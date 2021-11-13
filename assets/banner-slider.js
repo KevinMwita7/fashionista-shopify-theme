@@ -24,7 +24,8 @@ function setBannerImage() {
             var index = Math.ceil(screen.width / 180) - 1;
             var src = imgs[i].dataset.bg.split(',')[index]
             var attr = src.split(' ');
-            imgs[i].style.backgroundImage = "url('" + attr[0] + "')";
+            console.log(attr);
+            imgs[i].style.backgroundImage = "url('" + attr[0].trim() + "')";
             setBannerHeight(attr[2].replace('h', 'px'));
         }
     }
