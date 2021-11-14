@@ -148,7 +148,7 @@
 
   <div class="md:relative">
     {% if section.settings.image != blank %}
-      <div class="relative banner-slide fade">
+      <div class="relative banner-slide fade md:h-screen">
           <div class="d-none md:block h-full bg-cover bg-center overflow-hidden w-full relative">
             <img
             srcset="{%- if section.settings.image.width >= 180 -%}{{ section.settings.image | img_url: '180x' }} 180w 80h,{% endif -%}
@@ -185,12 +185,41 @@
                     <h2 class=" text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-5 text-black lg:leading-tight xl:leading-tight 2xl:leading-tight">
                         <span class="font-normal">Stylish Dress</span>
                     </h2>
-                    <a href="#" class="inline-block border border-black rounded py-2.5 px-5 hover:bg-black">
+                    <a href="#" class="inline-block border border-black rounded py-2.5 px-5">
                         Shop Now
                     </a>
                 </div>
             </div>
-          </div>         
+          </div>
+
+          <div class="md:hidden block pb-6">
+              <div class="relative">
+                  <div>
+                      <img 
+                      class="banner-img"
+                      alt="{{ section.settings.image.alt | escape }}"
+                      src="{{ section.settings.image | img_url: '720x' }}"
+                      srcset="{%- if section.settings.image.width >= 180 -%}{{ section.settings.image | img_url: '180x' }} 180w,{% endif -%}
+                      {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{% endif -%}
+                      {%- if section.settings.image.width >= 540 -%}{{ section.settings.image | img_url: '540x' }} 540w,{% endif -%}
+                      {%- if section.settings.image.width >= 720 -%}{{ section.settings.image | img_url: '720x' }} 720w,{% endif -%}
+                      {%- if section.settings.image.width >= 900 -%}{{ section.settings.image | img_url: '900x' }} 900w,{% endif -%}
+                      {%- if section.settings.image.width >= 1080 -%}{{ section.settings.image | img_url: '1080x' }} 1080w,{% endif -%}
+                      {%- if section.settings.image.width >= 1125 -%}{{ section.settings.image | img_url: '1125x' }} 1125w,{% endif -%}
+                      {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
+                      loading="lazy"
+                      width="{{ section.settings.image.width }}"
+                      height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}">
+                  </div>
+              </div>
+              <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
+                  <p class="mb-0.5 font-semibold">Trending</p>
+                  <h2 class="text-4xl mb-3">Stylish Dress</h2>
+                  <a href="#" class="block border border-black rounded py-2.5 px-5">
+                      Shop Now
+                  </a>
+              </div>
+          </div>
       </div>
     {% endif %}
 
