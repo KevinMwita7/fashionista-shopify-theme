@@ -127,9 +127,6 @@
       animation-name: fade;
       animation-duration: 1.5s;
   }
-  .d-none: {
-    display: none;
-  }
   @-webkit-keyframes fade {
       from {opacity: .4}
       to {opacity: 1}
@@ -149,7 +146,7 @@
   <div class="md:relative">
     {% if section.settings.image != blank %}
       <div class="relative banner-slide fade md:h-screen">
-          <div class="d-none md:block h-full bg-cover bg-center overflow-hidden w-full relative">
+          <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
             <img
             srcset="{%- if section.settings.image.width >= 180 -%}{{ section.settings.image | img_url: '180x' }} 180w 80h,{% endif -%}
             {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w 159h,{% endif -%}
