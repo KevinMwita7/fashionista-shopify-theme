@@ -1,8 +1,3 @@
-/*if (Shopify.designMode) {
-  document.addEventListener("shopify:section:load", showSlides);
-}*/
-
-
 // Slider dots
 var dots = document.getElementsByClassName("dot");
 
@@ -33,4 +28,10 @@ function showSlides(event) {
     // Change image every 5 seconds
     setTimeout(showSlides, 5000);
   }
+}
+
+if (Shopify.designMode) {
+  document.addEventListener("shopify:section:load", function(event) {
+    slideIndex = 0;
+  });
 }
