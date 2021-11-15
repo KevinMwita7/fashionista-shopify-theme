@@ -145,7 +145,7 @@
 
   <div class="md:relative">
     {% if section.settings.image != blank %}
-      <div class="relative banner-slide fade md:h-screen">
+      <div class="relative banner-slide fade md:h-screen" style="display:none">
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
             <img
             srcset="{%- if section.settings.image.width >= 180 -%}{{ section.settings.image | img_url: '180x' }} 180w 80h,{% endif -%}
@@ -221,7 +221,7 @@
     {% endif %}
 
     {% if section.settings.image_2 != blank %}
-      <div class="relative banner-slide fade md:h-screen">
+      <div class="relative banner-slide fade md:h-screen" style="display: none;">
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
             <img
             srcset="{%- if section.settings.image_2.width >= 180 -%}{{ section.settings.image_2 | img_url: '180x' }} 180w 80h,{% endif -%}
@@ -297,7 +297,7 @@
     {% endif %}
     
     {% if section.settings.image_3 != blank %}
-      <div class="relative banner-slide fade md:h-screen">
+      <div class="relative banner-slide fade md:h-screen" style="display: none;">
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
             <img
             srcset="{%- if section.settings.image_3.width >= 180 -%}{{ section.settings.image_3 | img_url: '180x' }} 180w 80h,{% endif -%}

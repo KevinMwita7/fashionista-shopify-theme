@@ -1,10 +1,5 @@
 if (Shopify.designMode) {
   document.addEventListener("shopify:section:load", showSlides);
-  
-  /*document.addEventListener("shopify:section:unload", function(event) {
-    console.log("unloaded")
-    document.removeEventListener("shopify:section:load", showSlides);
-  })*/
 }
 
 
@@ -21,7 +16,7 @@ function setActiveDot(currentSlide) {
 
 // Banner slideshow
 var slideIndex = 0;
-showSlides();
+// showSlides();
 
 function showSlides(event) {
   var i;
