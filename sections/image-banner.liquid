@@ -374,7 +374,7 @@
 
     {% if images_count > 1 %}
       <div class="flex justify-center">
-          <div class="flex md:absolute md:flex-col md:z-10 md:right-16 md:top-96">
+          <div class="flex md:absolute md:flex-col md:z-10 md:right-16 md:top-1/4">
               <span class="md:block mx-4 md:mx-0 md:mb-4 dot dot-active"></span>
               <span class="md:block mx-4 md:mx-0 md:mb-4 dot"></span>
               <span class="md:block mx-4 md:mx-0 dot"></span>
@@ -383,7 +383,11 @@
     {% endif %}
   </div>
 
-  <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
+  <h1>{{ images_count }}</h1>
+
+  {% if images_count > 1 %}
+    <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
+  {% endif %}
 {% endif %}
 
 {% schema %}

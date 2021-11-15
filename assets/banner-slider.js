@@ -1,7 +1,10 @@
 if (Shopify.designMode) {
-  document.addEventListener("shopify:section:load", function(event) {
-    showSlides();
-  });
+  document.addEventListener("shopify:section:load", showSlides);
+  
+  document.addEventListener("shopify:section:unload", function(event) {
+    console.log("unloaded")
+    document.removeEventListener("shopify:section:load", showSlides);
+  })
 }
 
 
@@ -20,10 +23,9 @@ function setActiveDot(currentSlide) {
 var slideIndex = 0;
 showSlides();
 
-function showSlides() {
+function showSlides(event) {
   var i;
   var slides = document.getElementsByClassName("banner-slide");
-  console.log("slides: ", slides.length);
   if(slides.length > 1) {
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
