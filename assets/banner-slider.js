@@ -1,7 +1,6 @@
 if (Shopify.designMode) {
   document.addEventListener("shopify:section:load", function(event) {
-    console.log(event.target);
-    // showSlides();
+    showSlides();
   });
 }
 
@@ -24,6 +23,7 @@ showSlides();
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("banner-slide");
+  console.log("slides: ", slides.length);
   if(slides.length > 1) {
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
