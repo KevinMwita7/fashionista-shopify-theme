@@ -16,7 +16,6 @@ var slideIndex = 0;
 showSlides();
 
 function showSlides(event) {
-  console.log("you called: ", slideIndex)
   var i;
   var slides = document.getElementsByClassName("banner-slide");
   for (i = 0; i < slides.length; i++) {
