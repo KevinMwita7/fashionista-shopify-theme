@@ -16,21 +16,19 @@ showSlides();
 function showSlides(event) {
   var i;
   var slides = document.getElementsByClassName("banner-slide");
-  if(slides.length > 1) {
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    var currentSlide = slideIndex - 1;
-    slides[currentSlide].style.display = "block";
-    setActiveDot(currentSlide);
-    // Change image every 5 seconds
-    setTimeout(showSlides, 5000);
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  var currentSlide = slideIndex - 1;
+  slides[currentSlide].style.display = "block";
+  setActiveDot(currentSlide);
+  // Change image every 5 seconds
+  setTimeout(showSlides, 5000);
 }
 
-if (Shopify.designMode) {
+if(Shopify.designMode) {
   document.addEventListener("shopify:section:load", function(event) {
     slideIndex = 0;
   });
