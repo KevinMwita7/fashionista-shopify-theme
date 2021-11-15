@@ -34,8 +34,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/girl2.jpg",
-        "image_2": "shopify:\/\/shop_images\/dgl17ayp2.jpg",
+        "image": "shopify:\/\/shop_images\/dgl17ayp2.jpg",
+        "image_2": "shopify:\/\/shop_images\/girl2.jpg",
         "image_3": "shopify:\/\/shop_images\/84758nne2.jpg",
         "image_height": "medium",
         "adapt_height_first_image": false,
