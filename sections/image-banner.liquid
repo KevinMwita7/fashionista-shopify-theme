@@ -377,13 +377,11 @@
           <div class="flex md:absolute md:flex-col md:z-10 md:right-16 md:top-1/4">
               <span class="md:block mx-4 md:mx-0 md:mb-4 dot dot-active"></span>
               <span class="md:block mx-4 md:mx-0 md:mb-4 dot"></span>
-              <span class="md:block mx-4 md:mx-0 dot"></span>
+              {% if images_count == 3 %}<span class="md:block mx-4 md:mx-0 dot"></span>{% endif %}
           </div>
       </div>
     {% endif %}
   </div>
-
-  <h1>{{ images_count }}</h1>
 
   <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
 {% endif %}
