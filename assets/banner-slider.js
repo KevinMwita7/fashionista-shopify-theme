@@ -1,6 +1,6 @@
-if (Shopify.designMode) {
+/*if (Shopify.designMode) {
   document.addEventListener("shopify:section:load", showSlides);
-}
+}*/
 
 
 // Slider dots
@@ -16,7 +16,7 @@ function setActiveDot(currentSlide) {
 
 // Banner slideshow
 var slideIndex = 0;
-// showSlides();
+showSlides();
 
 function showSlides(event) {
   var i;
