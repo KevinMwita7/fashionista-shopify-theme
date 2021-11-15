@@ -3,6 +3,12 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "ec60a8c7-0b02-4460-ba2f-fce54d1faa20": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
@@ -23,12 +29,14 @@
         }
       },
       "block_order": [
+        "ec60a8c7-0b02-4460-ba2f-fce54d1faa20",
         "heading",
         "button"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/girl2.jpg",
         "image_2": "shopify:\/\/shop_images\/dgl17ayp2.jpg",
+        "image_3": "shopify:\/\/shop_images\/84758nne2.jpg",
         "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
