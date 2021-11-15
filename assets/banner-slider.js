@@ -1,10 +1,10 @@
 if (Shopify.designMode) {
   document.addEventListener("shopify:section:load", showSlides);
   
-  document.addEventListener("shopify:section:unload", function(event) {
+  /*document.addEventListener("shopify:section:unload", function(event) {
     console.log("unloaded")
     document.removeEventListener("shopify:section:load", showSlides);
-  })
+  })*/
 }
 
 
