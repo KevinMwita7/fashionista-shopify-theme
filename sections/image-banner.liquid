@@ -169,10 +169,9 @@
             {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w {{ section.settings.image.width }}h"
             src="{{ section.settings.image | img_url: '1512x' }}" 
             alt="{{ section.settings.image.alt | escape }}"
-            class="absolute w-full pointer-events-none -z-1"
+            class="absolute w-full pointer-events-none -z-1 h-full object-cover"
             loading="lazy"
             width="{{ section.settings.image.width }}"
-            height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
             >
             <div class="flex container w-full h-full py-24 relative px-4 items-center">
                 <div class="max-w-4xl w-max text-left">
@@ -245,10 +244,9 @@
             {{ section.settings.image_2 | img_url: 'master' }} {{ section.settings.image_2.width }}w {{ section.settings.image_2.width }}h"
             src="{{ section.settings.image_2 | img_url: '1512x' }}" 
             alt="{{ section.settings.image_2.alt | escape }}"
-            class="absolute w-full pointer-events-none -z-1"
+            class="absolute w-full pointer-events-none -z-1 h-full object-cover"
             loading="lazy"
             width="{{ section.settings.image_2.width }}"
-            height="{{ section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio }}"
             >
             <div class="flex container w-full h-full py-24 relative px-4 items-center">
                 <div class="max-w-4xl w-max text-left">
@@ -321,10 +319,9 @@
             {{ section.settings.image_3 | img_url: 'master' }} {{ section.settings.image_3.width }}w {{ section.settings.image_3.width }}h"
             src="{{ section.settings.image_3 | img_url: '1512x' }}" 
             alt="{{ section.settings.image_3.alt | escape }}"
-            class="absolute w-full pointer-events-none -z-1"
+            class="absolute w-full pointer-events-none -z-1 h-full object-cover"
             loading="lazy"
             width="{{ section.settings.image_3.width }}"
-            height="{{ section.settings.image_3.width | divided_by: section.settings.image_3.aspect_ratio }}"
             >
             <div class="flex container w-full h-full py-24 relative px-4 items-center">
                 <div class="max-w-4xl w-max text-left">
