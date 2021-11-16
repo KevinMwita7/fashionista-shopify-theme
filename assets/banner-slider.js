@@ -3,16 +3,15 @@ var dots = document.getElementsByClassName("dot");
 
 function setActiveDot(currentSlide) {
     // Remove active class from all dots and set on current one
-    if(dots.length > 1) {
-      for (i = 0; i < dots.length; i++) {
-        dots[i].classList.remove("dot-active");
-      }
-      dots[currentSlide].classList.add("dot-active");
+    for (i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("dot-active");
     }
+    dots[currentSlide].classList.add("dot-active");
 }
 
 // Banner slideshow
 var slideIndex = 0;
+var timeoutId;
 showSlides();
 
 function showSlides(event) {
@@ -26,8 +25,17 @@ function showSlides(event) {
   var currentSlide = slideIndex - 1;
   slides[currentSlide].style.display = "block";
   setActiveDot(currentSlide);
-  // Change image every 5 seconds
-  setTimeout(showSlides, 5000);
+  timeoutId = setTimeout(showSlides, 5000);
+}
+
+for(var i = 0; i < dots.length; ++i) {
+  dots[i].addEventListener('click', function(event) {
+    var idx = Number(event.target.dataset.index);
+    clearTimeout(timeoutId);
+    setActiveDot(idx);
+    slideIndex = idx;
+    showSlides();
+  })
 }
 
 if(Shopify.designMode) {
