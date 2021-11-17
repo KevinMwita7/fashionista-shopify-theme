@@ -219,6 +219,7 @@
       </div>
     {% endif %}
 
+    {% comment %}
     {% if section.settings.image_2 != blank %}
       <div class="relative banner-slide fade md:h-screen">
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
@@ -369,6 +370,8 @@
       </div>
     {% endif %}    
 
+
+
     {% if images_count > 1 %}
       <div class="flex justify-center">
           <div class="flex md:absolute md:flex-col md:z-10 md:right-16 md:top-1/2">
@@ -378,6 +381,7 @@
           </div>
       </div>
     {% endif %}
+  {% endcomment %}
   </div>
 
   <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
