@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-        
+        "slide": {
+          "name": "Liuku",
+          "settings": {
+            "large_image": {
+              "label": "Suuri kuva",
+              "info": "Taustakuva isommille näytöille"
+            },
+            "small_image": {
+              "label": "Pieni kuva",
+              "info": "Taustakuva pienemmille näytöille"
+            },
+            "heading": {
+              "label": "Otsikko",
+              "default": "Otsikko",
+              "info": "Teksti tämän dian kohteen korostamiseksi"
+            },
+            "sub_heading": {
+              "label": "Alaotsikko",
+              "default": "Alaotsikko",
+              "info": "Teksti, joka selittää kohteen tarkemmin"
+            },
+            "button_text": {
+              "label": "Painikkeen teksti",
+              "default": "Osta nyt",
+              "info": "Teksti, joka näkyy diassa painikkeen sisällä"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Kuvabanneri"

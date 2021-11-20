@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-
+        "slide": {
+          "name": "滑动",
+          "settings": {
+            "large_image": {
+              "label": "大图",
+              "info": "大屏幕的背景图像"
+            },
+            "small_image": {
+              "label": "小图",
+              "info": "小屏幕的背景图像"
+            },
+            "heading": {
+              "label": "标题",
+              "default": "标题",
+              "info": "文本以突出显示此幻灯片上的项目"
+            },
+            "sub_heading": {
+              "label": "副标题",
+              "default": "副标题",
+              "info": "进一步解释幻灯片上项目的文字"
+            },
+            "button_text": {
+              "label": "按钮文字",
+              "default": "现在去购物",
+              "info": "将出现在幻灯片中按钮内的文本"
+            }
+          }
+        }
       },
       "presets": {
         "name": "图片横幅"

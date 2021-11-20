@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-        
+        "slide": {
+          "name": "Ślizgać się",
+          "settings": {
+            "large_image": {
+              "label": "Duży obraz",
+              "info": "Obraz tła dla większych ekranów"
+            },
+            "small_image": {
+              "label": "Mały obraz",
+              "info": "Obraz tła dla mniejszych ekranów"
+            },
+            "heading": {
+              "label": "Nagłówek",
+              "default": "Nagłówek",
+              "info": "Tekst do podświetlenia elementu na tym slajdzie"
+            },
+            "sub_heading": {
+              "label": "Podtytuł",
+              "default": "Podtytuł",
+              "info": "Tekst do dalszego wyjaśnienia pozycji na slajdzie"
+            },
+            "button_text": {
+              "label": "Przycisk tekstowy",
+              "default": "Kupuj teraz",
+              "info": "Tekst, który pojawi się na przycisku na slajdzie"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Baner z obrazem"

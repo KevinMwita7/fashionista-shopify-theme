@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-        
+        "slide": {
+          "name": "Skluzavka",
+          "settings": {
+            "large_image": {
+              "label": "Velký obrázek",
+              "info": "Obrázek na pozadí pro větší obrazovky"
+            },
+            "small_image": {
+              "label": "Malý obrázek",
+              "info": "Obrázek na pozadí pro menší obrazovky"
+            },
+            "heading": {
+              "label": "Nadpis",
+              "default": "Nadpis",
+              "info": "Text pro zvýraznění položky na tomto snímku"
+            },
+            "sub_heading": {
+              "label": "Podnadpis",
+              "default": "Podnadpis",
+              "info": "Text pro další vysvětlení položky na snímku"
+            },
+            "button_text": {
+              "label": "Text tlačítka",
+              "default": "Nakupuj teď",
+              "info": "Text, který se objeví v tlačítku na snímku"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Obrázkový banner"

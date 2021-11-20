@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-
+        "slide": {
+          "name": "Slide",
+          "settings": {
+            "large_image": {
+              "label": "Stor bild",
+              "info": "Bakgrundsbild för större skärmar"
+            },
+            "small_image": {
+              "label": "Liten bild",
+              "info": "Bakgrundsbild för mindre skärmar"
+            },
+            "heading": {
+              "label": "Rubrik",
+              "default": "Rubrik",
+              "info": "Text för att markera objekt på denna bild"
+            },
+            "sub_heading": {
+              "label": "Underrubrik",
+              "default": "Underrubrik",
+              "info": "Text för att ytterligare förklara objektet på bilden"
+            },
+            "button_text": {
+              "label": "Knapp-text",
+              "default": "Shoppa nu",
+              "info": "Text som kommer att visas i knappen i bilden"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Bildbanner"

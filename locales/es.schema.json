@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-        
+        "slide": {
+          "name": "Diapositiva",
+          "settings": {
+            "large_image": {
+              "label": "Imagen grande",
+              "info": "Imagen de fondo para pantallas más grandes"
+            },
+            "small_image": {
+              "label": "Imagen pequeña",
+              "info": "Imagen de fondo para pantallas más pequeñas"
+            },
+            "heading": {
+              "label": "Bóveda",
+              "default": "Bóveda",
+              "info": "Texto para resaltar el elemento en esta diapositiva"
+            },
+            "sub_heading": {
+              "label": "Subtítulo",
+              "default": "Subtítulo",
+              "info": "Texto para explicar con más detalle el elemento de la diapositiva"
+            },
+            "button_text": {
+              "label": "Botón de texto",
+              "default": "Compra ahora",
+              "info": "Texto que aparecerá dentro del botón en la diapositiva"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Banner de imagen"

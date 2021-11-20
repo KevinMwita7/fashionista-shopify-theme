@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-
+        "slide": {
+          "name": "미끄러지 다",
+          "settings": {
+            "large_image": {
+              "label": "큰 이미지",
+              "info": "큰 화면의 배경 이미지"
+            },
+            "small_image": {
+              "label": "작은 이미지",
+              "info": "작은 화면의 배경 이미지"
+            },
+            "heading": {
+              "label": "표제",
+              "default": "표제",
+              "info": "이 슬라이드의 항목을 강조 표시할 텍스트"
+            },
+            "sub_heading": {
+              "label": "소제목",
+              "default": "소제목",
+              "info": "슬라이드의 항목을 추가로 설명하는 텍스트"
+            },
+            "button_text": {
+              "label": "버튼 텍스트",
+              "default": "지금 쇼핑하기",
+              "info": "슬라이드의 버튼 안에 표시될 텍스트"
+            }
+          }
+        }
       },
       "presets": {
         "name": "이미지 배너"

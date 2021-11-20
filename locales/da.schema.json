@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-        
+        "slide": {
+          "name": "Glide",
+          "settings": {
+            "large_image": {
+              "label": "Stort billede",
+              "info": "Baggrundsbillede til større skærme"
+            },
+            "small_image": {
+              "label": "Lille billede",
+              "info": "Baggrundsbillede til mindre skærme"
+            },
+            "heading": {
+              "label": "Overskrift",
+              "default": "Overskrift",
+              "info": "Tekst for at fremhæve emnet på dette dias"
+            },
+            "sub_heading": {
+              "label": "Underoverskrift",
+              "default": "Underoverskrift",
+              "info": "Tekst for yderligere at forklare emnet på dias"
+            },
+            "button_text": {
+              "label": "Knaptekst",
+              "default": "Køb nu",
+              "info": "Tekst, der vises inden for knappen i dias"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Billedbanner"

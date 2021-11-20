@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-
+        "slide": {
+          "name": "Schuif",
+          "settings": {
+            "large_image": {
+              "label": "Grote afbeelding",
+              "info": "Achtergrondafbeelding voor grotere schermen"
+            },
+            "small_image": {
+              "label": "Kleine afbeelding",
+              "info": "Achtergrondafbeelding voor kleinere schermen"
+            },
+            "heading": {
+              "label": "rubriek",
+              "default": "rubriek",
+              "info": "Tekst om item op deze dia te markeren"
+            },
+            "sub_heading": {
+              "label": "Ondertitel",
+              "default": "Ondertitel",
+              "info": "Tekst om het item op de dia verder uit te leggen"
+            },
+            "button_text": {
+              "label": "Knop tekst",
+              "default": "Winkel nu",
+              "info": "Tekst die binnen de knop in de dia verschijnt"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Bannerafbeelding"

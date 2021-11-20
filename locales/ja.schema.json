@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-
+        "slide": {
+          "name": "滑り台",
+          "settings": {
+            "large_image": {
+              "label": "大きな画像",
+              "info": "大画面の背景画像"
+            },
+            "small_image": {
+              "label": "小さい画像",
+              "info": "小さい画面の背景画像"
+            },
+            "heading": {
+              "label": "見出し",
+              "default": "見出し",
+              "info": "このスライドの項目を強調するテキスト"
+            },
+            "sub_heading": {
+              "label": "小見出し",
+              "default": "小見出し",
+              "info": "スライドの項目をさらに説明するテキスト"
+            },
+            "button_text": {
+              "label": "ボタンテキスト",
+              "default": "今すぐ購入",
+              "info": "スライドのボタン内に表示されるテキスト"
+            }
+          }
+        }
       },
       "presets": {
         "name": "画像バナー"

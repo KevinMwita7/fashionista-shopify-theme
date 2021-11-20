@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-        
+        "slide": {
+          "name": "Faire glisser",
+          "settings": {
+            "large_image": {
+              "label": "Grande image",
+              "info": "Image de fond pour les écrans plus grands"
+            },
+            "small_image": {
+              "label": "Petite image",
+              "info": "Image de fond pour les petits écrans"
+            },
+            "heading": {
+              "label": "Titre",
+              "default": "Titre",
+              "info": "Texte pour surligner l'élément sur cette diapositive"
+            },
+            "sub_heading": {
+              "label": "Sous-titre",
+              "default": "Sous-titre",
+              "info": "Texte pour expliquer davantage l'élément sur la diapositive"
+            },
+            "button_text": {
+              "label": "Texte du bouton",
+              "default": "Achetez maintenant",
+              "info": "Texte qui apparaîtra dans le bouton dans la diapositive"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Bannière avec image"

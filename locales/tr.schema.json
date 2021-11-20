@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-
+        "slide": {
+          "name": "Kaymak",
+          "settings": {
+            "large_image": {
+              "label": "Büyük resim",
+              "info": "Daha büyük ekranlar için arka plan resmi"
+            },
+            "small_image": {
+              "label": "Küçük resim",
+              "info": "Daha küçük ekranlar için arka plan resmi"
+            },
+            "heading": {
+              "label": "başlık",
+              "default": "başlık",
+              "info": "Bu slayttaki öğeyi vurgulayacak metin"
+            },
+            "sub_heading": {
+              "label": "alt başlık",
+              "default": "alt başlık",
+              "info": "Slayttaki öğeyi daha ayrıntılı açıklamak için metin"
+            },
+            "button_text": {
+              "label": "Düğme Metni",
+              "default": "Şimdi satın al",
+              "info": "Slayttaki düğmenin içinde görünecek metin"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Görsel banner'ı"

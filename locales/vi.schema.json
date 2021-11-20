@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-
+        "slide": {
+          "name": "Trượt",
+          "settings": {
+            "large_image": {
+              "label": "Hình ảnh lớn",
+              "info": "Hình nền cho màn hình lớn hơn"
+            },
+            "small_image": {
+              "label": "Hình ảnh nhỏ",
+              "info": "Hình nền cho màn hình nhỏ hơn"
+            },
+            "heading": {
+              "label": "Phần mở đầu",
+              "default": "Phần mở đầu",
+              "info": "Văn bản để đánh dấu mục trên trang trình bày này"
+            },
+            "sub_heading": {
+              "label": "Tiêu đề phụ",
+              "default": "Tiêu đề phụ",
+              "info": "Văn bản để giải thích thêm về mục trên trang trình bày"
+            },
+            "button_text": {
+              "label": "Nút văn bản",
+              "default": "Mua ngay",
+              "info": "Văn bản sẽ xuất hiện trong nút trong trang trình bày"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Biểu ngữ hình ảnh"

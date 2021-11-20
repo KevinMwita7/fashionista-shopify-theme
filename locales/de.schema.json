@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-        
+        "slide": {
+          "name": "Gleiten",
+          "settings": {
+            "large_image": {
+              "label": "Großes Bild",
+              "info": "Hintergrundbild für größere Bildschirme"
+            },
+            "small_image": {
+              "label": "Kleines Bild",
+              "info": "Hintergrundbild für kleinere Bildschirme"
+            },
+            "heading": {
+              "label": "Üerschrift",
+              "default": "Üerschrift",
+              "info": "Text zum Hervorheben eines Elements auf dieser Folie"
+            },
+            "sub_heading": {
+              "label": "Zwischenüberschrift",
+              "default": "Zwischenüberschrift",
+              "info": "Text zur weiteren Erläuterung des Elements auf der Folie"
+            },
+            "button_text": {
+              "label": "Schaltflächentext",
+              "default": "Jetzt einkaufen",
+              "info": "Text, der innerhalb der Schaltfläche in der Folie angezeigt wird"
+            }
+          }
+        }        
       },
       "presets": {
         "name": "Bild-Banner"

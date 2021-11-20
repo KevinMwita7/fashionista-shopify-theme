@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-
+        "slide": {
+          "name": "Slide",
+          "settings": {
+            "large_image": {
+              "label": "Imagem grande",
+              "info": "Imagem de fundo para telas maiores"
+            },
+            "small_image": {
+              "label": "Imagem pequena",
+              "info": "Imagem de fundo para telas menores"
+            },
+            "heading": {
+              "label": "Cabeçalho",
+              "default": "Cabeçalho",
+              "info": "Texto para destacar o item neste slide"
+            },
+            "sub_heading": {
+              "label": "Subtítulo",
+              "default": "Subtítulo",
+              "info": "Texto para explicar melhor o item no slide"
+            },
+            "button_text": {
+              "label": "Botão de texto",
+              "default": "Compre agora",
+              "info": "Texto que aparecerá dentro do botão no slide"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Faixa de imagem"

@@ -759,7 +759,34 @@
         }
       },
       "blocks": {
-
+        "slide": {
+          "name": "Lysbilde",
+          "settings": {
+            "large_image": {
+              "label": "Stort bilde",
+              "info": "Bakgrunnsbilde for større skjermer"
+            },
+            "small_image": {
+              "label": "Lite bilde",
+              "info": "Bakgrunnsbilde for mindre skjermer"
+            },
+            "heading": {
+              "label": "Overskrift",
+              "default": "Overskrift",
+              "info": "Tekst for å markere elementet på dette lysbildet"
+            },
+            "sub_heading": {
+              "label": "Underoverskrift",
+              "default": "Underoverskrift",
+              "info": "Tekst for å forklare elementet på lysbildet ytterligere"
+            },
+            "button_text": {
+              "label": "Knappetekst",
+              "default": "Handle nå",
+              "info": "Tekst som vises i knappen i lysbildet"
+            }
+          }
+        }
       },
       "presets": {
         "name": "Bildeoverskrift"
