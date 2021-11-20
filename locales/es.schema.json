@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Título",
-          "settings": {
-            "heading": {
-              "label": "Título"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Medio"
-              },
-              "options__2": {
-                "label": "Grande"
-              },
-              "label": "Tamaño de fuente de título"
-            }
-          }
-        },
-        "text": {
-          "name": "Texto",
-          "settings": {
-            "text": {
-              "label": "Descripción"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Botones",
-          "settings": {
-            "button_label_1": {
-              "label": "Primera etiqueta de botón",
-              "info": "Deja la etiqueta en blanco para ocultar el botón."
-            },
-            "button_link_1": {
-              "label": "Primer enlace de botón"
-            },
-            "button_style_secondary_1": {
-              "label": "Usar estilo de botón con contorno"
-            },
-            "button_label_2": {
-              "label": "Primera etiqueta de botón",
-              "info": "Deja la etiqueta en blanco para ocultar el botón."
-            },
-            "button_link_2": {
-              "label": "Segundo enlace de botón"
-            },
-            "button_style_secondary_2": {
-              "label": "Usar estilo de botón con contorno"
-            }
-          }
-        }
+        
       },
       "presets": {
         "name": "Banner de imagen"

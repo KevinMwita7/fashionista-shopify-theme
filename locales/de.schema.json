@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Titel",
-          "settings": {
-            "heading": {
-              "label": "Überschrift"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Mittel"
-              },
-              "options__2": {
-                "label": "Groß"
-              },
-              "label": "Schriftgröße der Überschrift"
-            }
-          }
-        },
-        "text": {
-          "name": "Text",
-          "settings": {
-            "text": {
-              "label": "Beschreibung"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Schaltflächen",
-          "settings": {
-            "button_label_1": {
-              "label": "Erste Beschriftung der Schaltfläche",
-              "info": "Lasse die Beschriftung leer, um die Schaltfläche auszublenden."
-            },
-            "button_link_1": {
-              "label": "Erster Link der Schaltfläche"
-            },
-            "button_style_secondary_1": {
-              "label": "Umriss-Stil für Schaltfläche verwenden"
-            },
-            "button_label_2": {
-              "label": "Zweite Beschriftung der Schaltfläche",
-              "info": "Lasse die Beschriftung leer, um die Schaltfläche auszublenden."
-            },
-            "button_link_2": {
-              "label": "Zweiter Link der Schaltfläche"
-            },
-            "button_style_secondary_2": {
-              "label": "Umriss-Stil für Schaltfläche verwenden"
-            }
-          }
-        }
+        
       },
       "presets": {
         "name": "Bild-Banner"

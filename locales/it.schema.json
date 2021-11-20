@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Titolo",
-          "settings": {
-            "heading": {
-              "label": "Titolo"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Medio"
-              },
-              "options__2": {
-                "label": "Grande"
-              },
-              "label": "Dimensione font titolo"
-            }
-          }
-        },
-        "text": {
-          "name": "Testo",
-          "settings": {
-            "text": {
-              "label": "Descrizione"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Pulsanti",
-          "settings": {
-            "button_label_1": {
-              "label": "Prima etichetta pulsante",
-              "info": "Lascia vuota l'etichetta per nascondere il pulsante."
-            },
-            "button_link_1": {
-              "label": "Primo link pulsante"
-            },
-            "button_style_secondary_1": {
-              "label": "Utilizza stile contorno pulsante"
-            },
-            "button_label_2": {
-              "label": "Seconda etichetta pulsante",
-              "info": "Lascia vuota l'etichetta per nascondere il pulsante."
-            },
-            "button_link_2": {
-              "label": "Secondo link pulsante"
-            },
-            "button_style_secondary_2": {
-              "label": "Utilizza stile contorno pulsante"
-            }
-          }
-        }
+
       },
       "presets": {
         "name": "Immagine banner"

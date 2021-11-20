@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Titre",
-          "settings": {
-            "heading": {
-              "label": "Titre"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Moyen"
-              },
-              "options__2": {
-                "label": "Grand"
-              },
-              "label": "Taille de la police du titre"
-            }
-          }
-        },
-        "text": {
-          "name": "Texte",
-          "settings": {
-            "text": {
-              "label": "Description"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Boutons",
-          "settings": {
-            "button_label_1": {
-              "label": "Texte du premier bouton",
-              "info": "Laisser le texte vide pour masquer le bouton."
-            },
-            "button_link_1": {
-              "label": "Lien du premier bouton"
-            },
-            "button_style_secondary_1": {
-              "label": "Utiliser le style du bouton en relief"
-            },
-            "button_label_2": {
-              "label": "Texte du deuxième bouton",
-              "info": "Laisser le texte vide pour masquer le bouton."
-            },
-            "button_link_2": {
-              "label": "Lien du deuxième bouton"
-            },
-            "button_style_secondary_2": {
-              "label": "Utiliser le style du bouton en relief"
-            }
-          }
-        }
+        
       },
       "presets": {
         "name": "Bannière avec image"

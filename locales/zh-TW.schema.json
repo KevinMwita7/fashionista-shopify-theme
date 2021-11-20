@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "settings": {
-            "heading": {
-              "label": "標題"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "中等"
-              },
-              "options__2": {
-                "label": "大"
-              },
-              "label": "標題字型大小"
-            }
-          },
-          "name": "標題"
-        },
-        "text": {
-          "settings": {
-            "text": {
-              "label": "說明"
-            }
-          },
-          "name": "文字"
-        },
-        "buttons": {
-          "settings": {
-            "button_label_1": {
-              "label": "第一個按鈕標籤",
-              "info": "將標籤保留空白以隱藏按鈕。"
-            },
-            "button_link_1": {
-              "label": "第一個按鈕連結"
-            },
-            "button_style_secondary_1": {
-              "label": "使用外框按鈕樣式"
-            },
-            "button_label_2": {
-              "label": "第二個按鈕標籤",
-              "info": "將標籤保留空白以隱藏按鈕。"
-            },
-            "button_link_2": {
-              "label": "第二個按鈕連結"
-            },
-            "button_style_secondary_2": {
-              "label": "使用外框按鈕樣式"
-            }
-          },
-          "name": "按鈕"
-        }
+
       },
       "presets": {
         "name": "圖片橫幅"

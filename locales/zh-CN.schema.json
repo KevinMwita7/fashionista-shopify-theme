@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "settings": {
-            "heading": {
-              "label": "标题"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "中"
-              },
-              "options__2": {
-                "label": "大"
-              },
-              "label": "标题字体大小"
-            }
-          },
-          "name": "标题"
-        },
-        "text": {
-          "settings": {
-            "text": {
-              "label": "描述"
-            }
-          },
-          "name": "文本"
-        },
-        "buttons": {
-          "settings": {
-            "button_label_1": {
-              "label": "第一个按钮标签",
-              "info": "将标签留空以隐藏按钮。"
-            },
-            "button_link_1": {
-              "label": "第一个按钮链接"
-            },
-            "button_style_secondary_1": {
-              "label": "使用轮廓按钮样式"
-            },
-            "button_label_2": {
-              "label": "第二个按钮标签",
-              "info": "将标签留空以隐藏按钮。"
-            },
-            "button_link_2": {
-              "label": "第二个按钮链接"
-            },
-            "button_style_secondary_2": {
-              "label": "使用轮廓按钮样式"
-            }
-          },
-          "name": "按钮"
-        }
+
       },
       "presets": {
         "name": "图片横幅"

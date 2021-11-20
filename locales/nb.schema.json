@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Overskrift",
-          "settings": {
-            "heading": {
-              "label": "Overskrift"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Middels"
-              },
-              "options__2": {
-                "label": "Stor"
-              },
-              "label": "Skriftstørrelse for overskrift"
-            }
-          }
-        },
-        "text": {
-          "name": "Tekst",
-          "settings": {
-            "text": {
-              "label": "Beskrivelse"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Knapper",
-          "settings": {
-            "button_label_1": {
-              "label": "Første knappetikett",
-              "info": "La etiketten stå tom for å skjule knappen."
-            },
-            "button_link_1": {
-              "label": "Første knappekobling"
-            },
-            "button_style_secondary_1": {
-              "label": "Bruk knappestil med omriss"
-            },
-            "button_label_2": {
-              "label": "Andre knappetikett",
-              "info": "La etiketten stå tom for å skjule knappen."
-            },
-            "button_link_2": {
-              "label": "Andre knappekobling"
-            },
-            "button_style_secondary_2": {
-              "label": "Bruk knappestil med omriss"
-            }
-          }
-        }
+
       },
       "presets": {
         "name": "Bildeoverskrift"

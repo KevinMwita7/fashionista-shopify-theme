@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Overskrift",
-          "settings": {
-            "heading": {
-              "label": "Overskrift"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Medium"
-              },
-              "options__2": {
-                "label": "Stor"
-              },
-              "label": "Skriftstørrelse til overskrifter"
-            }
-          }
-        },
-        "text": {
-          "name": "Tekst",
-          "settings": {
-            "text": {
-              "label": "Beskrivelse"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Knapper",
-          "settings": {
-            "button_label_1": {
-              "label": "Første knaptekst",
-              "info": "Lad feltet være tomt for at skjule knappen."
-            },
-            "button_link_1": {
-              "label": "Første knaplink"
-            },
-            "button_style_secondary_1": {
-              "label": "Brug rammeknaptypografi"
-            },
-            "button_label_2": {
-              "label": "Anden knaptekst",
-              "info": "Lad feltet være tomt for at skjule knappen."
-            },
-            "button_link_2": {
-              "label": "Andet knaplink"
-            },
-            "button_style_secondary_2": {
-              "label": "Brug rammeknaptypografi"
-            }
-          }
-        }
+        
       },
       "presets": {
         "name": "Billedbanner"

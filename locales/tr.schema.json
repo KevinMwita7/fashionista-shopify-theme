@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Başlık",
-          "settings": {
-            "heading": {
-              "label": "Başlık"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Orta"
-              },
-              "options__2": {
-                "label": "Büyük"
-              },
-              "label": "Başlık yazı tipi boyutu"
-            }
-          }
-        },
-        "text": {
-          "name": "Metin rengi",
-          "settings": {
-            "text": {
-              "label": "Açıklama"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Düğmeler",
-          "settings": {
-            "button_label_1": {
-              "label": "İlk düğme etiketi",
-              "info": "Düğmeyi gizlemek için etiketi boş bırakın."
-            },
-            "button_link_1": {
-              "label": "İlk düğme bağlantısı"
-            },
-            "button_style_secondary_1": {
-              "label": "Dış çizgi düğme stilini kullan"
-            },
-            "button_label_2": {
-              "label": "İkinci düğme etiketi",
-              "info": "Düğmeyi gizlemek için etiketi boş bırakın."
-            },
-            "button_link_2": {
-              "label": "İkinci düğme bağlantısı"
-            },
-            "button_style_secondary_2": {
-              "label": "Dış çizgi düğme stilini kullan"
-            }
-          }
-        }
+
       },
       "presets": {
         "name": "Görsel banner'ı"

@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Tiêu đề",
-          "settings": {
-            "heading": {
-              "label": "Tiêu đề"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Trung bình"
-              },
-              "options__2": {
-                "label": "Lớn"
-              },
-              "label": "Cỡ phông chữ tiêu đề"
-            }
-          }
-        },
-        "text": {
-          "name": "Văn bản",
-          "settings": {
-            "text": {
-              "label": "Mô tả"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Nút",
-          "settings": {
-            "button_label_1": {
-              "label": "Nhãn nút thứ nhất",
-              "info": "Để nhãn trống để ẩn nút."
-            },
-            "button_link_1": {
-              "label": "Liên kết trên nút thứ nhất"
-            },
-            "button_style_secondary_1": {
-              "label": "Sử dụng kiểu nút viền ngoài"
-            },
-            "button_label_2": {
-              "label": "Nhãn nút thứ hai",
-              "info": "Để nhãn trống để ẩn nút."
-            },
-            "button_link_2": {
-              "label": "Liên kết trên nút thứ hai"
-            },
-            "button_style_secondary_2": {
-              "label": "Sử dụng kiểu nút viền ngoài"
-            }
-          }
-        }
+
       },
       "presets": {
         "name": "Biểu ngữ hình ảnh"

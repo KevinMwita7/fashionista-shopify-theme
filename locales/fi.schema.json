@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Otsikko",
-          "settings": {
-            "heading": {
-              "label": "Otsikko"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Keskisuuri"
-              },
-              "options__2": {
-                "label": "Suuri"
-              },
-              "label": "Otsikon fonttikoko"
-            }
-          }
-        },
-        "text": {
-          "name": "Teksti",
-          "settings": {
-            "text": {
-              "label": "Kuvaus"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Painikkeet",
-          "settings": {
-            "button_label_1": {
-              "label": "Ensimmäinen tekstipainike",
-              "info": "Jos haluat piilottaa painikkeen, jätä painikkeen teksti tyhjäksi."
-            },
-            "button_link_1": {
-              "label": "Ensimmäinen painikelinkki"
-            },
-            "button_style_secondary_1": {
-              "label": "Käytä ääriviivallista painiketyyliä"
-            },
-            "button_label_2": {
-              "label": "Toinen tekstipainike",
-              "info": "Jos haluat piilottaa painikkeen, jätä painikkeen teksti tyhjäksi."
-            },
-            "button_link_2": {
-              "label": "Toinen painikelinkki"
-            },
-            "button_style_secondary_2": {
-              "label": "Käytä ääriviivallista painiketyyliä"
-            }
-          }
-        }
+        
       },
       "presets": {
         "name": "Kuvabanneri"

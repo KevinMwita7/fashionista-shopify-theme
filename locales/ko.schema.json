@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "settings": {
-            "heading": {
-              "label": "제목"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "보통"
-              },
-              "options__2": {
-                "label": "크게"
-              },
-              "label": "제목 글꼴 사이즈"
-            }
-          },
-          "name": "제목"
-        },
-        "text": {
-          "settings": {
-            "text": {
-              "label": "설명"
-            }
-          },
-          "name": "텍스트"
-        },
-        "buttons": {
-          "settings": {
-            "button_label_1": {
-              "label": "첫 번째 버튼 레이블",
-              "info": "버튼을 숨기려면 레이블을 비워둡니다."
-            },
-            "button_link_1": {
-              "label": "첫 번째 버튼 링크"
-            },
-            "button_style_secondary_1": {
-              "label": "윤곽 버튼 스타일 사용"
-            },
-            "button_label_2": {
-              "label": "두 번째 버튼 레이블",
-              "info": "버튼을 숨기려면 레이블을 비워둡니다."
-            },
-            "button_link_2": {
-              "label": "두 번째 버튼 링크"
-            },
-            "button_style_secondary_2": {
-              "label": "윤곽 버튼 스타일 사용"
-            }
-          },
-          "name": "버튼"
-        }
+
       },
       "presets": {
         "name": "이미지 배너"

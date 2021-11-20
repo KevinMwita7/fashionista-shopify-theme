@@ -759,56 +759,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Opschrift",
-          "settings": {
-            "heading": {
-              "label": "Opschrift"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Gemiddeld"
-              },
-              "options__2": {
-                "label": "Groot"
-              },
-              "label": "Grootte lettertype kop"
-            }
-          }
-        },
-        "text": {
-          "name": "Tekstkleur",
-          "settings": {
-            "text": {
-              "label": "Beschrijving"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Knoppen",
-          "settings": {
-            "button_label_1": {
-              "label": "Eerste knoplabel",
-              "info": "Laat het label leeg om de knop te verbergen."
-            },
-            "button_link_1": {
-              "label": "Eerste knoplink"
-            },
-            "button_style_secondary_1": {
-              "label": "Gebruik toelichten voor knopstijl"
-            },
-            "button_label_2": {
-              "label": "Tweede knoplabel",
-              "info": "Laat het label leeg om de knop te verbergen."
-            },
-            "button_link_2": {
-              "label": "Tweede knoplink"
-            },
-            "button_style_secondary_2": {
-              "label": "Gebruik toelichten voor knopstijl"
-            }
-          }
-        }
+
       },
       "presets": {
         "name": "Bannerafbeelding"

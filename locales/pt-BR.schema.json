@@ -755,56 +755,7 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Título",
-          "settings": {
-            "heading": {
-              "label": "Título"
-            },
-            "heading_size": {
-              "options__1": {
-                "label": "Médio"
-              },
-              "options__2": {
-                "label": "Grande"
-              },
-              "label": "Tamanho da fonte do título"
-            }
-          }
-        },
-        "text": {
-          "name": "Texto",
-          "settings": {
-            "text": {
-              "label": "Descrição"
-            }
-          }
-        },
-        "buttons": {
-          "name": "Botões",
-          "settings": {
-            "button_label_1": {
-              "label": "Primeira etiqueta de botão",
-              "info": "Deixe a etiqueta em branco para ocultar o botão."
-            },
-            "button_link_1": {
-              "label": "Primeiro link de botão"
-            },
-            "button_style_secondary_1": {
-              "label": "Usar estilo de botão com contorno"
-            },
-            "button_label_2": {
-              "label": "Segunda etiqueta de botão",
-              "info": "Deixe a etiqueta em branco para ocultar o botão."
-            },
-            "button_link_2": {
-              "label": "Segundo link de botão"
-            },
-            "button_style_secondary_2": {
-              "label": "Usar estilo de botão com contorno"
-            }
-          }
-        }
+
       },
       "presets": {
         "name": "Banner da imagem"
