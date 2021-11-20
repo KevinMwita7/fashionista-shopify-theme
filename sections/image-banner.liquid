@@ -144,12 +144,17 @@
         <div class="relative banner-slide fade md:h-screen">
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
             {% if block.large_image == blank %}
-              <img 
-              src="{{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}" 
-              alt="lifestyle"
-              class="absolute w-full pointer-events-none -z-1 h-full object-cover"
-              loading="lazy"
-              />
+              <div class="banner__media media placeholder">
+                {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+              {% comment %}
+                <img 
+                src="{{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}" 
+                alt="lifestyle"
+                class="absolute w-full pointer-events-none -z-1 h-full object-cover"
+                loading="lazy"
+                />
+              {% endcomment %}
             {% else %}
               <img
               srcset="{%- if block.large_image.width >= 180 -%}{{ block.large_image | img_url: '180x' }} 180w 80h,{% endif -%}
