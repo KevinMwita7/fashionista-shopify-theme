@@ -137,40 +137,47 @@
   }        
 {% endstyle %}
 
-<h2>{{ section.blocks | size }}</h2>
-
 {% if section.blocks.size > 0 %}
   <div class="md:relative">
     {% for block in section.blocks %}
       {% if block.type == 'image_picker' %}
         <div class="relative banner-slide fade md:h-screen">
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
-            <img
-            srcset="{%- if block.large_image.width >= 180 -%}{{ block.large_image | img_url: '180x' }} 180w 80h,{% endif -%}
-            {%- if block.large_image.width >= 360 -%}{{ block.large_image | img_url: '360x' }} 360w 159h,{% endif -%}
-            {%- if block.large_image.width >= 540 -%}{{ block.large_image | img_url: '540x' }} 540w 239h,{% endif -%}
-            {%- if block.large_image.width >= 720 -%}{{ block.large_image | img_url: '720x' }} 720w 319h,{% endif -%}
-            {%- if block.large_image.width >= 900 -%}{{ block.large_image | img_url: '900x' }} 900w 398h,{% endif -%}
-            {%- if block.large_image.width >= 1080 -%}{{ block.large_image | img_url: '1080x' }} 1080w 478h,{% endif -%}
-            {%- if block.large_image.width >= 1296 -%}{{ block.large_image | img_url: '1296x' }} 1296w 574h,{% endif -%}
-            {%- if block.large_image.width >= 1512 -%}{{ block.large_image | img_url: '1512x' }} 1512w 669h,{% endif -%}
-            {%- if block.large_image.width >= 1728 -%}{{ block.large_image | img_url: '1728x' }} 1728w 765h,{% endif -%}
-            {%- if block.large_image.width >= 1950 -%}{{ block.large_image | img_url: '1950x' }} 1950w 863h,{% endif -%}
-            {%- if block.large_image.width >= 2100 -%}{{ block.large_image | img_url: '2100x' }} 2100w 930h,{% endif -%}
-            {%- if block.large_image.width >= 2260 -%}{{ block.large_image | img_url: '2260x' }} 2260w 1001h,{% endif -%}
-            {%- if block.large_image.width >= 2450 -%}{{ block.large_image | img_url: '2450x' }} 2450w 1085h,{% endif -%}
-            {%- if block.large_image.width >= 2700 -%}{{ block.large_image | img_url: '2700x' }} 2700w 1195h,{% endif -%}
-            {%- if block.large_image.width >= 3000 -%}{{ block.large_image | img_url: '3000x' }} 3000w 1328h,{% endif -%}
-            {%- if block.large_image.width >= 3350 -%}{{ block.large_image | img_url: '3350x' }} 3350w 1483h,{% endif -%}
-            {%- if block.large_image.width >= 3750 -%}{{ block.large_image | img_url: '3750x' }} 3750w 1660h,{% endif -%}
-            {%- if block.large_image.width >= 3840 -%}{{ block.large_image | img_url: '3840x' }} 3840w 1700h,{% endif -%}
-            {{ block.large_image | img_url: 'master' }} {{ block.large_image.width }}w {{ block.large_image.width }}h"
-            src="{{ block.large_image | img_url: '1512x' }}" 
-            alt="{{ block.large_image.alt | escape }}"
-            class="absolute w-full pointer-events-none -z-1 h-full object-cover"
-            loading="lazy"
-            width="{{ block.large_image.width }}"
-            >
+            {% if block.large_image == blank %}
+              <img 
+              src="{{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}" 
+              alt="lifestyle"
+              class="absolute w-full pointer-events-none -z-1 h-full object-cover"
+              loading="lazy"
+              />
+            {% else %}
+              <img
+              srcset="{%- if block.large_image.width >= 180 -%}{{ block.large_image | img_url: '180x' }} 180w 80h,{% endif -%}
+              {%- if block.large_image.width >= 360 -%}{{ block.large_image | img_url: '360x' }} 360w 159h,{% endif -%}
+              {%- if block.large_image.width >= 540 -%}{{ block.large_image | img_url: '540x' }} 540w 239h,{% endif -%}
+              {%- if block.large_image.width >= 720 -%}{{ block.large_image | img_url: '720x' }} 720w 319h,{% endif -%}
+              {%- if block.large_image.width >= 900 -%}{{ block.large_image | img_url: '900x' }} 900w 398h,{% endif -%}
+              {%- if block.large_image.width >= 1080 -%}{{ block.large_image | img_url: '1080x' }} 1080w 478h,{% endif -%}
+              {%- if block.large_image.width >= 1296 -%}{{ block.large_image | img_url: '1296x' }} 1296w 574h,{% endif -%}
+              {%- if block.large_image.width >= 1512 -%}{{ block.large_image | img_url: '1512x' }} 1512w 669h,{% endif -%}
+              {%- if block.large_image.width >= 1728 -%}{{ block.large_image | img_url: '1728x' }} 1728w 765h,{% endif -%}
+              {%- if block.large_image.width >= 1950 -%}{{ block.large_image | img_url: '1950x' }} 1950w 863h,{% endif -%}
+              {%- if block.large_image.width >= 2100 -%}{{ block.large_image | img_url: '2100x' }} 2100w 930h,{% endif -%}
+              {%- if block.large_image.width >= 2260 -%}{{ block.large_image | img_url: '2260x' }} 2260w 1001h,{% endif -%}
+              {%- if block.large_image.width >= 2450 -%}{{ block.large_image | img_url: '2450x' }} 2450w 1085h,{% endif -%}
+              {%- if block.large_image.width >= 2700 -%}{{ block.large_image | img_url: '2700x' }} 2700w 1195h,{% endif -%}
+              {%- if block.large_image.width >= 3000 -%}{{ block.large_image | img_url: '3000x' }} 3000w 1328h,{% endif -%}
+              {%- if block.large_image.width >= 3350 -%}{{ block.large_image | img_url: '3350x' }} 3350w 1483h,{% endif -%}
+              {%- if block.large_image.width >= 3750 -%}{{ block.large_image | img_url: '3750x' }} 3750w 1660h,{% endif -%}
+              {%- if block.large_image.width >= 3840 -%}{{ block.large_image | img_url: '3840x' }} 3840w 1700h,{% endif -%}
+              {{ block.large_image | img_url: 'master' }} {{ block.large_image.width }}w {{ block.large_image.width }}h"
+              src="{{ block.large_image | img_url: '1512x' }}" 
+              alt="{{ block.large_image.alt | escape }}"
+              class="absolute w-full pointer-events-none -z-1 h-full object-cover"
+              loading="lazy"
+              width="{{ block.large_image.width }}"
+              >
+            {% endif %}
             <div class="flex container w-full h-full md:p-12 xl:p-24 relative items-center">
                 <div class="max-w-4xl w-max text-left">
                     <div class="text-2xl mb-3.5 text-black">
@@ -401,6 +408,7 @@
           "type": "text",
           "id": "button_text",
           "label": "Button Text",
+          "default": "Shop Now"
           "info": "Text that will appear within the button in slide"
         }
       ]
