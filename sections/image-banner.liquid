@@ -143,7 +143,7 @@
       {% if block.type == 'image_picker' %}
         <div class="relative banner-slide fade md:h-screen">
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
-            {% if block.large_image == blank %}
+            {% if block.large_image == blank and block.small_image == blank %}
               <div class="banner__media media placeholder">
                 {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
               </div>
@@ -157,30 +157,30 @@
               {% endcomment %}
             {% else %}
               <img
-              srcset="{%- if block.large_image.width >= 180 -%}{{ block.large_image | img_url: '180x' }} 180w 80h,{% endif -%}
-              {%- if block.large_image.width >= 360 -%}{{ block.large_image | img_url: '360x' }} 360w 159h,{% endif -%}
-              {%- if block.large_image.width >= 540 -%}{{ block.large_image | img_url: '540x' }} 540w 239h,{% endif -%}
-              {%- if block.large_image.width >= 720 -%}{{ block.large_image | img_url: '720x' }} 720w 319h,{% endif -%}
-              {%- if block.large_image.width >= 900 -%}{{ block.large_image | img_url: '900x' }} 900w 398h,{% endif -%}
-              {%- if block.large_image.width >= 1080 -%}{{ block.large_image | img_url: '1080x' }} 1080w 478h,{% endif -%}
-              {%- if block.large_image.width >= 1296 -%}{{ block.large_image | img_url: '1296x' }} 1296w 574h,{% endif -%}
-              {%- if block.large_image.width >= 1512 -%}{{ block.large_image | img_url: '1512x' }} 1512w 669h,{% endif -%}
-              {%- if block.large_image.width >= 1728 -%}{{ block.large_image | img_url: '1728x' }} 1728w 765h,{% endif -%}
-              {%- if block.large_image.width >= 1950 -%}{{ block.large_image | img_url: '1950x' }} 1950w 863h,{% endif -%}
-              {%- if block.large_image.width >= 2100 -%}{{ block.large_image | img_url: '2100x' }} 2100w 930h,{% endif -%}
-              {%- if block.large_image.width >= 2260 -%}{{ block.large_image | img_url: '2260x' }} 2260w 1001h,{% endif -%}
-              {%- if block.large_image.width >= 2450 -%}{{ block.large_image | img_url: '2450x' }} 2450w 1085h,{% endif -%}
-              {%- if block.large_image.width >= 2700 -%}{{ block.large_image | img_url: '2700x' }} 2700w 1195h,{% endif -%}
-              {%- if block.large_image.width >= 3000 -%}{{ block.large_image | img_url: '3000x' }} 3000w 1328h,{% endif -%}
-              {%- if block.large_image.width >= 3350 -%}{{ block.large_image | img_url: '3350x' }} 3350w 1483h,{% endif -%}
-              {%- if block.large_image.width >= 3750 -%}{{ block.large_image | img_url: '3750x' }} 3750w 1660h,{% endif -%}
-              {%- if block.large_image.width >= 3840 -%}{{ block.large_image | img_url: '3840x' }} 3840w 1700h,{% endif -%}
-              {{ block.large_image | img_url: 'master' }} {{ block.large_image.width }}w {{ block.large_image.width }}h"
-              src="{{ block.large_image | img_url: '1512x' }}" 
-              alt="{{ block.large_image.alt | escape }}"
+              srcset="{%- if block.large_image != blank -%}{%- if block.large_image.width >= 180 -%}{{ block.large_image | img_url: '180x' }} 180w 80h,{% endif -%}{%- elsif block.small_image.width >= 180 -%}{{ block.small_image | img_url: '180x' }} 180w 80h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 360 -%}{{ block.large_image | img_url: '360x' }} 360w 159h,{% endif -%}{%- elsif block.small_image.width >= 360 -%}{{ block.small_image | img_url: '360x' }} 360w 159h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 540 -%}{{ block.large_image | img_url: '540x' }} 540w 239h,{% endif -%}{%- elsif block.small_image.width >= 540 -%}{{ block.small_image | img_url: '540x' }} 540w 239h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 720 -%}{{ block.large_image | img_url: '720x' }} 720w 319h,{% endif -%}{%- elsif block.small_image.width >= 720 -%}{{ block.small_image | img_url: '720x' }} 720w 319h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 900 -%}{{ block.large_image | img_url: '900x' }} 900w 398h,{% endif -%}{%- elsif block.small_image.width >= 900 -%}{{ block.small_image | img_url: '900x' }} 900w 398h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 1080 -%}{{ block.large_image | img_url: '1080x' }} 1080w 478h,{% endif -%}{%- elsif block.small_image.width >= 1080 -%}{{ block.small_image | img_url: '1080x' }} 1080w 478h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 1296 -%}{{ block.large_image | img_url: '1296x' }} 1296w 574h,{% endif -%}{%- elsif block.small_image.width >= 1296 -%}{{ block.small_image | img_url: '1296x' }} 1296w 574h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 1512 -%}{{ block.large_image | img_url: '1512x' }} 1512w 669h,{% endif -%}{%- elsif block.small_image.width >= 1512 -%}{{ block.small_image | img_url: '1512x' }} 1512w 669h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 1728 -%}{{ block.large_image | img_url: '1728x' }} 1728w 765h,{% endif -%}{%- elsif block.small_image.width >= 1728 -%}{{ block.small_image | img_url: '1728x' }} 1728w 765h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 1950 -%}{{ block.large_image | img_url: '1950x' }} 1950w 863h,{% endif -%}{%- elsif block.small_image.width >= 1950 -%}{{ block.small_image | img_url: '1950x' }} 1950w 863h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 2100 -%}{{ block.large_image | img_url: '2100x' }} 2100w 930h,{% endif -%}{%- elsif block.small_image.width >= 2100 -%}{{ block.small_image | img_url: '2100x' }} 2100w 930h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 2260 -%}{{ block.large_image | img_url: '2260x' }} 2260w 1001h,{% endif -%}{%- elsif block.small_image.width >= 2260 -%}{{ block.small_image | img_url: '2260x' }} 2260w 1001h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 2450 -%}{{ block.large_image | img_url: '2450x' }} 2450w 1085h,{% endif -%}{%- elsif block.small_image.width >= 2450 -%}{{ block.small_image | img_url: '2450x' }} 2450w 1085h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 2700 -%}{{ block.large_image | img_url: '2700x' }} 2700w 1195h,{% endif -%}{%- elsif block.small_image.width >= 2700 -%}{{ block.small_image | img_url: '2700x' }} 2700w 1195h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 3000 -%}{{ block.large_image | img_url: '3000x' }} 3000w 1328h,{% endif -%}{%- elsif block.small_image.width >= 3000 -%}{{ block.small_image | img_url: '3000x' }} 3000w 1328h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 3350 -%}{{ block.large_image | img_url: '3350x' }} 3350w 1483h,{% endif -%}{%- elsif block.small_image.width >= 3350 -%}{{ block.small_image | img_url: '3350x' }} 3350w 1483h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 3750 -%}{{ block.large_image | img_url: '3750x' }} 3750w 1660h,{% endif -%}{%- elsif block.small_image.width >= 3750 -%}{{ block.small_image | img_url: '3750x' }} 3750w 1660h,{%- endif -%}
+              {%- if block.large_image != blank -%}{%- if block.large_image.width >= 3840 -%}{{ block.large_image | img_url: '3840x' }} 3840w 1700h,{% endif -%}{%- elsif block.small_image.width >= 3840 -%}{{ block.small_image | img_url: '3840x' }} 3840w 1700h,{%- endif -%}
+              {%- if block.large_image != blank -%}{{ block.large_image | img_url: 'master' }} {{ block.large_image.width }}w {{ block.large_image.width }}h {% else %} {{ block.small_image | img_url: 'master' }} {{ block.small_image.width }}w {{ block.small_image.width }}h{%- endif -%}"
+              src="{%- if block.large_image != blank -%}{{ block.large_image | img_url: '1512x' }}{%- else -%}{{ block.small_image | img_url: '1512x' }}{%- endif -%}"
+              alt="{%- if block.large_image != blank -%}{{ block.large_image.alt | escape }}{%- else -%}{{ block.small_image.alt | escape }}{%- endif -%}"
               class="absolute w-full pointer-events-none -z-1 h-full object-cover"
               loading="lazy"
-              width="{{ block.large_image.width }}"
+              width="{%- if block.large_image != blank -%}{{ block.large_image.width }}{%- else -%}{{ block.small_image.width }}{%- endif -%}"
               >
             {% endif %}
             <div class="flex container w-full h-full md:p-12 xl:p-24 relative items-center">
