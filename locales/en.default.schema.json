@@ -881,20 +881,31 @@
         }
       },
       "blocks": {
-        "heading": {
-          "name": "Heading",
+        "slide": {
+          "name": "Slide",
           "settings": {
-            "heading": {
-              "label": "Heading"
+            "large_image": {
+              "label": "Large image",
+              "info": "Background image for larger screens"
             },
-            "heading_size": {
-              "options__1": {
-                "label": "Medium"
-              },
-              "options__2": {
-                "label": "Large"
-              },
-              "label": "Heading font size"
+            "small_image": {
+              "label": "Small image",
+              "info": "Background image for smaller screens"
+            },
+            "heading": {
+              "label": "Heading",
+              "default": "Heading",
+              "info": "Text to highlight item on this slide"
+            },
+            "sub_heading": {
+              "label": "Sub-heading",
+              "default": "Sub-heading",
+              "info": "Text to further explain item on slide"
+            },
+            "button_text": {
+              "label": "Button Text",
+              "default": "Shop Now",
+              "info": "Text that will appear within the button in slide"              
             }
           }
         }
