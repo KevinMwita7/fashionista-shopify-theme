@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "Görsel banner'ı",
       "settings": {
-        "image": {
-          "label": "İlk görsel"
-        },
-        "image_2": {
-          "label": "İkinci görsel"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "Üst"

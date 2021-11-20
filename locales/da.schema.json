@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "Billedbanner",
       "settings": {
-        "image": {
-          "label": "Første billede"
-        },
-        "image_2": {
-          "label": "Andet billede"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "Top"

@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "Bild-Banner",
       "settings": {
-        "image": {
-          "label": "Erstes Bild"
-        },
-        "image_2": {
-          "label": "Zweites Bild"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "Oben"

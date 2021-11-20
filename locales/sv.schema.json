@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "Bildbanner",
       "settings": {
-        "image": {
-          "label": "Första bild"
-        },
-        "image_2": {
-          "label": "Andra bild"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "Högst upp"

@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "Baner z obrazem",
       "settings": {
-        "image": {
-          "label": "Pierwszy obraz"
-        },
-        "image_2": {
-          "label": "Drugi obraz"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "Góra"

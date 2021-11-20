@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "이미지 배너",
       "settings": {
-        "image": {
-          "label": "첫 번째 이미지"
-        },
-        "image_2": {
-          "label": "두 번째 이미지"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "위쪽"

@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "Biểu ngữ hình ảnh",
       "settings": {
-        "image": {
-          "label": "Hình ảnh đầu tiên"
-        },
-        "image_2": {
-          "label": "Hình ảnh thứ hai"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "Trên"

@@ -140,7 +140,7 @@
 {% if section.blocks.size > 0 %}
   <div class="md:relative">
     {% for block in section.blocks %}
-      {% if block.type == 'image_picker' %}
+      {% if block.type == 'slide' %}
         <div class="relative banner-slide fade md:h-screen">
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
             {% if block.large_image == blank and block.small_image == blank %}
@@ -253,21 +253,6 @@
   "max_blocks": 5,
   "settings": [
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.image-banner.settings.image.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_2",
-      "label": "t:sections.image-banner.settings.image_2.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_3",
-      "label": "t:sections.image-banner.settings.image_3.label"
-    },
-    {
       "type": "select",
       "id": "image_height",
       "options": [
@@ -379,7 +364,7 @@
   ],
   "blocks": [
     {
-      "type": "image_picker",
+      "type": "slide",
       "name": "Slide",
       "limit": 3,
       "settings": [

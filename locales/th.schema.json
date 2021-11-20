@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "แบนเนอร์รูปภาพ",
       "settings": {
-        "image": {
-          "label": "รูปภาพแรก"
-        },
-        "image_2": {
-          "label": "รูปภาพที่สอง"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "บน"

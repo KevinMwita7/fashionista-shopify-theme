@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "图片横幅",
       "settings": {
-        "image": {
-          "label": "第一张图片"
-        },
-        "image_2": {
-          "label": "第二张图片"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "顶部"

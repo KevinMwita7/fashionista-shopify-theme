@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "圖片橫幅",
       "settings": {
-        "image": {
-          "label": "第一張圖片"
-        },
-        "image_2": {
-          "label": "第二張圖片"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "靠上"

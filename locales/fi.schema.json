@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "Kuvabanneri",
       "settings": {
-        "image": {
-          "label": "Ensimmäinen kuva"
-        },
-        "image_2": {
-          "label": "Toinen kuva"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "Ylös"

@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "Bannerafbeelding",
       "settings": {
-        "image": {
-          "label": "Eerste afbeelding"
-        },
-        "image_2": {
-          "label": "Tweede afbeelding"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "Boven"

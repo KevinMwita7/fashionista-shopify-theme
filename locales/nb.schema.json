@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "Bildeoverskrift",
       "settings": {
-        "image": {
-          "label": "Første bilde"
-        },
-        "image_2": {
-          "label": "Andre bilde"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "Topp"

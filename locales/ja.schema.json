@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "画像バナー",
       "settings": {
-        "image": {
-          "label": "最初の画像"
-        },
-        "image_2": {
-          "label": "2番目の画像"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "上"

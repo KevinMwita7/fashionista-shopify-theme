@@ -694,12 +694,6 @@
     "image-banner": {
       "name": "Obrázkový banner",
       "settings": {
-        "image": {
-          "label": "První obrázek"
-        },
-        "image_2": {
-          "label": "Druhý obrázek"
-        },
         "desktop_text_box_position": {
           "options__1": {
             "label": "Nahoře"
