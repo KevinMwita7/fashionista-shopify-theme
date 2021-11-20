@@ -218,7 +218,7 @@
           </div>
       </div>
     {% endif %}
-
+    
     {% comment %}
     {% if section.settings.image_2 != blank %}
       <div class="relative banner-slide fade md:h-screen">
@@ -391,7 +391,7 @@
 {
   "name": "t:sections.image-banner.name",
   "tag": "section",
-  "class": "spaced-section spaced-section--full-width",
+  "max_blocks": 5,
   "settings": [
     {
       "type": "image_picker",
@@ -603,6 +603,11 @@
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
         }
       ]
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_1",
+      "label": "Slide 1"
     }
   ],
   "presets": [
@@ -617,6 +622,9 @@
         },
         {
           "type": "buttons"
+        },
+        {
+          "type": "image_picker"
         }
       ]
     }
