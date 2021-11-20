@@ -137,52 +137,48 @@
   }        
 {% endstyle %}
 
-{% if section.settings.image != blank or section.settings.image_2 != blank or section.settings.image_3 != blank %}
-  {% assign images_count = 0 %}
-  {% if section.settings.image != blank %}{% assign images_count = images_count | plus: 1 %}{% endif %}
-  {% if section.settings.image_2 != blank %}{% assign images_count = images_count | plus: 1 %}{% endif %}
-  {% if section.settings.image_3 != blank %}{% assign images_count = images_count | plus: 1 %}{% endif %}
-
+{% if section.blocks.size > 0 %}
   <div class="md:relative">
-    {% if section.settings.image != blank %}
-      <div class="relative banner-slide fade md:h-screen">
+    {% for block in section.blocks %}
+      {% if block.type == 'image_picker' %}
+        <div class="relative banner-slide fade md:h-screen">
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
             <img
-            srcset="{%- if section.settings.image.width >= 180 -%}{{ section.settings.image | img_url: '180x' }} 180w 80h,{% endif -%}
-            {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w 159h,{% endif -%}
-            {%- if section.settings.image.width >= 540 -%}{{ section.settings.image | img_url: '540x' }} 540w 239h,{% endif -%}
-            {%- if section.settings.image.width >= 720 -%}{{ section.settings.image | img_url: '720x' }} 720w 319h,{% endif -%}
-            {%- if section.settings.image.width >= 900 -%}{{ section.settings.image | img_url: '900x' }} 900w 398h,{% endif -%}
-            {%- if section.settings.image.width >= 1080 -%}{{ section.settings.image | img_url: '1080x' }} 1080w 478h,{% endif -%}
-            {%- if section.settings.image.width >= 1296 -%}{{ section.settings.image | img_url: '1296x' }} 1296w 574h,{% endif -%}
-            {%- if section.settings.image.width >= 1512 -%}{{ section.settings.image | img_url: '1512x' }} 1512w 669h,{% endif -%}
-            {%- if section.settings.image.width >= 1728 -%}{{ section.settings.image | img_url: '1728x' }} 1728w 765h,{% endif -%}
-            {%- if section.settings.image.width >= 1950 -%}{{ section.settings.image | img_url: '1950x' }} 1950w 863h,{% endif -%}
-            {%- if section.settings.image.width >= 2100 -%}{{ section.settings.image | img_url: '2100x' }} 2100w 930h,{% endif -%}
-            {%- if section.settings.image.width >= 2260 -%}{{ section.settings.image | img_url: '2260x' }} 2260w 1001h,{% endif -%}
-            {%- if section.settings.image.width >= 2450 -%}{{ section.settings.image | img_url: '2450x' }} 2450w 1085h,{% endif -%}
-            {%- if section.settings.image.width >= 2700 -%}{{ section.settings.image | img_url: '2700x' }} 2700w 1195h,{% endif -%}
-            {%- if section.settings.image.width >= 3000 -%}{{ section.settings.image | img_url: '3000x' }} 3000w 1328h,{% endif -%}
-            {%- if section.settings.image.width >= 3350 -%}{{ section.settings.image | img_url: '3350x' }} 3350w 1483h,{% endif -%}
-            {%- if section.settings.image.width >= 3750 -%}{{ section.settings.image | img_url: '3750x' }} 3750w 1660h,{% endif -%}
-            {%- if section.settings.image.width >= 3840 -%}{{ section.settings.image | img_url: '3840x' }} 3840w 1700h,{% endif -%}
-            {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w {{ section.settings.image.width }}h"
-            src="{{ section.settings.image | img_url: '1512x' }}" 
-            alt="{{ section.settings.image.alt | escape }}"
+            srcset="{%- if block.large_image.width >= 180 -%}{{ block.large_image | img_url: '180x' }} 180w 80h,{% endif -%}
+            {%- if block.large_image.width >= 360 -%}{{ block.large_image | img_url: '360x' }} 360w 159h,{% endif -%}
+            {%- if block.large_image.width >= 540 -%}{{ block.large_image | img_url: '540x' }} 540w 239h,{% endif -%}
+            {%- if block.large_image.width >= 720 -%}{{ block.large_image | img_url: '720x' }} 720w 319h,{% endif -%}
+            {%- if block.large_image.width >= 900 -%}{{ block.large_image | img_url: '900x' }} 900w 398h,{% endif -%}
+            {%- if block.large_image.width >= 1080 -%}{{ block.large_image | img_url: '1080x' }} 1080w 478h,{% endif -%}
+            {%- if block.large_image.width >= 1296 -%}{{ block.large_image | img_url: '1296x' }} 1296w 574h,{% endif -%}
+            {%- if block.large_image.width >= 1512 -%}{{ block.large_image | img_url: '1512x' }} 1512w 669h,{% endif -%}
+            {%- if block.large_image.width >= 1728 -%}{{ block.large_image | img_url: '1728x' }} 1728w 765h,{% endif -%}
+            {%- if block.large_image.width >= 1950 -%}{{ block.large_image | img_url: '1950x' }} 1950w 863h,{% endif -%}
+            {%- if block.large_image.width >= 2100 -%}{{ block.large_image | img_url: '2100x' }} 2100w 930h,{% endif -%}
+            {%- if block.large_image.width >= 2260 -%}{{ block.large_image | img_url: '2260x' }} 2260w 1001h,{% endif -%}
+            {%- if block.large_image.width >= 2450 -%}{{ block.large_image | img_url: '2450x' }} 2450w 1085h,{% endif -%}
+            {%- if block.large_image.width >= 2700 -%}{{ block.large_image | img_url: '2700x' }} 2700w 1195h,{% endif -%}
+            {%- if block.large_image.width >= 3000 -%}{{ block.large_image | img_url: '3000x' }} 3000w 1328h,{% endif -%}
+            {%- if block.large_image.width >= 3350 -%}{{ block.large_image | img_url: '3350x' }} 3350w 1483h,{% endif -%}
+            {%- if block.large_image.width >= 3750 -%}{{ block.large_image | img_url: '3750x' }} 3750w 1660h,{% endif -%}
+            {%- if block.large_image.width >= 3840 -%}{{ block.large_image | img_url: '3840x' }} 3840w 1700h,{% endif -%}
+            {{ block.large_image | img_url: 'master' }} {{ block.large_image.width }}w {{ block.large_image.width }}h"
+            src="{{ block.large_image | img_url: '1512x' }}" 
+            alt="{{ block.large_image.alt | escape }}"
             class="absolute w-full pointer-events-none -z-1 h-full object-cover"
             loading="lazy"
-            width="{{ section.settings.image.width }}"
+            width="{{ block.large_image.width }}"
             >
             <div class="flex container w-full h-full md:p-12 xl:p-24 relative items-center">
                 <div class="max-w-4xl w-max text-left">
                     <div class="text-2xl mb-3.5 text-black">
-                        <span class="semi-bold">Trending</span>
+                        <span class="semi-bold">{{ block.sub_heading }}</span>
                     </div>
                     <h2 class="text-8xl lg:text-10xl xl:text-12xl 2xl:text-14xl mb-5 text-black lg:leading-tight xl:leading-tight 2xl:leading-tight">
-                        <span class="font-normal">Stylish Dress</span>
+                        <span class="font-normal">{{ block.heading }}</span>
                     </h2>
                     <a href="#" class="inline-block border border-black rounded py-2.5 px-5">
-                        Shop Now
+                        {{ block.button_text }}
                     </a>
                 </div>
             </div>
@@ -193,185 +189,34 @@
                   <div>
                       <img 
                       class="banner-img"
-                      alt="{{ section.settings.image.alt | escape }}"
-                      src="{{ section.settings.image | img_url: '720x' }}"
-                      srcset="{%- if section.settings.image.width >= 180 -%}{{ section.settings.image | img_url: '180x' }} 180w,{% endif -%}
-                      {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | img_url: '360x' }} 360w,{% endif -%}
-                      {%- if section.settings.image.width >= 540 -%}{{ section.settings.image | img_url: '540x' }} 540w,{% endif -%}
-                      {%- if section.settings.image.width >= 720 -%}{{ section.settings.image | img_url: '720x' }} 720w,{% endif -%}
-                      {%- if section.settings.image.width >= 900 -%}{{ section.settings.image | img_url: '900x' }} 900w,{% endif -%}
-                      {%- if section.settings.image.width >= 1080 -%}{{ section.settings.image | img_url: '1080x' }} 1080w,{% endif -%}
-                      {%- if section.settings.image.width >= 1125 -%}{{ section.settings.image | img_url: '1125x' }} 1125w,{% endif -%}
-                      {{ section.settings.image | img_url: 'master' }} {{ section.settings.image.width }}w"
+                      alt="{{ block.large_image.alt | escape }}"
+                      src="{{ block.large_image | img_url: '720x' }}"
+                      srcset="{%- if block.large_image.width >= 180 -%}{{ block.large_image | img_url: '180x' }} 180w,{% endif -%}
+                      {%- if block.large_image.width >= 360 -%}{{ block.large_image | img_url: '360x' }} 360w,{% endif -%}
+                      {%- if block.large_image.width >= 540 -%}{{ block.large_image | img_url: '540x' }} 540w,{% endif -%}
+                      {%- if block.large_image.width >= 720 -%}{{ block.large_image | img_url: '720x' }} 720w,{% endif -%}
+                      {%- if block.large_image.width >= 900 -%}{{ block.large_image | img_url: '900x' }} 900w,{% endif -%}
+                      {%- if block.large_image.width >= 1080 -%}{{ block.large_image | img_url: '1080x' }} 1080w,{% endif -%}
+                      {%- if block.large_image.width >= 1125 -%}{{ block.large_image | img_url: '1125x' }} 1125w,{% endif -%}
+                      {{ block.large_image | img_url: 'master' }} {{ block.large_image.width }}w"
                       loading="lazy"
-                      width="{{ section.settings.image.width }}"
-                      height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}">
+                      width="{{ block.large_image.width }}"
+                      height="{{ block.large_image.width | divided_by: block.large_image.aspect_ratio }}">
                   </div>
               </div>
               <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
-                  <p class="mb-0.5 font-semibold">Trending</p>
-                  <h2 class="text-4xl mb-3">Stylish Dress</h2>
+                  <p class="mb-0.5 font-semibold">{{ block.sub_heading }}</p>
+                  <h2 class="text-4xl mb-3">{{ block.heading }}</h2>
                   <a href="#" class="block border border-black rounded py-2.5 px-5">
-                      Shop Now
+                      {{ block.button_text }}
                   </a>
               </div>
           </div>
       </div>
     {% endif %}
-    
-    {% comment %}
-    {% if section.settings.image_2 != blank %}
-      <div class="relative banner-slide fade md:h-screen">
-          <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
-            <img
-            srcset="{%- if section.settings.image_2.width >= 180 -%}{{ section.settings.image_2 | img_url: '180x' }} 180w 80h,{% endif -%}
-            {%- if section.settings.image_2.width >= 360 -%}{{ section.settings.image_2 | img_url: '360x' }} 360w 159h,{% endif -%}
-            {%- if section.settings.image_2.width >= 540 -%}{{ section.settings.image_2 | img_url: '540x' }} 540w 239h,{% endif -%}
-            {%- if section.settings.image_2.width >= 720 -%}{{ section.settings.image_2 | img_url: '720x' }} 720w 319h,{% endif -%}
-            {%- if section.settings.image_2.width >= 900 -%}{{ section.settings.image_2 | img_url: '900x' }} 900w 398h,{% endif -%}
-            {%- if section.settings.image_2.width >= 1080 -%}{{ section.settings.image_2 | img_url: '1080x' }} 1080w 478h,{% endif -%}
-            {%- if section.settings.image_2.width >= 1296 -%}{{ section.settings.image_2 | img_url: '1296x' }} 1296w 574h,{% endif -%}
-            {%- if section.settings.image_2.width >= 1512 -%}{{ section.settings.image_2 | img_url: '1512x' }} 1512w 669h,{% endif -%}
-            {%- if section.settings.image_2.width >= 1728 -%}{{ section.settings.image_2 | img_url: '1728x' }} 1728w 765h,{% endif -%}
-            {%- if section.settings.image_2.width >= 1950 -%}{{ section.settings.image_2 | img_url: '1950x' }} 1950w 863h,{% endif -%}
-            {%- if section.settings.image_2.width >= 2100 -%}{{ section.settings.image_2 | img_url: '2100x' }} 2100w 930h,{% endif -%}
-            {%- if section.settings.image_2.width >= 2260 -%}{{ section.settings.image_2 | img_url: '2260x' }} 2260w 1001h,{% endif -%}
-            {%- if section.settings.image_2.width >= 2450 -%}{{ section.settings.image_2 | img_url: '2450x' }} 2450w 1085h,{% endif -%}
-            {%- if section.settings.image_2.width >= 2700 -%}{{ section.settings.image_2 | img_url: '2700x' }} 2700w 1195h,{% endif -%}
-            {%- if section.settings.image_2.width >= 3000 -%}{{ section.settings.image_2 | img_url: '3000x' }} 3000w 1328h,{% endif -%}
-            {%- if section.settings.image_2.width >= 3350 -%}{{ section.settings.image_2 | img_url: '3350x' }} 3350w 1483h,{% endif -%}
-            {%- if section.settings.image_2.width >= 3750 -%}{{ section.settings.image_2 | img_url: '3750x' }} 3750w 1660h,{% endif -%}
-            {%- if section.settings.image_2.width >= 3840 -%}{{ section.settings.image_2 | img_url: '3840x' }} 3840w 1700h,{% endif -%}
-            {{ section.settings.image_2 | img_url: 'master' }} {{ section.settings.image_2.width }}w {{ section.settings.image_2.width }}h"
-            src="{{ section.settings.image_2 | img_url: '1512x' }}" 
-            alt="{{ section.settings.image_2.alt | escape }}"
-            class="absolute w-full pointer-events-none -z-1 h-full object-cover"
-            loading="lazy"
-            width="{{ section.settings.image_2.width }}"
-            >
-            <div class="flex container w-full h-full md:p-12 xl:p-24 relative items-center">
-                <div class="max-w-4xl w-max text-left">
-                    <div class="text-2xl mb-3.5 text-black">
-                        <span class="semi-bold">New Arrivals</span>
-                    </div>
-                    <h2 class=" text-8xl lg:text-10xl xl:text-12xl 2xl:text-14xl mb-5 text-black lg:leading-tight xl:leading-tight 2xl:leading-tight">
-                        <span class="font-normal">New Arrivals</span>
-                    </h2>
-                    <a href="#" class="inline-block border border-black rounded py-2.5 px-5">
-                        Shop Now
-                    </a>
-                </div>
-            </div>
-          </div>
-      
-          <div class="md:hidden block pb-6">
-              <div class="relative">
-                  <div>
-                      <img 
-                      class="banner-img"
-                      alt="{{ section.settings.image_2.alt | escape }}"
-                      src="{{ section.settings.image_2 | img_url: '720x' }}"
-                      srcset="{%- if section.settings.image_2.width >= 180 -%}{{ section.settings.image_2 | img_url: '180x' }} 180w,{% endif -%}
-                      {%- if section.settings.image_2.width >= 360 -%}{{ section.settings.image_2 | img_url: '360x' }} 360w,{% endif -%}
-                      {%- if section.settings.image_2.width >= 540 -%}{{ section.settings.image_2 | img_url: '540x' }} 540w,{% endif -%}
-                      {%- if section.settings.image_2.width >= 720 -%}{{ section.settings.image_2 | img_url: '720x' }} 720w,{% endif -%}
-                      {%- if section.settings.image_2.width >= 900 -%}{{ section.settings.image_2 | img_url: '900x' }} 900w,{% endif -%}
-                      {%- if section.settings.image_2.width >= 1080 -%}{{ section.settings.image_2 | img_url: '1080x' }} 1080w,{% endif -%}
-                      {%- if section.settings.image_2.width >= 1125 -%}{{ section.settings.image_2 | img_url: '1125x' }} 1125w,{% endif -%}
-                      {{ section.settings.image_2 | img_url: 'master' }} {{ section.settings.image_2.width }}w"
-                      loading="lazy"
-                      width="{{ section.settings.image_2.width }}"
-                      height="{{ section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio }}">
-                  </div>
-              </div>
-              <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
-                  <p class="mb-0.5 font-semibold">New Arrivals</p>
-                  <h2 class="text-4xl mb-3">Summer Collection</h2>
-                  <a href="#" class="block border border-black rounded py-2.5 px-5">
-                      Shop Now
-                  </a>
-              </div>
-          </div>
-      </div>
-    {% endif %}
-    
-    {% if section.settings.image_3 != blank %}
-      <div class="relative banner-slide fade md:h-screen">
-          <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
-            <img
-            srcset="{%- if section.settings.image_3.width >= 180 -%}{{ section.settings.image_3 | img_url: '180x' }} 180w 80h,{% endif -%}
-            {%- if section.settings.image_3.width >= 360 -%}{{ section.settings.image_3 | img_url: '360x' }} 360w 159h,{% endif -%}
-            {%- if section.settings.image_3.width >= 540 -%}{{ section.settings.image_3 | img_url: '540x' }} 540w 239h,{% endif -%}
-            {%- if section.settings.image_3.width >= 720 -%}{{ section.settings.image_3 | img_url: '720x' }} 720w 319h,{% endif -%}
-            {%- if section.settings.image_3.width >= 900 -%}{{ section.settings.image_3 | img_url: '900x' }} 900w 398h,{% endif -%}
-            {%- if section.settings.image_3.width >= 1080 -%}{{ section.settings.image_3 | img_url: '1080x' }} 1080w 478h,{% endif -%}
-            {%- if section.settings.image_3.width >= 1296 -%}{{ section.settings.image_3 | img_url: '1296x' }} 1296w 574h,{% endif -%}
-            {%- if section.settings.image_3.width >= 1512 -%}{{ section.settings.image_3 | img_url: '1512x' }} 1512w 669h,{% endif -%}
-            {%- if section.settings.image_3.width >= 1728 -%}{{ section.settings.image_3 | img_url: '1728x' }} 1728w 765h,{% endif -%}
-            {%- if section.settings.image_3.width >= 1950 -%}{{ section.settings.image_3 | img_url: '1950x' }} 1950w 863h,{% endif -%}
-            {%- if section.settings.image_3.width >= 2100 -%}{{ section.settings.image_3 | img_url: '2100x' }} 2100w 930h,{% endif -%}
-            {%- if section.settings.image_3.width >= 2260 -%}{{ section.settings.image_3 | img_url: '2260x' }} 2260w 1001h,{% endif -%}
-            {%- if section.settings.image_3.width >= 2450 -%}{{ section.settings.image_3 | img_url: '2450x' }} 2450w 1085h,{% endif -%}
-            {%- if section.settings.image_3.width >= 2700 -%}{{ section.settings.image_3 | img_url: '2700x' }} 2700w 1195h,{% endif -%}
-            {%- if section.settings.image_3.width >= 3000 -%}{{ section.settings.image_3 | img_url: '3000x' }} 3000w 1328h,{% endif -%}
-            {%- if section.settings.image_3.width >= 3350 -%}{{ section.settings.image_3 | img_url: '3350x' }} 3350w 1483h,{% endif -%}
-            {%- if section.settings.image_3.width >= 3750 -%}{{ section.settings.image_3 | img_url: '3750x' }} 3750w 1660h,{% endif -%}
-            {%- if section.settings.image_3.width >= 3840 -%}{{ section.settings.image_3 | img_url: '3840x' }} 3840w 1700h,{% endif -%}
-            {{ section.settings.image_3 | img_url: 'master' }} {{ section.settings.image_3.width }}w {{ section.settings.image_3.width }}h"
-            src="{{ section.settings.image_3 | img_url: '1512x' }}" 
-            alt="{{ section.settings.image_3.alt | escape }}"
-            class="absolute w-full pointer-events-none -z-1 h-full object-cover"
-            loading="lazy"
-            width="{{ section.settings.image_3.width }}"
-            >
-            <div class="flex container w-full h-full md:p-12 xl:p-24 relative items-center">
-                <div class="max-w-4xl w-max text-left">
-                    <div class="text-2xl mb-3.5 text-black">
-                        <span class="semi-bold">Elegant</span>
-                    </div>
-                    <h2 class=" text-8xl lg:text-10xl xl:text-12xl 2xl:text-14xl mb-5 text-black lg:leading-tight xl:leading-tight 2xl:leading-tight">
-                        <span class="font-normal">Wrap Dress</span>
-                    </h2>
-                    <a href="#" class="inline-block border border-black rounded py-2.5 px-5">
-                        Shop Now
-                    </a>
-                </div>
-            </div>
-          </div>
-      
-          <div class="md:hidden block pb-6">
-              <div class="relative">
-                  <div>
-                      <img 
-                      class="banner-img"
-                      alt="{{ section.settings.image_3.alt | escape }}"
-                      src="{{ section.settings.image_3 | img_url: '720x' }}"
-                      srcset="{%- if section.settings.image_3.width >= 180 -%}{{ section.settings.image_3 | img_url: '180x' }} 180w,{% endif -%}
-                      {%- if section.settings.image_3.width >= 360 -%}{{ section.settings.image_3 | img_url: '360x' }} 360w,{% endif -%}
-                      {%- if section.settings.image_3.width >= 540 -%}{{ section.settings.image_3 | img_url: '540x' }} 540w,{% endif -%}
-                      {%- if section.settings.image_3.width >= 720 -%}{{ section.settings.image_3 | img_url: '720x' }} 720w,{% endif -%}
-                      {%- if section.settings.image_3.width >= 900 -%}{{ section.settings.image_3 | img_url: '900x' }} 900w,{% endif -%}
-                      {%- if section.settings.image_3.width >= 1080 -%}{{ section.settings.image_3 | img_url: '1080x' }} 1080w,{% endif -%}
-                      {%- if section.settings.image_3.width >= 1125 -%}{{ section.settings.image_3 | img_url: '1125x' }} 1125w,{% endif -%}
-                      {{ section.settings.image_3 | img_url: 'master' }} {{ section.settings.image_3.width }}w"
-                      loading="lazy"
-                      width="{{ section.settings.image_3.width }}"
-                      height="{{ section.settings.image_3.width | divided_by: section.settings.image_3.aspect_ratio }}">
-                  </div>
-              </div>
-              <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
-                  <p class="mb-0.5 font-semibold">Elegant</p>
-                  <h2 class="text-4xl mb-3">Wrap Dress</h2>
-                  <a href="#" class="block border border-black rounded py-2.5 px-5">
-                      Shop Now
-                  </a>
-              </div>
-          </div>
-      </div>
-    {% endif %}    
+  {% endfor %}
 
-
-
+  {% comment %}
     {% if images_count > 1 %}
       <div class="flex justify-center">
           <div class="flex md:absolute md:flex-col md:z-10 md:right-16 md:top-1/2">
@@ -535,6 +380,26 @@
           "id": "small_image",
           "label": "Small Image",
           "info": "Background image for smaller screens"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Heading",
+          "info": "Large text to highlight item on this slide e.g product name"
+        },
+        {
+          "type": "text",
+          "id": "sub_heading",
+          "label": "Sub-heading",
+          "default": "Sub-heading",
+          "info": "Small text to further explain item on slide e.g. new arrival"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "info": "Text that will appear within the button in slide"
         }
       ]
     },
