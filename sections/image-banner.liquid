@@ -1,4 +1,3 @@
-{% comment %}
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
@@ -105,8 +104,8 @@
     </div>
   </div>
 </div>
-{% endcomment %}
 
+{% comment %}
 {{ 'main.5ddd1122.chunk.css' | asset_url | stylesheet_tag }}
 
 {% style %}
@@ -136,8 +135,6 @@
       to {opacity: 1}
   }        
 {% endstyle %}
-
-<p>Testing</p>
 
 {% if section.blocks.size > 0 %}
   <div class="md:relative">
@@ -232,8 +229,8 @@
           </div>
       </div>
     {% endif %}
-  {% endcomment %}
   </div>
+{% endcomment %}
 
   <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
 {% endif %}
@@ -242,7 +239,7 @@
 {
   "name": "t:sections.image-banner.name",
   "tag": "section",
-  "max_blocks": 5,
+  "max_blocks": 3,
   "settings": [
     {
       "type": "select",
@@ -352,58 +349,6 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "slide",
-      "label": "t:sections.image-banner.blocks.slide.name",
-      "limit": 3,
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "large_image",
-          "label": "t:sections.image-banner.blocks.slide.settings.large_image.label",
-          "info": "t:sections.image-banner.blocks.slide.settings.large_image.info"
-        },
-        {
-          "type": "image_picker",
-          "id": "small_image",
-          "label": "t:sections.image-banner.blocks.slide.settings.small_image.label",
-          "info": "t:sections.image-banner.blocks.slide.settings.small_image.info"
-        },
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "t:sections.image-banner.blocks.slide.settings.heading.label",
-          "default": "Heading",
-          "info": "t:sections.image-banner.blocks.slide.settings.heading.info"
-        },
-        {
-          "type": "text",
-          "id": "sub_heading",
-          "label": "t:sections.image-banner.blocks.slide.settings.sub_heading.label",
-          "default": "Sub-heading",
-          "info": "t:sections.image-banner.blocks.slide.settings.sub_heading.info"
-        },
-        {
-          "type": "text",
-          "id": "button_text",
-          "label": "t:sections.image-banner.blocks.slide.settings.button_text.label",
-          "default": "Shop Now",
-          "info": "t:sections.image-banner.blocks.slide.settings.button_text.info"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "t:sections.image-banner.presets.name",
-      "blocks": [
-        {
-          "type": "slide"
-        }
-      ]
     }
   ]
 }
