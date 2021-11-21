@@ -1,3 +1,4 @@
+{% comment %}
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
@@ -28,8 +29,6 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 {%- endstyle -%}
-
-<h2>Testing</h2>
 
 <div id="Banner-{{ section.id }}" class="banner banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
   {%- if section.settings.image != blank -%}
@@ -106,8 +105,8 @@
     </div>
   </div>
 </div>
+{% endcomment %}
 
-{% comment %}
 {{ 'main.5ddd1122.chunk.css' | asset_url | stylesheet_tag }}
 
 {% style %}
@@ -231,8 +230,8 @@
           </div>
       </div>
     {% endif %}
+  {% endcomment %}
   </div>
-{% endcomment %}
 
   <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
 {% endif %}
@@ -351,6 +350,58 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "label": "t:sections.image-banner.blocks.slide.name",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "large_image",
+          "label": "t:sections.image-banner.blocks.slide.settings.large_image.label",
+          "info": "t:sections.image-banner.blocks.slide.settings.large_image.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "small_image",
+          "label": "t:sections.image-banner.blocks.slide.settings.small_image.label",
+          "info": "t:sections.image-banner.blocks.slide.settings.small_image.info"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:sections.image-banner.blocks.slide.settings.heading.label",
+          "default": "Heading",
+          "info": "t:sections.image-banner.blocks.slide.settings.heading.info"
+        },
+        {
+          "type": "text",
+          "id": "sub_heading",
+          "label": "t:sections.image-banner.blocks.slide.settings.sub_heading.label",
+          "default": "Sub-heading",
+          "info": "t:sections.image-banner.blocks.slide.settings.sub_heading.info"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "t:sections.image-banner.blocks.slide.settings.button_text.label",
+          "default": "Shop Now",
+          "info": "t:sections.image-banner.blocks.slide.settings.button_text.info"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.image-banner.presets.name",
+      "blocks": [
+        {
+          "type": "slide"
+        }
+      ]
     }
   ]
 }
