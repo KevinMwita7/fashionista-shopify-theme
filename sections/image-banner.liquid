@@ -140,10 +140,9 @@
 {% if section.blocks.size > 0 %}
   <div class="md:relative">
     {% for block in section.blocks %}
-      {% if block.type == 'slide' %}
         <div class="relative banner-slide fade md:h-screen">
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
-            {% if block.large_image == blank and block.small_image == blank %}
+            {% if block.settings.large_image == blank and block.settings.small_image == blank %}
               <div class="banner__media media placeholder">
                 {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
               </div>
@@ -186,13 +185,13 @@
             <div class="flex container w-full h-full md:p-12 xl:p-24 relative items-center">
                 <div class="max-w-4xl w-max text-left">
                     <div class="text-2xl mb-3.5 text-black">
-                        <span class="semi-bold">{{ block.sub_heading }}</span>
+                        <span class="semi-bold">{{ block.settings.sub_heading }}</span>
                     </div>
                     <h2 class="text-8xl lg:text-10xl xl:text-12xl 2xl:text-14xl mb-5 text-black lg:leading-tight xl:leading-tight 2xl:leading-tight">
-                        <span class="font-normal">{{ block.heading }}</span>
+                        <span class="font-normal">{{ block.settings.heading }}</span>
                     </h2>
                     <a href="#" class="inline-block border border-black rounded py-2.5 px-5">
-                        {{ block.button_text }}
+                        {{ block.settings.button_text }}
                     </a>
                 </div>
             </div>
@@ -227,7 +226,6 @@
               </div>
           </div>
       </div>
-    {% endif %}
   {% endfor %}
 
   {% comment %}
