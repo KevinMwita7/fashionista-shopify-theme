@@ -140,7 +140,7 @@
 {% if section.blocks.size > 0 %}
   <div class="md:relative">
     {% for block in section.blocks %}
-        <div class="relative banner-slide fade md:h-screen">
+        <div class="relative banner-slide fade md:h-screen" {{ block.shopify_attributes }}>
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
             {% if block.settings.large_image == blank and block.settings.small_image == blank %}
               <div class="absolute w-full pointer-events-none -z-1 h-full object-cover placeholder">
