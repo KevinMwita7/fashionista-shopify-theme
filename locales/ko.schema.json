@@ -789,7 +789,7 @@
         }
       },
       "presets": {
-        "name": "이미지 배너"
+        "name": "슬라이드쇼"
       }
     },
     "image-with-text": {

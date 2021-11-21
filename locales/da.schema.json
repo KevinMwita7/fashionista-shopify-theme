@@ -789,7 +789,7 @@
         }
       },
       "presets": {
-        "name": "Billedbanner"
+        "name": "Slideshow"
       }
     },
     "image-with-text": {

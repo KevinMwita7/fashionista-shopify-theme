@@ -789,7 +789,7 @@
         }
       },
       "presets": {
-        "name": "Faixa de imagem"
+        "name": "Slideshow"
       }
     },
     "image-with-text": {

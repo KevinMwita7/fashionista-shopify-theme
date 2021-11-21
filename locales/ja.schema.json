@@ -789,7 +789,7 @@
         }
       },
       "presets": {
-        "name": "画像バナー"
+        "name": "スライドショー"
       }
     },
     "image-with-text": {

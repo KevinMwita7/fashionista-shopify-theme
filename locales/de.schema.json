@@ -789,7 +789,7 @@
         }        
       },
       "presets": {
-        "name": "Bild-Banner"
+        "name": "Diashow"
       }
     },
     "image-with-text": {

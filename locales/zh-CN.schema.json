@@ -789,7 +789,7 @@
         }
       },
       "presets": {
-        "name": "图片横幅"
+        "name": "幻灯片"
       }
     },
     "image-with-text": {

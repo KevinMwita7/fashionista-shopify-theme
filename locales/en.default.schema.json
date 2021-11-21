@@ -911,7 +911,7 @@
         }
       },
       "presets": {
-        "name": "Image banner"
+        "name": "Slideshow"
       }
     },
     "image-with-text": {

@@ -146,14 +146,6 @@
               <div class="absolute w-full pointer-events-none -z-1 h-full object-cover placeholder">
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
               </div>
-              {% comment %}
-                <img 
-                src="{{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}" 
-                alt="lifestyle"
-                class="absolute w-full pointer-events-none -z-1 h-full object-cover"
-                loading="lazy"
-                />
-              {% endcomment %}
             {% else %}
               <img
               srcset="{%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 180 -%}{{ block.settings.large_image | img_url: '180x' }} 180w 80h,{% endif -%}{%- elsif block.settings.small_image.width >= 180 -%}{{ block.settings.small_image | img_url: '180x' }} 180w 80h,{%- endif -%}
