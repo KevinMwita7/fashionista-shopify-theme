@@ -894,17 +894,14 @@
             },
             "heading": {
               "label": "Heading",
-              "default": "Heading",
               "info": "Text to highlight item on this slide"
             },
             "sub_heading": {
               "label": "Sub-heading",
-              "default": "Sub-heading",
               "info": "Text to further explain item on slide"
             },
             "button_text": {
               "label": "Button Text",
-              "default": "Shop Now",
               "info": "Text that will appear within the button in slide"              
             }
           }
