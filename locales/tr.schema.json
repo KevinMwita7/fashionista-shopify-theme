@@ -692,7 +692,7 @@
       }
     },
     "image-banner": {
-      "name": "Görsel banner'ı",
+      "name": "slayt gösterisi",
       "settings": {
         "desktop_text_box_position": {
           "options__1": {

@@ -692,7 +692,7 @@
       }
     },
     "image-banner": {
-      "name": "Bannière avec image",
+      "name": "Diaporama",
       "settings": {
         "desktop_text_box_position": {
           "options__1": {

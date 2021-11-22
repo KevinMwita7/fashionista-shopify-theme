@@ -688,7 +688,7 @@
       }
     },
     "image-banner": {
-      "name": "Banner da imagem",
+      "name": "Slideshow",
       "settings": {
         "desktop_text_box_position": {
           "options__1": {

@@ -692,7 +692,7 @@
       }
     },
     "image-banner": {
-      "name": "画像バナー",
+      "name": "スライドショー",
       "settings": {
         "desktop_text_box_position": {
           "options__1": {

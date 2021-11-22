@@ -640,7 +640,7 @@
       }
     },
     "header": {
-      "name": "Overskrift",
+      "name": "Lysbildefremvisning",
       "settings": {
         "logo": {
           "label": "Logobilde"

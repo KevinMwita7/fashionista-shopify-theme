@@ -692,7 +692,7 @@
       }
     },
     "image-banner": {
-      "name": "Baner z obrazem",
+      "name": "Pokaz slajdów",
       "settings": {
         "desktop_text_box_position": {
           "options__1": {

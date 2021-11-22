@@ -692,7 +692,7 @@
       }
     },
     "image-banner": {
-      "name": "圖片橫幅",
+      "name": "幻燈片",
       "settings": {
         "desktop_text_box_position": {
           "options__1": {

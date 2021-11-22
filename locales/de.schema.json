@@ -692,7 +692,7 @@
       }
     },
     "image-banner": {
-      "name": "Bild-Banner",
+      "name": "Diashow",
       "settings": {
         "desktop_text_box_position": {
           "options__1": {
