@@ -137,6 +137,8 @@
   }        
 {% endstyle %}
 
+<h2>{{ section.blocks | size }}</h2>
+
 {% if section.blocks.size > 0 %}
   <div class="md:relative">
     {% for block in section.blocks %}
