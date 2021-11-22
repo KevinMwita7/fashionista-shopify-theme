@@ -239,21 +239,6 @@
   "max_blocks": 3,
   "settings": [
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.image-banner.settings.image.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_2",
-      "label": "t:sections.image-banner.settings.image_2.label"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_3",
-      "label": "t:sections.image-banner.settings.image_3.label"
-    },
-    {
       "type": "select",
       "id": "image_height",
       "options": [
@@ -365,42 +350,41 @@
   ],
   "blocks": [
     {
-      "type": "slide",
-      "label": "t:sections.image-banner.blocks.slide.name",
+      "type": "image_picker",
+      "name": "Slide",
       "limit": 3,
       "settings": [
         {
           "type": "image_picker",
           "id": "large_image",
-          "label": "t:sections.image-banner.blocks.slide.settings.large_image.label",
-          "info": "t:sections.image-banner.blocks.slide.settings.large_image.info"
+          "label": "Large Image",
+          "info": "Background image for larger screens"
         },
         {
           "type": "image_picker",
           "id": "small_image",
-          "label": "t:sections.image-banner.blocks.slide.settings.small_image.label",
-          "info": "t:sections.image-banner.blocks.slide.settings.small_image.info"
+          "label": "Small Image",
+          "info": "Background image for smaller screens"
         },
         {
           "type": "text",
           "id": "heading",
-          "label": "t:sections.image-banner.blocks.slide.settings.heading.label",
+          "label": "Heading",
           "default": "Heading",
-          "info": "t:sections.image-banner.blocks.slide.settings.heading.info"
+          "info": "Large text to highlight item on this slide e.g product name"
         },
         {
           "type": "text",
           "id": "sub_heading",
-          "label": "t:sections.image-banner.blocks.slide.settings.sub_heading.label",
+          "label": "Sub-heading",
           "default": "Sub-heading",
-          "info": "t:sections.image-banner.blocks.slide.settings.sub_heading.info"
+          "info": "Small text to further explain item on slide e.g. new arrival"
         },
         {
           "type": "text",
           "id": "button_text",
-          "label": "t:sections.image-banner.blocks.slide.settings.button_text.label",
-          "default": "Shop Now",
-          "info": "t:sections.image-banner.blocks.slide.settings.button_text.info"
+          "label": "Button Text",
+          "info": "Text that will appear within the button in slide"
         }
       ]
     }
