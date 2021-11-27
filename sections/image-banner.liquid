@@ -176,11 +176,11 @@
               >
             {% endif %}
             <div class="flex container w-full h-full md:p-12 xl:p-24 relative items-center">
-                <div class="max-w-4xl w-max text-left">
+                <div class="w-full text-left">
                     <div class="text-2xl mb-3.5 text-black">
                         <span class="semi-bold">{{ block.settings.sub_heading }}</span>
                     </div>
-                    <h2 class="{%- if block.settings.heading_font_size == 'xl' -%}text-xl {%-else-%}text-{{ block.settings.heading_font_size }}xl {%-endif-%} mb-5 text-black lg:leading-tight xl:leading-tight 2xl:leading-tight">
+                    <h2 class="text-{%- if block.settings.heading_font_size != 'xl' -%}{{ block.settings.heading_font_size }}{%- endif -%}xl mb-5 text-black lg:leading-tight xl:leading-tight 2xl:leading-tight">
                         <span class="font-normal">{{ block.settings.heading }}</span>
                     </h2>
                     <a href="#" class="inline-block border border-black rounded py-2.5 px-5">
