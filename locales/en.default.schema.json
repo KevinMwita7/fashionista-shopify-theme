@@ -908,31 +908,31 @@
               "info": "Text that will appear within the button in slide"
             },
             "heading_font_size": {
-              "option_1": {
+              "option__1": {
                 "label": "xl"
               },
-              "option_2": {
+              "option__2": {
                 "label": "2xl"
               },
-              "option_3": {
+              "option__3": {
                 "label": "3xl"
               },
-              "option_4": {
+              "option__4": {
                 "label": "4xl"
               },
-              "option_5": {
+              "option__5": {
                 "label": "5xl"
               },
-              "option_6": {
+              "option__6": {
                 "label": "6xl"
               },
-              "option_7": {
+              "option__7": {
                 "label": "7xl"
               },
-              "option_8": {
+              "option__8": {
                 "label": "8xl"
               },
-              "option_9": {
+              "option__9": {
                 "label": "9xl"
               }
             }
