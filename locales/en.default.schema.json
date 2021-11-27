@@ -906,6 +906,35 @@
               "label": "Button Text",
               "default": "Shop Now",
               "info": "Text that will appear within the button in slide"
+            },
+            "heading_font_size": {
+              "option_1": {
+                "label": "xl"
+              },
+              "option_2": {
+                "label": "2xl"
+              },
+              "option_3": {
+                "label": "3xl"
+              },
+              "option_4": {
+                "label": "4xl"
+              },
+              "option_5": {
+                "label": "5xl"
+              },
+              "option_6": {
+                "label": "6xl"
+              },
+              "option_7": {
+                "label": "7xl"
+              },
+              "option_8": {
+                "label": "8xl"
+              },
+              "option_9": {
+                "label": "9xl"
+              }
             }
           }
         }
