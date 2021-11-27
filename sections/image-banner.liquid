@@ -172,7 +172,7 @@
               class="absolute w-full pointer-events-none -z-1 h-full object-cover"
               loading="lazy"
               width="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.width }}{%- else -%}{{ block.settings.small_image.width }}{%- endif -%}"
-              height="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.height | divided_by: section.settings.large_image.aspect_ratio }}{%- else -%}{{ block.settings.small_image.height | divided_by: section.settings.small_image.aspect_ratio }}{%- endif -%}"
+              height="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.height }}{%- else -%}{{ block.settings.small_image.height }}{%- endif -%}"
               >
             {% endif %}
             <div class="flex container w-full h-full md:p-12 xl:p-24 relative items-center">
