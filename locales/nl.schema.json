@@ -784,6 +784,35 @@
               "label": "Knop tekst",
               "default": "Winkel nu",
               "info": "Tekst die binnen de knop in de dia verschijnt"
+            },
+            "heading_font_size": {
+              "option__1": {
+                "label": "xl"
+              },
+              "option__2": {
+                "label": "2xl"
+              },
+              "option__3": {
+                "label": "3xl"
+              },
+              "option__4": {
+                "label": "4xl"
+              },
+              "option__5": {
+                "label": "5xl"
+              },
+              "option__6": {
+                "label": "6xl"
+              },
+              "option__7": {
+                "label": "7xl"
+              },
+              "option__8": {
+                "label": "8xl"
+              },
+              "option__9": {
+                "label": "9xl"
+              }
             }
           }
         }
