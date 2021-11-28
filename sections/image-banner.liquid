@@ -177,7 +177,7 @@
             {% endif %}
             <div class="flex container w-full h-full md:p-12 xl:p-24 relative items-center">
                 <div class="w-full text-left">
-                    <div class="text-2xl mb-3.5 text-black">
+                    <div class="text-{%- if block.settings.subheading_font_size != 'xl' -%}{{ block.settings.subheading_font_size }}{%- endif -%}xl mb-3.5 text-black">
                         <span class="semi-bold">{{ block.settings.sub_heading }}</span>
                     </div>
                     <h2 class="text-{%- if block.settings.heading_font_size != 'xl' -%}{{ block.settings.heading_font_size }}{%- endif -%}xl mb-5 text-black lg:leading-tight xl:leading-tight 2xl:leading-tight">
@@ -420,7 +420,51 @@
           ],
           "default": "8",
           "label": "Heading font size"
-        },        
+        },
+        {
+          "type": "select",
+          "id": "subheading_font_size",
+          "options": [
+            {
+              "value": "xl",
+              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__1.label"
+            },
+            {
+              "value": "2",
+              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__2.label"
+            },
+            {
+              "value": "3",
+              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__3.label"
+            },
+            {
+              "value": "4",
+              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__4.label"
+            },
+            {
+              "value": "5",
+              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__5.label"
+            },
+            {
+              "value": "6",
+              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__6.label"
+            },
+            {
+              "value": "7",
+              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__7.label"
+            },
+            {
+              "value": "8",
+              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__8.label"
+            },
+            {
+              "value": "9",
+              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__9.label"
+            }
+          ],
+          "default": "2",
+          "label": "Sub-heading font size"
+        },       
         {
           "type": "text",
           "id": "sub_heading",
