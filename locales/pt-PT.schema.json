@@ -842,7 +842,31 @@
               "option__9": {
                 "label": "9xl"
               }
-            }
+            },
+            "vertical_content_position": {
+              "label": "Posição vertical do conteúdo",
+              "option__1": {
+                "label": "Começar"
+              },
+              "option__2": {
+                "label": "Centro"
+              },
+              "option__3": {
+                "label": "Fim"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "Posição de conteúdo horizontal",
+              "option__1": {
+                "label": "Começar"
+              },
+              "option__2": {
+                "label": "Centro"
+              },
+              "option__3": {
+                "label": "Fim"
+              }
+            }  
           }
         }
       },

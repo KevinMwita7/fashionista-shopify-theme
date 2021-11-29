@@ -842,6 +842,30 @@
               "option__9": {
                 "label": "9xl"
               }
+            },
+            "vertical_content_position": {
+              "label": "Vị trí nội dung dọc",
+              "option__1": {
+                "label": "Bắt đầu"
+              },
+              "option__2": {
+                "label": "Trung tâm"
+              },
+              "option__3": {
+                "label": "Kết thúc"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "Vị trí nội dung ngang",
+              "option__1": {
+                "label": "Bắt đầu"
+              },
+              "option__2": {
+                "label": "Trung tâm"
+              },
+              "option__3": {
+                "label": "Kết thúc"
+              }
             }
           }
         }

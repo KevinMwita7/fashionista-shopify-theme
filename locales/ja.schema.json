@@ -842,6 +842,30 @@
               "option__9": {
                 "label": "9xl"
               }
+            },
+            "vertical_content_position": {
+              "label": "垂直コンテンツ位置",
+              "option__1": {
+                "label": "始める"
+              },
+              "option__2": {
+                "label": "中心"
+              },
+              "option__3": {
+                "label": "終わり"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "水平コンテンツ位置",
+              "option__1": {
+                "label": "始める"
+              },
+              "option__2": {
+                "label": "中心"
+              },
+              "option__3": {
+                "label": "終わり"
+              }
             }
           }
         }

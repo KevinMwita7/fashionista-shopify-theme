@@ -842,6 +842,30 @@
               "option__9": {
                 "label": "9xl"
               }
+            },
+            "vertical_content_position": {
+              "label": "Vertikal innholdsposisjon",
+              "option__1": {
+                "label": "Start"
+              },
+              "option__2": {
+                "label": "Senter"
+              },
+              "option__3": {
+                "label": "Slutt"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "Horisontal innholdsposisjon",
+              "option__1": {
+                "label": "Start"
+              },
+              "option__2": {
+                "label": "Senter"
+              },
+              "option__3": {
+                "label": "Slutt"
+              }
             }
           }
         }

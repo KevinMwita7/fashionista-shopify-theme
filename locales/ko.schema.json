@@ -842,6 +842,30 @@
               "option__9": {
                 "label": "9xl"
               }
+            },
+            "vertical_content_position": {
+              "label": "세로 콘텐츠 위치",
+              "option__1": {
+                "label": "시작"
+              },
+              "option__2": {
+                "label": "센터"
+              },
+              "option__3": {
+                "label": "끝"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "수평 콘텐츠 위치",
+              "option__1": {
+                "label": "시작"
+              },
+              "option__2": {
+                "label": "센터"
+              },
+              "option__3": {
+                "label": "끝"
+              }
             }
           }
         }
@@ -1684,7 +1708,7 @@
           "label": "공급업체 표시"
         },
         "paragraph__1": {
-          "content": "주문 및 제품 정보를 사용한 동적 추천 사항은 시간이 지나면서 변경되고 개선됩니다. [자세히 알아보기](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
+          "content": "주문 및 제품 정보를 사용한 동적 추천 사항은 시간이 지나면서 변경되고 개선됩니다. [자세히 알아보기](https:\/\/help.shopify.com\/en\/themes\/development\/recomm끝d-products)"
         },
         "show_image_outline": {
           "label": "이미지 테두리 표시"

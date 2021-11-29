@@ -842,6 +842,30 @@
               "option__9": {
                 "label": "9xl"
               }
+            },
+            "vertical_content_position": {
+              "label": "Vertikale Inhaltsposition",
+              "option__1": {
+                "label": "Anfang"
+              },
+              "option__2": {
+                "label": "Centrum"
+              },
+              "option__3": {
+                "label": "Ende"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "Horizontale Inhaltsposition",
+              "option__1": {
+                "label": "Anfang"
+              },
+              "option__2": {
+                "label": "Centrum"
+              },
+              "option__3": {
+                "label": "Ende"
+              }
             }
           }
         }

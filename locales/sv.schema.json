@@ -842,7 +842,31 @@
               "option__9": {
                 "label": "9xl"
               }
-            }
+            },
+            "vertical_content_position": {
+              "label": "Vertikalt mittläge",
+              "option__1": {
+                "label": "Start"
+              },
+              "option__2": {
+                "label": "Centrum"
+              },
+              "option__3": {
+                "label": "Slutet"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "Horisontellt mittläge",
+              "option__1": {
+                "label": "Start"
+              },
+              "option__2": {
+                "label": "Centrum"
+              },
+              "option__3": {
+                "label": "Slutet"
+              }
+            }  
           }
         }
       },

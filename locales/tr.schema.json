@@ -842,6 +842,30 @@
               "option__9": {
                 "label": "9xl"
               }
+            },
+            "vertical_content_position": {
+              "label": "Dikey içerik konumu",
+              "option__1": {
+                "label": "Başlat"
+              },
+              "option__2": {
+                "label": "Merkez"
+              },
+              "option__3": {
+                "label": "Son"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "Yatay içerik konumu",
+              "option__1": {
+                "label": "Başlat"
+              },
+              "option__2": {
+                "label": "Merkez"
+              },
+              "option__3": {
+                "label": "Son"
+              }
             }
           }
         }

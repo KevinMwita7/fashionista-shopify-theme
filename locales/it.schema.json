@@ -842,6 +842,30 @@
               "option__9": {
                 "label": "9xl"
               }
+            },
+            "vertical_content_position": {
+              "label": "Posizione verticale del contenuto",
+              "option__1": {
+                "label": "Cominciare"
+              },
+              "option__2": {
+                "label": "Centro"
+              },
+              "option__3": {
+                "label": "Fine"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "Posizione del contenuto orizzontale",
+              "option__1": {
+                "label": "Cominciare"
+              },
+              "option__2": {
+                "label": "Centro"
+              },
+              "option__3": {
+                "label": "Fine"
+              }
             }
           }
         }
