@@ -965,18 +965,7 @@
                 "label": "9xl"
               }
             },
-            "vertical_content_position": {
-              "option__1": {
-                "label": "Start"
-              },
-              "option__2": {
-                "label": "Center"
-              },
-              "option__3": {
-                "label": "End"
-              }
-            },
-            "horizontal_content_position": {
+            "content_position": {
               "option__1": {
                 "label": "Start"
               },
