@@ -964,6 +964,17 @@
               "option__9": {
                 "label": "9xl"
               }
+            },
+            "content_position": {
+              "option__1": {
+                "label": "Start"
+              },
+              "option__2": {
+                "label": "Center"
+              },
+              "option__3": {
+                "label": "End"
+              }
             }
           }
         }
