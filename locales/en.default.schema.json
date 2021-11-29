@@ -966,7 +966,6 @@
               }
             },
             "vertical_content_position": {
-              "label": "Vertical Content Positioning",
               "option__1": {
                 "label": "Start"
               },
@@ -978,7 +977,6 @@
               }
             },
             "horizontal_content_position": {
-              "label": "Horizontal Content Positioning",
               "option__1": {
                 "label": "Start"
               },
