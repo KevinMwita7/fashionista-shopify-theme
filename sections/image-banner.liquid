@@ -175,8 +175,8 @@
               height="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.height }}{%- else -%}{{ block.settings.small_image.height }}{%- endif -%}"
               >
             {% endif %}
-            <div class="flex container w-full h-full md:p-12 xl:p-24 relative items-{{ block.settings.content_position }}">
-                <div class="w-full text-left">
+            <div class="flex container w-full h-full relative items-{{ block.settings.vertical_content_position }} justify-{{ block.settings.horizontal_content_position }}">
+                <div>
                     <div class="text-{%- if block.settings.subheading_font_size != 'xl' -%}{{ block.settings.subheading_font_size }}{%- endif -%}xl mb-3.5 text-black">
                         <span class="semi-bold">{{ block.settings.sub_heading }}</span>
                     </div>
@@ -481,24 +481,44 @@
         },
         {
           "type": "select",
-          "id": "content_position",
+          "id": "vertical_content_position",
           "options": [
             {
               "value": "start",
-              "label": "t:sections.image-banner.blocks.slide.settings.content_position.option__1.label"
+              "label": "t:sections.image-banner.blocks.slide.settings.vertical_content_position.option__1.label"
             },
             {
               "value": "center",
-              "label": "t:sections.image-banner.blocks.slide.settings.content_position.option__2.label"
+              "label": "t:sections.image-banner.blocks.slide.settings.vertical_content_position.option__2.label"
             },
             {
               "value": "end",
-              "label": "t:sections.image-banner.blocks.slide.settings.content_position.option__3.label"
+              "label": "t:sections.image-banner.blocks.slide.settings.vertical_content_position.option__3.label"
             }
           ],
-          "label": "Content positioning",
+          "label": "t:sections.image-banner.blocks.slide.settings.vertical_content_position.label",
           "default": "center"
-        }
+        },
+        {
+          "type": "select",
+          "id": "horizontal_content_position",
+          "options": [
+            {
+              "value": "start",
+              "label": "t:sections.image-banner.blocks.slide.settings.horizontal_content_position.option__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.image-banner.blocks.slide.settings.horizontal_content_position.option__2.label"
+            },
+            {
+              "value": "end",
+              "label": "t:sections.image-banner.blocks.slide.settings.horizontal_content_position.option__3.label"
+            }
+          ],
+          "label": "t:sections.image-banner.blocks.slide.settings.horizontal_content_position.label",
+          "default": "center"
+        },
       ]
     }
   ],

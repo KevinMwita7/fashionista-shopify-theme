@@ -965,7 +965,20 @@
                 "label": "9xl"
               }
             },
-            "content_position": {
+            "vertical_content_position": {
+              "label": "Vertical Content Positioning",
+              "option__1": {
+                "label": "Start"
+              },
+              "option__2": {
+                "label": "Center"
+              },
+              "option__3": {
+                "label": "End"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "Horizontal Content Positioning",
               "option__1": {
                 "label": "Start"
               },
