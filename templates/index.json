@@ -7,8 +7,13 @@
           "type": "slide",
           "settings": {
             "heading": "Slideshow heading",
+            "heading_font_size": "8",
             "sub_heading": "Slideshow sub-heading",
-            "button_text": "Button Text"
+            "subheading_font_size": "2",
+            "button_text": "Button Text",
+            "button_link": "shopify:\/\/collections\/all",
+            "vertical_content_position": "center",
+            "horizontal_content_position": "start"
           }
         }
       },
