@@ -866,6 +866,9 @@
               "option__3": {
                 "label": "Einde"
               }
+            },
+            "button_link": {
+              "label": "Knop link"
             }
           }
         }

@@ -866,6 +866,9 @@
               "option__3": {
                 "label": "Finir"
               }
+            },
+            "button_link": {
+              "label": "Lien du bouton"
             }
           }
         }

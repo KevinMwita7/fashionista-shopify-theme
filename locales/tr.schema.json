@@ -866,6 +866,9 @@
               "option__3": {
                 "label": "Son"
               }
+            },
+            "button_link": {
+              "label": "Düğme bağlantısı"
             }
           }
         }

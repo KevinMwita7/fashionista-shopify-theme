@@ -842,6 +842,33 @@
               "option__9": {
                 "label": "9xl"
               }
+            },
+            "vertical_content_position": {
+              "label": "ตำแหน่งเนื้อหาแนวตั้ง",
+              "option__1": {
+                "label": "เริ่ม"
+              },
+              "option__2": {
+                "label": "ศูนย์กลาง"
+              },
+              "option__3": {
+                "label": "จบ"
+              }
+            },
+            "horizontal_content_position": {
+              "label": "ตำแหน่งเนื้อหาแนวนอน",
+              "option__1": {
+                "label": "เริ่ม"
+              },
+              "option__2": {
+                "label": "ศูนย์กลาง"
+              },
+              "option__3": {
+                "label": "จบ"
+              }
+            },
+            "button_link": {
+              "label": "ลิงค์ปุ่ม"
             }
           }
         }

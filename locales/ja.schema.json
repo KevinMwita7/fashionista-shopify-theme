@@ -866,6 +866,9 @@
               "option__3": {
                 "label": "終わり"
               }
+            },
+            "button_link": {
+              "label": "ボタンリンク"
             }
           }
         }

@@ -866,6 +866,9 @@
               "option__3": {
                 "label": "Fine"
               }
+            },
+            "button_link": {
+              "label": "Collegamento pulsante"
             }
           }
         }

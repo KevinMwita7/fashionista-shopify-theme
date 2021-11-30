@@ -862,7 +862,10 @@
               "option__3": {
                 "label": "Fim"
               }
-            }            
+            },
+            "button_link": {
+              "label": "Botão de link"
+            }
           }
         }
       },

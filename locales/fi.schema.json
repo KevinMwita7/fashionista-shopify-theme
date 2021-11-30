@@ -866,6 +866,9 @@
               "option__3": {
                 "label": "Loppu"
               }
+            },
+            "button_link": {
+              "label": "Painikkeen linkki"
             }
           }
         }

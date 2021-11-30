@@ -866,7 +866,10 @@
               "option__3": {
                 "label": "Slutet"
               }
-            }  
+            },
+            "button_link": {
+              "label": "Knapplänk"
+            }
           }
         }
       },

@@ -866,6 +866,9 @@
               "option__3": {
                 "label": "Ende"
               }
+            },
+            "button_link": {
+              "label": "Schaltflächenlink"
             }
           }
         }

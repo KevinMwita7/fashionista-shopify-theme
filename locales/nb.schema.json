@@ -866,6 +866,9 @@
               "option__3": {
                 "label": "Slutt"
               }
+            },
+            "button_link": {
+              "label": "Knappen lenke"
             }
           }
         }

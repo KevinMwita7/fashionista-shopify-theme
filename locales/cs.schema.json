@@ -866,6 +866,9 @@
               "option__3": {
                 "label": "Konec"
               }
+            },
+            "button_link": {
+              "label": "Tlačítko odkaz"
             }
           }
         }
