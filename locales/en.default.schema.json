@@ -988,6 +988,9 @@
               "option__3": {
                 "label": "End"
               }
+            },
+            "button_link": {
+              "label": "Button link"
             }
           }
         }
