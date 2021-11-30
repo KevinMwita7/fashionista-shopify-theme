@@ -756,6 +756,88 @@
             "label": "Lớn"
           },
           "info": "Để có kết quả tốt nhất, hãy sử dụng hình ảnh có tỷ lệ khung hình 3:2. [Tìm hiểu thêm](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "heading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "subheading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "vertical_content_position": {
+          "label": "Vị trí nội dung dọc",
+          "option__1": {
+            "label": "Bắt đầu"
+          },
+          "option__2": {
+            "label": "Trung tâm"
+          },
+          "option__3": {
+            "label": "Kết thúc"
+          }
+        },
+        "horizontal_content_position": {
+          "label": "Vị trí nội dung ngang",
+          "option__1": {
+            "label": "Bắt đầu"
+          },
+          "option__2": {
+            "label": "Trung tâm"
+          },
+          "option__3": {
+            "label": "Kết thúc"
+          }
         }
       },
       "blocks": {
@@ -784,88 +866,6 @@
               "label": "Nút văn bản",
               "default": "Mua ngay",
               "info": "Văn bản sẽ xuất hiện trong nút trong trang trình bày"
-            },
-            "heading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "subheading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "vertical_content_position": {
-              "label": "Vị trí nội dung dọc",
-              "option__1": {
-                "label": "Bắt đầu"
-              },
-              "option__2": {
-                "label": "Trung tâm"
-              },
-              "option__3": {
-                "label": "Kết thúc"
-              }
-            },
-            "horizontal_content_position": {
-              "label": "Vị trí nội dung ngang",
-              "option__1": {
-                "label": "Bắt đầu"
-              },
-              "option__2": {
-                "label": "Trung tâm"
-              },
-              "option__3": {
-                "label": "Kết thúc"
-              }
             },
             "button_link": {
               "label": "Nút liên kết"

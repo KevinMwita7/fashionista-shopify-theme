@@ -756,6 +756,88 @@
             "label": "大"
           },
           "info": "画像のアスペクト比が3:2のものを使用すると最適です。[詳しくはこちら](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "heading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "subheading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "vertical_content_position": {
+          "label": "垂直コンテンツ位置",
+          "option__1": {
+            "label": "始める"
+          },
+          "option__2": {
+            "label": "中心"
+          },
+          "option__3": {
+            "label": "終わり"
+          }
+        },
+        "horizontal_content_position": {
+          "label": "水平コンテンツ位置",
+          "option__1": {
+            "label": "始める"
+          },
+          "option__2": {
+            "label": "中心"
+          },
+          "option__3": {
+            "label": "終わり"
+          }
         }
       },
       "blocks": {
@@ -784,88 +866,6 @@
               "label": "ボタンテキスト",
               "default": "今すぐ購入",
               "info": "スライドのボタン内に表示されるテキスト"
-            },
-            "heading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "subheading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "vertical_content_position": {
-              "label": "垂直コンテンツ位置",
-              "option__1": {
-                "label": "始める"
-              },
-              "option__2": {
-                "label": "中心"
-              },
-              "option__3": {
-                "label": "終わり"
-              }
-            },
-            "horizontal_content_position": {
-              "label": "水平コンテンツ位置",
-              "option__1": {
-                "label": "始める"
-              },
-              "option__2": {
-                "label": "中心"
-              },
-              "option__3": {
-                "label": "終わり"
-              }
             },
             "button_link": {
               "label": "ボタンリンク"

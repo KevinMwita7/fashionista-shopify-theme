@@ -756,6 +756,88 @@
             "label": "Duży"
           },
           "info": "Aby uzyskać najlepszy efekt, użyj obrazu o współczynniku proporcji 2:3. [Dowiedz się więcej](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "heading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "subheading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "vertical_content_position": {
+          "label": "Pionowa pozycja treści",
+          "option__1": {
+            "label": "Początek"
+          },
+          "option__2": {
+            "label": "Środek"
+          },
+          "option__3": {
+            "label": "Kończyć się"
+          }
+        },
+        "horizontal_content_position": {
+          "label": "Pozioma pozycja treści",
+          "option__1": {
+            "label": "Początek"
+          },
+          "option__2": {
+            "label": "Środek"
+          },
+          "option__3": {
+            "label": "Kończyć się"
+          }
         }
       },
       "blocks": {
@@ -784,88 +866,6 @@
               "label": "Przycisk tekstowy",
               "default": "Kupuj teraz",
               "info": "Tekst, który pojawi się na przycisku na slajdzie"
-            },
-            "heading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "subheading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "vertical_content_position": {
-              "label": "Pionowa pozycja treści",
-              "option__1": {
-                "label": "Początek"
-              },
-              "option__2": {
-                "label": "Środek"
-              },
-              "option__3": {
-                "label": "Kończyć się"
-              }
-            },
-            "horizontal_content_position": {
-              "label": "Pozioma pozycja treści",
-              "option__1": {
-                "label": "Początek"
-              },
-              "option__2": {
-                "label": "Środek"
-              },
-              "option__3": {
-                "label": "Kończyć się"
-              }
             },
             "button_link": {
               "label": "Przycisk link"

@@ -756,6 +756,88 @@
             "label": "Velká"
           },
           "info": "Nejlepších výsledků dosáhnete použitím obrázku s poměrem stran 3:2. [Zjistit více](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "heading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "subheading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "vertical_content_position": {
+          "label": "Vertikální poloha obsahu",
+          "option__1": {
+            "label": "Start"
+          },
+          "option__2": {
+            "label": "Centrum"
+          },
+          "option__3": {
+            "label": "Konec"
+          }
+        },
+        "horizontal_content_position": {
+          "label": "Horizontální poloha obsahu",
+          "option__1": {
+            "label": "Start"
+          },
+          "option__2": {
+            "label": "Centrum"
+          },
+          "option__3": {
+            "label": "Konec"
+          }
         }
       },
       "blocks": {
@@ -784,88 +866,6 @@
               "label": "Text tlačítka",
               "default": "Nakupuj teď",
               "info": "Text, který se objeví v tlačítku na snímku"
-            },
-            "heading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "subheading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "vertical_content_position": {
-              "label": "Vertikální poloha obsahu",
-              "option__1": {
-                "label": "Start"
-              },
-              "option__2": {
-                "label": "Centrum"
-              },
-              "option__3": {
-                "label": "Konec"
-              }
-            },
-            "horizontal_content_position": {
-              "label": "Horizontální poloha obsahu",
-              "option__1": {
-                "label": "Start"
-              },
-              "option__2": {
-                "label": "Centrum"
-              },
-              "option__3": {
-                "label": "Konec"
-              }
             },
             "button_link": {
               "label": "Tlačítko odkaz"

@@ -756,6 +756,88 @@
             "label": "크게"
           },
           "info": "최고의 결과를 얻으려면 이미지의 가로 세로 비율을 3:2로 사용하십시오. [자세히 알아보기](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "heading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "subheading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "vertical_content_position": {
+          "label": "세로 콘텐츠 위치",
+          "option__1": {
+            "label": "시작"
+          },
+          "option__2": {
+            "label": "센터"
+          },
+          "option__3": {
+            "label": "끝"
+          }
+        },
+        "horizontal_content_position": {
+          "label": "수평 콘텐츠 위치",
+          "option__1": {
+            "label": "시작"
+          },
+          "option__2": {
+            "label": "센터"
+          },
+          "option__3": {
+            "label": "끝"
+          }
         }
       },
       "blocks": {
@@ -784,88 +866,6 @@
               "label": "버튼 텍스트",
               "default": "지금 쇼핑하기",
               "info": "슬라이드의 버튼 안에 표시될 텍스트"
-            },
-            "heading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "subheading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "vertical_content_position": {
-              "label": "세로 콘텐츠 위치",
-              "option__1": {
-                "label": "시작"
-              },
-              "option__2": {
-                "label": "센터"
-              },
-              "option__3": {
-                "label": "끝"
-              }
-            },
-            "horizontal_content_position": {
-              "label": "수평 콘텐츠 위치",
-              "option__1": {
-                "label": "시작"
-              },
-              "option__2": {
-                "label": "센터"
-              },
-              "option__3": {
-                "label": "끝"
-              }
             },
             "button_link": {
               "label": "버튼 링크"

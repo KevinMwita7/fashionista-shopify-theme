@@ -756,6 +756,88 @@
             "label": "Stor"
           },
           "info": "Brug et billede med et højde-bredde-forhold på 3:2 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "heading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "subheading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "vertical_content_position": {
+          "label": "Lodret indholdsposition",
+          "option__1": {
+            "label": "Start"
+          },
+          "option__2": {
+            "label": "Centrum"
+          },
+          "option__3": {
+            "label": "Ende"
+          }
+        },
+        "horizontal_content_position": {
+          "label": "Vandret indholdsposition",
+          "option__1": {
+            "label": "Start"
+          },
+          "option__2": {
+            "label": "Centrum"
+          },
+          "option__3": {
+            "label": "Ende"
+          }
         }
       },
       "blocks": {
@@ -784,88 +866,6 @@
               "label": "Knaptekst",
               "default": "Køb nu",
               "info": "Tekst, der vises inden for knappen i dias"
-            },
-            "heading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "subheading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "vertical_content_position": {
-              "label": "Lodret indholdsposition",
-              "option__1": {
-                "label": "Start"
-              },
-              "option__2": {
-                "label": "Centrum"
-              },
-              "option__3": {
-                "label": "Ende"
-              }
-            },
-            "horizontal_content_position": {
-              "label": "Vandret indholdsposition",
-              "option__1": {
-                "label": "Start"
-              },
-              "option__2": {
-                "label": "Centrum"
-              },
-              "option__3": {
-                "label": "Ende"
-              }
             },
             "button_link": {
               "label": "Knap link"

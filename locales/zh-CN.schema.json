@@ -756,6 +756,88 @@
             "label": "大"
           },
           "info": "若要获得最佳效果，请使用纵横比为 3:2 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "heading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "subheading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "vertical_content_position": {
+          "label": "垂直内容位置",
+          "option__1": {
+            "label": "开始"
+          },
+          "option__2": {
+            "label": "中央"
+          },
+          "option__3": {
+            "label": "结尾"
+          }
+        },
+        "horizontal_content_position": {
+          "label": "水平内容位置",
+          "option__1": {
+            "label": "开始"
+          },
+          "option__2": {
+            "label": "中央"
+          },
+          "option__3": {
+            "label": "结尾"
+          }
         }
       },
       "blocks": {
@@ -784,88 +866,6 @@
               "label": "按钮文字",
               "default": "现在去购物",
               "info": "将出现在幻灯片中按钮内的文本"
-            },
-            "heading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "subheading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "vertical_content_position": {
-              "label": "垂直内容位置",
-              "option__1": {
-                "label": "开始"
-              },
-              "option__2": {
-                "label": "中央"
-              },
-              "option__3": {
-                "label": "结尾"
-              }
-            },
-            "horizontal_content_position": {
-              "label": "水平内容位置",
-              "option__1": {
-                "label": "开始"
-              },
-              "option__2": {
-                "label": "中央"
-              },
-              "option__3": {
-                "label": "结尾"
-              }
             },
             "button_link": {
               "label": "按钮链接"

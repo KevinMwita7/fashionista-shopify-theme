@@ -756,6 +756,88 @@
             "label": "Groß"
           },
           "info": "Verwende für Bilder ein Seitenverhältnis von 3:2 für optimale Ergebnisse. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "heading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "subheading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "vertical_content_position": {
+          "label": "Vertikale Inhaltsposition",
+          "option__1": {
+            "label": "Anfang"
+          },
+          "option__2": {
+            "label": "Centrum"
+          },
+          "option__3": {
+            "label": "Ende"
+          }
+        },
+        "horizontal_content_position": {
+          "label": "Horizontale Inhaltsposition",
+          "option__1": {
+            "label": "Anfang"
+          },
+          "option__2": {
+            "label": "Centrum"
+          },
+          "option__3": {
+            "label": "Ende"
+          }
         }
       },
       "blocks": {
@@ -784,88 +866,6 @@
               "label": "Schaltflächentext",
               "default": "Jetzt einkaufen",
               "info": "Text, der innerhalb der Schaltfläche in der Folie angezeigt wird"
-            },
-            "heading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "subheading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "vertical_content_position": {
-              "label": "Vertikale Inhaltsposition",
-              "option__1": {
-                "label": "Anfang"
-              },
-              "option__2": {
-                "label": "Centrum"
-              },
-              "option__3": {
-                "label": "Ende"
-              }
-            },
-            "horizontal_content_position": {
-              "label": "Horizontale Inhaltsposition",
-              "option__1": {
-                "label": "Anfang"
-              },
-              "option__2": {
-                "label": "Centrum"
-              },
-              "option__3": {
-                "label": "Ende"
-              }
             },
             "button_link": {
               "label": "Schaltflächenlink"

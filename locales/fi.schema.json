@@ -756,6 +756,88 @@
             "label": "Suuri"
           },
           "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 3:2. [Lisätietoja](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "heading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "subheading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "vertical_content_position": {
+          "label": "Pystysuora sisällön sijainti",
+          "option__1": {
+            "label": "Alkaa"
+          },
+          "option__2": {
+            "label": "Keskusta"
+          },
+          "option__3": {
+            "label": "Loppu"
+          }
+        },
+        "horizontal_content_position": {
+          "label": "Vaakasuora sisällön sijainti",
+          "option__1": {
+            "label": "Alkaa"
+          },
+          "option__2": {
+            "label": "Keskusta"
+          },
+          "option__3": {
+            "label": "Loppu"
+          }
         }
       },
       "blocks": {
@@ -784,88 +866,6 @@
               "label": "Painikkeen teksti",
               "default": "Osta nyt",
               "info": "Teksti, joka näkyy diassa painikkeen sisällä"
-            },
-            "heading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "subheading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "vertical_content_position": {
-              "label": "Pystysuora sisällön sijainti",
-              "option__1": {
-                "label": "Alkaa"
-              },
-              "option__2": {
-                "label": "Keskusta"
-              },
-              "option__3": {
-                "label": "Loppu"
-              }
-            },
-            "horizontal_content_position": {
-              "label": "Vaakasuora sisällön sijainti",
-              "option__1": {
-                "label": "Alkaa"
-              },
-              "option__2": {
-                "label": "Keskusta"
-              },
-              "option__3": {
-                "label": "Loppu"
-              }
             },
             "button_link": {
               "label": "Painikkeen linkki"

@@ -752,6 +752,88 @@
             "label": "Grande"
           },
           "info": "Use uma imagem com proporção 3:2 para alcançar os melhores resultados. [Saiba mais](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
+        "heading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "subheading_font_size": {
+          "option__1": {
+            "label": "xl"
+          },
+          "option__2": {
+            "label": "2xl"
+          },
+          "option__3": {
+            "label": "3xl"
+          },
+          "option__4": {
+            "label": "4xl"
+          },
+          "option__5": {
+            "label": "5xl"
+          },
+          "option__6": {
+            "label": "6xl"
+          },
+          "option__7": {
+            "label": "7xl"
+          },
+          "option__8": {
+            "label": "8xl"
+          },
+          "option__9": {
+            "label": "9xl"
+          }
+        },
+        "vertical_content_position": {
+          "label": "Posição vertical do conteúdo",
+          "option__1": {
+            "label": "Começar"
+          },
+          "option__2": {
+            "label": "Centro"
+          },
+          "option__3": {
+            "label": "Fim"
+          }
+        },
+        "horizontal_content_position": {
+          "label": "Posição de conteúdo horizontal",
+          "option__1": {
+            "label": "Começar"
+          },
+          "option__2": {
+            "label": "Centro"
+          },
+          "option__3": {
+            "label": "Fim"
+          }
         }
       },
       "blocks": {
@@ -780,88 +862,6 @@
               "label": "Botão de texto",
               "default": "Compre agora",
               "info": "Texto que aparecerá dentro do botão no slide"
-            },
-            "heading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "subheading_font_size": {
-              "option__1": {
-                "label": "xl"
-              },
-              "option__2": {
-                "label": "2xl"
-              },
-              "option__3": {
-                "label": "3xl"
-              },
-              "option__4": {
-                "label": "4xl"
-              },
-              "option__5": {
-                "label": "5xl"
-              },
-              "option__6": {
-                "label": "6xl"
-              },
-              "option__7": {
-                "label": "7xl"
-              },
-              "option__8": {
-                "label": "8xl"
-              },
-              "option__9": {
-                "label": "9xl"
-              }
-            },
-            "vertical_content_position": {
-              "label": "Posição vertical do conteúdo",
-              "option__1": {
-                "label": "Começar"
-              },
-              "option__2": {
-                "label": "Centro"
-              },
-              "option__3": {
-                "label": "Fim"
-              }
-            },
-            "horizontal_content_position": {
-              "label": "Posição de conteúdo horizontal",
-              "option__1": {
-                "label": "Começar"
-              },
-              "option__2": {
-                "label": "Centro"
-              },
-              "option__3": {
-                "label": "Fim"
-              }
             },
             "button_link": {
               "label": "Botão de link"
