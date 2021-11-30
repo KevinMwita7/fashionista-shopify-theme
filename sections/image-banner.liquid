@@ -175,13 +175,13 @@
               height="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.height }}{%- else -%}{{ block.settings.small_image.height }}{%- endif -%}"
               >
             {% endif %}
-            <div class="flex container w-full h-full relative items-{{ block.settings.vertical_content_position }} justify-{{ block.settings.horizontal_content_position }}">
+            <div class="flex container w-full h-full relative items-{{ section.settings.vertical_content_position }} justify-{{ section.settings.horizontal_content_position }}">
                 <div>
-                    <h4 class="text-{%- if block.settings.subheading_font_size != 'xl' -%}{{ block.settings.subheading_font_size }}{%- endif -%}xl mb-3.5 text-black">
-                        <span class="semi-bold">{{ block.settings.sub_heading }}</span>
+                    <h4 class="text-{%- if section.settings.subheading_font_size != 'xl' -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-3.5 text-black">
+                        <span class="semi-bold">{{ section.settings.sub_heading }}</span>
                     </h4>
-                    <h2 class="text-{%- if block.settings.heading_font_size != 'xl' -%}{{ block.settings.heading_font_size }}{%- endif -%}xl mb-5 text-black lg:leading-tight xl:leading-tight 2xl:leading-tight">
-                        <span class="font-normal">{{ block.settings.heading }}</span>
+                    <h2 class="text-{%- if section.settings.heading_font_size != 'xl' -%}{{ section.settings.heading_font_size }}{%- endif -%}xl mb-5 text-black lg:leading-tight xl:leading-tight 2xl:leading-tight">
+                        <span class="font-normal">{{ section.settings.heading }}</span>
                     </h2>
                     <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="inline-block border border-black rounded py-2.5 px-5 h3">
                         {{ block.settings.button_text }}
@@ -351,6 +351,134 @@
       "id": "show_text_below",
       "default": true,
       "label": "t:sections.image-banner.settings.show_text_below.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_font_size",
+      "options": [
+        {
+          "value": "xl",
+          "label": "t:sections.image-banner.settings.heading_font_size.option__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.image-banner.settings.heading_font_size.option__2.label"
+        },
+        {
+          "value": "3",
+          "label": "t:sections.image-banner.settings.heading_font_size.option__3.label"
+        },
+        {
+          "value": "4",
+          "label": "t:sections.image-banner.settings.heading_font_size.option__4.label"
+        },
+        {
+          "value": "5",
+          "label": "t:sections.image-banner.settings.heading_font_size.option__5.label"
+        },
+        {
+          "value": "6",
+          "label": "t:sections.image-banner.settings.heading_font_size.option__6.label"
+        },
+        {
+          "value": "7",
+          "label": "t:sections.image-banner.settings.heading_font_size.option__7.label"
+        },
+        {
+          "value": "8",
+          "label": "t:sections.image-banner.settings.heading_font_size.option__8.label"
+        },
+        {
+          "value": "9",
+          "label": "t:sections.image-banner.settings.heading_font_size.option__9.label"
+        }
+      ],
+      "default": "8",
+      "label": "Heading font size"
+    },
+    {
+      "type": "select",
+      "id": "subheading_font_size",
+      "options": [
+        {
+          "value": "xl",
+          "label": "t:sections.image-banner.settings.subheading_font_size.option__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.image-banner.settings.subheading_font_size.option__2.label"
+        },
+        {
+          "value": "3",
+          "label": "t:sections.image-banner.settings.subheading_font_size.option__3.label"
+        },
+        {
+          "value": "4",
+          "label": "t:sections.image-banner.settings.subheading_font_size.option__4.label"
+        },
+        {
+          "value": "5",
+          "label": "t:sections.image-banner.settings.subheading_font_size.option__5.label"
+        },
+        {
+          "value": "6",
+          "label": "t:sections.image-banner.settings.subheading_font_size.option__6.label"
+        },
+        {
+          "value": "7",
+          "label": "t:sections.image-banner.settings.subheading_font_size.option__7.label"
+        },
+        {
+          "value": "8",
+          "label": "t:sections.image-banner.settings.subheading_font_size.option__8.label"
+        },
+        {
+          "value": "9",
+          "label": "t:sections.image-banner.settings.subheading_font_size.option__9.label"
+        }
+      ],
+      "default": "2",
+      "label": "Sub-heading font size"
+    },
+    {
+      "type": "select",
+      "id": "vertical_content_position",
+      "options": [
+        {
+          "value": "start",
+          "label": "t:sections.image-banner.settings.vertical_content_position.option__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.image-banner.settings.vertical_content_position.option__2.label"
+        },
+        {
+          "value": "end",
+          "label": "t:sections.image-banner.settings.vertical_content_position.option__3.label"
+        }
+      ],
+      "label": "t:sections.image-banner.settings.vertical_content_position.label",
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "horizontal_content_position",
+      "options": [
+        {
+          "value": "start",
+          "label": "t:sections.image-banner.settings.horizontal_content_position.option__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.image-banner.settings.horizontal_content_position.option__2.label"
+        },
+        {
+          "value": "end",
+          "label": "t:sections.image-banner.settings.horizontal_content_position.option__3.label"
+        }
+      ],
+      "label": "t:sections.image-banner.settings.horizontal_content_position.label",
+      "default": "start"
     }
   ],
   "blocks": [
@@ -378,99 +506,11 @@
           "info": "t:sections.image-banner.blocks.slide.settings.heading.info"
         },
         {
-          "type": "select",
-          "id": "heading_font_size",
-          "options": [
-            {
-              "value": "xl",
-              "label": "t:sections.image-banner.blocks.slide.settings.heading_font_size.option__1.label"
-            },
-            {
-              "value": "2",
-              "label": "t:sections.image-banner.blocks.slide.settings.heading_font_size.option__2.label"
-            },
-            {
-              "value": "3",
-              "label": "t:sections.image-banner.blocks.slide.settings.heading_font_size.option__3.label"
-            },
-            {
-              "value": "4",
-              "label": "t:sections.image-banner.blocks.slide.settings.heading_font_size.option__4.label"
-            },
-            {
-              "value": "5",
-              "label": "t:sections.image-banner.blocks.slide.settings.heading_font_size.option__5.label"
-            },
-            {
-              "value": "6",
-              "label": "t:sections.image-banner.blocks.slide.settings.heading_font_size.option__6.label"
-            },
-            {
-              "value": "7",
-              "label": "t:sections.image-banner.blocks.slide.settings.heading_font_size.option__7.label"
-            },
-            {
-              "value": "8",
-              "label": "t:sections.image-banner.blocks.slide.settings.heading_font_size.option__8.label"
-            },
-            {
-              "value": "9",
-              "label": "t:sections.image-banner.blocks.slide.settings.heading_font_size.option__9.label"
-            }
-          ],
-          "default": "8",
-          "label": "Heading font size"
-        },     
-        {
           "type": "text",
           "id": "sub_heading",
           "label": "t:sections.image-banner.blocks.slide.settings.sub_heading.label",
           "default": "Slideshow sub-heading",
           "info": "t:sections.image-banner.blocks.slide.settings.sub_heading.info"
-        },
-        {
-          "type": "select",
-          "id": "subheading_font_size",
-          "options": [
-            {
-              "value": "xl",
-              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__1.label"
-            },
-            {
-              "value": "2",
-              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__2.label"
-            },
-            {
-              "value": "3",
-              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__3.label"
-            },
-            {
-              "value": "4",
-              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__4.label"
-            },
-            {
-              "value": "5",
-              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__5.label"
-            },
-            {
-              "value": "6",
-              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__6.label"
-            },
-            {
-              "value": "7",
-              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__7.label"
-            },
-            {
-              "value": "8",
-              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__8.label"
-            },
-            {
-              "value": "9",
-              "label": "t:sections.image-banner.blocks.slide.settings.subheading_font_size.option__9.label"
-            }
-          ],
-          "default": "2",
-          "label": "Sub-heading font size"
         },
         {
           "type": "text",
@@ -483,46 +523,6 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.image-banner.blocks.slide.settings.button_link.label"
-        },
-        {
-          "type": "select",
-          "id": "vertical_content_position",
-          "options": [
-            {
-              "value": "start",
-              "label": "t:sections.image-banner.blocks.slide.settings.vertical_content_position.option__1.label"
-            },
-            {
-              "value": "center",
-              "label": "t:sections.image-banner.blocks.slide.settings.vertical_content_position.option__2.label"
-            },
-            {
-              "value": "end",
-              "label": "t:sections.image-banner.blocks.slide.settings.vertical_content_position.option__3.label"
-            }
-          ],
-          "label": "t:sections.image-banner.blocks.slide.settings.vertical_content_position.label",
-          "default": "center"
-        },
-        {
-          "type": "select",
-          "id": "horizontal_content_position",
-          "options": [
-            {
-              "value": "start",
-              "label": "t:sections.image-banner.blocks.slide.settings.horizontal_content_position.option__1.label"
-            },
-            {
-              "value": "center",
-              "label": "t:sections.image-banner.blocks.slide.settings.horizontal_content_position.option__2.label"
-            },
-            {
-              "value": "end",
-              "label": "t:sections.image-banner.blocks.slide.settings.horizontal_content_position.option__3.label"
-            }
-          ],
-          "label": "t:sections.image-banner.blocks.slide.settings.horizontal_content_position.label",
-          "default": "start"
         }
       ]
     }
