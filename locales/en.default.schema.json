@@ -836,10 +836,12 @@
           "content": "Typography"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Heading font size",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Subheading font size",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Vertical Content Position",
