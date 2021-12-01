@@ -174,7 +174,7 @@
             {% endif %}
             <div class="flex container w-full h-full relative items-{{ section.settings.vertical_content_position }} justify-{{ section.settings.horizontal_content_position }}">
                 <div>
-                    <h4 class="text-{%- if section.settings.subheading_font_size != 0 -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-3.5">
+                    <h4 class="text-{%- if section.settings.subheading_font_size != 1 -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-3.5">
                         <span class="semi-bold">{{ block.settings.sub_heading }}</span>
                     </h4>
                     <h2 class="text-{%- if section.settings.heading_font_size != 'xl' -%}{{ section.settings.heading_font_size }}{%- endif -%}xl mb-5 lg:leading-tight xl:leading-tight 2xl:leading-tight">
@@ -322,11 +322,11 @@
     {
       "id": "subheading_font_size",
       "type": "range",
-      "min": 0,
+      "min": 1,
       "max": 9,
       "step": 1,
       "unit": "xl",
-      "default": 0,
+      "default": 2,
       "label": "Sub-heading font size"
     },
     {
