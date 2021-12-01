@@ -174,7 +174,7 @@
             {% endif %}
             <div class="flex container w-full h-full relative items-{{ section.settings.vertical_content_position }} justify-{{ section.settings.horizontal_content_position }}">
                 <div>
-                    <h4 class="mb-3.5" style="font-size: {{ section.settings.heading_size }}">
+                    <h4 class="text-{%- if section.settings.subheading_font_size != 0 -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-3.5">
                         <span class="semi-bold">{{ block.settings.sub_heading }}</span>
                     </h4>
                     <h2 class="text-{%- if section.settings.heading_font_size != 'xl' -%}{{ section.settings.heading_font_size }}{%- endif -%}xl mb-5 lg:leading-tight xl:leading-tight 2xl:leading-tight">
@@ -320,47 +320,13 @@
       "label": "Heading font size"
     },
     {
-      "type": "select",
       "id": "subheading_font_size",
-      "options": [
-        {
-          "value": "xl",
-          "label": "t:sections.image-banner.settings.subheading_font_size.option__1.label"
-        },
-        {
-          "value": "2",
-          "label": "t:sections.image-banner.settings.subheading_font_size.option__2.label"
-        },
-        {
-          "value": "3",
-          "label": "t:sections.image-banner.settings.subheading_font_size.option__3.label"
-        },
-        {
-          "value": "4",
-          "label": "t:sections.image-banner.settings.subheading_font_size.option__4.label"
-        },
-        {
-          "value": "5",
-          "label": "t:sections.image-banner.settings.subheading_font_size.option__5.label"
-        },
-        {
-          "value": "6",
-          "label": "t:sections.image-banner.settings.subheading_font_size.option__6.label"
-        },
-        {
-          "value": "7",
-          "label": "t:sections.image-banner.settings.subheading_font_size.option__7.label"
-        },
-        {
-          "value": "8",
-          "label": "t:sections.image-banner.settings.subheading_font_size.option__8.label"
-        },
-        {
-          "value": "9",
-          "label": "t:sections.image-banner.settings.subheading_font_size.option__9.label"
-        }
-      ],
-      "default": "2",
+      "type": "range",
+      "min": 0,
+      "max": 9,
+      "step": 1,
+      "unit": "xl",
+      "default": 0,
       "label": "Sub-heading font size"
     },
     {
@@ -402,16 +368,6 @@
       ],
       "label": "t:sections.image-banner.settings.horizontal_content_position.label",
       "default": "start"
-    },
-    {
-      "type": "range",
-      "id": "heading_size",
-      "min": 1,
-      "max": 10,
-      "step": 0.5,
-      "unit": "rem",
-      "label": "heading size",
-      "default": 1
     }
   ],
   "blocks": [
