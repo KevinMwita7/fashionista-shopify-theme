@@ -694,55 +694,11 @@
     "image-banner": {
       "name": "スライドショー",
       "settings": {
-        "desktop_text_box_position": {
-          "options__1": {
-            "label": "上"
-          },
-          "options__2": {
-            "label": "中央"
-          },
-          "options__3": {
-            "label": "下"
-          },
-          "label": "デスクトップのテキスト位置"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "アクセント1"
-          },
-          "options__2": {
-            "label": "アクセント2"
-          },
-          "options__3": {
-            "label": "背景1"
-          },
-          "options__4": {
-            "label": "背景2"
-          },
-          "options__5": {
-            "label": "反転"
-          },
-          "label": "配色",
-          "info": "テキストボックスに使用されています"
-        },
-        "stack_images_on_mobile": {
-          "label": "モバイルで画像を重ねる"
-        },
-        "adapt_height_first_image": {
-          "label": "セクションの高さを最初の画像サイズに合わせる",
-          "info": "チェックすると、画像バナーの高さ設定が上書きされます。"
-        },
-        "show_text_box": {
-          "label": "デスクトップ上にテキストボックスを表示する"
-        },
         "image_overlay_opacity": {
           "label": "画像のオーバーレイ不透明率"
         },
         "header": {
           "content": "モバイルのレイアウト"
-        },
-        "show_text_below": {
-          "label": "画像下にテキストを表示する"
         },
         "image_height": {
           "label": "バナーの高さ",
@@ -758,62 +714,10 @@
           "info": "画像のアスペクト比が3:2のものを使用すると最適です。[詳しくはこちら](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "subheading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "vertical_content_position": {
           "label": "垂直コンテンツ位置",

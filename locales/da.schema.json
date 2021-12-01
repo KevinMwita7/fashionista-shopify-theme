@@ -694,55 +694,11 @@
     "image-banner": {
       "name": "Slideshow",
       "settings": {
-        "desktop_text_box_position": {
-          "options__1": {
-            "label": "Top"
-          },
-          "options__2": {
-            "label": "Centreret"
-          },
-          "options__3": {
-            "label": "Bund"
-          },
-          "label": "Placering af tekst på skrivebordet"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "Markering 1"
-          },
-          "options__2": {
-            "label": "Markering 2"
-          },
-          "options__3": {
-            "label": "Baggrund 1"
-          },
-          "options__4": {
-            "label": "Baggrund 2"
-          },
-          "options__5": {
-            "label": "Omvendt"
-          },
-          "label": "Farveskema",
-          "info": "Bruges til tekstfelt."
-        },
-        "stack_images_on_mobile": {
-          "label": "Stabl billeder på mobilenheder"
-        },
-        "adapt_height_first_image": {
-          "label": "Tilpas afsnitshøjden til størrelsen af det første billede",
-          "info": "Overskriver indstillingerne for højden på billedbanneret, når det markeres."
-        },
-        "show_text_box": {
-          "label": "Vis tekstfelt på skrivebord"
-        },
         "image_overlay_opacity": {
           "label": "Billedoverlejringens uigennemsigtighed"
         },
         "header": {
           "content": "Mobillayout"
-        },
-        "show_text_below": {
-          "label": "Vis tekster under billeder"
         },
         "image_height": {
           "label": "Bannerhøjde",
@@ -758,62 +714,10 @@
           "info": "Brug et billede med et højde-bredde-forhold på 3:2 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "subheading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "vertical_content_position": {
           "label": "Lodret indholdsposition",

@@ -694,55 +694,11 @@
     "image-banner": {
       "name": "สไลด์โชว์",
       "settings": {
-        "desktop_text_box_position": {
-          "options__1": {
-            "label": "บน"
-          },
-          "options__2": {
-            "label": "กึ่งกลาง"
-          },
-          "options__3": {
-            "label": "ล่าง"
-          },
-          "label": "ตำแหน่งข้อความบนเดสก์ท็อป"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "การเน้น 1"
-          },
-          "options__2": {
-            "label": "การเน้น 2"
-          },
-          "options__3": {
-            "label": "พื้นหลัง 1"
-          },
-          "options__4": {
-            "label": "พื้นหลัง 2"
-          },
-          "options__5": {
-            "label": "ตรงกันข้าม"
-          },
-          "label": "รูปแบบสี",
-          "info": "ใช้สำหรับกล่องข้อความ"
-        },
-        "stack_images_on_mobile": {
-          "label": "การรวมภาพบนมือถือ"
-        },
-        "adapt_height_first_image": {
-          "label": "ปรับความสูงของส่วนตามขนาดของรูปภาพแรก",
-          "info": "เขียนทับการตั้งค่าความสูงของแบนเนอร์รูปภาพเมื่อทำเครื่องหมาย"
-        },
-        "show_text_box": {
-          "label": "แสดงกล่องข้อความบนเดสก์ท็อป"
-        },
         "image_overlay_opacity": {
           "label": "ความทึบของการวางซ้อนรูปภาพ"
         },
         "header": {
           "content": "เลย์เอาต์ของมือถือ"
-        },
-        "show_text_below": {
-          "label": "แสดงข้อความที่ด้านล่างของรูปภาพ"
         },
         "image_height": {
           "label": "ความสูงของแบนเนอร์",
@@ -758,62 +714,10 @@
           "info": "ใช้รูปภาพที่มีอัตราส่วนภาพ 3:2 เพื่อผลลัพธ์ที่ดีที่สุด [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "subheading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "vertical_content_position": {
           "label": "ตำแหน่งเนื้อหาแนวตั้ง",

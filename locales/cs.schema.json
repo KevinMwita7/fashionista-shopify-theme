@@ -694,55 +694,11 @@
     "image-banner": {
       "name": "Prezentace",
       "settings": {
-        "desktop_text_box_position": {
-          "options__1": {
-            "label": "Nahoře"
-          },
-          "options__2": {
-            "label": "Uprostřed"
-          },
-          "options__3": {
-            "label": "Dole"
-          },
-          "label": "Pozice textu na desktopu"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "Zvýraznění 1"
-          },
-          "options__2": {
-            "label": "Zvýraznění 2"
-          },
-          "options__3": {
-            "label": "Pozadí 1"
-          },
-          "options__4": {
-            "label": "Pozadí 2"
-          },
-          "options__5": {
-            "label": "Inverze"
-          },
-          "label": "Barevné schéma",
-          "info": "Používá se pro textové pole."
-        },
-        "stack_images_on_mobile": {
-          "label": "Zobrazit obrázky na mobilním zařízení nad sebou"
-        },
-        "adapt_height_first_image": {
-          "label": "Přizpůsobit výšku sekce velikosti prvního obrázku",
-          "info": "Pokud je tato možnost zaškrtnuta, přepíše nastavení výšky obrázkového banneru."
-        },
-        "show_text_box": {
-          "label": "Zobrazit textové pole na počítači"
-        },
         "image_overlay_opacity": {
           "label": "Neprůhlednost překryvu obrázku"
         },
         "header": {
           "content": "Mobilní rozvržení"
-        },
-        "show_text_below": {
-          "label": "Zobrazit text pod obrázky"
         },
         "image_height": {
           "label": "Výška banneru",
@@ -758,62 +714,10 @@
           "info": "Nejlepších výsledků dosáhnete použitím obrázku s poměrem stran 3:2. [Zjistit více](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "subheading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "vertical_content_position": {
           "label": "Vertikální poloha obsahu",

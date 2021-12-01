@@ -694,55 +694,11 @@
     "image-banner": {
       "name": "Diaesitys",
       "settings": {
-        "desktop_text_box_position": {
-          "options__1": {
-            "label": "Ylös"
-          },
-          "options__2": {
-            "label": "Keskitetty"
-          },
-          "options__3": {
-            "label": "Alas"
-          },
-          "label": "Työpöytätekstin sijainti"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "Korostus 1"
-          },
-          "options__2": {
-            "label": "Korostus 2"
-          },
-          "options__3": {
-            "label": "Tausta 1"
-          },
-          "options__4": {
-            "label": "Tausta 2"
-          },
-          "options__5": {
-            "label": "Käänteinen"
-          },
-          "label": "Värimalli",
-          "info": "Käytetään tekstiruudussa."
-        },
-        "stack_images_on_mobile": {
-          "label": "Pinoa kuvat mobiilissa"
-        },
-        "adapt_height_first_image": {
-          "label": "Mukauta osion korkeus ensimmäisen kuvan kokoon",
-          "info": "Korvaa kuvabannerin korkeusasetuksen"
-        },
-        "show_text_box": {
-          "label": "Näytä tekstiruutu työpöydällä"
-        },
         "image_overlay_opacity": {
           "label": "Peittokuvan läpikuultavuus"
         },
         "header": {
           "content": "Mobiiliasettelu"
-        },
-        "show_text_below": {
-          "label": "Näytä teksti kuvien alapuolella"
         },
         "image_height": {
           "label": "Bannerin korkeus",
@@ -758,62 +714,10 @@
           "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 3:2. [Lisätietoja](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "subheading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "vertical_content_position": {
           "label": "Pystysuora sisällön sijainti",

@@ -694,55 +694,11 @@
     "image-banner": {
       "name": "trình chiếu",
       "settings": {
-        "desktop_text_box_position": {
-          "options__1": {
-            "label": "Trên"
-          },
-          "options__2": {
-            "label": "Giữa"
-          },
-          "options__3": {
-            "label": "Dưới"
-          },
-          "label": "Vị trí văn bản trên màn hình máy tính"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "Nhấn 1"
-          },
-          "options__2": {
-            "label": "Nhấn 2"
-          },
-          "options__3": {
-            "label": "Nền 1"
-          },
-          "options__4": {
-            "label": "Nền 2"
-          },
-          "options__5": {
-            "label": "Nghịch đảo"
-          },
-          "label": "Bảng màu",
-          "info": "Sử dụng cho hộp văn bản."
-        },
-        "stack_images_on_mobile": {
-          "label": "Xếp chồng hình ảnh trên điện thoại di động"
-        },
-        "adapt_height_first_image": {
-          "label": "Điều chỉnh độ cao mục theo cỡ hình ảnh thứ nhất",
-          "info": "Nếu chọn, cài đặt chiều cao biểu ngữ hình ảnh sẽ được ghi đè."
-        },
-        "show_text_box": {
-          "label": "Hiển thị hộp văn bản trên máy tính để bàn"
-        },
         "image_overlay_opacity": {
           "label": "Độ chắn sáng của lớp phủ hình ảnh"
         },
         "header": {
           "content": "Bố cục trên thiết bị di động"
-        },
-        "show_text_below": {
-          "label": "Hiển thị văn bản bên dưới hình ảnh"
         },
         "image_height": {
           "label": "Chiều cao biểu ngữ",
@@ -758,62 +714,10 @@
           "info": "Để có kết quả tốt nhất, hãy sử dụng hình ảnh có tỷ lệ khung hình 3:2. [Tìm hiểu thêm](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "subheading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "vertical_content_position": {
           "label": "Vị trí nội dung dọc",

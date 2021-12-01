@@ -694,55 +694,11 @@
     "image-banner": {
       "name": "幻灯片",
       "settings": {
-        "desktop_text_box_position": {
-          "options__1": {
-            "label": "顶部"
-          },
-          "options__2": {
-            "label": "居中"
-          },
-          "options__3": {
-            "label": "底部"
-          },
-          "label": "桌面文本位置"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "强调色 1"
-          },
-          "options__2": {
-            "label": "强调色 2"
-          },
-          "options__3": {
-            "label": "背景 1"
-          },
-          "options__4": {
-            "label": "背景 2"
-          },
-          "options__5": {
-            "label": "反转"
-          },
-          "label": "配色方案",
-          "info": "用于文本框"
-        },
-        "stack_images_on_mobile": {
-          "label": "在移动设备上堆叠图片"
-        },
-        "adapt_height_first_image": {
-          "label": "使分区高度适应第一张图片大小",
-          "info": "当勾选时，覆盖图像横幅高度设置。"
-        },
-        "show_text_box": {
-          "label": "在桌面上显示文本框"
-        },
         "image_overlay_opacity": {
           "label": "图片叠加不透明度"
         },
         "header": {
           "content": "移动布局"
-        },
-        "show_text_below": {
-          "label": "在图片下方显示文本"
         },
         "image_height": {
           "label": "横幅高度",
@@ -758,62 +714,10 @@
           "info": "若要获得最佳效果，请使用纵横比为 3:2 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "subheading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "vertical_content_position": {
           "label": "垂直内容位置",

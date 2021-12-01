@@ -694,55 +694,11 @@
     "image-banner": {
       "name": "Pokaz slajdów",
       "settings": {
-        "desktop_text_box_position": {
-          "options__1": {
-            "label": "Góra"
-          },
-          "options__2": {
-            "label": "Do środka"
-          },
-          "options__3": {
-            "label": "Dół"
-          },
-          "label": "Pozycja tekstu na pulpicie"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "Akcent 1"
-          },
-          "options__2": {
-            "label": "Akcent 2"
-          },
-          "options__3": {
-            "label": "Tło 1"
-          },
-          "options__4": {
-            "label": "Tło 2"
-          },
-          "options__5": {
-            "label": "Odwrócone"
-          },
-          "label": "Kolorystyka",
-          "info": "Wykorzystuje się do pola tekstowego."
-        },
-        "stack_images_on_mobile": {
-          "label": "Układaj obrazy w stosy na urządzeniu mobilnym"
-        },
-        "adapt_height_first_image": {
-          "label": "Dostosuj wysokość sekcji do rozmiaru pierwszego obrazu",
-          "info": "Nadpisuje ustawienie wysokości banera obrazu, jeżeli jest zaznaczone."
-        },
-        "show_text_box": {
-          "label": "Pokaż pole tekstowe na pulpicie"
-        },
         "image_overlay_opacity": {
           "label": "Nieprzezroczystość nakładki obrazu"
         },
         "header": {
           "content": "Układ na urządzeniu mobilnym"
-        },
-        "show_text_below": {
-          "label": "Pokaż tekst pod obrazami"
         },
         "image_height": {
           "label": "Wysokość banera",
@@ -758,62 +714,10 @@
           "info": "Aby uzyskać najlepszy efekt, użyj obrazu o współczynniku proporcji 2:3. [Dowiedz się więcej](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "subheading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "vertical_content_position": {
           "label": "Pionowa pozycja treści",

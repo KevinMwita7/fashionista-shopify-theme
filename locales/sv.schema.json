@@ -694,55 +694,11 @@
     "image-banner": {
       "name": "Bildspel",
       "settings": {
-        "desktop_text_box_position": {
-          "options__1": {
-            "label": "Högst upp"
-          },
-          "options__2": {
-            "label": "Centrera"
-          },
-          "options__3": {
-            "label": "Längst ner"
-          },
-          "label": "Text-position dator"
-        },
-        "color_scheme": {
-          "options__1": {
-            "label": "Accent 1"
-          },
-          "options__2": {
-            "label": "Accent 2"
-          },
-          "options__3": {
-            "label": "Bakgrund 1"
-          },
-          "options__4": {
-            "label": "Bakgrund 2"
-          },
-          "options__5": {
-            "label": "Omvänd"
-          },
-          "label": "Färgschema",
-          "info": "Används för textruta."
-        },
-        "stack_images_on_mobile": {
-          "label": "Stapla bilder på mobil"
-        },
-        "adapt_height_first_image": {
-          "label": "Anpassa avsnittets höjd till storleken på första bilden.",
-          "info": "Skriver över inställning för bildbanner-höjden när den markeras."
-        },
-        "show_text_box": {
-          "label": "Visa textruta på dator"
-        },
         "image_overlay_opacity": {
           "label": "Bildens opacitet för överlagring"
         },
         "header": {
           "content": "Mobil layout"
-        },
-        "show_text_below": {
-          "label": "Visa text under bilder"
         },
         "image_height": {
           "label": "Banner-höjd",
@@ -758,62 +714,10 @@
           "info": "Använd en bild med bildformat 3:2, för bästa resultat. [Mer information](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "subheading_font_size": {
-          "option__1": {
-            "label": "xl"
-          },
-          "option__2": {
-            "label": "2xl"
-          },
-          "option__3": {
-            "label": "3xl"
-          },
-          "option__4": {
-            "label": "4xl"
-          },
-          "option__5": {
-            "label": "5xl"
-          },
-          "option__6": {
-            "label": "6xl"
-          },
-          "option__7": {
-            "label": "7xl"
-          },
-          "option__8": {
-            "label": "8xl"
-          },
-          "option__9": {
-            "label": "9xl"
-          }
+          "label": "xl"
         },
         "vertical_content_position": {
           "label": "Vertikalt mittläge",
