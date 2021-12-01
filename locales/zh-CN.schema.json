@@ -698,7 +698,7 @@
           "label": "图片叠加不透明度"
         },
         "header": {
-          "content": "移动布局"
+          "content": "排版"
         },
         "image_height": {
           "label": "横幅高度",
@@ -714,10 +714,12 @@
           "info": "若要获得最佳效果，请使用纵横比为 3:2 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "标题字体大小",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "副标题字体大小",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "垂直内容位置",

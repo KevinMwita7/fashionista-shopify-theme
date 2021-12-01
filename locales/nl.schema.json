@@ -698,7 +698,7 @@
           "label": "Doorzichtigheid van afbeeldingsoverlay"
         },
         "header": {
-          "content": "Mobiele opmaak"
+          "content": "Typografie"
         },
         "image_height": {
           "label": "Hoogte van de banner",
@@ -714,10 +714,12 @@
           "info": "Gebruik voor de beste resultaten een afbeelding met een beeldverhouding van 3:2. [Meer informatie](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Lettergrootte kop",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Ondertitel lettergrootte",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Verticale inhoudspositie",

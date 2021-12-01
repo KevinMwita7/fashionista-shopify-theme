@@ -698,7 +698,7 @@
           "label": "画像のオーバーレイ不透明率"
         },
         "header": {
-          "content": "モバイルのレイアウト"
+          "content": "タイポグラフィ"
         },
         "image_height": {
           "label": "バナーの高さ",
@@ -714,10 +714,12 @@
           "info": "画像のアスペクト比が3:2のものを使用すると最適です。[詳しくはこちら](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "見出しのフォントサイズ",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "小見出しのフォントサイズ",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "垂直コンテンツ位置",

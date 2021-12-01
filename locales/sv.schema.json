@@ -698,7 +698,7 @@
           "label": "Bildens opacitet för överlagring"
         },
         "header": {
-          "content": "Mobil layout"
+          "content": "Typografi"
         },
         "image_height": {
           "label": "Banner-höjd",
@@ -714,10 +714,12 @@
           "info": "Använd en bild med bildformat 3:2, för bästa resultat. [Mer information](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Rubrikens teckenstorlek",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Teckenstorlek för underrubrik",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Vertikalt mittläge",

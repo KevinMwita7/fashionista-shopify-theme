@@ -698,7 +698,7 @@
           "label": "圖片疊加層透明度"
         },
         "header": {
-          "content": "行動版版面配置"
+          "content": "排版"
         },
         "image_height": {
           "label": "橫幅高度",
@@ -714,10 +714,12 @@
           "info": "若想要獲得最佳結果，請使用外觀比例為 3:2 的圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "標題字體大小",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "副標題字體大小",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "垂直內容位置",

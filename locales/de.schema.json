@@ -698,7 +698,7 @@
           "label": "Deckkraft der Bildüberlagerung"
         },
         "header": {
-          "content": "Mobiles Layout"
+          "content": "Typografie"
         },
         "image_height": {
           "label": "Bannerhöhe",
@@ -714,10 +714,12 @@
           "info": "Verwende für Bilder ein Seitenverhältnis von 3:2 für optimale Ergebnisse. [Mehr Informationen](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Überschrift Schriftgröße",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Schriftgröße der Untertitel",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Vertikale Inhaltsposition",

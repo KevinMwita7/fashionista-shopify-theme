@@ -698,7 +698,7 @@
           "label": "Nieprzezroczystość nakładki obrazu"
         },
         "header": {
-          "content": "Układ na urządzeniu mobilnym"
+          "content": "Typografia"
         },
         "image_height": {
           "label": "Wysokość banera",
@@ -714,10 +714,12 @@
           "info": "Aby uzyskać najlepszy efekt, użyj obrazu o współczynniku proporcji 2:3. [Dowiedz się więcej](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Rozmiar czcionki nagłówka",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Rozmiar czcionki podtytułu",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Pionowa pozycja treści",

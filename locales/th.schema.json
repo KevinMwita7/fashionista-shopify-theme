@@ -698,7 +698,7 @@
           "label": "ความทึบของการวางซ้อนรูปภาพ"
         },
         "header": {
-          "content": "เลย์เอาต์ของมือถือ"
+          "content": "วิชาการพิมพ์"
         },
         "image_height": {
           "label": "ความสูงของแบนเนอร์",
@@ -714,10 +714,12 @@
           "info": "ใช้รูปภาพที่มีอัตราส่วนภาพ 3:2 เพื่อผลลัพธ์ที่ดีที่สุด [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "ขนาดตัวอักษรของหัวเรื่อง",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "ขนาดตัวอักษรของหัวเรื่องย่อย",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "ตำแหน่งเนื้อหาแนวตั้ง",

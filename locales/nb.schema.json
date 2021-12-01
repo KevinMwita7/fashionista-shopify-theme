@@ -698,7 +698,7 @@
           "label": "Gjennomsiktighet for bildeoverlegg"
         },
         "header": {
-          "content": "Mobillayout"
+          "content": "Typografi"
         },
         "image_height": {
           "label": "Bannerhøyde",
@@ -714,10 +714,12 @@
           "info": "Bruk et bilde med størrelsesforhold 3:2 for best resultat. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Skriftstørrelse for overskrift",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Skriftstørrelse for underoverskrift",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Vertikal innholdsposisjon",

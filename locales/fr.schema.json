@@ -698,7 +698,7 @@
           "label": "Opacité de la superposition d'images"
         },
         "header": {
-          "content": "Mise en page mobile"
+          "content": "Typographie"
         },
         "image_height": {
           "label": "Hauteur de la bannière",
@@ -714,10 +714,12 @@
           "info": "Pour optimiser vos résultats, utilisez une image ayant un rapport d'aspect de 3:2. [En savoir plus](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Taille de la police d'en-tête",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Taille de la police des sous-titres",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Position verticale du contenu",

@@ -694,7 +694,7 @@
           "label": "Opacidade de sobreposição de imagem"
         },
         "header": {
-          "content": "Layout para dispositivo móvel"
+          "content": "Tipografia"
         },
         "image_height": {
           "label": "Altura do banner",
@@ -710,10 +710,12 @@
           "info": "Use uma imagem com proporção 3:2 para alcançar os melhores resultados. [Saiba mais](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Tamanho da fonte do título",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Tamanho da fonte do subtítulo",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Posição vertical do conteúdo",

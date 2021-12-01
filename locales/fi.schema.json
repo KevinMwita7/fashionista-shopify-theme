@@ -698,7 +698,7 @@
           "label": "Peittokuvan läpikuultavuus"
         },
         "header": {
-          "content": "Mobiiliasettelu"
+          "content": "Typografia"
         },
         "image_height": {
           "label": "Bannerin korkeus",
@@ -714,10 +714,12 @@
           "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 3:2. [Lisätietoja](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Otsikon fonttikoko",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Alaotsikon kirjasinkoko",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Pystysuora sisällön sijainti",

@@ -698,7 +698,7 @@
           "label": "Độ chắn sáng của lớp phủ hình ảnh"
         },
         "header": {
-          "content": "Bố cục trên thiết bị di động"
+          "content": "Kiểu chữ"
         },
         "image_height": {
           "label": "Chiều cao biểu ngữ",
@@ -714,10 +714,12 @@
           "info": "Để có kết quả tốt nhất, hãy sử dụng hình ảnh có tỷ lệ khung hình 3:2. [Tìm hiểu thêm](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Kích thước phông chữ tiêu đề",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Kích thước phông chữ tiêu đề phụ",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Vị trí nội dung dọc",

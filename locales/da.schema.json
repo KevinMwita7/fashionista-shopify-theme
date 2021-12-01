@@ -698,7 +698,7 @@
           "label": "Billedoverlejringens uigennemsigtighed"
         },
         "header": {
-          "content": "Mobillayout"
+          "content": "Typografi"
         },
         "image_height": {
           "label": "Bannerhøjde",
@@ -714,10 +714,12 @@
           "info": "Brug et billede med et højde-bredde-forhold på 3:2 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "heading_font_size": {
-          "label": "xl"
+          "label": "Overskrifts skriftstørrelse",
+          "unit": "xl"
         },
         "subheading_font_size": {
-          "label": "xl"
+          "label": "Underoverskrift skriftstørrelse",
+          "unit": "xl"
         },
         "vertical_content_position": {
           "label": "Lodret indholdsposition",
