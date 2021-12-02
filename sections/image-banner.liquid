@@ -135,6 +135,7 @@
 {% endstyle %}
 
 {% if section.blocks.size > 0 %}
+  {{ section.settings.heading_color }}
   <div id="Banner-{{ section.id }}" class="md:relative">
     {% for block in section.blocks %}
         <div class="relative banner-slide fade md:h-screen" {{ block.shopify_attributes }}>
@@ -208,10 +209,10 @@
                   </div>
               </div>
               <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
-                  <p class="mb-0.5 font-semibold">{{ block.sub_heading }}</p>
-                  <h2 class="text-4xl mb-3">{{ block.heading }}</h2>
+                  <p class="mb-0.5 font-semibold">{{ block.settings.sub_heading }}</p>
+                  <h2 class="text-4xl mb-3">{{ block.settings.heading }}</h2>
                   <a href="#" class="block border border-black rounded py-2.5 px-5">
-                      {{ block.button_text }}
+                      {{ block.settings.button_text }}
                   </a>
               </div>
           </div>
@@ -294,6 +295,11 @@
       "unit": "t:sections.image-banner.settings.subheading_font_size.unit",
       "default": 8,
       "label": "t:sections.image-banner.settings.subheading_font_size.label"
+    },
+    {
+      "id": "heading_color",
+      "type": "color",
+      "label": "Heading Color"
     },
     {
       "type": "select",
