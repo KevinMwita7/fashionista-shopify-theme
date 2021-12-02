@@ -888,7 +888,7 @@
           "info": "The boldness of the sub-heading text"
         },
         "button_text_font_weight": {
-          "label": "Sub-heading font weight",
+          "label": "Button text font weight",
           "info": "The boldness of the button text"
         }
       },
