@@ -876,11 +876,20 @@
         "subheading_color": {
           "label": "Subheading color"
         },
+        "button_text_color": {
+          "label": "Button text color"
+        },
         "heading_font_weight": {
-          "label": "Heading font weight"
+          "label": "Heading font weight",
+          "info": "The boldness of the heading text"
         },
         "subheading_font_weight": {
-          "label": "Sub-heading font weight"
+          "label": "Sub-heading font weight",
+          "info": "The boldness of the sub-heading text"
+        },
+        "button_text_font_weight": {
+          "label": "Sub-heading font weight",
+          "info": "The boldness of the button text"
         }
       },
       "blocks": {
