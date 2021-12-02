@@ -835,6 +835,9 @@
         "header": {
           "content": "Typography"
         },
+        "header2": {
+          "content": "Content alignment"
+        },
         "heading_font_size": {
           "label": "Heading font size",
           "unit": "xl"
@@ -866,7 +869,13 @@
           "option__3": {
             "label": "End"
           }
-        }        
+        },
+        "heading_color": {
+          "label": "Heading color"
+        },
+        "subheading_color": {
+          "label": "Subheading color"
+        }
       },
       "blocks": {
         "slide": {
