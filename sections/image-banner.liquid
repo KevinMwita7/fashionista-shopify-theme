@@ -175,10 +175,10 @@
             <div class="flex container w-full h-full relative items-{{ section.settings.vertical_content_position }} justify-{{ section.settings.horizontal_content_position }}">
                 <div>
                     <h4 class="text-{%- if section.settings.heading_font_size != 1 -%}{{ section.settings.heading_font_size }}{%- endif -%}xl mb-3.5" style="color: {{ section.settings.heading_color }}; font-weight: {{ section.settings.heading_font_weight }};">
-                        <span class="semi-bold">{{ block.settings.heading }}</span>
+                        <span>{{ block.settings.heading }}</span>
                     </h4>
                     <h2 class="text-{%- if section.settings.subheading_font_size != 1 -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-5 lg:leading-tight xl:leading-tight 2xl:leading-tight" style="color: {{ section.settings.subheading_color }}; font-weight: {{ section.settings.subheading_font_weight }};">
-                        <span class="font-normal">{{ block.settings.sub_heading }}</span>
+                        <span>{{ block.settings.sub_heading }}</span>
                     </h2>
                     <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="inline-block border border-black rounded py-2.5 px-5 h3">
                         {{ block.settings.button_text }}
