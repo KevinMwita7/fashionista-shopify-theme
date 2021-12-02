@@ -180,7 +180,7 @@
                     <h2 class="text-{%- if section.settings.subheading_font_size != 1 -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-5 lg:leading-tight xl:leading-tight 2xl:leading-tight" style="color: {{ section.settings.subheading_color }}; font-weight: {{ section.settings.subheading_font_weight }};">
                         <span>{{ block.settings.sub_heading }}</span>
                     </h2>
-                    <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="inline-block border border-black rounded py-2.5 px-5 h3" style="color: {{ section.settings.button_text_color }};">
+                    <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="inline-block border border-black rounded py-2.5 px-5 h3" style="color: {{ section.settings.button_text_color }}; font-weight: {{ section.settings.button_text_font_weight }}">
                         {{ block.settings.button_text }}
                     </a>
                 </div>
