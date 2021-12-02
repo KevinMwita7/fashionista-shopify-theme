@@ -135,7 +135,6 @@
 {% endstyle %}
 
 {% if section.blocks.size > 0 %}
-  {{ section.settings.heading_color }}
   <div id="Banner-{{ section.id }}" class="md:relative">
     {% for block in section.blocks %}
         <div class="relative banner-slide fade md:h-screen" {{ block.shopify_attributes }}>
@@ -312,7 +311,6 @@
       "min": 100,
       "max": 900,
       "step": 100,
-      "unit": "",
       "default": 400,
       "label": "t:sections.image-banner.settings.heading_font_weight.label",
       "info": "The boldness of the heading text"
@@ -323,7 +321,6 @@
       "min": 100,
       "max": 900,
       "step": 100,
-      "unit": "",
       "default": 400,
       "label": "t:sections.image-banner.settings.subheading_font_weight.label",
       "info": "The boldness of the sub-heading text"
