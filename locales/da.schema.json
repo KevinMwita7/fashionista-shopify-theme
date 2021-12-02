@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Ende"
           }
+        },
+        "header2": {
+          "content": "Indholdsjustering"
+        },
+        "heading_color": {
+          "label": "Overskriftsfarve"
+        },
+        "subheading_color": {
+          "label": "Underoverskriftsfarve"
+        },
+        "button_text_color": {
+          "label": "Knap tekstfarve"
+        },
+        "heading_font_weight": {
+          "label": "Overskrifts skrifttypevægt",
+          "info": "Overskriftstekstens fedhed"
+        },
+        "subheading_font_weight": {
+          "label": "Underoverskrift skrifttypevægt",
+          "info": "Fedheden af ​​underoverskriftsteksten"
+        },
+        "button_text_font_weight": {
+          "label": "Knap tekst skrifttype vægt",
+          "info": "Knappens fedhed"
         }
       },
       "blocks": {

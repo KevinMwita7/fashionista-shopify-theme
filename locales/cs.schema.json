@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Konec"
           }
+        },
+        "header2": {
+          "content": "Zarovnání obsahu"
+        },
+        "heading_color": {
+          "label": "Barva nadpisu"
+        },
+        "subheading_color": {
+          "label": "Barva podnadpisu"
+        },
+        "button_text_color": {
+          "label": "Barva textu tlačítka"
+        },
+        "heading_font_weight": {
+          "label": "Tloušťka písma nadpisu",
+          "info": "Tučné písmo textu nadpisu"
+        },
+        "subheading_font_weight": {
+          "label": "Tloušťka písma podnadpisu",
+          "info": "Tučný text podnadpisu"
+        },
+        "button_text_font_weight": {
+          "label": "Tloušťka písma textu tlačítka",
+          "info": "Tučné písmo textu tlačítka"
         }
       },
       "blocks": {

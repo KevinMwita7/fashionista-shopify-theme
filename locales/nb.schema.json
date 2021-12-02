@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Slutt"
           }
+        },
+        "header2": {
+          "content": "Innholdsjustering"
+        },
+        "heading_color": {
+          "label": "Overskriftsfarge"
+        },
+        "subheading_color": {
+          "label": "Farge på underoverskrift"
+        },
+        "button_text_color": {
+          "label": "Tekstfarge på knapp"
+        },
+        "heading_font_weight": {
+          "label": "Overskrifts skriftvekt",
+          "info": "Dristigheten i overskriftsteksten"
+        },
+        "subheading_font_weight": {
+          "label": "Underoverskrift skriftvekt",
+          "info": "Fetheten til underoverskriftsteksten"
+        },
+        "button_text_font_weight": {
+          "label": "Skriftvekt for knapptekst",
+          "info": "Fetheten til knappeteksten"
         }
       },
       "blocks": {

@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Loppu"
           }
+        },
+        "header2": {
+          "content": "Sisällön tasaus"
+        },
+        "heading_color": {
+          "label": "Otsikon väri"
+        },
+        "subheading_color": {
+          "label": "Alaotsikon väri"
+        },
+        "button_text_color": {
+          "label": "Painikkeen tekstin väri"
+        },
+        "heading_font_weight": {
+          "label": "Otsikon fontin paino",
+          "info": "Otsikon tekstin rohkeus"
+        },
+        "subheading_font_weight": {
+          "label": "Alaotsikon fontin paino",
+          "info": "Alaotsikon tekstin rohkeus"
+        },
+        "button_text_font_weight": {
+          "label": "Painikkeen tekstin fontin paino",
+          "info": "Painikkeen tekstin rohkeus"
         }
       },
       "blocks": {

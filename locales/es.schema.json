@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Fin"
           }
+        },
+        "header2": {
+          "content": "Alineación de contenido"
+        },
+        "heading_color": {
+          "label": "Color de encabezado"
+        },
+        "subheading_color": {
+          "label": "Color de subpartida"
+        },
+        "button_text_color": {
+          "label": "Color del texto del botón"
+        },
+        "heading_font_weight": {
+          "label": "Peso de la fuente del encabezado",
+          "info": "La audacia del texto del encabezado"
+        },
+        "subheading_font_weight": {
+          "label": "Peso de la fuente del subtítulo",
+          "info": "La audacia del texto del subtítulo"
+        },
+        "button_text_font_weight": {
+          "label": "Peso de la fuente del texto del botón",
+          "info": "La audacia del texto del botón."
         }
       },
       "blocks": {

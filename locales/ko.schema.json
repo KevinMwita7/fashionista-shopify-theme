@@ -744,6 +744,30 @@
           "option__3": {
             "label": "끝"
           }
+        },
+        "header2": {
+          "content": "콘텐츠 정렬"
+        },
+        "heading_color": {
+          "label": "제목 색상"
+        },
+        "subheading_color": {
+          "label": "소제목 색상"
+        },
+        "button_text_color": {
+          "label": "버튼 텍스트 색상"
+        },
+        "heading_font_weight": {
+          "label": "제목 글꼴 두께",
+          "info": "제목 텍스트의 굵기"
+        },
+        "subheading_font_weight": {
+          "label": "소제목 글꼴 두께",
+          "info": "부제목 텍스트의 굵기"
+        },
+        "button_text_font_weight": {
+          "label": "버튼 텍스트 글꼴 두께",
+          "info": "버튼 텍스트의 굵기"
         }
       },
       "blocks": {

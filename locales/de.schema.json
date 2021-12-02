@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Ende"
           }
+        },
+        "header2": {
+          "content": "Inhaltliche Ausrichtung"
+        },
+        "heading_color": {
+          "label": "Überschriftsfarbe"
+        },
+        "subheading_color": {
+          "label": "Untertitelfarbe"
+        },
+        "button_text_color": {
+          "label": "Schaltflächentextfarbe"
+        },
+        "heading_font_weight": {
+          "label": "Schriftstärke der Überschrift",
+          "info": "Die Kühnheit des Überschriftentextes"
+        },
+        "subheading_font_weight": {
+          "label": "Schriftstärke von Untertiteln",
+          "info": "Die Kühnheit des Untertiteltextes"
+        },
+        "button_text_font_weight": {
+          "label": "Schriftstärke des Schaltflächentextes",
+          "info": "Die Kühnheit des Schaltflächentextes"
         }
       },
       "blocks": {

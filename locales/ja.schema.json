@@ -744,6 +744,30 @@
           "option__3": {
             "label": "終わり"
           }
+        },
+        "header2": {
+          "content": "コンテンツの調整"
+        },
+        "heading_color": {
+          "label": "見出しの色"
+        },
+        "subheading_color": {
+          "label": "小見出しの色"
+        },
+        "button_text_color": {
+          "label": "ボタンのテキストの色"
+        },
+        "heading_font_weight": {
+          "label": "見出しのフォントの太さ",
+          "info": "見出しテキストの大胆さ"
+        },
+        "subheading_font_weight": {
+          "label": "小見出しのフォントの太さ",
+          "info": "小見出しテキストの大胆さ"
+        },
+        "button_text_font_weight": {
+          "label": "ボタンのテキストフォントの太さ",
+          "info": "ボタンテキストの大胆さ"
         }
       },
       "blocks": {

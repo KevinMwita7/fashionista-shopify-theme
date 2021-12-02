@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Einde"
           }
+        },
+        "header2": {
+          "content": "Uitlijning van inhoud"
+        },
+        "heading_color": {
+          "label": "Kopkleur"
+        },
+        "subheading_color": {
+          "label": "Ondertitel kleur"
+        },
+        "button_text_color": {
+          "label": "Tekstkleur knop"
+        },
+        "heading_font_weight": {
+          "label": "Kop lettertype gewicht",
+          "info": "De vetheid van de koptekst"
+        },
+        "subheading_font_weight": {
+          "label": "Lettergewicht subkop",
+          "info": "De vetheid van de subkoptekst"
+        },
+        "button_text_font_weight": {
+          "label": "Lettergewicht van knoptekst",
+          "info": "De vettigheid van de knoptekst"
         }
       },
       "blocks": {
