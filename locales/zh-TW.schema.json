@@ -744,6 +744,30 @@
           "option__3": {
             "label": "結尾"
           }
+        },
+        "header2": {
+          "content": "內容對齊"
+        },
+        "heading_color": {
+          "label": "標題顏色"
+        },
+        "subheading_color": {
+          "label": "副標題顏色"
+        },
+        "button_text_color": {
+          "label": "按鈕文字顏色"
+        },
+        "heading_font_weight": {
+          "label": "標題字體粗細",
+          "info": "標題文字的粗細"
+        },
+        "subheading_font_weight": {
+          "label": "副標題字體粗細",
+          "info": "副標題文本的粗細"
+        },
+        "button_text_font_weight": {
+          "label": "按鈕文字字體粗細",
+          "info": "按鈕文字的粗細"
         }
       },
       "blocks": {

@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Son"
           }
+        },
+        "header2": {
+          "content": "İçerik hizalama"
+        },
+        "heading_color": {
+          "label": "Başlık rengi"
+        },
+        "subheading_color": {
+          "label": "Alt başlık rengi"
+        },
+        "button_text_color": {
+          "label": "Düğme metin rengi"
+        },
+        "heading_font_weight": {
+          "label": "Başlık yazı tipi ağırlığı",
+          "info": "Başlık metninin koyuluğu"
+        },
+        "subheading_font_weight": {
+          "label": "Alt başlık yazı tipi ağırlığı",
+          "info": "Alt başlık metninin koyuluğu"
+        },
+        "button_text_font_weight": {
+          "label": "Düğme metni yazı tipi ağırlığı",
+          "info": "Düğme metninin cesurluğu"
         }
       },
       "blocks": {

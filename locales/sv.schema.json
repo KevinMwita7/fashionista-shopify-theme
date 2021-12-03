@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Slutet"
           }
+        },
+        "header2": {
+          "content": "Innehållsjustering"
+        },
+        "heading_color": {
+          "label": "Rubrikens färg"
+        },
+        "subheading_color": {
+          "label": "Färg på underrubrik"
+        },
+        "button_text_color": {
+          "label": "Knappens textfärg"
+        },
+        "heading_font_weight": {
+          "label": "Rubrik teckensnitt vikt",
+          "info": "Djärvheten i rubriktexten"
+        },
+        "subheading_font_weight": {
+          "label": "Underrubrik teckensnittsvikt",
+          "info": "Djärvheten i underrubrikens text"
+        },
+        "button_text_font_weight": {
+          "label": "Knapp text teckensnitt vikt",
+          "info": "Knapptextens fethet"
         }
       },
       "blocks": {

@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Kończyć się"
           }
+        },
+        "header2": {
+          "content": "Wyrównanie treści"
+        },
+        "heading_color": {
+          "label": "Kolor nagłówka"
+        },
+        "subheading_color": {
+          "label": "Kolor podtytułu"
+        },
+        "button_text_color": {
+          "label": "Kolor tekstu przycisku"
+        },
+        "heading_font_weight": {
+          "label": "Grubość czcionki nagłówka",
+          "info": "Pogrubienie tekstu nagłówka"
+        },
+        "subheading_font_weight": {
+          "label": "Grubość czcionki podtytułu",
+          "info": "Pogrubienie tekstu podtytułu"
+        },
+        "button_text_font_weight": {
+          "label": "Grubość czcionki tekstu przycisku",
+          "info": "Pogrubienie tekstu przycisku"
         }
       },
       "blocks": {

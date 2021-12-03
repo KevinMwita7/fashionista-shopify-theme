@@ -744,6 +744,30 @@
           "option__3": {
             "label": "จบ"
           }
+        },
+        "header2": {
+          "content": "การจัดตำแหน่งเนื้อหา"
+        },
+        "heading_color": {
+          "label": "หัวเรื่องสี"
+        },
+        "subheading_color": {
+          "label": "สีหัวเรื่องย่อย"
+        },
+        "button_text_color": {
+          "label": "สีข้อความปุ่ม"
+        },
+        "heading_font_weight": {
+          "label": "น้ำหนักแบบอักษรของหัวเรื่อง",
+          "info": "ความกล้าของหัวเรื่อง"
+        },
+        "subheading_font_weight": {
+          "label": "น้ำหนักแบบอักษรของหัวข้อย่อย",
+          "info": "ตัวหนาของข้อความหัวเรื่องย่อย"
+        },
+        "button_text_font_weight": {
+          "label": "น้ำหนักแบบอักษรของข้อความปุ่ม",
+          "info": "ตัวหนาของข้อความปุ่ม"
         }
       },
       "blocks": {

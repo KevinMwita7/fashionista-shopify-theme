@@ -740,6 +740,30 @@
           "option__3": {
             "label": "Fim"
           }
+        },
+        "header2": {
+          "content": "Alinhamento de conteúdo"
+        },
+        "heading_color": {
+          "label": "Cor do cabeçalho"
+        },
+        "subheading_color": {
+          "label": "Cor do subtítulo"
+        },
+        "button_text_color": {
+          "label": "Cor do texto do botão"
+        },
+        "heading_font_weight": {
+          "label": "Peso da fonte do cabeçalho",
+          "info": "A ousadia do texto do título"
+        },
+        "subheading_font_weight": {
+          "label": "Peso da fonte do subtítulo",
+          "info": "A ousadia do texto do subtítulo"
+        },
+        "button_text_font_weight": {
+          "label": "Peso da fonte do texto do botão",
+          "info": "A ousadia do texto do botão"
         }
       },
       "blocks": {

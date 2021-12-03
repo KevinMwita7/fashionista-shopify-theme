@@ -744,6 +744,30 @@
           "option__3": {
             "label": "Kết thúc"
           }
+        },
+        "header2": {
+          "content": "Căn chỉnh nội dung"
+        },
+        "heading_color": {
+          "label": "Màu tiêu đề"
+        },
+        "subheading_color": {
+          "label": "Màu tiêu đề phụ"
+        },
+        "button_text_color": {
+          "label": "Màu văn bản của nút"
+        },
+        "heading_font_weight": {
+          "label": "Độ đậm của phông chữ tiêu đề",
+          "info": "Độ đậm của văn bản tiêu đề"
+        },
+        "subheading_font_weight": {
+          "label": "Độ đậm phông chữ của tiêu đề phụ",
+          "info": "Độ đậm của văn bản tiêu đề phụ"
+        },
+        "button_text_font_weight": {
+          "label": "Độ đậm phông chữ của văn bản nút",
+          "info": "Độ đậm của văn bản nút"
         }
       },
       "blocks": {
