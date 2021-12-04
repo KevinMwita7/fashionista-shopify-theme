@@ -915,6 +915,18 @@
           "option__4": {
             "label": "Full"
           }
+        },
+        "banner_button_size": {
+          "label": "Button size",
+          "option__1": {
+            "label": "Small"
+          },
+          "option__2": {
+            "label": "Medium"
+          },
+          "option__3": {
+            "label": "Large"
+          }
         }
       },
       "blocks": {
