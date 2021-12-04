@@ -173,7 +173,7 @@
               >
             {% endif %}
             <div class="flex container w-full h-full relative items-{{ section.settings.vertical_content_position }} justify-{{ section.settings.horizontal_content_position }}">
-                <div class="{%- if section.settings.horizontal_content_position == 'start' -%}ml-40 {%- endif -%} {%- if section.settings.horizontal_content_position == 'end' -%}mr-40 {%- endif -%}{%- if section.settings.vertical_content_position == 'start' -%}mt-40 {%- endif -%}{%- if section.settings.horizontal_content_position == 'end' -%}mb-40 {%- endif -%}">
+                <div class="{%if section.settings.horizontal_content_position == 'start' %}ml-40 {%endif%} {%if section.settings.horizontal_content_position == 'end' %}mr-40 {% endif %}{% if section.settings.vertical_content_position == 'start' %}mt-40 {% endif %}{% if section.settings.horizontal_content_position == 'end' %}mb-40{% endif %}">
                     <h4 class="text-{%- if section.settings.heading_font_size != 1 -%}{{ section.settings.heading_font_size }}{%- endif -%}xl mb-3.5" style="color: {{ section.settings.heading_color }}; font-weight: {{ section.settings.heading_font_weight }};">
                         <span>{{ block.settings.heading }}</span>
                     </h4>
