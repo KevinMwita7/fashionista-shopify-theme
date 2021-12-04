@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "Kolor tła przycisku"
+        },
+        "header3": {
+          "content": "Button"
+        },
+        "button_border_radius": {
+          "label": "Promień obramowania przycisku",
+          "info": "Krzywizna granic przycisku",
+          "option__1": {
+            "label": "Nic"
+          },
+          "option__2": {
+            "label": "Mały"
+          },
+          "option__3": {
+            "label": "Duży"
+          },
+          "option__4": {
+            "label": "Pełny"
+          }
         }
       },
       "blocks": {

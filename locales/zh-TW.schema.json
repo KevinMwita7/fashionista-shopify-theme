@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "按鈕背景色"
+        },
+        "header3": {
+          "content": "按鈕"
+        },
+        "button_border_radius": {
+          "label": "按鈕邊框半徑",
+          "info": "按鈕邊框的曲線",
+          "option__1": {
+            "label": "沒有任何"
+          },
+          "option__2": {
+            "label": "小的"
+          },
+          "option__3": {
+            "label": "大的"
+          },
+          "option__4": {
+            "label": "滿的"
+          }
         }
       },
       "blocks": {

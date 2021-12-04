@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "Color de fondo del botón"
+        },
+        "header3": {
+          "content": "Botón"
+        },
+        "button_border_radius": {
+          "label": "Radio del borde del botón",
+          "info": "Curva de los bordes del botón",
+          "option__1": {
+            "label": "Ninguna"
+          },
+          "option__2": {
+            "label": "Pequeña"
+          },
+          "option__3": {
+            "label": "Grande"
+          },
+          "option__4": {
+            "label": "Llena"
+          }
         }
       },
       "blocks": {

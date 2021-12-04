@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "Painikkeen taustaväri"
+        },
+        "header3": {
+          "content": "Painike"
+        },
+        "button_border_radius": {
+          "label": "Painikkeen reunan säde",
+          "info": "Painikkeen reunusten kaarevuus",
+          "option__1": {
+            "label": "Ei mitään"
+          },
+          "option__2": {
+            "label": "Pieni"
+          },
+          "option__3": {
+            "label": "Suuri"
+          },
+          "option__4": {
+            "label": "Koko"
+          }
         }
       },
       "blocks": {

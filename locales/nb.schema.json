@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "Bakgrunnsfarge på knapp"
+        },
+        "header3": {
+          "content": "Knapp"
+        },
+        "button_border_radius": {
+          "label": "Knappens kantradius",
+          "info": "Krumning av knappens kantlinjer",
+          "option__1": {
+            "label": "Ingen"
+          },
+          "option__2": {
+            "label": "Liten"
+          },
+          "option__3": {
+            "label": "Stor"
+          },
+          "option__4": {
+            "label": "Full"
+          }
         }
       },
       "blocks": {

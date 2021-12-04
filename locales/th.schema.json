@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "สีพื้นหลังของปุ่ม"
+        },
+        "header3": {
+          "content": "ปุ่ม"
+        },
+        "button_border_radius": {
+          "label": "รัศมีเส้นขอบของปุ่ม",
+          "info": "ความโค้งของขอบปุ่ม",
+          "option__1": {
+            "label": "ไม่มี"
+          },
+          "option__2": {
+            "label": "เล็ก"
+          },
+          "option__3": {
+            "label": "ใหญ่"
+          },
+          "option__4": {
+            "label": "เต็ม"
+          }
         }
       },
       "blocks": {

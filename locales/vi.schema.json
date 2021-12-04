@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "Màu nền của nút"
+        },
+        "header3": {
+          "content": "Cái nút"
+        },
+        "button_border_radius": {
+          "label": "Bán kính đường viền nút",
+          "info": "Độ cong của các đường viền của nút",
+          "option__1": {
+            "label": "Không có"
+          },
+          "option__2": {
+            "label": "Nhỏ"
+          },
+          "option__3": {
+            "label": "Lớn"
+          },
+          "option__4": {
+            "label": "Đầy"
+          }
         }
       },
       "blocks": {

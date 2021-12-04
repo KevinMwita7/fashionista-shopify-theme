@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "Düğme arka plan rengi"
+        },
+        "header3": {
+          "content": "Buton"
+        },
+        "button_border_radius": {
+          "label": "Düğme kenarlığı yarıçapı",
+          "info": "Düğme kenarlıklarının eğriliği",
+          "option__1": {
+            "label": "Hiçbiri"
+          },
+          "option__2": {
+            "label": "Küçük"
+          },
+          "option__3": {
+            "label": "Büyük"
+          },
+          "option__4": {
+            "label": "Tam dolu"
+          }
         }
       },
       "blocks": {

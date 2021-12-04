@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "Knap baggrundsfarve"
+        },
+        "header3": {
+          "content": "Knap"
+        },
+        "button_border_radius": {
+          "label": "Knapkantradius",
+          "info": "Krumning af knappens kanter",
+          "option__1": {
+            "label": "Ingen"
+          },
+          "option__2": {
+            "label": "Lille"
+          },
+          "option__3": {
+            "label": "Stor"
+          },
+          "option__4": {
+            "label": "Fuld"
+          }
         }
       },
       "blocks": {

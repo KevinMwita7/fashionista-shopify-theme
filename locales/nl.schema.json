@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "Achtergrondkleur knop"
+        },
+        "header3": {
+          "content": "Knop"
+        },
+        "button_border_radius": {
+          "label": "Knoprandradius",
+          "info": "Kromming van de randen van de knop",
+          "option__1": {
+            "label": "Geen"
+          },
+          "option__2": {
+            "label": "Klein"
+          },
+          "option__3": {
+            "label": "Groot"
+          },
+          "option__4": {
+            "label": "Vol"
+          }
         }
       },
       "blocks": {

@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "Barva pozadí tlačítka"
+        },
+        "header3": {
+          "content": "Knoflík"
+        },
+        "button_border_radius": {
+          "label": "Poloměr ohraničení tlačítka",
+          "info": "Zakřivení okrajů tlačítka",
+          "option__1": {
+            "label": "Žádný"
+          },
+          "option__2": {
+            "label": "Malý"
+          },
+          "option__3": {
+            "label": "Velký"
+          },
+          "option__4": {
+            "label": "Úplný"
+          }
         }
       },
       "blocks": {

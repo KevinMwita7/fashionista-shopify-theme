@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "ボタンの背景色"
+        },
+        "header3": {
+          "content": "ボタン"
+        },
+        "button_border_radius": {
+          "label": "ボタンの境界線の半径",
+          "info": "ボタンの境界線の曲線",
+          "option__1": {
+            "label": "なし"
+          },
+          "option__2": {
+            "label": "小さな"
+          },
+          "option__3": {
+            "label": "大きい"
+          },
+          "option__4": {
+            "label": "満杯"
+          }
         }
       },
       "blocks": {

@@ -774,6 +774,25 @@
         },
         "button_bg_color": {
           "label": "Hintergrundfarbe der Schaltfläche"
+        },
+        "header3": {
+          "content": "Taste"
+        },
+        "button_border_radius": {
+          "label": "Radius der Schaltflächenränder",
+          "info": "Krümmung der Ränder der Schaltfläche",
+          "option__1": {
+            "label": "Keiner"
+          },
+          "option__2": {
+            "label": "Klein"
+          },
+          "option__3": {
+            "label": "Groß"
+          },
+          "option__4": {
+            "label": "Voll"
+          }
         }
       },
       "blocks": {
