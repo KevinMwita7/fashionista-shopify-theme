@@ -896,6 +896,25 @@
         },
         "button_bg_color": {
           "label": "Button background color"
+        },
+        "header3": {
+          "content": "Button"
+        },
+        "button_border_radius": {
+          "label": "Button border radius",
+          "info": "The curveness of the button's borders",
+          "option__1": {
+            "label": "None"
+          },
+          "option__2": {
+            "label": "Small"
+          },
+          "option__3": {
+            "label": "Large"
+          },
+          "option__4": {
+            "label": "Full"
+          }
         }
       },
       "blocks": {
