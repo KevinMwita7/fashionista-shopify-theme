@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Full"
           }
+        },
+        "banner_button_size": {
+          "label": "Knappstorlek",
+          "option__1": {
+            "label": "Små"
+          },
+          "option__2": {
+            "label": "Medium"
+          },
+          "option__3": {
+            "label": "Stor"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Rubrik teckensnitt"
+        },
+        "banner_subheading_font": {
+          "label": "Typsnitt för underrubrik"
+        },
+        "banner_button_font": {
+          "label": "Knapptext teckensnitt"
         }
       },
       "blocks": {

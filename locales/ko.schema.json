@@ -793,6 +793,27 @@
           "option__4": {
             "label": "가득한"
           }
+        },
+        "banner_button_size": {
+          "label": "버튼 크기",
+          "option__1": {
+            "label": "작은"
+          },
+          "option__2": {
+            "label": "중간"
+          },
+          "option__3": {
+            "label": "크기가 큰"
+          }
+        },
+        "banner_heading_font": {
+          "label": "제목 글꼴"
+        },
+        "banner_subheading_font": {
+          "label": "소제목 글꼴"
+        },
+        "banner_button_font": {
+          "label": "버튼 텍스트 글꼴"
         }
       },
       "blocks": {

@@ -789,6 +789,27 @@
           "option__4": {
             "label": "Cheio"
           }
+        },
+        "banner_button_size": {
+          "label": "Tamanho do botão",
+          "option__1": {
+            "label": "Pequena"
+          },
+          "option__2": {
+            "label": "Média"
+          },
+          "option__3": {
+            "label": "Grande"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Fonte Cabeçalho"
+        },
+        "banner_subheading_font": {
+          "label": "Fonte do subtítulo"
+        },
+        "banner_button_font": {
+          "label": "Fonte do texto do botão"
         }
       },
       "blocks": {

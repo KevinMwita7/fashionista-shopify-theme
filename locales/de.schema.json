@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Voll"
           }
+        },
+        "banner_button_size": {
+          "label": "Knopfgröße",
+          "option__1": {
+            "label": "Klein"
+          },
+          "option__2": {
+            "label": "Mittel"
+          },
+          "option__3": {
+            "label": "Groß"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Überschriftsschriftart"
+        },
+        "banner_subheading_font": {
+          "label": "Untertitelschriftart"
+        },
+        "banner_button_font": {
+          "label": "Schriftart für Schaltflächentext"
         }
       },
       "blocks": {

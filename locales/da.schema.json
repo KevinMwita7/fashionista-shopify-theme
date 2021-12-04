@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Fuld"
           }
+        },
+        "banner_button_size": {
+          "label": "Knap størrelse",
+          "option__1": {
+            "label": "Lille"
+          },
+          "option__2": {
+            "label": "Medium"
+          },
+          "option__3": {
+            "label": "Stor"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Overskrift skrifttype"
+        },
+        "banner_subheading_font": {
+          "label": "Skrifttype under overskrift"
+        },
+        "banner_button_font": {
+          "label": "Knap tekst skrifttype"
         }
       },
       "blocks": {

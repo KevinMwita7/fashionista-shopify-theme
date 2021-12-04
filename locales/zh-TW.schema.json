@@ -793,6 +793,27 @@
           "option__4": {
             "label": "滿的"
           }
+        },
+        "banner_button_size": {
+          "label": "按鈕尺寸",
+          "option__1": {
+            "label": "小的"
+          },
+          "option__2": {
+            "label": "中等的"
+          },
+          "option__3": {
+            "label": "大的"
+          }
+        },
+        "banner_heading_font": {
+          "label": "標題字體"
+        },
+        "banner_subheading_font": {
+          "label": "副標題字體"
+        },
+        "banner_button_font": {
+          "label": "按鈕文字字體"
         }
       },
       "blocks": {

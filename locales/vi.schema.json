@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Đầy"
           }
+        },
+        "banner_button_size": {
+          "label": "Kích thước nút",
+          "option__1": {
+            "label": "Nhỏ"
+          },
+          "option__2": {
+            "label": "Trung bình"
+          },
+          "option__3": {
+            "label": "Lớn"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Phông chữ tiêu đề"
+        },
+        "banner_subheading_font": {
+          "label": "Phông chữ tiêu đề phụ"
+        },
+        "banner_button_font": {
+          "label": "Phông chữ văn bản nút"
         }
       },
       "blocks": {

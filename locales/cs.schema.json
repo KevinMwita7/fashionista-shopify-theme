@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Úplný"
           }
+        },
+        "banner_button_size": {
+          "label": "Velikost tlačítka",
+          "option__1": {
+            "label": "Malý"
+          },
+          "option__2": {
+            "label": "Střední"
+          },
+          "option__3": {
+            "label": "Velký"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Písmo nadpisu"
+        },
+        "banner_subheading_font": {
+          "label": "Podnadpisové písmo"
+        },
+        "banner_button_font": {
+          "label": "Písmo textu tlačítka"
         }
       },
       "blocks": {

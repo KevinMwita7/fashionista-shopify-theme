@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Vol"
           }
+        },
+        "banner_button_size": {
+          "label": "Knoopmaat",
+          "option__1": {
+            "label": "Klein"
+          },
+          "option__2": {
+            "label": "Medium"
+          },
+          "option__3": {
+            "label": "Groot"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Koplettertype"
+        },
+        "banner_subheading_font": {
+          "label": "Ondertitel lettertype"
+        },
+        "banner_button_font": {
+          "label": "Lettertype knoptekst"
         }
       },
       "blocks": {

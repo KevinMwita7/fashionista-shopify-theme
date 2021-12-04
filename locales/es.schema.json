@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Llena"
           }
+        },
+        "banner_button_size": {
+          "label": "Tamaño del botón",
+          "option__1": {
+            "label": "Pequeña"
+          },
+          "option__2": {
+            "label": "Medio"
+          },
+          "option__3": {
+            "label": "Grande"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Fuente de encabezado"
+        },
+        "banner_subheading_font": {
+          "label": "Fuente de subtítulo"
+        },
+        "banner_button_font": {
+          "label": "Fuente del texto del botón"
         }
       },
       "blocks": {

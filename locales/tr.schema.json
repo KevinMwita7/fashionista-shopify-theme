@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Tam dolu"
           }
+        },
+        "banner_button_size": {
+          "label": "Düğme boyutu",
+          "option__1": {
+            "label": "Küçük"
+          },
+          "option__2": {
+            "label": "Orta"
+          },
+          "option__3": {
+            "label": "Büyük"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Başlık yazı tipi"
+        },
+        "banner_subheading_font": {
+          "label": "Alt başlık yazı tipi"
+        },
+        "banner_button_font": {
+          "label": "Düğme metni yazı tipi"
         }
       },
       "blocks": {

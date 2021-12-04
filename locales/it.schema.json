@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Completo"
           }
+        },
+        "banner_button_size": {
+          "label": "Dimensione del pulsante",
+          "option__1": {
+            "label": "Piccola"
+          },
+          "option__2": {
+            "label": "Medio"
+          },
+          "option__3": {
+            "label": "Grande"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Carattere intestazione"
+        },
+        "banner_subheading_font": {
+          "label": "Carattere sottotitolo"
+        },
+        "banner_button_font": {
+          "label": "Carattere di testo del pulsante"
         }
       },
       "blocks": {

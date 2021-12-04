@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Full"
           }
+        },
+        "banner_button_size": {
+          "label": "Knappstørrelse",
+          "option__1": {
+            "label": "Liten"
+          },
+          "option__2": {
+            "label": "Medium"
+          },
+          "option__3": {
+            "label": "Stor"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Overskrift font"
+        },
+        "banner_subheading_font": {
+          "label": "Underoverskrift font"
+        },
+        "banner_button_font": {
+          "label": "Knappetekstfont"
         }
       },
       "blocks": {

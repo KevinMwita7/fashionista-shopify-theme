@@ -927,6 +927,15 @@
           "option__3": {
             "label": "Large"
           }
+        },
+        "banner_heading_font": {
+          "label": "Heading font"
+        },
+        "banner_subheading_font": {
+          "label": "Subheading font"
+        },
+        "banner_button_font": {
+          "label": "Button text font"
         }
       },
       "blocks": {

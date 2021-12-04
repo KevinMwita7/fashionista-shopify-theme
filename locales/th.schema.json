@@ -793,6 +793,27 @@
           "option__4": {
             "label": "เต็ม"
           }
+        },
+        "banner_button_size": {
+          "label": "ขนาดปุ่ม",
+          "option__1": {
+            "label": "เล็ก"
+          },
+          "option__2": {
+            "label": "ปานกลาง"
+          },
+          "option__3": {
+            "label": "ใหญ่"
+          }
+        },
+        "banner_heading_font": {
+          "label": "แบบอักษรหัวเรื่อง"
+        },
+        "banner_subheading_font": {
+          "label": "แบบอักษรของหัวเรื่องย่อย"
+        },
+        "banner_button_font": {
+          "label": "แบบอักษรข้อความปุ่ม"
         }
       },
       "blocks": {

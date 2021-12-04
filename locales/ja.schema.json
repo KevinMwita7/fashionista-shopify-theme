@@ -793,6 +793,27 @@
           "option__4": {
             "label": "満杯"
           }
+        },
+        "banner_button_size": {
+          "label": "ボタンのサイズ",
+          "option__1": {
+            "label": "小さな"
+          },
+          "option__2": {
+            "label": "中くらい"
+          },
+          "option__3": {
+            "label": "大きい"
+          }
+        },
+        "banner_heading_font": {
+          "label": "見出しフォント"
+        },
+        "banner_subheading_font": {
+          "label": "小見出しフォント"
+        },
+        "banner_button_font": {
+          "label": "ボタンテキストフォント"
         }
       },
       "blocks": {

@@ -793,6 +793,27 @@
           "option__4": {
             "label": "Koko"
           }
+        },
+        "banner_button_size": {
+          "label": "Painikkeen koko",
+          "option__1": {
+            "label": "Pieni"
+          },
+          "option__2": {
+            "label": "Keskikokoinen"
+          },
+          "option__3": {
+            "label": "Suuri"
+          }
+        },
+        "banner_heading_font": {
+          "label": "Otsikon fontti"
+        },
+        "banner_subheading_font": {
+          "label": "Alaotsikon fontti"
+        },
+        "banner_button_font": {
+          "label": "Painikkeen tekstin fontti"
         }
       },
       "blocks": {
