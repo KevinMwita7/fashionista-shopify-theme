@@ -902,7 +902,7 @@
         },
         "button_border_radius": {
           "label": "Button border radius",
-          "info": "The curveness of the button's borders",
+          "info": "Curveness of the button's borders",
           "option__1": {
             "label": "None"
           },
