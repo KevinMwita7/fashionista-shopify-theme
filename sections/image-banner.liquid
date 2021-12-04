@@ -131,10 +131,7 @@
   }
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
-  }
-  {%- if section.settings.heading_font.system == false -%}
-    {{ section.settings.heading_font | font_face }}
-  {%-endif-%}
+  }  
 {% endstyle %}
 
 {% if section.blocks.size > 0 %}
@@ -177,7 +174,7 @@
             {% endif %}
             <div class="flex container w-full h-full relative items-{{ section.settings.vertical_content_position }} justify-{{ section.settings.horizontal_content_position }}">
                 <div>
-                    <h4 class="text-{%- if section.settings.heading_font_size != 1 -%}{{ section.settings.heading_font_size }}{%- endif -%}xl mb-3.5" style="color: {{ section.settings.heading_color }}; font-weight: {{ section.settings.heading_font_weight }}; font-family: {{ section.settings.heading_font.family }}  {{ section.settings.heading_font.fallback_families }};">
+                    <h4 class="text-{%- if section.settings.heading_font_size != 1 -%}{{ section.settings.heading_font_size }}{%- endif -%}xl mb-3.5" style="color: {{ section.settings.heading_color }}; font-weight: {{ section.settings.heading_font_weight }};">
                         <span>{{ block.settings.heading }}</span>
                     </h4>
                     <h2 class="text-{%- if section.settings.subheading_font_size != 1 -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-5 lg:leading-tight xl:leading-tight 2xl:leading-tight" style="color: {{ section.settings.subheading_color }}; font-weight: {{ section.settings.subheading_font_weight }};">
@@ -315,12 +312,6 @@
       "type": "color",
       "label": "t:sections.image-banner.settings.button_text_color.label",
       "default": "#000"
-    },
-    {
-      "id": "heading_font",
-      "type": "font_picker",
-      "label": "Heading font",
-      "default": "serif"
     },
     {
       "id": "heading_font_weight",
