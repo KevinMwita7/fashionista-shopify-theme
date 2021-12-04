@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Grubość czcionki tekstu przycisku",
           "info": "Pogrubienie tekstu przycisku"
+        },
+        "button_border_color": {
+          "label": "Kolor obramowania przycisku"
+        },
+        "button_bg_color": {
+          "label": "Kolor tła przycisku"
         }
       },
       "blocks": {

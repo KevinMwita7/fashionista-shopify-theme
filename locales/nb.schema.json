@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Skriftvekt for knapptekst",
           "info": "Fetheten til knappeteksten"
+        },
+        "button_border_color": {
+          "label": "Kantfarge på knapp"
+        },
+        "button_bg_color": {
+          "label": "Bakgrunnsfarge på knapp"
         }
       },
       "blocks": {

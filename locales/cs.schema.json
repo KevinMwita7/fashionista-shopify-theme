@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Tloušťka písma textu tlačítka",
           "info": "Tučné písmo textu tlačítka"
+        },
+        "button_border_color": {
+          "label": "Barva okraje tlačítka"
+        },
+        "button_bg_color": {
+          "label": "Barva pozadí tlačítka"
         }
       },
       "blocks": {

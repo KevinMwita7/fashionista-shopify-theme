@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Độ đậm phông chữ của văn bản nút",
           "info": "Độ đậm của văn bản nút"
+        },
+        "button_border_color": {
+          "label": "Màu viền nút"
+        },
+        "button_bg_color": {
+          "label": "Màu nền của nút"
         }
       },
       "blocks": {

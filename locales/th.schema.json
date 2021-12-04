@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "น้ำหนักแบบอักษรของข้อความปุ่ม",
           "info": "ตัวหนาของข้อความปุ่ม"
+        },
+        "button_border_color": {
+          "label": "สีเส้นขอบของปุ่ม"
+        },
+        "button_bg_color": {
+          "label": "สีพื้นหลังของปุ่ม"
         }
       },
       "blocks": {

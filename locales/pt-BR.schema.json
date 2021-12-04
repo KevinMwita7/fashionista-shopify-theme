@@ -764,6 +764,12 @@
         "button_text_font_weight": {
           "label": "Peso da fonte do texto do botão",
           "info": "A ousadia do texto do botão"
+        },
+        "button_border_color": {
+          "label": "Cor da borda do botão"
+        },
+        "button_bg_color": {
+          "label": "Cor de fundo do botão"
         }
       },
       "blocks": {

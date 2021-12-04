@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "버튼 텍스트 글꼴 두께",
           "info": "버튼 텍스트의 굵기"
+        },
+        "button_border_color": {
+          "label": "버튼 테두리 색상"
+        },
+        "button_bg_color": {
+          "label": "버튼 배경색"
         }
       },
       "blocks": {

@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Knap tekst skrifttype vægt",
           "info": "Knappens fedhed"
+        },
+        "button_border_color": {
+          "label": "Knap kant farve"
+        },
+        "button_bg_color": {
+          "label": "Knap baggrundsfarve"
         }
       },
       "blocks": {

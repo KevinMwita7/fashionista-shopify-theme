@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "ボタンのテキストフォントの太さ",
           "info": "ボタンテキストの大胆さ"
+        },
+        "button_border_color": {
+          "label": "ボタンのボーダーカラー"
+        },
+        "button_bg_color": {
+          "label": "ボタンの背景色"
         }
       },
       "blocks": {

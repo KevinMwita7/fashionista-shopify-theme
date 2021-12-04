@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Lettergewicht van knoptekst",
           "info": "De vettigheid van de knoptekst"
+        },
+        "button_border_color": {
+          "label": "Kleur knoprand"
+        },
+        "button_bg_color": {
+          "label": "Achtergrondkleur knop"
         }
       },
       "blocks": {

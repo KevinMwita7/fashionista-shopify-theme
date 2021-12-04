@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Schriftstärke des Schaltflächentextes",
           "info": "Die Kühnheit des Schaltflächentextes"
+        },
+        "button_border_color": {
+          "label": "Farbe des Knopfrahmens"
+        },
+        "button_bg_color": {
+          "label": "Hintergrundfarbe der Schaltfläche"
         }
       },
       "blocks": {

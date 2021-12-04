@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Painikkeen tekstin fontin paino",
           "info": "Painikkeen tekstin rohkeus"
+        },
+        "button_border_color": {
+          "label": "Painikkeen reunan väri"
+        },
+        "button_bg_color": {
+          "label": "Painikkeen taustaväri"
         }
       },
       "blocks": {

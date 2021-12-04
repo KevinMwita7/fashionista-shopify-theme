@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Knapp text teckensnitt vikt",
           "info": "Knapptextens fethet"
+        },
+        "button_border_color": {
+          "label": "Kantfärg på knapp"
+        },
+        "button_bg_color": {
+          "label": "Knapp bakgrundsfärg"
         }
       },
       "blocks": {

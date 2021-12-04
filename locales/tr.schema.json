@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Düğme metni yazı tipi ağırlığı",
           "info": "Düğme metninin cesurluğu"
+        },
+        "button_border_color": {
+          "label": "Düğme kenarlık rengi"
+        },
+        "button_bg_color": {
+          "label": "Düğme arka plan rengi"
         }
       },
       "blocks": {

@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Peso del carattere del testo del pulsante",
           "info": "L'audacia del testo del pulsante"
+        },
+        "button_border_color": {
+          "label": "Colore bordo pulsante"
+        },
+        "button_bg_color": {
+          "label": "Colore di sfondo del pulsante"
         }
       },
       "blocks": {

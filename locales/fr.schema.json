@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "Poids de la police du texte du bouton",
           "info": "L'audace du texte du bouton"
+        },
+        "button_border_color": {
+          "label": "Couleur de la bordure du bouton"
+        },
+        "button_bg_color": {
+          "label": "Couleur d'arrière-plan du bouton"
         }
       },
       "blocks": {

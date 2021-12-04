@@ -768,6 +768,12 @@
         "button_text_font_weight": {
           "label": "按鈕文字字體粗細",
           "info": "按鈕文字的粗細"
+        },
+        "button_border_color": {
+          "label": "按鈕邊框顏色"
+        },
+        "button_bg_color": {
+          "label": "按鈕背景色"
         }
       },
       "blocks": {

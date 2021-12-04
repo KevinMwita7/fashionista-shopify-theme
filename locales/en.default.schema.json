@@ -890,6 +890,12 @@
         "button_text_font_weight": {
           "label": "Button text font weight",
           "info": "The boldness of the button text"
+        },
+        "button_border_color": {
+          "label": "Button border color"
+        },
+        "button_bg_color": {
+          "label": "Button background color"
         }
       },
       "blocks": {
