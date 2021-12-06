@@ -107,6 +107,14 @@
   assign heading_font_bold = section.settings.banner_heading_font | font_modify: 'weight', 'bold'
   assign heading_font_italic = section.settings.banner_heading_font | font_modify: 'style', 'italic'
   assign heading_font_bold_italic = heading_font_bold | font_modify: 'style', 'italic'
+  
+  assign subheading_font_bold = section.settings.banner_subheading_font | font_modify: 'weight', 'bold'
+  assign subheading_font_italic = section.settings.banner_subheading_font | font_modify: 'style', 'italic'
+  assign subheading_font_bold_italic = subheading_font_bold | font_modify: 'style', 'italic'
+  
+  assign button_font_bold = section.settings.banner_button_font | font_modify: 'weight', 'bold'
+  assign button_font_italic = section.settings.banner_button_font | font_modify: 'style', 'italic'
+  assign button_font_bold_italic = button_font_bold | font_modify: 'style', 'italic'
 %}
 
 {% style %}
@@ -140,18 +148,43 @@
   }
   
   {{ section.settings.banner_heading_font | font_face }}
-
   {{ heading_font_bold | font_face: font_display: 'swap' }}
   {{ heading_font_italic | font_face: font_display: 'swap' }}
   {{ heading_font_bold_italic | font_face: font_display: 'swap' }}
 
+  {{ section.settings.banner_subheading_font | font_face }}
+  {{ subheading_font_bold | font_face: font_display: 'swap' }}
+  {{ subheading_font_italic | font_face: font_display: 'swap' }}
+  {{ subheading_font_bold_italic | font_face: font_display: 'swap' }}
+
+  {{ section.settings.banner_button_font | font_face }}
+  {{ button_font_bold | font_face: font_display: 'swap' }}
+  {{ button_font_italic | font_face: font_display: 'swap' }}
+  {{ button_font_bold_italic | font_face: font_display: 'swap' }}
+
   .banner_heading {
     font-family: {{ section.settings.banner_heading_font.family }}, {{ section.settings.banner_heading_font.fallback_families }}
+  }
+
+  .banner_subheading {
+    font-family: {{ section.settings.banner_subheading_font.family }}, {{ section.settings.banner_subheading_font.fallback_families }}
+  }
+
+  .banner_button {
+    font-family: {{ section.settings.banner_button_font.family }}, {{ section.settings.banner_button_font.fallback_families }}
   }
 {% endstyle %}
 
 {%- unless section.settings.banner_heading_font.system? -%}
   <link rel="preload" as="font" href="{{ section.settings.banner_heading_font | font_url }}" type="font/woff2" crossorigin>
+{%- endunless -%}
+
+{%- unless section.settings.banner_subheading_font.system? -%}
+  <link rel="preload" as="font" href="{{ section.settings.banner_subheading_font | font_url }}" type="font/woff2" crossorigin>
+{%- endunless -%}
+
+{%- unless section.settings.banner_button_font.system? -%}
+  <link rel="preload" as="font" href="{{ section.settings.banner_button_font | font_url }}" type="font/woff2" crossorigin>
 {%- endunless -%}
 
 {% if section.blocks.size > 0 %}
@@ -197,10 +230,10 @@
                     <h4 class="banner_heading text-{%- if section.settings.heading_font_size != 1 -%}{{ section.settings.heading_font_size }}{%- endif -%}xl mb-3.5" style="color: {{ section.settings.heading_color }}; font-weight: {{ section.settings.heading_font_weight }};">
                         <span>{{ block.settings.heading }}</span>
                     </h4>
-                    <h2 class="text-{%- if section.settings.subheading_font_size != 1 -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-5 lg:leading-tight xl:leading-tight 2xl:leading-tight" style="color: {{ section.settings.subheading_color }}; font-weight: {{ section.settings.subheading_font_weight }};">
+                    <h2 class="banner_subheading text-{%- if section.settings.subheading_font_size != 1 -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-5 lg:leading-tight xl:leading-tight 2xl:leading-tight" style="color: {{ section.settings.subheading_color }}; font-weight: {{ section.settings.subheading_font_weight }};">
                         <span>{{ block.settings.sub_heading }}</span>
                     </h2>
-                    <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="inline-block border rounded-{{ section.settings.button_border_radius }} py-2.5 px-5 h3" style="font-weight: {{ section.settings.button_text_font_weight }}; color: {{ section.settings.button_text_color }}; border-color: {{ section.settings.button_border_color }}; {%- unless section.settings.button_bg_color == blank -%} background-color: {{ section.settings.button_bg_color }}; {%- endunless -%} padding: {{ section.settings.banner_button_size }};">
+                    <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="inline-block border rounded-{{ section.settings.button_border_radius }} py-2.5 px-5 h3 banner_button" style="font-weight: {{ section.settings.button_text_font_weight }}; color: {{ section.settings.button_text_color }}; border-color: {{ section.settings.button_border_color }}; {%- unless section.settings.button_bg_color == blank -%} background-color: {{ section.settings.button_bg_color }}; {%- endunless -%} padding: {{ section.settings.banner_button_size }};">
                         {{ block.settings.button_text }}
                     </a>
                 </div>
@@ -366,6 +399,18 @@
     {
       "id": "banner_heading_font",
       "label": "t:sections.image-banner.settings.banner_heading_font.label",
+      "type": "font_picker",
+      "default": "rubik_n4"
+    },
+    {
+      "id": "banner_subheading_font",
+      "label": "t:sections.image-banner.settings.banner_subheading_font.label",
+      "type": "font_picker",
+      "default": "rubik_n4"
+    },
+    {
+      "id": "banner_btn_font",
+      "label": "t:sections.image-banner.settings.banner_button_font.label",
       "type": "font_picker",
       "default": "rubik_n4"
     },
