@@ -143,7 +143,8 @@
       from {opacity: .4}
       to {opacity: 1}
   }
-  #Banner-{{ section.id }}::after {
+
+  .banner {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
   
@@ -188,7 +189,7 @@
 {%- endunless -%}
 
 {% if section.blocks.size > 0 %}
-  <div id="Banner-{{ section.id }}" class="md:relative">
+  <div id="Banner-{{ section.id }}" class="md:relative banner">
     {% for block in section.blocks %}
         <div class="relative banner-slide fade md:h-screen" {{ block.shopify_attributes }}>
           <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
