@@ -700,19 +700,6 @@
         "header": {
           "content": "Typografie"
         },
-        "image_height": {
-          "label": "Hoogte van de banner",
-          "options__1": {
-            "label": "Klein"
-          },
-          "options__2": {
-            "label": "Gemiddeld"
-          },
-          "options__3": {
-            "label": "Groot"
-          },
-          "info": "Gebruik voor de beste resultaten een afbeelding met een beeldverhouding van 3:2. [Meer informatie](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
-        },
         "heading_font_size": {
           "label": "Lettergrootte kop",
           "unit": "xl"

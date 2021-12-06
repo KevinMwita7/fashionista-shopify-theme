@@ -700,19 +700,6 @@
         "header": {
           "content": "Typografia"
         },
-        "image_height": {
-          "label": "Bannerin korkeus",
-          "options__1": {
-            "label": "Pieni"
-          },
-          "options__2": {
-            "label": "Keskisuuri"
-          },
-          "options__3": {
-            "label": "Suuri"
-          },
-          "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 3:2. [Lisätietoja](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-        },
         "heading_font_size": {
           "label": "Otsikon fonttikoko",
           "unit": "xl"

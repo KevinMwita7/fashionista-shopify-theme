@@ -700,19 +700,6 @@
         "header": {
           "content": "タイポグラフィ"
         },
-        "image_height": {
-          "label": "バナーの高さ",
-          "options__1": {
-            "label": "小"
-          },
-          "options__2": {
-            "label": "中"
-          },
-          "options__3": {
-            "label": "大"
-          },
-          "info": "画像のアスペクト比が3:2のものを使用すると最適です。[詳しくはこちら](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-        },
         "heading_font_size": {
           "label": "見出しのフォントサイズ",
           "unit": "xl"

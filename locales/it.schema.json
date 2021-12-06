@@ -700,19 +700,6 @@
         "header": {
           "content": "Tipografia"
         },
-        "image_height": {
-          "label": "Altezza banner",
-          "options__1": {
-            "label": "Piccola"
-          },
-          "options__2": {
-            "label": "Media"
-          },
-          "options__3": {
-            "label": "Grande"
-          },
-          "info": "Per un risultato ottimale, utilizza un'immagine con proporzioni 3:2. [Maggiori informazioni](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-        },
         "heading_font_size": {
           "label": "Dimensione del carattere dell'intestazione",
           "unit": "xl"

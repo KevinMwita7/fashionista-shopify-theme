@@ -700,19 +700,6 @@
         "header": {
           "content": "Typografie"
         },
-        "image_height": {
-          "label": "Výška banneru",
-          "options__1": {
-            "label": "Malá"
-          },
-          "options__2": {
-            "label": "Střední"
-          },
-          "options__3": {
-            "label": "Velká"
-          },
-          "info": "Nejlepších výsledků dosáhnete použitím obrázku s poměrem stran 3:2. [Zjistit více](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-        },
         "heading_font_size": {
           "label": "Velikost písma nadpisu",
           "unit": "xl"

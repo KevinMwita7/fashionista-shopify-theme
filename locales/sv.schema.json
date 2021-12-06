@@ -700,19 +700,6 @@
         "header": {
           "content": "Typografi"
         },
-        "image_height": {
-          "label": "Banner-höjd",
-          "options__1": {
-            "label": "Liten"
-          },
-          "options__2": {
-            "label": "Medel"
-          },
-          "options__3": {
-            "label": "Stor"
-          },
-          "info": "Använd en bild med bildformat 3:2, för bästa resultat. [Mer information](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
-        },
         "heading_font_size": {
           "label": "Rubrikens teckenstorlek",
           "unit": "xl"
