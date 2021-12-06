@@ -103,6 +103,12 @@
 
 {{ 'main.5ddd1122.chunk.css' | asset_url | stylesheet_tag }}
 
+{%- liquid
+  assign heading_font_bold = section.settings.banner_heading_font | font_modify: 'weight', 'bold'
+  assign heading_font_italic = section.settings.banner_heading_font | font_modify: 'style', 'italic'
+  assign heading_font_bold_italic = heading_font_bold | font_modify: 'style', 'italic'
+%}
+
 {% style %}
   .dot {
       cursor: pointer;
@@ -134,6 +140,10 @@
   }
   
   {{ section.settings.banner_heading_font | font_face }}
+
+  {{ heading_font_bold | font_face: font_display: 'swap' }}
+  {{ heading_font_italic | font_face: font_display: 'swap' }}
+  {{ heading_font_bold_italic | font_face: font_display: 'swap' }}
 
   .banner_heading {
     font-family: {{ section.settings.banner_heading_font.family }}, {{ section.settings.banner_heading_font.fallback_families }}
@@ -292,7 +302,7 @@
       "max": 9,
       "step": 1,
       "unit": "t:sections.image-banner.settings.heading_font_size.unit",
-      "default": 2,
+      "default": 8,
       "label": "t:sections.image-banner.settings.heading_font_size.label"
     },
     {
@@ -302,7 +312,7 @@
       "max": 9,
       "step": 1,
       "unit": "t:sections.image-banner.settings.subheading_font_size.unit",
-      "default": 8,
+      "default": 4,
       "label": "t:sections.image-banner.settings.subheading_font_size.label"
     },
     {
@@ -357,7 +367,7 @@
       "id": "banner_heading_font",
       "label": "t:sections.image-banner.settings.banner_heading_font.label",
       "type": "font_picker",
-      "default": "serif"
+      "default": "rubik"
     },
     {
       "type": "header",
@@ -417,7 +427,7 @@
         }
       ],
       "label": "t:sections.image-banner.settings.banner_button_size.label",
-      "default": "1.2rem 1.8rem"
+      "default": "2.443m 3.6rem"
     },
     {
       "type": "header",
