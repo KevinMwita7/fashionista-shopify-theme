@@ -141,7 +141,7 @@
 {% endstyle %}
 
 {%- unless settings.banner_heading_font.system? -%}
-  <link rel="preload" as="font" href="{{ settings.banner_heading_font | font_url }}" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" href="{{ section.settings.banner_heading_font | font_url }}" type="font/woff2" crossorigin>
 {%- endunless -%}
 
 {% if section.blocks.size > 0 %}
