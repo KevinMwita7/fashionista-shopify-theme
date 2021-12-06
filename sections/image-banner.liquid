@@ -144,9 +144,11 @@
       to {opacity: 1}
   }
 
+  {% unless section.settings.image_overlay_opacity == 0 %}
   .banner {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+{% endunless %}
   
   {{ section.settings.banner_heading_font | font_face }}
   {{ heading_font_bold | font_face: font_display: 'swap' }}
