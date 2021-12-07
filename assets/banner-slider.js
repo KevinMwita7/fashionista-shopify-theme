@@ -6,7 +6,9 @@ function setActiveDot(currentSlide) {
     for (i = 0; i < dots.length; i++) {
       dots[i].classList.remove("dot-active");
     }
-    dots[currentSlide].classList.add("dot-active");
+    if(dots.length) {
+      dots[currentSlide].classList.add("dot-active");
+    }
 }
 
 // Banner slideshow
