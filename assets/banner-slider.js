@@ -28,4 +28,10 @@ function LiveRegion( Splide ) {
 document.addEventListener( 'DOMContentLoaded', function() {
   var splide = new Splide( '.splide');
   splide.mount({ LiveRegion });
-} );
+});
+
+document.addEventListener( 'shopify:section:load', function() {
+  var splide = new Splide( '.splide');
+  splide.mount({ LiveRegion });
+  console.log("reloaded");
+});
