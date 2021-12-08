@@ -7,9 +7,9 @@
           "type": "slide",
           "settings": {
             "large_image": "shopify:\/\/shop_images\/dgl17ayp2.jpg",
-            "heading": "Slideshow heading",
-            "sub_heading": "Slideshow sub-heading",
-            "button_text": "Button Text",
+            "heading": "New arrivals",
+            "sub_heading": "Summer collection",
+            "button_text": "Shop Now",
             "button_link": "shopify:\/\/collections\/all"
           }
         },
