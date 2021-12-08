@@ -18,7 +18,6 @@ var timeoutId;
 showSlides();
 
 function showSlides(event) {
-  console.log(this.play_banner_slides);
   var i;
   var slides = document.getElementsByClassName("banner-slide");
   for (i = 0; i < slides.length; i++) {
@@ -47,5 +46,6 @@ for(var i = 0; i < dots.length; ++i) {
 if(Shopify.designMode) {
   document.addEventListener("shopify:section:load", function(event) {
     slideIndex = 0;
+    console.log(timeoutId);
   });
 }
