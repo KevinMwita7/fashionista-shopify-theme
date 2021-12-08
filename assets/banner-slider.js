@@ -48,5 +48,6 @@ for(var i = 0; i < dots.length; ++i) {
 if(Shopify.designMode) {
   document.addEventListener("shopify:section:load", function(event) {
     slideIndex = 0;
+    console.log(`play banner slides: ${this.play_banner_slides}`);
   });
 }
