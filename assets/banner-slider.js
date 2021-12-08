@@ -1,6 +1,8 @@
 // Slider dots
 var dots = document.getElementsByClassName("dot");
 
+console.log("playBannerSlides is: " + this.play_banner_slides);
+
 function setActiveDot(currentSlide) {
     // Remove active class from all dots and set on current one
     for (i = 0; i < dots.length; i++) {
