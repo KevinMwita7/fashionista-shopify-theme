@@ -30,8 +30,13 @@ document.addEventListener( 'DOMContentLoaded', function() {
   splide.mount({ LiveRegion });
 });
 
-document.addEventListener( 'shopify:section:load', function() {
-  var splide = new Splide( '.splide');
-  splide.mount({ LiveRegion });
-  console.log("reloaded");
-});
+if (Shopify.designMode) {
+  document.addEventListener( 'shopify:section:load', function() {
+    var splide = new Splide( '.splide');
+    splide.mount({ LiveRegion });
+  });
+
+  document.addEventListener( 'shopify:block:select', function(blockId, sectionId, load) {
+    console.log("reloaded: " + load);
+  });
+}
