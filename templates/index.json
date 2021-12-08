@@ -12,18 +12,28 @@
             "button_text": "Button Text",
             "button_link": "shopify:\/\/collections\/all"
           }
+        },
+        "5223dcdd-687e-434e-8011-08c95b9936bc": {
+          "type": "slide",
+          "settings": {
+            "heading": "Slideshow heading",
+            "sub_heading": "Slideshow sub-heading",
+            "button_text": "Button Text",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
-        "163756544668aa414f-0"
+        "163756544668aa414f-0",
+        "5223dcdd-687e-434e-8011-08c95b9936bc"
       ],
       "settings": {
         "image_overlay_opacity": 0,
         "heading_font_size": 8,
         "subheading_font_size": 4,
-        "heading_color": "#000",
-        "subheading_color": "#000",
-        "button_text_color": "#000",
+        "heading_color": "#000000",
+        "subheading_color": "#000000",
+        "button_text_color": "#000000",
         "heading_font_weight": 400,
         "subheading_font_weight": 400,
         "button_text_font_weight": 400,
@@ -31,7 +41,7 @@
         "banner_subheading_font": "rubik_n4",
         "banner_button_font": "rubik_n4",
         "button_bg_color": "",
-        "button_border_color": "#000",
+        "button_border_color": "#000000",
         "button_border_radius": "none",
         "banner_button_size": "2.4rem 3.6rem",
         "vertical_content_position": "center",
