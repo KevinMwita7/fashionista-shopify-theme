@@ -14,6 +14,7 @@ function setActiveDot(currentSlide) {
 // Banner slideshow
 var slideIndex = 0;
 var timeoutId;
+console.log(this.play_banner_slides);
 
 showSlides();
 
