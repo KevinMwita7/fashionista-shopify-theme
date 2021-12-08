@@ -179,7 +179,7 @@
 
 {% if section.blocks.size > 0 %}
   <div id="Banner-{{ section.id }}" class="md:relative banner">
-    <div class="splide" data-splide='{"type": "loop", "autoplay": {{ section.settings.autoplay_banner_slides }}, "pagination": true}'>
+    <div class="splide" data-splide='{"type": "loop", "autoplay": {{ section.settings.autoplay_banner_slides }}, "pagination": false}'>
       <div class="splide__track">
         <div class="splide__list">
           {% for block in section.blocks %}
