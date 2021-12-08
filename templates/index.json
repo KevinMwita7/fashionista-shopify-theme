@@ -16,6 +16,7 @@
         "5223dcdd-687e-434e-8011-08c95b9936bc": {
           "type": "slide",
           "settings": {
+            "large_image": "shopify:\/\/shop_images\/84758nne2.jpg",
             "heading": "Slideshow heading",
             "sub_heading": "Slideshow sub-heading",
             "button_text": "Button Text",
