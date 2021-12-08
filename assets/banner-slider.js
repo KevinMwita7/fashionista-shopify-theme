@@ -15,6 +15,8 @@ function setActiveDot(currentSlide) {
 var slideIndex = 0;
 var timeoutId;
 
+showSlides();
+
 function showSlides(event) {
   var i;
   var slides = document.getElementsByClassName("banner-slide");
