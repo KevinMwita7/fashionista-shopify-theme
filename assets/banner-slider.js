@@ -1,51 +1,31 @@
-// Slider dots
-var dots = document.getElementsByClassName("dot");
+function LiveRegion( Splide ) {
+  let liveRegion;
 
-function setActiveDot(currentSlide) {
-    // Remove active class from all dots and set on current one
-    for (i = 0; i < dots.length; i++) {
-      dots[i].classList.remove("dot-active");
-    }
-    if(dots.length) {
-      dots[currentSlide].classList.add("dot-active");
-    }
-}
+  function mount() {
+    liveRegion = document.createElement( 'div' );
+    liveRegion.setAttribute( 'aria-live', 'polite' );
+    liveRegion.setAttribute( 'aria-atomic', 'true' );
+    liveRegion.classList.add( 'visually-hidden' );
 
-// Banner slideshow
-var slideIndex = 0;
-var timeoutId;
-
-showSlides();
-
-function showSlides(event) {
-  var i;
-  var slides = document.getElementsByClassName("banner-slide");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    Splide.root.appendChild( liveRegion );
+    Splide.on( 'moved', onMoved );
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  var currentSlide = slideIndex - 1;
-  slides[currentSlide].style.display = "block";
-  setActiveDot(currentSlide);
-  if(this.play_banner_slides) {
-    timeoutId = setTimeout(showSlides, 5000);
+
+  function onMoved() {
+    liveRegion.textContent = `Slide ${ Splide.index + 1 } of ${ Splide.length }`;
+  }
+
+  function destroy() {
+    Splide.root.removeChild( liveRegion );
+  }
+
+  return {
+    mount,
+    destroy,
   }
 }
 
-for(var i = 0; i < dots.length; ++i) {
-  dots[i].addEventListener('click', function(event) {
-    var idx = Number(event.target.dataset.index);
-    clearTimeout(timeoutId);
-    setActiveDot(idx);
-    slideIndex = idx;
-    showSlides();
-  })
-}
-
-if(Shopify.designMode) {
-  document.addEventListener("shopify:section:load", function(event) {
-    slideIndex = 0;
-    console.log(timeoutId);
-  });
-}
+document.addEventListener( 'DOMContentLoaded', function() {
+  var splide = new Splide( '.splide');
+  splide.mount({ LiveRegion });
+} );

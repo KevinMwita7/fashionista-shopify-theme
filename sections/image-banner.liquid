@@ -102,6 +102,7 @@
 {% endcomment %}
 
 {{ 'main.5ddd1122.chunk.css' | asset_url | stylesheet_tag }}
+{{ 'splide.min.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign heading_font_bold = section.settings.banner_heading_font | font_modify: 'weight', 'bold'
@@ -118,30 +119,14 @@
 %}
 
 {% style %}
-  .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      background-color: #A9A9A9;
-      border-radius: 50%;
-      transition: background-color 0.6s ease;
-  }
-  .dot-active, .dot:hover {
-      background-color: #000;
-  }
-  .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
-      animation-name: fade;
-      animation-duration: 1.5s;
-  }
-  @-webkit-keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
-  }
-  @keyframes fade {
-      from {opacity: .4}
-      to {opacity: 1}
+  .visually-hidden {
+    border: 0;clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
 
   .overlay {
@@ -194,116 +179,107 @@
 
 {% if section.blocks.size > 0 %}
   <div id="Banner-{{ section.id }}" class="md:relative banner">
-    {% for block in section.blocks %}
-        <div class="relative banner-slide fade md:h-screen" {{ block.shopify_attributes }}>
-          <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
-            {% if block.settings.large_image == blank and block.settings.small_image == blank %}
-              <div class="absolute w-full pointer-events-none -z-1 h-full object-cover placeholder">
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              </div>
-            {% else %}
-              <img
-              srcset="{%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 180 -%}{{ block.settings.large_image | img_url: '180x' }} 180w 80h,{% endif -%}{%- elsif block.settings.small_image.width >= 180 -%}{{ block.settings.small_image | img_url: '180x' }} 180w 80h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 360 -%}{{ block.settings.large_image | img_url: '360x' }} 360w 159h,{% endif -%}{%- elsif block.settings.small_image.width >= 360 -%}{{ block.settings.small_image | img_url: '360x' }} 360w 159h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 540 -%}{{ block.settings.large_image | img_url: '540x' }} 540w 239h,{% endif -%}{%- elsif block.settings.small_image.width >= 540 -%}{{ block.settings.small_image | img_url: '540x' }} 540w 239h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 720 -%}{{ block.settings.large_image | img_url: '720x' }} 720w 319h,{% endif -%}{%- elsif block.settings.small_image.width >= 720 -%}{{ block.settings.small_image | img_url: '720x' }} 720w 319h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 900 -%}{{ block.settings.large_image | img_url: '900x' }} 900w 398h,{% endif -%}{%- elsif block.settings.small_image.width >= 900 -%}{{ block.settings.small_image | img_url: '900x' }} 900w 398h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 1080 -%}{{ block.settings.large_image | img_url: '1080x' }} 1080w 478h,{% endif -%}{%- elsif block.settings.small_image.width >= 1080 -%}{{ block.settings.small_image | img_url: '1080x' }} 1080w 478h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 1296 -%}{{ block.settings.large_image | img_url: '1296x' }} 1296w 574h,{% endif -%}{%- elsif block.settings.small_image.width >= 1296 -%}{{ block.settings.small_image | img_url: '1296x' }} 1296w 574h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 1512 -%}{{ block.settings.large_image | img_url: '1512x' }} 1512w 669h,{% endif -%}{%- elsif block.settings.small_image.width >= 1512 -%}{{ block.settings.small_image | img_url: '1512x' }} 1512w 669h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 1728 -%}{{ block.settings.large_image | img_url: '1728x' }} 1728w 765h,{% endif -%}{%- elsif block.settings.small_image.width >= 1728 -%}{{ block.settings.small_image | img_url: '1728x' }} 1728w 765h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 1950 -%}{{ block.settings.large_image | img_url: '1950x' }} 1950w 863h,{% endif -%}{%- elsif block.settings.small_image.width >= 1950 -%}{{ block.settings.small_image | img_url: '1950x' }} 1950w 863h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 2100 -%}{{ block.settings.large_image | img_url: '2100x' }} 2100w 930h,{% endif -%}{%- elsif block.settings.small_image.width >= 2100 -%}{{ block.settings.small_image | img_url: '2100x' }} 2100w 930h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 2260 -%}{{ block.settings.large_image | img_url: '2260x' }} 2260w 1001h,{% endif -%}{%- elsif block.settings.small_image.width >= 2260 -%}{{ block.settings.small_image | img_url: '2260x' }} 2260w 1001h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 2450 -%}{{ block.settings.large_image | img_url: '2450x' }} 2450w 1085h,{% endif -%}{%- elsif block.settings.small_image.width >= 2450 -%}{{ block.settings.small_image | img_url: '2450x' }} 2450w 1085h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 2700 -%}{{ block.settings.large_image | img_url: '2700x' }} 2700w 1195h,{% endif -%}{%- elsif block.settings.small_image.width >= 2700 -%}{{ block.settings.small_image | img_url: '2700x' }} 2700w 1195h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 3000 -%}{{ block.settings.large_image | img_url: '3000x' }} 3000w 1328h,{% endif -%}{%- elsif block.settings.small_image.width >= 3000 -%}{{ block.settings.small_image | img_url: '3000x' }} 3000w 1328h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 3350 -%}{{ block.settings.large_image | img_url: '3350x' }} 3350w 1483h,{% endif -%}{%- elsif block.settings.small_image.width >= 3350 -%}{{ block.settings.small_image | img_url: '3350x' }} 3350w 1483h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 3750 -%}{{ block.settings.large_image | img_url: '3750x' }} 3750w 1660h,{% endif -%}{%- elsif block.settings.small_image.width >= 3750 -%}{{ block.settings.small_image | img_url: '3750x' }} 3750w 1660h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 3840 -%}{{ block.settings.large_image | img_url: '3840x' }} 3840w 1700h,{% endif -%}{%- elsif block.settings.small_image.width >= 3840 -%}{{ block.settings.small_image | img_url: '3840x' }} 3840w 1700h,{%- endif -%}
-              {%- if block.settings.large_image != blank -%}{{ block.settings.large_image | img_url: 'master' }} {{ block.settings.large_image.width }}w {{ block.settings.large_image.width }}h {% else %} {{ block.settings.small_image | img_url: 'master' }} {{ block.settings.small_image.width }}w {{ block.settings.small_image.width }}h{%- endif -%}"
-              src="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image | img_url: '1512x' }}{%- else -%}{{ block.settings.small_image | img_url: '1512x' }}{%- endif -%}"
-              alt="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.alt | escape }}{%- else -%}{{ block.settings.small_image.alt | escape }}{%- endif -%}"
-              class="absolute w-full pointer-events-none -z-1 h-full object-cover"
-              loading="lazy"
-              width="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.width }}{%- else -%}{{ block.settings.small_image.width }}{%- endif -%}"
-              height="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.height }}{%- else -%}{{ block.settings.small_image.height }}{%- endif -%}"
-              >
-            {% endif %}
-            <div class="overlay absolute h-full w-full"><p>&nbsp;</p></div>
-            <div class="flex container w-full h-full relative items-{{ section.settings.vertical_content_position }} justify-{{ section.settings.horizontal_content_position }}">
-                <div class="{%if section.settings.horizontal_content_position == 'start' %}ml-40 {%endif%} {%if section.settings.horizontal_content_position == 'end' %}mr-40 text-right {% endif %}{% if section.settings.vertical_content_position == 'start' %}mt-40 {% endif %}{% if section.settings.vertical_content_position == 'end' %}mb-40{% endif %}">
-                    <h1 class="banner_heading text-{%- if section.settings.heading_font_size != 1 -%}{{ section.settings.heading_font_size }}{%- endif -%}xl mb-3.5" style="color: {{ section.settings.heading_color }}; font-weight: {{ section.settings.heading_font_weight }};">
-                        <span>{{ block.settings.heading }}</span>
-                    </h1>
-                    <h2 class="my-14 banner_subheading text-{%- if section.settings.subheading_font_size != 1 -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-5 lg:leading-tight xl:leading-tight 2xl:leading-tight" style="color: {{ section.settings.subheading_color }}; font-weight: {{ section.settings.subheading_font_weight }};">
-                        <span>{{ block.settings.sub_heading }}</span>
-                    </h2>
-                    <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="inline-block border rounded-{{ section.settings.button_border_radius }} py-2.5 px-5 h3 banner_button" style="font-weight: {{ section.settings.button_text_font_weight }}; color: {{ section.settings.button_text_color }}; border-color: {{ section.settings.button_border_color }}; {%- unless section.settings.button_bg_color == blank -%} background-color: {{ section.settings.button_bg_color }}; {%- endunless -%} padding: {{ section.settings.banner_button_size }};">
-                        {{ block.settings.button_text }}
-                    </a>
+    <div class="splide" data-splide='{"type": "loop", "autoplay": {{ section.settings.autoplay_banner_slides }}, "pagination": true}'>
+      <div class="splide__track">
+        <div class="splide__list">
+          <div class="splide__slide">
+            {% for block in section.blocks %}
+              <div class="relative fade md:h-screen" {{ block.shopify_attributes }}>
+                <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
+                  {% if block.settings.large_image == blank and block.settings.small_image == blank %}
+                    <div class="absolute w-full pointer-events-none -z-1 h-full object-cover placeholder">
+                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    </div>
+                  {% else %}
+                    <img
+                    srcset="{%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 180 -%}{{ block.settings.large_image | img_url: '180x' }} 180w 80h,{% endif -%}{%- elsif block.settings.small_image.width >= 180 -%}{{ block.settings.small_image | img_url: '180x' }} 180w 80h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 360 -%}{{ block.settings.large_image | img_url: '360x' }} 360w 159h,{% endif -%}{%- elsif block.settings.small_image.width >= 360 -%}{{ block.settings.small_image | img_url: '360x' }} 360w 159h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 540 -%}{{ block.settings.large_image | img_url: '540x' }} 540w 239h,{% endif -%}{%- elsif block.settings.small_image.width >= 540 -%}{{ block.settings.small_image | img_url: '540x' }} 540w 239h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 720 -%}{{ block.settings.large_image | img_url: '720x' }} 720w 319h,{% endif -%}{%- elsif block.settings.small_image.width >= 720 -%}{{ block.settings.small_image | img_url: '720x' }} 720w 319h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 900 -%}{{ block.settings.large_image | img_url: '900x' }} 900w 398h,{% endif -%}{%- elsif block.settings.small_image.width >= 900 -%}{{ block.settings.small_image | img_url: '900x' }} 900w 398h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 1080 -%}{{ block.settings.large_image | img_url: '1080x' }} 1080w 478h,{% endif -%}{%- elsif block.settings.small_image.width >= 1080 -%}{{ block.settings.small_image | img_url: '1080x' }} 1080w 478h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 1296 -%}{{ block.settings.large_image | img_url: '1296x' }} 1296w 574h,{% endif -%}{%- elsif block.settings.small_image.width >= 1296 -%}{{ block.settings.small_image | img_url: '1296x' }} 1296w 574h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 1512 -%}{{ block.settings.large_image | img_url: '1512x' }} 1512w 669h,{% endif -%}{%- elsif block.settings.small_image.width >= 1512 -%}{{ block.settings.small_image | img_url: '1512x' }} 1512w 669h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 1728 -%}{{ block.settings.large_image | img_url: '1728x' }} 1728w 765h,{% endif -%}{%- elsif block.settings.small_image.width >= 1728 -%}{{ block.settings.small_image | img_url: '1728x' }} 1728w 765h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 1950 -%}{{ block.settings.large_image | img_url: '1950x' }} 1950w 863h,{% endif -%}{%- elsif block.settings.small_image.width >= 1950 -%}{{ block.settings.small_image | img_url: '1950x' }} 1950w 863h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 2100 -%}{{ block.settings.large_image | img_url: '2100x' }} 2100w 930h,{% endif -%}{%- elsif block.settings.small_image.width >= 2100 -%}{{ block.settings.small_image | img_url: '2100x' }} 2100w 930h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 2260 -%}{{ block.settings.large_image | img_url: '2260x' }} 2260w 1001h,{% endif -%}{%- elsif block.settings.small_image.width >= 2260 -%}{{ block.settings.small_image | img_url: '2260x' }} 2260w 1001h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 2450 -%}{{ block.settings.large_image | img_url: '2450x' }} 2450w 1085h,{% endif -%}{%- elsif block.settings.small_image.width >= 2450 -%}{{ block.settings.small_image | img_url: '2450x' }} 2450w 1085h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 2700 -%}{{ block.settings.large_image | img_url: '2700x' }} 2700w 1195h,{% endif -%}{%- elsif block.settings.small_image.width >= 2700 -%}{{ block.settings.small_image | img_url: '2700x' }} 2700w 1195h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 3000 -%}{{ block.settings.large_image | img_url: '3000x' }} 3000w 1328h,{% endif -%}{%- elsif block.settings.small_image.width >= 3000 -%}{{ block.settings.small_image | img_url: '3000x' }} 3000w 1328h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 3350 -%}{{ block.settings.large_image | img_url: '3350x' }} 3350w 1483h,{% endif -%}{%- elsif block.settings.small_image.width >= 3350 -%}{{ block.settings.small_image | img_url: '3350x' }} 3350w 1483h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 3750 -%}{{ block.settings.large_image | img_url: '3750x' }} 3750w 1660h,{% endif -%}{%- elsif block.settings.small_image.width >= 3750 -%}{{ block.settings.small_image | img_url: '3750x' }} 3750w 1660h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 3840 -%}{{ block.settings.large_image | img_url: '3840x' }} 3840w 1700h,{% endif -%}{%- elsif block.settings.small_image.width >= 3840 -%}{{ block.settings.small_image | img_url: '3840x' }} 3840w 1700h,{%- endif -%}
+                    {%- if block.settings.large_image != blank -%}{{ block.settings.large_image | img_url: 'master' }} {{ block.settings.large_image.width }}w {{ block.settings.large_image.width }}h {% else %} {{ block.settings.small_image | img_url: 'master' }} {{ block.settings.small_image.width }}w {{ block.settings.small_image.width }}h{%- endif -%}"
+                    src="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image | img_url: '1512x' }}{%- else -%}{{ block.settings.small_image | img_url: '1512x' }}{%- endif -%}"
+                    alt="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.alt | escape }}{%- else -%}{{ block.settings.small_image.alt | escape }}{%- endif -%}"
+                    class="absolute w-full pointer-events-none -z-1 h-full object-cover"
+                    loading="lazy"
+                    width="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.width }}{%- else -%}{{ block.settings.small_image.width }}{%- endif -%}"
+                    height="{%- if block.settings.large_image != blank -%}{{ block.settings.large_image.height }}{%- else -%}{{ block.settings.small_image.height }}{%- endif -%}"
+                    >
+                  {% endif %}
+                  <div class="overlay absolute h-full w-full"><p>&nbsp;</p></div>
+                  <div class="flex container w-full h-full relative items-{{ section.settings.vertical_content_position }} justify-{{ section.settings.horizontal_content_position }}">
+                      <div class="{%if section.settings.horizontal_content_position == 'start' %}ml-40 {%endif%} {%if section.settings.horizontal_content_position == 'end' %}mr-40 text-right {% endif %}{% if section.settings.vertical_content_position == 'start' %}mt-40 {% endif %}{% if section.settings.vertical_content_position == 'end' %}mb-40{% endif %}">
+                          <h1 class="banner_heading text-{%- if section.settings.heading_font_size != 1 -%}{{ section.settings.heading_font_size }}{%- endif -%}xl mb-3.5" style="color: {{ section.settings.heading_color }}; font-weight: {{ section.settings.heading_font_weight }};">
+                              <span>{{ block.settings.heading }}</span>
+                          </h1>
+                          <h2 class="my-14 banner_subheading text-{%- if section.settings.subheading_font_size != 1 -%}{{ section.settings.subheading_font_size }}{%- endif -%}xl mb-5 lg:leading-tight xl:leading-tight 2xl:leading-tight" style="color: {{ section.settings.subheading_color }}; font-weight: {{ section.settings.subheading_font_weight }};">
+                              <span>{{ block.settings.sub_heading }}</span>
+                          </h2>
+                          <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="inline-block border rounded-{{ section.settings.button_border_radius }} py-2.5 px-5 h3 banner_button" style="font-weight: {{ section.settings.button_text_font_weight }}; color: {{ section.settings.button_text_color }}; border-color: {{ section.settings.button_border_color }}; {%- unless section.settings.button_bg_color == blank -%} background-color: {{ section.settings.button_bg_color }}; {%- endunless -%} padding: {{ section.settings.banner_button_size }};">
+                              {{ block.settings.button_text }}
+                          </a>
+                      </div>
+                  </div>
+                </div>
+      
+                <div class="md:hidden block pb-6">
+                    <div class="relative">
+                        <div>
+                          {% if block.settings.small_image == blank and block.settings.large_image == blank %}
+                            <div class="banner-img placeholder">
+                              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                            </div>
+                          {% else %}
+                            <img 
+                            class="banner-img"
+                            alt="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.alt | escape }}{%- else -%}{{ block.settings.large_image.alt | escape }}{%- endif -%}"
+                            src="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image | img_url: '720x' }}{%- else -%}{{ block.settings.large_image | img_url: '720x' }}{%- endif -%}"
+                            srcset="{%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 180 -%}{{ block.settings.small_image | img_url: '180x' }} 180w{% endif -%}{%- elsif block.settings.large_image.width >= 180 -%}{{ block.settings.large_image | img_url: '180x' }} 180w{%- endif -%}
+                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 360 -%}{{ block.settings.small_image | img_url: '360x' }} 360w{% endif -%}{%- elsif block.settings.large_image.width >= 360 -%}{{ block.settings.large_image | img_url: '360x' }} 360w{%- endif -%}
+                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 540 -%}{{ block.settings.small_image | img_url: '540x' }} 540w{% endif -%}{%- elsif block.settings.large_image.width >= 540 -%}{{ block.settings.large_image | img_url: '540x' }} 540w{%- endif -%}
+                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 720 -%}{{ block.settings.small_image | img_url: '720x' }} 720w{% endif -%}{%- elsif block.settings.large_image.width >= 720 -%}{{ block.settings.large_image | img_url: '720x' }} 720w{%- endif -%}
+                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 900 -%}{{ block.settings.small_image | img_url: '900x' }} 900w{% endif -%}{%- elsif block.settings.large_image.width >= 900 -%}{{ block.settings.large_image | img_url: '900x' }} 900w{%- endif -%}
+                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 1080 -%}{{ block.settings.small_image | img_url: '1080x' }} 1080w{% endif -%}{%- elsif block.settings.large_image.width >= 1080 -%}{{ block.settings.large_image | img_url: '1080x' }} 1080w{%- endif -%}
+                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 1125 -%}{{ block.settings.small_image | img_url: '1125x' }} 1125w{% endif -%}{%- elsif block.settings.large_image.width >= 1125 -%}{{ block.settings.large_image | img_url: '1125x' }} 1125w{%- endif -%}
+                            {%- if block.settings.small_image != blank -%}{{ block.settings.small_image | img_url: 'master' }} {{ block.settings.small_image.width }}w {{ block.settings.small_image.width }}h {% else %} {{ block.settings.large_image | img_url: 'master' }} {{ block.settings.large_image.width }}w {{ block.settings.large_image.width }}h{%- endif -%}"
+                            loading="lazy"
+                            width="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.width }}{%- else -%}{{ block.settings.large_image.width }}{%- endif -%}"
+                            height="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.height | divided_by: block.settings.small_image.aspect_ratio }}{%- else -%}{{ block.settings.large_image.height | divided_by: block.settings.large_image.aspect_ratio }}{%- endif -%}">
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
+                        <p class="mb-0.5 font-semibold banner_heading">{{ block.settings.sub_heading }}</p>
+                        <h2 class="text-4xl my-6 banner_subheading">{{ block.settings.heading }}</h2>
+                        <a href="#" class="block border rounded-{{ section.settings.button_border_radius }} py-2.5 px-5 banner_button" style="border_color: {{ section.settings.button_border_color }};">
+                            {{ block.settings.button_text }}
+                        </a>
+                    </div>
                 </div>
             </div>
+          {% endfor %}
           </div>
-
-          <div class="md:hidden block pb-6">
-              <div class="relative">
-                  <div>
-                    {% if block.settings.small_image == blank and block.settings.large_image == blank %}
-                      <div class="banner-img placeholder">
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                      </div>
-                    {% else %}
-                      <img 
-                      class="banner-img"
-                      alt="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.alt | escape }}{%- else -%}{{ block.settings.large_image.alt | escape }}{%- endif -%}"
-                      src="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image | img_url: '720x' }}{%- else -%}{{ block.settings.large_image | img_url: '720x' }}{%- endif -%}"
-                      srcset="{%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 180 -%}{{ block.settings.small_image | img_url: '180x' }} 180w{% endif -%}{%- elsif block.settings.large_image.width >= 180 -%}{{ block.settings.large_image | img_url: '180x' }} 180w{%- endif -%}
-                      {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 360 -%}{{ block.settings.small_image | img_url: '360x' }} 360w{% endif -%}{%- elsif block.settings.large_image.width >= 360 -%}{{ block.settings.large_image | img_url: '360x' }} 360w{%- endif -%}
-                      {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 540 -%}{{ block.settings.small_image | img_url: '540x' }} 540w{% endif -%}{%- elsif block.settings.large_image.width >= 540 -%}{{ block.settings.large_image | img_url: '540x' }} 540w{%- endif -%}
-                      {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 720 -%}{{ block.settings.small_image | img_url: '720x' }} 720w{% endif -%}{%- elsif block.settings.large_image.width >= 720 -%}{{ block.settings.large_image | img_url: '720x' }} 720w{%- endif -%}
-                      {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 900 -%}{{ block.settings.small_image | img_url: '900x' }} 900w{% endif -%}{%- elsif block.settings.large_image.width >= 900 -%}{{ block.settings.large_image | img_url: '900x' }} 900w{%- endif -%}
-                      {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 1080 -%}{{ block.settings.small_image | img_url: '1080x' }} 1080w{% endif -%}{%- elsif block.settings.large_image.width >= 1080 -%}{{ block.settings.large_image | img_url: '1080x' }} 1080w{%- endif -%}
-                      {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 1125 -%}{{ block.settings.small_image | img_url: '1125x' }} 1125w{% endif -%}{%- elsif block.settings.large_image.width >= 1125 -%}{{ block.settings.large_image | img_url: '1125x' }} 1125w{%- endif -%}
-                      {%- if block.settings.small_image != blank -%}{{ block.settings.small_image | img_url: 'master' }} {{ block.settings.small_image.width }}w {{ block.settings.small_image.width }}h {% else %} {{ block.settings.large_image | img_url: 'master' }} {{ block.settings.large_image.width }}w {{ block.settings.large_image.width }}h{%- endif -%}"
-                      loading="lazy"
-                      width="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.width }}{%- else -%}{{ block.settings.large_image.width }}{%- endif -%}"
-                      height="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.height | divided_by: block.settings.small_image.aspect_ratio }}{%- else -%}{{ block.settings.large_image.height | divided_by: block.settings.large_image.aspect_ratio }}{%- endif -%}">
-                      {% endif %}
-                  </div>
-              </div>
-              <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
-                  <p class="mb-0.5 font-semibold banner_heading">{{ block.settings.sub_heading }}</p>
-                  <h2 class="text-4xl my-6 banner_subheading">{{ block.settings.heading }}</h2>
-                  <a href="#" class="block border rounded-{{ section.settings.button_border_radius }} py-2.5 px-5 banner_button" style="border_color: {{ section.settings.button_border_color }};">
-                      {{ block.settings.button_text }}
-                  </a>
-              </div>
-          </div>
+        </div>
       </div>
-    {% endfor %}
-
-    {% if section.blocks.size > 1 %}
-      <div class="flex justify-center">
-          <div class="flex md:absolute md:flex-col md:z-10 md:right-16 md:top-1/2">
-              <span class="md:block mx-4 md:mx-0 md:mb-4 dot dot-active" data-index="0"></span>
-              <span class="md:block mx-4 md:mx-0 md:mb-4 dot" data-index="1"></span>
-              {% if section.blocks.size == 3 %}<span class="md:block mx-4 md:mx-0 dot" data-index="2"></span>{% endif %}
-          </div>
-      </div>
-    {% endif %}
+    </div>
   </div>
 
     {% if section.blocks.size > 1 %}
-      {% comment %}
-        Set the variable play_banner_slides to true in window so that
-        it can be accessible in banner-slide.js
-      {% endcomment %}      
-      <script>
-        this.play_banner_slides = {{ section.settings.play_banner_slides }};
-      </script>
-
-      <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
+      <script src="{{ 'splide.min.js' | asset_url }}" defer type="text/javascript"></script>
+      <script src="{{ 'banner-slider.js' | asset_url }}" defer type="text/javascript"></script>
    {% endif %}
   {% endif %}
 
@@ -315,7 +291,7 @@
   "settings": [
     {
       "type": "checkbox",
-      "id": "play_banner_slides",
+      "id": "autoplay_banner_slides",
       "label": "Play slides automatically",
       "info": "Play slides or have user click button to move to next one. Useful if you want to pause and edit a single slide.",
       "default": true
