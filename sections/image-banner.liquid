@@ -281,7 +281,7 @@
               </div>
           </div>
       </div>
-  {% endfor %}
+    {% endfor %}
 
     {% if section.blocks.size > 1 %}
       <div class="flex justify-center">
@@ -294,17 +294,19 @@
     {% endif %}
   </div>
 
-  {% comment %}
-    The script below checks if user wants to play slides automatically.
-    If true, set the variable playBannerSlides to true in window so that
-    it can be accessible in banner-slide.js
-  {% endcomment %}
-  <script>
-    this.play_banner_slides = {{ section.settings.play_banner_slides }};
-  </script>
+    {% comment %}
+      The script below checks if user wants to play slides automatically.
+      If true, set the variable playBannerSlides to true in window so that
+      it can be accessible in banner-slide.js
+    {% endcomment %}
+    {% if section.blocks.size > 1 %}
+      <script>
+        this.play_banner_slides = {{ section.settings.play_banner_slides }};
+      </script>
 
-  <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
-{% endif %}
+      <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
+   {% endif %}
+  {% endif %}
 
 {% schema %}
 {
