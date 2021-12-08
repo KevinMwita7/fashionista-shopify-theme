@@ -301,9 +301,7 @@
   {% endcomment %}
   <script>
     var playBannerSlides = `{{ section.settings.play_banner_slides }}`;
-    console.log(playBannerSlides === true);
     if(playBannerSlides === "true") {
-      console.log("setting playBannerSlides to {{ section.settings.play_banner_slides }}");
       this.play_banner_slides = true;
     }
   </script>
