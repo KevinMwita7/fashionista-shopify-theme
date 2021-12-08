@@ -14,11 +14,11 @@ function setActiveDot(currentSlide) {
 // Banner slideshow
 var slideIndex = 0;
 var timeoutId;
-console.log(this.play_banner_slides);
 
 showSlides();
 
 function showSlides(event) {
+  console.log(this.play_banner_slides);
   var i;
   var slides = document.getElementsByClassName("banner-slide");
   for (i = 0; i < slides.length; i++) {
