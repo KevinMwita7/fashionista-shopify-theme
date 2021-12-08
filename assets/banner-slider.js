@@ -15,9 +15,7 @@ function setActiveDot(currentSlide) {
 var slideIndex = 0;
 var timeoutId;
 
-if(this.play_banner_slides) {
-  showSlides();
-}
+showSlides();
 
 function showSlides(event) {
   var i;
@@ -30,7 +28,9 @@ function showSlides(event) {
   var currentSlide = slideIndex - 1;
   slides[currentSlide].style.display = "block";
   setActiveDot(currentSlide);
-  timeoutId = setTimeout(showSlides, 5000);
+  if(this.play_banner_slides) {
+    timeoutId = setTimeout(showSlides, 5000);
+  }
 }
 
 for(var i = 0; i < dots.length; ++i) {
