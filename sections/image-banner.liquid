@@ -300,10 +300,7 @@
     it can be accessible in banner-slide.js
   {% endcomment %}
   <script>
-    var playBannerSlides = `{{ section.settings.play_banner_slides }}`;
-    if(playBannerSlides === "true") {
-      this.play_banner_slides = true;
-    }
+    this.play_banner_slides = {{ section.settings.play_banner_slides }};
   </script>
 
   <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
