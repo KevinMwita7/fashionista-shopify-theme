@@ -39,9 +39,7 @@ for(var i = 0; i < dots.length; ++i) {
     clearTimeout(timeoutId);
     setActiveDot(idx);
     slideIndex = idx;
-    if(this.play_banner_slides) {
-      showSlides();
-    }
+    showSlides();
   })
 }
 
