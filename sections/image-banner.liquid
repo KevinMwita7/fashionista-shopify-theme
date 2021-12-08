@@ -294,8 +294,18 @@
     {% endif %}
   </div>
 
+  {% comment %}
+    The script below checks if user wants to play slides automatically.
+    If true, set the variable playBannerSlides to true in window so that
+    it can be accessible in banner-slide.js
+  {% endcomment %}
   <script>
-    console.log(`Play slides: {{ section.settings.play_slides }}`);
+    var playBannerSlides = `{{ section.settings.play_banner_slides }}`;
+    console.log(playBannerSlides === true);
+    if(playBannerSlides === "true") {
+      console.log("setting playBannerSlides to {{ section.settings.play_banner_slides }}");
+      this.play_banner_slides = true;
+    }
   </script>
 
   <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
@@ -309,7 +319,7 @@
   "settings": [
     {
       "type": "checkbox",
-      "id": "play_slides",
+      "id": "play_banner_slides",
       "label": "Play slides automatically",
       "info": "Play slides or have user click button to move to next one. Useful if you want to pause and edit a single slide.",
       "default": true
