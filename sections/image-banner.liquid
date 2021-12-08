@@ -294,6 +294,10 @@
     {% endif %}
   </div>
 
+  <script>
+    console.log(`Play slides: {{ section.settings.play_slides }}`);
+  </script>
+
   <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
 {% endif %}
 
@@ -303,6 +307,13 @@
   "tag": "section",
   "max_blocks": 3,
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "play_slides",
+      "label": "Play slides automatically",
+      "info": "Play slides or have user click button to move to next one. Useful if you want to pause and edit a single slide.",
+      "default": false
+    },
     {
       "type": "range",
       "id": "image_overlay_opacity",
