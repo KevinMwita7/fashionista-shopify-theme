@@ -6,14 +6,11 @@
         "163756544668aa414f-0": {
           "type": "slide",
           "settings": {
+            "large_image": "shopify:\/\/shop_images\/dgl17ayp2.jpg",
             "heading": "Slideshow heading",
-            "heading_font_size": "8",
             "sub_heading": "Slideshow sub-heading",
-            "subheading_font_size": "2",
             "button_text": "Button Text",
-            "button_link": "shopify:\/\/collections\/all",
-            "vertical_content_position": "center",
-            "horizontal_content_position": "start"
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
@@ -21,14 +18,24 @@
         "163756544668aa414f-0"
       ],
       "settings": {
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
         "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "heading_font_size": 8,
+        "subheading_font_size": 4,
+        "heading_color": "#000",
+        "subheading_color": "#000",
+        "button_text_color": "#000",
+        "heading_font_weight": 400,
+        "subheading_font_weight": 400,
+        "button_text_font_weight": 400,
+        "banner_heading_font": "rubik_n4",
+        "banner_subheading_font": "rubik_n4",
+        "banner_button_font": "rubik_n4",
+        "button_bg_color": "",
+        "button_border_color": "#000",
+        "button_border_radius": "none",
+        "banner_button_size": "2.4rem 3.6rem",
+        "vertical_content_position": "center",
+        "horizontal_content_position": "start"
       }
     },
     "rich_text": {
