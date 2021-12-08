@@ -183,8 +183,8 @@
       <div class="splide__track">
         <div class="splide__list">
           {% for block in section.blocks %}
-            <div class="splide__slide{% if request.design_mode == true %} {{ forloop.index }}{% endif %}" {{ block.shopify_attributes }}>
-              <div class="relative fade md:h-screen">
+            <div class="splide__slide">
+              <div class="relative fade md:h-screen{% if request.design_mode == true %} {{ forloop.index }}{% endif %}" {{ block.shopify_attributes }}>
                 <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
                   {% if block.settings.large_image == blank and block.settings.small_image == blank %}
                     <div class="absolute w-full pointer-events-none -z-1 h-full object-cover placeholder">
