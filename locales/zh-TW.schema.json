@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "幻燈片",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "自動播放投影片",
+          "info": "播放幻燈片或讓用戶按兩下一個投影片。如果要暫停和編輯單張幻燈片，則非常有用"
+        },        
         "image_overlay_opacity": {
           "label": "圖片疊加層透明度"
         },

@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "Bildspel",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "Spela upp bilder automatiskt",
+          "info": "Spela upp bilder eller låt användaren klicka på knappen för att flytta till nästa. Användbart om du vill pausa och redigera en enda bild"
+        },        
         "image_overlay_opacity": {
           "label": "Bildens opacitet för överlagring"
         },

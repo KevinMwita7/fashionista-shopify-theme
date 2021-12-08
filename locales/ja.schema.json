@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "スライドショー",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "スライドを自動的に再生する",
+          "info": "スライドを再生するか、ユーザーにボタンをクリックして次のスライドに移動します。1 つのスライドを一時停止して編集する場合に便利です"
+        },
         "image_overlay_opacity": {
           "label": "画像のオーバーレイ不透明率"
         },

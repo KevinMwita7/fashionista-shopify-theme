@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "trình chiếu",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "Tự động phát trang chiếu",
+          "info": "Phát trang chiếu hoặc có nút bấm của người dùng để di chuyển sang trang chiếu tiếp theo. Hữu ích nếu bạn muốn tạm dừng và sửa một trang chiếu duy nhất"
+        },        
         "image_overlay_opacity": {
           "label": "Độ chắn sáng của lớp phủ hình ảnh"
         },

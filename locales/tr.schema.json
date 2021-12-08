@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "slayt gösterisi",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "Slaytları otomatik olarak yürütme",
+          "info": "Slaytları oynatın veya bir sonrakine geçmek için kullanıcının düğmesini tıklatmasını isteyin. Tek bir slaydı duraklatmak ve düzenlemek istiyorsanız kullanışlıdır"
+        },        
         "image_overlay_opacity": {
           "label": "Görsel yer paylaşımı opaklığı"
         },

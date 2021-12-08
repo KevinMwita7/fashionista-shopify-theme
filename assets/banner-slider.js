@@ -37,6 +37,6 @@ if (Shopify.designMode) {
   });
 
   document.addEventListener( 'shopify:block:select', function(blockId, sectionId, load) {
-    console.log("reloaded: " + load);
+    console.log("reloaded: " + load + " blockId: " + blockId);
   });
 }

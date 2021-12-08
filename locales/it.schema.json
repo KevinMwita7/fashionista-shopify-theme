@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "Presentazione",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "Riprodurre automaticamente le diapositive",
+          "info": "Riproduci diapositive o fai clic sull'utente sul pulsante per passare a quello successivo. Utile se si desidera mettere in pausa e modificare una singola diapositiva."
+        },
         "image_overlay_opacity": {
           "label": "Opacità della sovrapposizione immagine"
         },

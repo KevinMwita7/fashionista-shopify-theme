@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "Diaesitys",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "Diojen toistaminen automaattisesti",
+          "info": "Toista dioja tai siirrä seuraavaan napsauttamalla käyttäjää. Hyödyllinen, jos haluat keskeyttää ja muokata yhtä diaa"
+        },
         "image_overlay_opacity": {
           "label": "Peittokuvan läpikuultavuus"
         },

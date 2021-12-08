@@ -690,6 +690,10 @@
     "image-banner": {
       "name": "Slideshow",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "Reproduzir slides automaticamente",
+          "info": "Reprodução slides ou peça ao usuário para clicar no botão para passar para o próximo. Útil se você quiser pausar e editar um único slide"
+        },        
         "image_overlay_opacity": {
           "label": "Opacidade de sobreposição de imagem"
         },

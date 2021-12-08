@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "Pokaz slajdów",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "Automatyczne odtwarzanie slajdów",
+          "info": "Odtwórz slajdy lub kliknij przycisk użytkownika, aby przejść do następnego. Przydatne, jeśli chcesz wstrzymać i edytować pojedynczy slajd"
+        },        
         "image_overlay_opacity": {
           "label": "Nieprzezroczystość nakładki obrazu"
         },

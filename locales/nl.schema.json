@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "Bannerafbeelding",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "Dia's automatisch afspelen",
+          "info": "Speel dia's af of laat de gebruiker op de knop klikken om naar de volgende dia te gaan. Handig als u een enkele dia wilt pauzeren en bewerken"
+        },        
         "image_overlay_opacity": {
           "label": "Doorzichtigheid van afbeeldingsoverlay"
         },

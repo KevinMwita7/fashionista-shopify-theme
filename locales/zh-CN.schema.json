@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "幻灯片",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "自动播放幻灯片",
+          "info": "播放幻灯片或让用户单击按钮移动到下一个幻灯片。如果要暂停和编辑单张幻灯片，则非常有用"
+        },        
         "image_overlay_opacity": {
           "label": "图片叠加不透明度"
         },

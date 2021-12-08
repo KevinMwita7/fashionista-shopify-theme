@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "슬라이드쇼",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "슬라이드 재생",
+          "info": "슬라이드를 재생하거나 사용자 클릭 버튼을 사용하여 다음 슬라이드로 이동합니다. 슬라이드를 일시 중지하고 편집하려는 경우 유용합니다"
+        },
         "image_overlay_opacity": {
           "label": "이미지 오버레이 투명도"
         },

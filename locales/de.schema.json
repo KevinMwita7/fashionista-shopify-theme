@@ -694,6 +694,10 @@
     "image-banner": {
       "name": "Diashow",
       "settings": {
+        "autoplay_banner_slides": {
+          "label": "Folien automatisch wiedergeben",
+          "info": "Spielen Sie Folien ab oder lassen Sie den Benutzer auf die Schaltfläche klicken, um zur nächsten zu gelangen. Nützlich, wenn Sie eine einzelne Folie anhalten und bearbeiten möchten"
+        },
         "image_overlay_opacity": {
           "label": "Deckkraft der Bildüberlagerung"
         },
