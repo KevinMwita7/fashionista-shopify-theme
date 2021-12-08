@@ -7,19 +7,20 @@
           "type": "slide",
           "settings": {
             "large_image": "shopify:\/\/shop_images\/dgl17ayp2.jpg",
-            "heading": "Slideshow heading",
-            "sub_heading": "Slideshow sub-heading",
-            "button_text": "Button Text",
-            "button_link": "shopify:\/\/collections\/all"
+            "heading": "New arrivals",
+            "sub_heading": "Summer collection",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections"
           }
         },
         "5223dcdd-687e-434e-8011-08c95b9936bc": {
           "type": "slide",
           "settings": {
-            "heading": "Slideshow heading",
-            "sub_heading": "Slideshow sub-heading",
-            "button_text": "Button Text",
-            "button_link": ""
+            "large_image": "shopify:\/\/shop_images\/84758nne2.jpg",
+            "heading": "Hot Trend",
+            "sub_heading": "Spring Collection",
+            "button_text": "Discover More",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
