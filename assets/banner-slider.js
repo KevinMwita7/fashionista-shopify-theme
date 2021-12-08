@@ -1,8 +1,6 @@
 // Slider dots
 var dots = document.getElementsByClassName("dot");
 
-console.log("playBannerSlides is: " + this.play_banner_slides);
-
 function setActiveDot(currentSlide) {
     // Remove active class from all dots and set on current one
     for (i = 0; i < dots.length; i++) {
@@ -16,7 +14,10 @@ function setActiveDot(currentSlide) {
 // Banner slideshow
 var slideIndex = 0;
 var timeoutId;
-showSlides();
+
+if(this.play_banner_slides) {
+  showSlides();
+}
 
 function showSlides(event) {
   var i;
@@ -38,7 +39,9 @@ for(var i = 0; i < dots.length; ++i) {
     clearTimeout(timeoutId);
     setActiveDot(idx);
     slideIndex = idx;
-    showSlides();
+    if(this.play_banner_slides) {
+      showSlides();
+    }
   })
 }
 
