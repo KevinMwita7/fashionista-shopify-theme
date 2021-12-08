@@ -294,12 +294,11 @@
     {% endif %}
   </div>
 
-    {% comment %}
-      The script below checks if user wants to play slides automatically.
-      If true, set the variable playBannerSlides to true in window so that
-      it can be accessible in banner-slide.js
-    {% endcomment %}
     {% if section.blocks.size > 1 %}
+      {% comment %}
+        Set the variable play_banner_slides to true in window so that
+        it can be accessible in banner-slide.js
+      {% endcomment %}      
       <script>
         this.play_banner_slides = {{ section.settings.play_banner_slides }};
       </script>
@@ -319,7 +318,7 @@
       "id": "play_banner_slides",
       "label": "Play slides automatically",
       "info": "Play slides or have user click button to move to next one. Useful if you want to pause and edit a single slide.",
-      "default": false
+      "default": true
     },
     {
       "type": "range",
