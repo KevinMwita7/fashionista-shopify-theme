@@ -26,7 +26,7 @@ function LiveRegion( Splide ) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  var splide = new Splide('.splide', { arrows: false });
+  var splide = new Splide('.splide', { arrows: screen.width >= 768 });
   splide.mount({ LiveRegion } );
 
   if (Shopify.designMode) {
