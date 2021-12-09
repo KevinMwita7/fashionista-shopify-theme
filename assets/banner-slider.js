@@ -37,9 +37,9 @@ if (Shopify.designMode) {
   });
 
   document.addEventListener( 'shopify:block:select', function({ detail }) {
-    // console.log(detail, `[data-shopify-editor-block]="{"id":"${detail.blockId}","type":"slide"}"`, JSON.stringify({ id: detail.blockId, type: "slide" }));
-    let blocks = document.querySelectorAll(`[data-shopify-editor-block]="${JSON.stringify({ id: detail.blockId, type: "slide" })}"`);
-    console.log(blocks);
-    // console.log(document.querySelectorAll('[data-shopify-editor-block]'));
+    let slide1 = document.getElementById("splide01-slide1");
+    let slide2 = document.getElementById("splide01-slide2");
+    let slide3 = document.getElementById("splide01-slide3");
+    console.log(slide1, slide2, slide3);
   });
 }
