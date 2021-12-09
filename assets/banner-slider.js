@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (Shopify.designMode) {
     document.addEventListener('shopify:block:select', function({ detail }) {
+      console.log("block selected");
       let slide1 = document.getElementById('splide01-slide01');
       let slide2 = document.getElementById('splide01-slide02');
       let slide3 = document.getElementById('splide01-slide03');
@@ -43,6 +44,27 @@ document.addEventListener('DOMContentLoaded', function() {
         splide.go(2);
       }
     });
+
+    document.addEventListener('shopify:section:load', function({ detail }) {
+      console.log("section loaded");
+    })
+
+    document.addEventListener('shopify:section:unload', function({ detail }) {
+      console.log("section unloaded");
+    })
+
+    document.addEventListener('shopify:section:select', function({ detail }) {
+      console.log("section select");
+    })
+
+    document.addEventListener('shopify:section:deselect', function({ detail }) {
+      console.log("section deselected");
+    })
+
+    document.addEventListener('shopify:block:deselect', function({ detail }) {
+      console.log("block deselected");
+    })
+    
 
     /*document.addEventListener("shopify:section:load", function({ details }) {
       splide.destroy();
