@@ -39,7 +39,7 @@ if (Shopify.designMode) {
   document.addEventListener( 'shopify:block:select', function({ detail }) {
     console.log(detail);
     let blocks = document.querySelectorAll('[data-shopify-editor-block]');
-    let slides = blocks.map(block => {
+    let slides = blocks.forEach(block => {
       console.log(block.dataset["shopify-editor-block"]);
     })
     // console.log(document.querySelectorAll('[data-shopify-editor-block]'));
