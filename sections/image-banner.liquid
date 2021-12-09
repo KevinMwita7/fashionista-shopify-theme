@@ -235,7 +235,7 @@
                   </div>
                 </div>
       
-                <div class="md:hidden block pb-6">
+                <div class="md:hidden block">
                     <div class="relative">
                         <div>
                           {% if block.settings.small_image == blank and block.settings.large_image == blank %}
@@ -261,6 +261,7 @@
                             {% endif %}
                         </div>
                     </div>
+                    {% comment %}
                     <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
                         <p class="mb-0.5 font-semibold banner_heading">{{ block.settings.sub_heading }}</p>
                         <h2 class="text-4xl my-6 banner_subheading">{{ block.settings.heading }}</h2>
@@ -268,6 +269,7 @@
                             {{ block.settings.button_text }}
                         </a>
                     </div>
+                  {% endcomment %}
                 </div>
             </div>
           </div>
