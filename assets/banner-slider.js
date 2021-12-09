@@ -46,7 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.addEventListener('shopify:section:select', function({ detail }) {
-      console.log(splide.state.is( Splide.STATES.CREATED ), splide.state.is( Splide.STATES.MOUNTED ), splide.state.is( Splide.STATES.IDLE ), splide.state.is( Splide.STATES.MOVING ), splide.state.is( Splide.STATES.DESTROYED ))
+      console.log(details);
+      splide.destroy();
       splide.mount();
     })
 
