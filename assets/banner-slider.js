@@ -26,8 +26,8 @@ function LiveRegion( Splide ) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  var splide = new Splide('.splide');
-  splide.mount({ LiveRegion });
+  var splide = new Splide('.splide', { arrows: false });
+  splide.mount({ LiveRegion } );
 
   if (Shopify.designMode) {
     document.addEventListener('shopify:block:select', function({ detail }) {

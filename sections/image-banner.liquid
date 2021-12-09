@@ -179,7 +179,7 @@
 
 {% if section.blocks.size > 0 %}
   <div id="Banner-{{ section.id }}" class="md:relative banner">
-    <div class="splide" data-splide='{"type": "loop", "autoplay": {{ section.settings.autoplay_banner_slides }}, "pagination": true}'>
+    <div class="splide" data-splide='{"type": "loop", "autoplay": {{ section.settings.autoplay_banner_slides }}, "pagination": false}'>
       <div class="splide__track">
         <div class="splide__list">
           {% for block in section.blocks %}
@@ -261,7 +261,6 @@
                             {% endif %}
                         </div>
                     </div>
-                    {% comment %}
                     <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
                         <p class="mb-0.5 font-semibold banner_heading">{{ block.settings.sub_heading }}</p>
                         <h2 class="text-4xl my-6 banner_subheading">{{ block.settings.heading }}</h2>
@@ -269,7 +268,6 @@
                             {{ block.settings.button_text }}
                         </a>
                     </div>
-                  {% endcomment %}
                 </div>
             </div>
           </div>
