@@ -40,7 +40,10 @@ if (Shopify.designMode) {
     let slide1 = document.getElementById("splide01-slide01");
     let slide2 = document.getElementById("splide01-slide02");
     let slide3 = document.getElementById("splide01-slide03");
-    if(slide1 && slide1.firstChild) console.log(slide1.firstElementChild.dataset);
-    if(slide2 && slide2.firstChild) console.log(slide2.firstElementChild.dataset);
+    if(slide1 && slide1.firstElementChild && JSON.parse(slide1.firstElementChild.dataset.shopifyEditorBlock).id === detail.blockId) {
+      console.log(0);
+    } if(slide2 && slide2.firstElementChild && JSON.parse(slide2.firstElementChild.dataset.shopifyEditorBlock).id === detail.blockId) {
+      console.log(1);
+    }
   });
 }
