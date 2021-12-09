@@ -25,28 +25,26 @@ function LiveRegion( Splide ) {
   }
 }
 
-document.addEventListener( 'DOMContentLoaded', function() {
-  var splide = new Splide( '.splide');
-  splide.mount({ LiveRegion });
-});
-
 if (Shopify.designMode) {
-  document.addEventListener( 'shopify:section:load', function() {
-    var splide = new Splide( '.splide');
+  document.addEventListener('shopify:section:load', function() {
+    var splide = new Splide('.splide');
     splide.mount({ LiveRegion });
   });
 
-  document.addEventListener( 'shopify:block:select', function({ detail }) {
-    const splide = new Splide( '.splide' );
-    let slide1 = document.getElementById("splide01-slide01");
-    let slide2 = document.getElementById("splide01-slide02");
-    let slide3 = document.getElementById("splide01-slide03");
+  document.addEventListener('shopify:block:select', function({ detail }) {
+    var splide = new Splide('.splide' );
+    let slide1 = document.getElementById('splide01-slide01');
+    let slide2 = document.getElementById('splide01-slide02');
+    let slide3 = document.getElementById('splide01-slide03');
     if(slide1 && slide1.firstElementChild && JSON.parse(slide1.firstElementChild.dataset.shopifyEditorBlock).id === detail.blockId) {
-      console.log(0)
       splide.go(0);
     } else if(slide2 && slide2.firstElementChild && JSON.parse(slide2.firstElementChild.dataset.shopifyEditorBlock).id === detail.blockId) {
-      console.log(1)
       splide.go(1);
     }
+  });
+} else {
+  document.addEventListener('DOMContentLoaded', function() {
+    var splide = new Splide('.splide');
+    splide.mount({ LiveRegion });
   });
 }
