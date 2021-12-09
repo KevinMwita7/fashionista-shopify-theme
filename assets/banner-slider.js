@@ -29,9 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var splide = new Splide('.splide');
   splide.mount({ LiveRegion });
 
-  if (Shopify.designMode) {
+  /*if (Shopify.designMode) {
     document.addEventListener('shopify:block:select', function({ detail }) {
-      console.log("block selected");
       let slide1 = document.getElementById('splide01-slide01');
       let slide2 = document.getElementById('splide01-slide02');
       let slide3 = document.getElementById('splide01-slide03');
@@ -52,5 +51,5 @@ document.addEventListener('DOMContentLoaded', function() {
         splide.mount();
       }
     })
-  }
+  }*/
 });
