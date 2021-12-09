@@ -40,7 +40,7 @@ if (Shopify.designMode) {
     let slide1 = document.getElementById("splide01-slide01");
     let slide2 = document.getElementById("splide01-slide02");
     let slide3 = document.getElementById("splide01-slide03");
-    if(slide1 && slide1.firstChild) console.log(slide1.firstChild.dataset);
-    if(slide2 && slide2.firstChild) console.log(slide2.firstChild.dataset);
+    if(slide1 && slide1.firstChild) console.log(slide1.firstElementChild.dataset);
+    if(slide2 && slide2.firstChild) console.log(slide2.firstElementChild.dataset);
   });
 }
