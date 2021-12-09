@@ -37,11 +37,9 @@ if (Shopify.designMode) {
   });
 
   document.addEventListener( 'shopify:block:select', function({ detail }) {
-    console.log(detail);
-    let blocks = document.querySelectorAll('[data-shopify-editor-block]');
-    let slides = blocks.forEach(block => {
-      console.log(block.dataset.shopifyEditorBlock);
-    })
+    console.log(detail, `[data-shopify-editor-block]="{"id":"${detail.blockId}","type":"slide"}"`);
+    let blocks = document.querySelectorAll(`[data-shopify-editor-block]="{"id":"${detail.blockId}","type":"slide"}"`);
+    console.log(blocks);
     // console.log(document.querySelectorAll('[data-shopify-editor-block]'));
   });
 }
