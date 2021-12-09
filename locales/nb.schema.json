@@ -697,7 +697,20 @@
         "autoplay_banner_slides": {
           "label": "Spille av lysbilder automatisk",
           "info": "Spill av lysbilder eller la brukeren klikke knappen for å gå til neste. Nyttig hvis du vil stanse midlertidig og redigere ett enkelt lysbilde"
-        },        
+        },
+        "image_height": {
+          "label": "Bannerhøyde",
+          "options__1": {
+            "label": "Liten"
+          },
+          "options__2": {
+            "label": "Middels"
+          },
+          "options__3": {
+            "label": "Stor"
+          },
+          "info": "Bruk et bilde med størrelsesforhold 2:3 for best resultat. [Finn ut mer](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },     
         "image_overlay_opacity": {
           "label": "Gjennomsiktighet for bildeoverlegg"
         },

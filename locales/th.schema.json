@@ -697,7 +697,20 @@
         "autoplay_banner_slides": {
           "label": "เล่นภาพนิ่งโดยอัตโนมัติ",
           "info": "เล่นสไลด์หรือให้ผู้ใช้คลิกปุ่มเพื่อย้ายไปยังสไลด์ถัดไป มีประโยชน์ถ้าคุณต้องการหยุดชั่วคราวและแก้ไขสไลด์เดียว"
-        },        
+        },
+        "image_height": {
+          "label": "ความสูงของแบนเนอร์",
+          "options__1": {
+            "label": "เล็ก"
+          },
+          "options__2": {
+            "label": "ปานกลาง"
+          },
+          "options__3": {
+            "label": "ใหญ่"
+          },
+          "info": "ใช้รูปภาพที่มีอัตราส่วนภาพ 2:3 เพื่อผลลัพธ์ที่ดีที่สุด [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
         "image_overlay_opacity": {
           "label": "ความทึบของการวางซ้อนรูปภาพ"
         },

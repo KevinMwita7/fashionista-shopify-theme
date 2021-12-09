@@ -698,6 +698,19 @@
           "label": "Diojen toistaminen automaattisesti",
           "info": "Toista dioja tai siirrä seuraavaan napsauttamalla käyttäjää. Hyödyllinen, jos haluat keskeyttää ja muokata yhtä diaa"
         },
+        "image_height": {
+          "label": "Bannerin korkeus",
+          "options__1": {
+            "label": "Pieni"
+          },
+          "options__2": {
+            "label": "Keskisuuri"
+          },
+          "options__3": {
+            "label": "Suuri"
+          },
+          "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 2:3. [Lisätietoja](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
         "image_overlay_opacity": {
           "label": "Peittokuvan läpikuultavuus"
         },

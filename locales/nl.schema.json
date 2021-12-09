@@ -697,7 +697,20 @@
         "autoplay_banner_slides": {
           "label": "Dia's automatisch afspelen",
           "info": "Speel dia's af of laat de gebruiker op de knop klikken om naar de volgende dia te gaan. Handig als u een enkele dia wilt pauzeren en bewerken"
-        },        
+        },
+        "image_height": {
+          "label": "Hoogte van de banner",
+          "options__1": {
+            "label": "Klein"
+          },
+          "options__2": {
+            "label": "Gemiddeld"
+          },
+          "options__3": {
+            "label": "Groot"
+          },
+          "info": "Gebruik voor de beste resultaten een afbeelding met een beeldverhouding van 2:3. [Meer informatie](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },   
         "image_overlay_opacity": {
           "label": "Doorzichtigheid van afbeeldingsoverlay"
         },

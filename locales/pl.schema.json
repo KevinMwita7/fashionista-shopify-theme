@@ -697,7 +697,20 @@
         "autoplay_banner_slides": {
           "label": "Automatyczne odtwarzanie slajdów",
           "info": "Odtwórz slajdy lub kliknij przycisk użytkownika, aby przejść do następnego. Przydatne, jeśli chcesz wstrzymać i edytować pojedynczy slajd"
-        },        
+        },
+        "image_height": {
+          "label": "Wysokość banera",
+          "options__1": {
+            "label": "Mały"
+          },
+          "options__2": {
+            "label": "Średni"
+          },
+          "options__3": {
+            "label": "Duży"
+          },
+          "info": "Aby uzyskać najlepsze wyniki, użyj obrazu o współczynniku proporcji 2:3. [Dowiedz się więcej](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
         "image_overlay_opacity": {
           "label": "Nieprzezroczystość nakładki obrazu"
         },

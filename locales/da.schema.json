@@ -698,6 +698,19 @@
           "label": "Afspille dias automatisk",
           "info": "Afspil dias, eller få brugeren til at klikke på knappen for at flytte til den næste. Nyttigt, hvis du vil afbryde et enkelt dias midlertidigt og redigere"
         },
+        "image_height": {
+          "label": "Bannerhøjde",
+          "options__1": {
+            "label": "Lille"
+          },
+          "options__2": {
+            "label": "Medium"
+          },
+          "options__3": {
+            "label": "Stor"
+          },
+          "info": "Brug et billede med et højde-bredde-forhold på 2:3 for at opnå det bedste resultat. [Få mere at vide](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
         "image_overlay_opacity": {
           "label": "Billedoverlejringens uigennemsigtighed"
         },

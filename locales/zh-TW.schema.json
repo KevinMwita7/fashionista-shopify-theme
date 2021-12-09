@@ -697,7 +697,20 @@
         "autoplay_banner_slides": {
           "label": "自動播放投影片",
           "info": "播放幻燈片或讓用戶按兩下一個投影片。如果要暫停和編輯單張幻燈片，則非常有用"
-        },        
+        },
+        "image_height": {
+          "label": "橫幅高度",
+          "options__1": {
+            "label": "小"
+          },
+          "options__2": {
+            "label": "中等"
+          },
+          "options__3": {
+            "label": "大"
+          },
+          "info": "若想要獲得最佳結果，請使用寬高比為 2:3 的圖片。[瞭解詳情](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
         "image_overlay_opacity": {
           "label": "圖片疊加層透明度"
         },

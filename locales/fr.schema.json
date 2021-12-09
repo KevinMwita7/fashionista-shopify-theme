@@ -698,6 +698,19 @@
           "label": "Lire les diapositives automatiquement",
           "info": "Lisez des diapositives ou demandez à l'utilisateur de cliquer sur le bouton pour passer à la suivante. Utile si vous souhaitez mettre en pause et modifier une seule diapositive"
         },
+        "image_height": {
+          "label": "Hauteur de la bannière",
+          "options__1": {
+            "label": "Petit"
+          },
+          "options__2": {
+            "label": "Moyen"
+          },
+          "options__3": {
+            "label": "Grand"
+          },
+          "info": "Pour optimiser vos résultats, utilisez une image ayant un rapport d'aspect de 2:3. [En savoir plus](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
         "image_overlay_opacity": {
           "label": "Opacité de la superposition d'images"
         },

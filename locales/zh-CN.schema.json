@@ -697,7 +697,20 @@
         "autoplay_banner_slides": {
           "label": "自动播放幻灯片",
           "info": "播放幻灯片或让用户单击按钮移动到下一个幻灯片。如果要暂停和编辑单张幻灯片，则非常有用"
-        },        
+        },
+        "image_height": {
+          "label": "横幅高度",
+          "options__1": {
+            "label": "小"
+          },
+          "options__2": {
+            "label": "中"
+          },
+          "options__3": {
+            "label": "大"
+          },
+          "info": "若要获得最佳效果，请使用纵横比为 2:3 的图片。[了解详细信息](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
         "image_overlay_opacity": {
           "label": "图片叠加不透明度"
         },

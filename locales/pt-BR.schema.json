@@ -693,7 +693,20 @@
         "autoplay_banner_slides": {
           "label": "Reproduzir slides automaticamente",
           "info": "Reprodução slides ou peça ao usuário para clicar no botão para passar para o próximo. Útil se você quiser pausar e editar um único slide"
-        },        
+        },
+        "image_height": {
+          "label": "Altura do banner",
+          "options__1": {
+            "label": "Pequena"
+          },
+          "options__2": {
+            "label": "Média"
+          },
+          "options__3": {
+            "label": "Grande"
+          },
+          "info": "Use uma imagem com proporção 2:3 para ter os melhores resultados. [Saiba mais](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },  
         "image_overlay_opacity": {
           "label": "Opacidade de sobreposição de imagem"
         },

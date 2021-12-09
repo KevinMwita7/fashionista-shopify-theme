@@ -697,7 +697,20 @@
         "autoplay_banner_slides": {
           "label": "Slaytları otomatik olarak yürütme",
           "info": "Slaytları oynatın veya bir sonrakine geçmek için kullanıcının düğmesini tıklatmasını isteyin. Tek bir slaydı duraklatmak ve düzenlemek istiyorsanız kullanışlıdır"
-        },        
+        },
+        "image_height": {
+          "label": "Banner yüksekliği",
+          "options__1": {
+            "label": "Küçük"
+          },
+          "options__2": {
+            "label": "Orta"
+          },
+          "options__3": {
+            "label": "Büyük"
+          },
+          "info": "En iyi sonuçlar için 2:3 en-boy oranına sahip bir görsel kullanın. [Daha fazla bilgi edinin](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
         "image_overlay_opacity": {
           "label": "Görsel yer paylaşımı opaklığı"
         },
