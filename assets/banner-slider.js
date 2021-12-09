@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.addEventListener('shopify:section:select', function({ detail }) {
-      console.log(details);
+      console.log(detail);
       splide.destroy();
       splide.mount();
     })
