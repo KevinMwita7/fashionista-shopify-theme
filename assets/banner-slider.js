@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if(slide2 && slide2.firstElementChild && JSON.parse(slide2.firstElementChild.dataset.shopifyEditorBlock).id === detail.blockId) {
         splide.go(1);
       } else if(slide3 && slide3.firstElementChild && JSON.parse(slide3.firstElementChild.dataset.shopifyEditorBlock).id === detail.blockId) {
+        console.log(detail);
         splide.go(2);
       }
     });
