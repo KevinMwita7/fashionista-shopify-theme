@@ -36,8 +36,8 @@ if (Shopify.designMode) {
     splide.mount({ LiveRegion });
   });
 
-  document.addEventListener( 'shopify:block:select', function(block, section, load) {
-    console.log(block.id);
+  document.addEventListener( 'shopify:block:select', function(event, blockId, sectionId, load) {
+    console.log(blockId, load);
     console.log(document.querySelectorAll('[data-shopify-editor-block]'));
   });
 }
