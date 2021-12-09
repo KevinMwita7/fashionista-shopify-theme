@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var splide = new Splide('.splide');
   splide.mount({ LiveRegion });
 
-  /*if (Shopify.designMode) {
+  if (Shopify.designMode) {
     document.addEventListener('shopify:block:select', function({ detail }) {
       let slide1 = document.getElementById('splide01-slide01');
       let slide2 = document.getElementById('splide01-slide02');
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if(detail.load) {
         splide.destroy();
         splide = new Splide('.splide');
-        splide.mount();
+        splide.mount({ LiveRegion });
       }
     })
-  }*/
+  }
 });
