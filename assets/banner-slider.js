@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var splide = new Splide('.splide');
   splide.mount({ LiveRegion });
 
-  if (Shopify.designMode) {
-    document.addEventListener('shopify:block:select', function({ detail }) {
+  //if (Shopify.designMode) {
+    //document.addEventListener('shopify:block:select', function({ detail }) {
       /*let slide1 = document.getElementById('splide01-slide01');
       let slide2 = document.getElementById('splide01-slide02');
       let slide3 = document.getElementById('splide01-slide03');
@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(detail);
         splide.go(2);
       }*/
-    });
+    //});
 
     /*document.addEventListener("shopify:section:load", function({ details }) {
       splide.destroy();
       splide.mount();
     });*/
-  }  
+  //  }
 });
