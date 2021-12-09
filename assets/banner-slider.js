@@ -40,7 +40,7 @@ if (Shopify.designMode) {
     console.log(detail);
     let blocks = document.querySelectorAll('[data-shopify-editor-block]');
     let slides = blocks.forEach(block => {
-      console.log(block, block.dataset);
+      console.log(block.dataset.shopifyEditorBlock);
     })
     // console.log(document.querySelectorAll('[data-shopify-editor-block]'));
   });
