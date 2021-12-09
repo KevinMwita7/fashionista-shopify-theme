@@ -24,11 +24,23 @@
             "button_text": "Discover More",
             "button_link": "shopify:\/\/collections\/all"
           }
+        },
+        "211e8824-ccd6-4384-a8ad-2d4c5697a3e3": {
+          "type": "slide",
+          "settings": {
+            "large_image": "shopify:\/\/shop_images\/girl2_3840x_4f112ade-818b-4ad5-b9ad-4e27794a2e0d.jpg",
+            "small_image": "shopify:\/\/shop_images\/girl1_3840x_99c9a37f-8f53-4b60-8808-325a2cc9e6eb.jpg",
+            "heading": "Slideshow heading",
+            "sub_heading": "Slideshow sub-heading",
+            "button_text": "Button Text",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "163756544668aa414f-0",
-        "5223dcdd-687e-434e-8011-08c95b9936bc"
+        "5223dcdd-687e-434e-8011-08c95b9936bc",
+        "211e8824-ccd6-4384-a8ad-2d4c5697a3e3"
       ],
       "settings": {
         "autoplay_banner_slides": true,
