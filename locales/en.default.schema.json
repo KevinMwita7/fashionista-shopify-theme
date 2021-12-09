@@ -820,6 +820,19 @@
           "label": "Play slides automatically",
           "info": "Play slides or have user click button to move to next one. Useful if you want to pause and edit a single slide."
         },
+        "image_height": {
+          "label": "Banner height",
+          "options__1": {
+            "label": "Small"
+          },
+          "options__2": {
+            "label": "Medium"
+          },
+          "options__3": {
+            "label": "Large"
+          },
+          "info": "For best results, use an image with a 2:3 aspect ratio. [Learn more](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+        },
         "image_overlay_opacity": {
           "label": "Image overlay opacity"
         },
