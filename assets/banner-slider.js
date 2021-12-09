@@ -36,8 +36,12 @@ if (Shopify.designMode) {
     splide.mount({ LiveRegion });
   });
 
-  document.addEventListener( 'shopify:block:select', function({ blockId, sectionId, load, detail }) {
-    console.log(blockId, load, detail);
-    console.log(document.querySelectorAll('[data-shopify-editor-block]'));
+  document.addEventListener( 'shopify:block:select', function({ detail }) {
+    console.log(detail);
+    let blocks = document.querySelectorAll('[data-shopify-editor-block]');
+    let slides = blocks.map(block => {
+      console.log(block.dataset["shopify-editor-block"]);
+    })
+    // console.log(document.querySelectorAll('[data-shopify-editor-block]'));
   });
 }
