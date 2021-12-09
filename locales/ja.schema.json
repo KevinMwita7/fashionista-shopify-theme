@@ -709,7 +709,7 @@
           "options__3": {
             "label": "大"
           },
-          "info": "画像のアスペクト比が2:3のものを使用すると最適です。[詳しくはこちら](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "画像のアスペクト比が2:3のものを使用すると最適です。[詳しくはこちら](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "image_overlay_opacity": {
           "label": "画像のオーバーレイ不透明率"

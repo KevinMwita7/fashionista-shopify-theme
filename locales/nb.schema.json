@@ -709,8 +709,8 @@
           "options__3": {
             "label": "Stor"
           },
-          "info": "Bruk et bilde med størrelsesforhold 2:3 for best resultat. [Finn ut mer](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
-        },     
+          "info": "Bruk et bilde med størrelsesforhold 2:3 for best resultat. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
+        },
         "image_overlay_opacity": {
           "label": "Gjennomsiktighet for bildeoverlegg"
         },

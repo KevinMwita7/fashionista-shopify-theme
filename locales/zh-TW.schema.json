@@ -709,7 +709,7 @@
           "options__3": {
             "label": "大"
           },
-          "info": "若想要獲得最佳結果，請使用寬高比為 2:3 的圖片。[瞭解詳情](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "若想要獲得最佳結果，請使用寬高比為 2:3 的圖片。[瞭解詳情](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "image_overlay_opacity": {
           "label": "圖片疊加層透明度"

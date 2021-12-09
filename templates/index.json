@@ -44,6 +44,7 @@
       ],
       "settings": {
         "autoplay_banner_slides": true,
+        "image_height": "md:h-screen-sm",
         "image_overlay_opacity": 0,
         "heading_font_size": 8,
         "subheading_font_size": 4,

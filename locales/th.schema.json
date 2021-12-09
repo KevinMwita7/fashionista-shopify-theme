@@ -709,7 +709,7 @@
           "options__3": {
             "label": "ใหญ่"
           },
-          "info": "ใช้รูปภาพที่มีอัตราส่วนภาพ 2:3 เพื่อผลลัพธ์ที่ดีที่สุด [ดูข้อมูลเพิ่มเติม](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "ใช้รูปภาพที่มีอัตราส่วนภาพ 2:3 เพื่อผลลัพธ์ที่ดีที่สุด [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "image_overlay_opacity": {
           "label": "ความทึบของการวางซ้อนรูปภาพ"

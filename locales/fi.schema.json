@@ -709,7 +709,7 @@
           "options__3": {
             "label": "Suuri"
           },
-          "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 2:3. [Lisätietoja](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "Saat parhaat tulokset käyttämällä kuvaa, jonka kuvasuhde on 2:3. [Lisätietoja](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "image_overlay_opacity": {
           "label": "Peittokuvan läpikuultavuus"
