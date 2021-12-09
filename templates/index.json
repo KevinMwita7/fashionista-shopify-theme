@@ -17,6 +17,7 @@
           "type": "slide",
           "settings": {
             "large_image": "shopify:\/\/shop_images\/84758nne2.jpg",
+            "small_image": "shopify:\/\/shop_images\/84758nne1_3840x_6de55f19-8893-40e8-864a-eae443787f15.jpg",
             "heading": "Hot Trend",
             "sub_heading": "Spring Collection",
             "button_text": "Discover More",
@@ -29,6 +30,7 @@
         "5223dcdd-687e-434e-8011-08c95b9936bc"
       ],
       "settings": {
+        "autoplay_banner_slides": true,
         "image_overlay_opacity": 0,
         "heading_font_size": 8,
         "subheading_font_size": 4,
