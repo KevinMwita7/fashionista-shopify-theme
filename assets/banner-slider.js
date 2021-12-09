@@ -45,26 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    document.addEventListener('shopify:section:load', function({ detail }) {
-      console.log("section loaded");
-    })
-
-    document.addEventListener('shopify:section:unload', function({ detail }) {
-      console.log("section unloaded");
-    })
-
     document.addEventListener('shopify:section:select', function({ detail }) {
-      console.log("section select");
+      console.log(splide.state.is( Splide.STATES.CREATED ), splide.state.is( Splide.STATES.MOUNTED ), splide.state.is( Splide.STATES.IDLE ), splide.state.is( Splide.STATES.MOVING ), splide.state.is( Splide.STATES.DESTROYED ))
+      // splide.mount();
     })
-
-    document.addEventListener('shopify:section:deselect', function({ detail }) {
-      console.log("section deselected");
-    })
-
-    document.addEventListener('shopify:block:deselect', function({ detail }) {
-      console.log("block deselected");
-    })
-    
 
     /*document.addEventListener("shopify:section:load", function({ details }) {
       splide.destroy();
