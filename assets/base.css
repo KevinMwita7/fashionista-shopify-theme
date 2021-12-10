@@ -1890,6 +1890,12 @@ input[type='checkbox'] {
     column-gap: 2rem;
   }
 
+  .header--logo-center {
+    grid-template-areas: 'navigation heading icons';
+    grid-template-columns: auto auto 1fr;
+    column-gap: 2rem;
+  }
+
   .header--top-center {
     grid-template-areas:
       'left-icon heading icons'
