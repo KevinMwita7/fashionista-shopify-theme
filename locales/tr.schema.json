@@ -709,7 +709,7 @@
           "options__3": {
             "label": "Büyük"
           },
-          "info": "En iyi sonuçlar için 2:3 en-boy oranına sahip bir görsel kullanın. [Daha fazla bilgi edinin](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "En iyi sonuçlar için 2:3 en-boy oranına sahip bir görsel kullanın. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "image_overlay_opacity": {
           "label": "Görsel yer paylaşımı opaklığı"

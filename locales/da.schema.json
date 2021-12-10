@@ -709,7 +709,7 @@
           "options__3": {
             "label": "Stor"
           },
-          "info": "Brug et billede med et højde-bredde-forhold på 2:3 for at opnå det bedste resultat. [Få mere at vide](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "Brug et billede med et højde-bredde-forhold på 2:3 for at opnå det bedste resultat. [Få mere at vide](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "image_overlay_opacity": {
           "label": "Billedoverlejringens uigennemsigtighed"

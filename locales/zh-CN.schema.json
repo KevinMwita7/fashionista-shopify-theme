@@ -709,7 +709,7 @@
           "options__3": {
             "label": "大"
           },
-          "info": "若要获得最佳效果，请使用纵横比为 2:3 的图片。[了解详细信息](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "若要获得最佳效果，请使用纵横比为 2:3 的图片。[了解详细信息](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "image_overlay_opacity": {
           "label": "图片叠加不透明度"

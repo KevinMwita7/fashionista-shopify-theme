@@ -709,7 +709,7 @@
           "options__3": {
             "label": "Duży"
           },
-          "info": "Aby uzyskać najlepsze wyniki, użyj obrazu o współczynniku proporcji 2:3. [Dowiedz się więcej](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "Aby uzyskać najlepsze wyniki, użyj obrazu o współczynniku proporcji 2:3. [Dowiedz się więcej](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "image_overlay_opacity": {
           "label": "Nieprzezroczystość nakładki obrazu"

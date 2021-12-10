@@ -709,7 +709,7 @@
           "options__3": {
             "label": "Grande"
           },
-          "info": "Para mejores resultados, utiliza una imagen con una relación de aspecto 2:3. [Más información](https://help.shopify.com/en/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "info": "Para mejores resultados, utiliza una imagen con una relación de aspecto 2:3. [Más información](https:\/\/help.shopify.com\/en\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         },
         "image_overlay_opacity": {
           "label": "Opacidad de la sobreposición de imagen"
