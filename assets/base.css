@@ -1872,7 +1872,7 @@ input[type='checkbox'] {
     padding-bottom: 2rem;
   }
 
-  .header--has-menu:not(.header--middle-left) {
+  .header--has-menu:not(.header--middle-left), .header--has-menu:not(.header--logo-center) {
     padding-bottom: 0;
   }
 
