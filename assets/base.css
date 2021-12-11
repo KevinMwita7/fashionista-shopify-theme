@@ -1895,7 +1895,7 @@ input[type='checkbox'] {
     grid-template-columns: auto auto auto;
     column-gap: 2rem;
     justify-content: space-between;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem !important;
   }
 
   .header--top-center {
