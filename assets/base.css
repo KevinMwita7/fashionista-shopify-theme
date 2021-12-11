@@ -2338,3 +2338,6 @@ details-disclosure > details {
   }
 }
 
+.font-bold {
+  font-weight: bold;
+}

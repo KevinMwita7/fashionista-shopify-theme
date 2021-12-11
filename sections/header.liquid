@@ -93,7 +93,7 @@
           <div id="menu-drawer" class="menu-drawer motion-reduce" tabindex="-1">
             <div class="menu-drawer__inner-container">
               <div class="menu-drawer__navigation-container">
-                <nav class="menu-drawer__navigation">
+                <nav class="menu-drawer__navigation font-bold">
                   <ul class="menu-drawer__menu list-menu" role="list">
                     {%- for link in section.settings.menu.links -%}
                       <li>
@@ -349,7 +349,7 @@
     {%- endif -%}
 
     {%- if section.settings.menu != blank -%}
-      <nav class="header__inline-menu">
+      <nav class="header__inline-menu font-bold">
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
             <li>
