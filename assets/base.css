@@ -2341,3 +2341,8 @@ details-disclosure > details {
 .font-bold {
   font-weight: bold;
 }
+
+.icon-bold {
+  stroke: currentColor;
+  stroke-width: 0.75px;
+}
