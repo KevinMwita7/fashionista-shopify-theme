@@ -1892,7 +1892,7 @@ input[type='checkbox'] {
 
   .header--logo-center {
     grid-template-areas: 'navigation heading icons';
-    grid-template-columns: auto auto auto;
+    /*grid-template-columns: auto auto auto;*/
     column-gap: 2rem;
     justify-content: space-between;
     padding-bottom: 2rem !important;
