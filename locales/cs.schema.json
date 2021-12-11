@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "Nahoře ve středu"
+          },
+          "options__4": {
+            "label": "Střed"
           }
         },
         "menu": {

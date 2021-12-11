@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "Centraal boven"
+          },
+          "options__4": {
+            "label": "Middelpunt"
           }
         },
         "menu": {

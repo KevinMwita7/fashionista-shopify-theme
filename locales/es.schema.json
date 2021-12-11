@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "Superior centrada"
+          },
+          "options__4": {
+            "label": "Centro"
           }
         },
         "menu": {

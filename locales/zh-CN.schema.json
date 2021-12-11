@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "顶部居中"
+          },
+          "options__4": {
+            "label": "中心"
           }
         },
         "menu": {

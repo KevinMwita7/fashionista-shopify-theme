@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "가운데 상단"
+          },
+          "options__4": {
+            "label": "중"
           }
         },
         "menu": {

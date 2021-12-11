@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "Trên cùng ở giữa"
+          },
+          "options__4": {
+            "label": "Trung tâm"
           }
         },
         "menu": {

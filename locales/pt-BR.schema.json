@@ -655,6 +655,9 @@
           },
           "options__3": {
             "label": "Centralizado na parte superior"
+          },
+          "options__4": {
+            "label": "Centro"
           }
         },
         "menu": {

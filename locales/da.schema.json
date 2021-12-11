@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "Øverst i midten"
+          },
+          "options__4": {
+            "label": "Midte"
           }
         },
         "menu": {

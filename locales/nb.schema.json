@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "Toppsentrert"
+          },
+          "options__4": {
+            "label": "Sentrum"
           }
         },
         "menu": {

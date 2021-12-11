@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "上部中央"
+          },
+          "options__4": {
+            "label": "センター"
           }
         },
         "menu": {

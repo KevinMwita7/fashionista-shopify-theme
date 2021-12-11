@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "Oben zentriert"
+          },
+          "options__4": {
+            "label": "Mitte"
           }
         },
         "menu": {

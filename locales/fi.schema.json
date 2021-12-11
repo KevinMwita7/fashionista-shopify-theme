@@ -659,6 +659,9 @@
           },
           "options__3": {
             "label": "Keskellä ylhäällä"
+          },
+          "options__4": {
+            "label": "Keskus"
           }
         },
         "menu": {
