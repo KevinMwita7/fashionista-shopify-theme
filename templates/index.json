@@ -104,7 +104,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "BEST SELLERS",
-        "collection": "all",
+        "collection": "all-products",
         "products_to_show": 4,
         "show_view_all": true,
         "swipe_on_mobile": false,
