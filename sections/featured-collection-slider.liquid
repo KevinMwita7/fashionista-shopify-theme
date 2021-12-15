@@ -30,7 +30,7 @@
       <div class="splide__track">
         <ul class="splide__list" role="list">
           {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
-            <li class="splide__slide">
+            <li class="splide__slide featured-collection-slide">
               {% render 'product-card',
                 product_card_product: product,
                 media_size: section.settings.image_ratio,
