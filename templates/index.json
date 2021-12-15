@@ -110,7 +110,7 @@
         "swipe_on_mobile": true,
         "image_ratio": "portrait",
         "show_secondary_image": false,
-        "add_image_padding": false,
+        "add_image_padding": true,
         "show_image_outline": false,
         "show_vendor": false,
         "show_rating": false
