@@ -102,7 +102,6 @@
 {% endcomment %}
 
 {{ 'main.5ddd1122.chunk.css' | asset_url | stylesheet_tag }}
-{{ 'splide.min.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign heading_font_bold = section.settings.banner_heading_font | font_modify: 'weight', 'bold'
@@ -278,7 +277,6 @@
   </div>
 
     {% if section.blocks.size > 1 %}
-      <script src="{{ 'splide.min.js' | asset_url }}" defer type="text/javascript"></script>
       <script src="{{ 'banner-slider.js' | asset_url }}" defer type="text/javascript"></script>
    {% endif %}
   {% endif %}
