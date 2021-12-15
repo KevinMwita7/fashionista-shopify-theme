@@ -4,7 +4,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.featured-collection-splide', {
         arrows: (screen.width >= 768 && splides.length > 4) || (screen.width < 768 && splides.length > 2),
         rewind: true,
-        perPage: screen.width >= 768 ? 4 : 2
+        perPage: screen.width >= 768 && splides.length > 3 ? 4 : 2
     } );
     splide.mount();
 });
