@@ -2346,3 +2346,7 @@ details-disclosure > details {
   stroke: currentColor;
   stroke-width: 0.75px;
 }
+
+.justify-center {
+  justify-content: center;
+}
