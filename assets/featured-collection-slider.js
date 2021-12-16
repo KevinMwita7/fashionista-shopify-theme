@@ -13,9 +13,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
     } );
 
     splide.on("arrows:mounted", function (prev, next) {
-        prev.style.top = "-20%";
-        prev.style.left = "94%";
-        next.style.top = "-20%";
+        prev.style.top = "-9%";
+        prev.style.left = "90%";
+        next.style.top = "-9%";
     });
 
     splide.mount();
