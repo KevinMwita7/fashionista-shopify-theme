@@ -64,14 +64,14 @@ document.addEventListener('DOMContentLoaded', function() {
       0: {
         direction: "horizontal",
         pagination: {
-          el: '.swiper-pagination-sm',
+          el: '.swiper-pagination',
           clickable: true
         },
       },
       750: {
         direction: "vertical",
         pagination: {
-          el: '.swiper-pagination',
+          el: '.swiper-pagination-md',
           clickable: true
         },
       }
