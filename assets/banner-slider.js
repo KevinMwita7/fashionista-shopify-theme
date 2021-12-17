@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
       delay: 5000,
     },
     pagination: true,
-    effect: fade,
+    effect: "fade",
     breakpoints: {
       0: {
         direction: "horizontal",
