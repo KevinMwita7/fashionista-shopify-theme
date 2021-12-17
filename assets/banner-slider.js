@@ -1,4 +1,4 @@
-function LiveRegion( Splide ) {
+/*function LiveRegion( Splide ) {
   let liveRegion;
 
   function mount() {
@@ -52,4 +52,29 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     })
   }
-});
+});*/
+
+document.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    breakpoints: {
+      0: {
+        direction: "horizontal",
+        pagination: {
+          el: '.swiper-pagination-sm',
+          clickable: true
+        },
+      },
+      750: {
+        direction: "vertical",
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+      }
+    }
+  });
+})

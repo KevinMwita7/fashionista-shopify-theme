@@ -176,13 +176,14 @@
   <link rel="preload" as="font" href="{{ section.settings.banner_button_font | font_url }}" type="font/woff2" crossorigin>
 {%- endunless -%}
 
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 {% if section.blocks.size > 0 %}
   <div id="Banner-{{ section.id }}" class="md:relative banner">
-    <div class="splide" data-splide='{"type": "loop", "autoplay": {{ section.settings.autoplay_banner_slides }}, "pagination": false}'>
-      <div class="splide__track">
-        <div class="splide__list">
+    <div class="swiper" data-splide='{"type": "loop", "autoplay": {{ section.settings.autoplay_banner_slides }}, "pagination": false}'>
+        <div class="swiper-wrapper">
           {% for block in section.blocks %}
-            <div class="splide__slide">
+            <div class="swiper-slide">
               <div class="relative fade {{ section.settings.image_height }}" {{ block.shopify_attributes }}>
                 <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
                   {% if block.settings.large_image == blank and block.settings.small_image == blank %}
@@ -272,12 +273,13 @@
           </div>
         {% endfor %}
       </div>
-      </div>
+      <div class="swiper-pagination-md"></div>
     </div>
   </div>
 
     {% if section.blocks.size > 1 %}
-      <script src="{{ 'banner-slider.js' | asset_url }}" defer type="text/javascript"></script>
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+      <script src="{{ 'banner-slider.js' | asset_url }}" defer></script>
    {% endif %}
   {% endif %}
 
