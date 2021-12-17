@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       750: {
         direction: "vertical",
-        grabCursor: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true
