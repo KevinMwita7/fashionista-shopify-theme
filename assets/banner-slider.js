@@ -70,10 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       750: {
         direction: "vertical",
-        pagination: {
-          el: '.swiper-pagination-md',
-          clickable: true
-        },
+        pagination: true
       }
     }
   });
