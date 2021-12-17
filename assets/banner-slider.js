@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
     autoplay: {
       delay: 5000,
     },
-    pagination: true,
     effect: "fade",
     breakpoints: {
       0: {
@@ -72,7 +71,11 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       750: {
         direction: "vertical",
-        // pagination: true
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
       }
     }
   });
