@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
       },
       750: {
-        direction: "vertical",
+        direction: "horizontal",
         pagination: {
           el: '.swiper-pagination-md',
           clickable: true
