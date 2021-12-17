@@ -179,8 +179,8 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
 {% if section.blocks.size > 0 %}
-  <div id="Banner-{{ section.id }}" class="md:relative">
-    <div class="swiper" data-splide='{"type": "loop", "autoplay": {{ section.settings.autoplay_banner_slides }}, "pagination": false}'>
+  <div id="Banner-{{ section.id }}" class="md:relative {{ section.settings.image_height }}">
+    <div class="swiper h-full w-full" data-splide='{"type": "loop", "autoplay": {{ section.settings.autoplay_banner_slides }}, "pagination": false}'>
         <div class="swiper-wrapper">
           {% for block in section.blocks %}
             <div class="swiper-slide" {{ block.shopify_attributes }}>
