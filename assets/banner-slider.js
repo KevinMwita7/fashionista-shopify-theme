@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     autoplay: {
       delay: 5000,
     },
+    pagination: true,
     breakpoints: {
       0: {
         direction: "horizontal",
@@ -70,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       750: {
         direction: "vertical",
-        pagination: true
+        // pagination: true
       }
     }
   });
