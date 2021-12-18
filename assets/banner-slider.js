@@ -63,7 +63,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // effect: "fade",
     effect: screen.width < 750 ? "" : "fade",
     speed: 1000,
-    pagination: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
     breakpoints: {
       0: {
         direction: "horizontal",
