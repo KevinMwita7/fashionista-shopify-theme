@@ -65,79 +65,6 @@
         "horizontal_content_position": "start"
       }
     },
-    "163983832371c1556a": {
-      "type": "collection-list",
-      "blocks": {
-        "1639838323d560b85d-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "accessories"
-          }
-        },
-        "1639838323d560b85d-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "shoes"
-          }
-        },
-        "1639838323d560b85d-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "bags"
-          }
-        },
-        "9c1650f5-d243-4cd2-8c5b-8f9310764f29": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dresses"
-          }
-        },
-        "dfa94e97-a550-4404-ba91-a572cebc842a": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hats"
-          }
-        },
-        "d004ec03-6896-478f-8a60-d180621648fe": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "legwear"
-          }
-        }
-      },
-      "block_order": [
-        "1639838323d560b85d-0",
-        "1639838323d560b85d-1",
-        "1639838323d560b85d-2",
-        "9c1650f5-d243-4cd2-8c5b-8f9310764f29",
-        "dfa94e97-a550-4404-ba91-a572cebc842a",
-        "d004ec03-6896-478f-8a60-d180621648fe"
-      ],
-      "settings": {
-        "title": "Collections",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
-    "1639584903cf44a326": {
-      "type": "featured-collection-slider",
-      "settings": {
-        "title": "BEST SELLERS",
-        "collection": "all-products",
-        "products_to_show": 6,
-        "show_view_all": false,
-        "swipe_on_mobile": true,
-        "image_ratio": "portrait",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": false,
-        "show_rating": false
-      }
-    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -237,8 +164,6 @@
   },
   "order": [
     "16375654467d9d124d",
-    "163983832371c1556a",
-    "1639584903cf44a326",
     "collage",
     "video",
     "multi_column"
