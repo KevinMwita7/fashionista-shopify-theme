@@ -264,7 +264,7 @@
                     <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
                         <p class="mb-0.5 font-semibold banner_heading">{{ block.settings.sub_heading }}</p>
                         <h2 class="text-4xl my-6 banner_subheading">{{ block.settings.heading }}</h2>
-                        <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="border block rounded-{{ section.settings.button_border_radius }} h3 banner_button" style="font-weight: {{ section.settings.button_text_font_weight }}; color: {{ section.settings.button_text_color }}; border-color: {{ section.settings.button_border_color }}; {%- unless section.settings.button_bg_color == blank -%} background-color: {{ section.settings.button_bg_color }}; {%- endunless -%} padding: {{ section.settings.banner_button_size }};">
+                        <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="border block rounded-{{ section.settings.button_border_radius }} h3 banner_button mb-20" style="font-weight: {{ section.settings.button_text_font_weight }}; color: {{ section.settings.button_text_color }}; border-color: {{ section.settings.button_border_color }}; {%- unless section.settings.button_bg_color == blank -%} background-color: {{ section.settings.button_bg_color }}; {%- endunless -%} padding: {{ section.settings.banner_button_size }};">
                             {{ block.settings.button_text }}
                         </a>
                     </div>
