@@ -97,6 +97,12 @@
           "settings": {
             "collection": "hats"
           }
+        },
+        "d004ec03-6896-478f-8a60-d180621648fe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "legwear"
+          }
         }
       },
       "block_order": [
@@ -104,7 +110,8 @@
         "1639838323d560b85d-1",
         "1639838323d560b85d-2",
         "9c1650f5-d243-4cd2-8c5b-8f9310764f29",
-        "dfa94e97-a550-4404-ba91-a572cebc842a"
+        "dfa94e97-a550-4404-ba91-a572cebc842a",
+        "d004ec03-6896-478f-8a60-d180621648fe"
       ],
       "settings": {
         "title": "Collections",
