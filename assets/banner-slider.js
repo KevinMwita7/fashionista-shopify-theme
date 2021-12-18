@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     autoplay: {
       delay: 5000,
     },
-    effect: screen.width >= 768 ? "fade" : "",
+    effect: window.innerWidth >= 768 ? "fade" : "",
     speed: 1000,
     pagination: {
       el: '.swiper-pagination',
