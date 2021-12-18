@@ -143,22 +143,12 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "23131540-a139-4232-b495-16ae91ff9d99": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "column1",
         "column2",
-        "column3",
-        "23131540-a139-4232-b495-16ae91ff9d99"
+        "column3"
       ],
       "settings": {
         "title": "Multicolumn",
@@ -197,13 +187,20 @@
           "settings": {
             "collection": "hats"
           }
+        },
+        "2598ee32-fcd1-4cdc-ab9b-3bc034f7f87c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
         }
       },
       "block_order": [
         "163984837516305934-0",
         "163984837516305934-1",
         "163984837516305934-2",
-        "ebcd4601-f80d-4c86-b18e-8b4a4fa3bb48"
+        "ebcd4601-f80d-4c86-b18e-8b4a4fa3bb48",
+        "2598ee32-fcd1-4cdc-ab9b-3bc034f7f87c"
       ],
       "settings": {
         "title": "Collections",
