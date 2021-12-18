@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
       delay: 5000,
     },
     // effect: "fade",
-    effect: screen.width <= 750 ? "" : "fade",
+    effect: screen.width >= 750 ? "fade" : "",
     speed: 1000,
     pagination: {
       el: '.swiper-pagination',
@@ -70,17 +70,9 @@ document.addEventListener('DOMContentLoaded', function() {
     breakpoints: {
       0: {
         direction: "horizontal",
-        /*pagination: {
-          el: '.swiper-pagination-sm',
-          clickable: true
-        },*/
       },
       750: {
         direction: "vertical",
-        /*pagination: {
-          el: '.swiper-pagination-md',
-          clickable: true
-        }*/
       }
     }
   });
