@@ -55,12 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });*/
 
 document.addEventListener('DOMContentLoaded', function() {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('#image-banner-sliders', {
     loop: true,
-    /*autoplay: {
+    autoplay: {
       delay: 5000,
-    },*/
-    // effect: "fade",
+    },
     effect: screen.width >= 768 ? "fade" : "",
     speed: 1000,
     pagination: {
