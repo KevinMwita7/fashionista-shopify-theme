@@ -1,5 +1,5 @@
 document.addEventListener( 'DOMContentLoaded', function() {
-    var swiper = new Swiper("#featured-collection-slider", {
+    var swiper = new Swiper("#collection-list-slider", {
         pagination: {
             el: ".featured-collection-pagination",
             clickable: true
