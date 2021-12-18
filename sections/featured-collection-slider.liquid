@@ -28,7 +28,7 @@
 
   <slider-component class="slider-mobile-gutter">
     <div class="swiper" id="featured-collection-slider">
-      <ul class="swiper-wrapper" role="list">
+      <ul class="swiper-wrapper" role="list" style="margin-bottom: 5rem;">
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li class="swiper-slide">
             {% render 'product-card',
