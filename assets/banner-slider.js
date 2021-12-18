@@ -60,22 +60,24 @@ document.addEventListener('DOMContentLoaded', function() {
     autoplay: {
       delay: 5000,
     },
-    effect: "fade",
+    // effect: "fade",
+    effect: screen.width < 750 ? "" : "fade",
     speed: 1000,
+    pagination: true,
     breakpoints: {
       0: {
         direction: "horizontal",
-        pagination: {
+        /*pagination: {
           el: '.swiper-pagination-sm',
           clickable: true
-        },
+        },*/
       },
       750: {
         direction: "vertical",
-        pagination: {
+        /*pagination: {
           el: '.swiper-pagination-md',
           clickable: true
-        }
+        }*/
       }
     }
   });
