@@ -1,9 +1,9 @@
 document.addEventListener( 'DOMContentLoaded', function() {
     var swiper = new Swiper("#collection-list-slider", {
-        pagination: {
+        /*pagination: {
             el: ".featured-collection-pagination",
             clickable: true
-        },
+        },*/
         spaceBetween: 20,
         breakpoints: {
             320: {
@@ -14,10 +14,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
             },
             1024: {
                 slidesPerView: 5,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
             }
         }
     });
