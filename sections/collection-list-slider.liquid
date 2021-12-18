@@ -1,6 +1,6 @@
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 {% comment %}<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">{% endcomment %}
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="{{ 'swiper-bundle.min.css' | asset_url }}">
 
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
@@ -103,7 +103,7 @@
   {%- endif -%}
 </div>
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>/
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
 <script src="{{ 'collection-list-slider.js' | asset_url }}" defer></script>
 
 {% schema %}
