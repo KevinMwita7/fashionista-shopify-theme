@@ -65,15 +65,15 @@ document.addEventListener('DOMContentLoaded', function() {
     breakpoints: {
       0: {
         direction: "horizontal",
-        /*pagination: {
-          el: '.swiper-pagination',
+        pagination: {
+          el: '.swiper-pagination-sm',
           clickable: true
-        },*/
+        },
       },
       750: {
         direction: "vertical",
         pagination: {
-          el: '.swiper-pagination',
+          el: '.swiper-pagination-md',
           clickable: true
         }
       }
