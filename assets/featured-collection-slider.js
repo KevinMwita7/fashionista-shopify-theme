@@ -4,10 +4,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
             el: ".featured-collection-pagination",
             clickable: true
         },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
         spaceBetween: 20,
         breakpoints: {
             320: {
@@ -18,6 +14,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
             },
             1024: {
                 slidesPerView: 5,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
             }
         }
     });
