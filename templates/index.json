@@ -160,12 +160,63 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "1639843027f683a06d": {
+      "type": "collection-list-slider",
+      "blocks": {
+        "1639843027af3070c6-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1639843027af3070c6-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1639843027af3070c6-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1639843027af3070c6-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1639843027af3070c6-4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1639843027af3070c6-0",
+        "1639843027af3070c6-1",
+        "1639843027af3070c6-2",
+        "1639843027af3070c6-3",
+        "1639843027af3070c6-4"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
     "16375654467d9d124d",
     "collage",
     "video",
-    "multi_column"
+    "multi_column",
+    "1639843027f683a06d"
   ]
 }
