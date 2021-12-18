@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   const swiper = new Swiper('.swiper', {
     loop: true,
-    autoplay: {
+    /*autoplay: {
       delay: 5000,
-    },
+    },*/
     // effect: "fade",
     effect: screen.width >= 768 ? "fade" : "",
     speed: 1000,
