@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
       delay: 5000,
     },
     // effect: "fade",
-    effect: screen.width < 750 ? "" : "fade",
+    effect: screen.width <= 750 ? "" : "fade",
     speed: 1000,
     pagination: {
       el: '.swiper-pagination',
