@@ -9,7 +9,9 @@ document.addEventListener( 'DOMContentLoaded', function() {
             prevEl: '.swiper-button-prev',
         },
         spaceBetween: 20,
-        breakpoints: {
+        slidesPerView: "auto",
+        centeredSlides: true,
+        /*breakpoints: {
             320: {
                 slidesPerView: 2,
             },
@@ -19,6 +21,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
             1024: {
                 slidesPerView: 5,
             }
-        }
+        }*/
     });
 });
