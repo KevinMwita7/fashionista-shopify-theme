@@ -2,8 +2,9 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
 
-<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+{% comment %}<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">{% endcomment %}
 <link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
@@ -26,30 +27,28 @@
   </div>
 
   <slider-component class="slider-mobile-gutter">
-    <div class="featured-collection-splide">
-      <div class="splide__track">
-        <ul class="splide__list" role="list">
-          {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
-            <li class="splide__slide featured-collection-slide">
-              {% render 'product-card',
-                product_card_product: product,
-                media_size: section.settings.image_ratio,
-                show_secondary_image: section.settings.show_secondary_image,
-                add_image_padding: section.settings.add_image_padding,
-                show_vendor: section.settings.show_vendor,
-                show_image_outline: section.settings.show_image_outline,
-                show_rating: section.settings.show_rating
-              %}
+    <div class="swiper" id="featured-collection-slider">
+      <ul class="swiper-wrapper" role="list">
+        {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+          <li class="swiper-slide">
+            {% render 'product-card',
+              product_card_product: product,
+              media_size: section.settings.image_ratio,
+              show_secondary_image: section.settings.show_secondary_image,
+              add_image_padding: section.settings.add_image_padding,
+              show_vendor: section.settings.show_vendor,
+              show_image_outline: section.settings.show_image_outline,
+              show_rating: section.settings.show_rating
+            %}
+          </li>
+        {%- else -%}
+          {%- for i in (1..4) -%}
+            <li class="grid__item">
+              {% render 'product-card-placeholder' %}
             </li>
-          {%- else -%}
-            {%- for i in (1..4) -%}
-              <li class="grid__item">
-                {% render 'product-card-placeholder' %}
-              </li>
-            {%- endfor -%}
           {%- endfor -%}
-        </ul>
-      </div>
+        {%- endfor -%}
+      </ul>
     </div>
   </slider-component>
 
@@ -65,6 +64,7 @@
   {%- endif -%}
 </div>
 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
 <script src="{{ 'featured-collection-slider.js' | asset_url }}" defer type="text/javascript"></script>
 
 {% schema %}
