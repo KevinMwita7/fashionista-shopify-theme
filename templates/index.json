@@ -143,12 +143,22 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "23131540-a139-4232-b495-16ae91ff9d99": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column1",
         "column2",
-        "column3"
+        "column3",
+        "23131540-a139-4232-b495-16ae91ff9d99"
       ],
       "settings": {
         "title": "Multicolumn",
@@ -181,12 +191,19 @@
           "settings": {
             "collection": "dresses"
           }
+        },
+        "ebcd4601-f80d-4c86-b18e-8b4a4fa3bb48": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hats"
+          }
         }
       },
       "block_order": [
         "163984837516305934-0",
         "163984837516305934-1",
-        "163984837516305934-2"
+        "163984837516305934-2",
+        "ebcd4601-f80d-4c86-b18e-8b4a4fa3bb48"
       ],
       "settings": {
         "title": "Collections",
