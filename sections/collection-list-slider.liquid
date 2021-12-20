@@ -25,7 +25,7 @@
       -%}
 
       {%- for block in section.blocks -%}
-        <li class="swiper-slide" {{ block.shopify_attributes }}>
+        <li class="swiper-slide" {{ block.shopify_attributes }} data-slide-index={{ forloop.index }}>
           <a{% if block.settings.collection != blank and block.settings.collection.all_products_count > 0 %} href="{{ block.settings.collection.url }}"{% else %} role="link" aria-disabled="true"{% endif %}
             class="card animate-arrow link{% if block.settings.collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
           >
