@@ -1,15 +1,8 @@
 function initSlider() {
     return new Swiper("#collection-list-slider", {
-        observer: true,
-observeParents: true,
-parallax:true,
         pagination: {
             el: ".collection-list-pagination",
             clickable: true
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
         },
         spaceBetween: 20,
         breakpoints: {
@@ -31,13 +24,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
     if(Shopify.designMode) {
         document.addEventListener("shopify:section:load", function (event) {
-            console.log("section load");
             swiper = initSlider();
         });
 
         document.addEventListener("shopify:section:unload", function (event) {
             swiper.destroy();
-            console.log("section unload");
         })
     }
 });
