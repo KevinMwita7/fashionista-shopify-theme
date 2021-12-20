@@ -32,8 +32,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
         });
 
         document.addEventListener("shopify:block:select", function (event) {
-            console.log(event.detail);
-            console.log(event.target);
+            swiper.slideTo(+event.target.dataset.slideIndex);
+            // if(event.detail.load) {}
         });
     }
 });
