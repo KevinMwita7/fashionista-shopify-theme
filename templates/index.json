@@ -175,11 +175,18 @@
           "settings": {
             "collection": "bags"
           }
+        },
+        "4ec21b77-9493-4766-8448-7aeb00fb5d59": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dresses"
+          }
         }
       },
       "block_order": [
         "1639992274bffc5122-0",
-        "1639992274bffc5122-1"
+        "1639992274bffc5122-1",
+        "4ec21b77-9493-4766-8448-7aeb00fb5d59"
       ],
       "settings": {
         "title": "Collections",
