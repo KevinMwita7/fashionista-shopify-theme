@@ -181,26 +181,12 @@
           "settings": {
             "collection": ""
           }
-        },
-        "1639992274bffc5122-3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "1639992274bffc5122-4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
         }
       },
       "block_order": [
         "1639992274bffc5122-0",
         "1639992274bffc5122-1",
-        "1639992274bffc5122-2",
-        "1639992274bffc5122-3",
-        "1639992274bffc5122-4"
+        "1639992274bffc5122-2"
       ],
       "settings": {
         "title": "Collections",
