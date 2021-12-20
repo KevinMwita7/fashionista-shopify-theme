@@ -2350,3 +2350,19 @@ details-disclosure > details {
 .justify-center {
   justify-content: center;
 }
+
+.section-heading {
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+
+.font-medium {
+  font-weight: 500
+}
+
+@media (min-width:1024px) {
+  .lg\:section-heading {
+    font-size:3.75rem;
+    line-height:1
+  }
+}
