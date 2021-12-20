@@ -1,5 +1,8 @@
 function initSlider() {
     return new Swiper("#collection-list-slider", {
+        observer: true,
+observeParents: true,
+parallax:true,
         pagination: {
             el: ".collection-list-pagination",
             clickable: true
