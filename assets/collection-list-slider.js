@@ -25,10 +25,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
     if(Shopify.designMode) {
         document.addEventListener("shopify:section:load", function (event) {
             console.log("section load");
-            swiper.update();
+            swiper = initSlider();
         });
 
         document.addEventListener("shopify:section:unload", function (event) {
+            swiper.destroy();
             console.log("section unload");
         })
     }
