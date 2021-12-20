@@ -1,6 +1,6 @@
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 {% comment %}<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">{% endcomment %}
-<link rel="stylesheet" href="{{ 'swiper-bundle.min.css' | asset_url }}">
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
