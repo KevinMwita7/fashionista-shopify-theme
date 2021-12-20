@@ -1,5 +1,5 @@
-document.addEventListener( 'DOMContentLoaded', function() {
-    var swiper = new Swiper("#collection-list-slider", {
+function initSlider() {
+    return new Swiper("#collection-list-slider", {
         pagination: {
             el: ".collection-list-pagination",
             clickable: true
@@ -17,10 +17,14 @@ document.addEventListener( 'DOMContentLoaded', function() {
             }
         }
     });
+}
+
+document.addEventListener( 'DOMContentLoaded', function() {
+    var swiper = initSlider();
 
     if(Shopify.designMode) {
         document.addEventListener("shopify:section:load", function (event) {
-            console.log(event.detail);
+            swiper.update();
         })   
     }
 });
