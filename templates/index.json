@@ -181,12 +181,26 @@
           "settings": {
             "collection": "dresses"
           }
+        },
+        "fde99ce3-84a6-4051-a31d-89a4bb6b3798": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hats"
+          }
+        },
+        "7b2fe984-c441-4024-8102-fb00ade39df5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "legwear"
+          }
         }
       },
       "block_order": [
         "1639992274bffc5122-0",
         "1639992274bffc5122-1",
-        "4ec21b77-9493-4766-8448-7aeb00fb5d59"
+        "4ec21b77-9493-4766-8448-7aeb00fb5d59",
+        "fde99ce3-84a6-4051-a31d-89a4bb6b3798",
+        "7b2fe984-c441-4024-8102-fb00ade39df5"
       ],
       "settings": {
         "title": "Collections",
