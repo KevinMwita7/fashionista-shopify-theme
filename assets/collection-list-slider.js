@@ -21,8 +21,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
 if(Shopify.designMode) {
     document.addEventListener("shopify:section:load", function (event) {
-        console.log(event.detail    );
+        console.log(event.detail);
     })   
 }
-
-console.log("slider");
