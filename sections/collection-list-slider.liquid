@@ -1,6 +1,7 @@
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 {% comment %}<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">{% endcomment %}
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+{{ 'main.3fa3ea74.css' | asset_url | stylesheet_tag }}
 
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
@@ -8,7 +9,7 @@
 
 <div class="collection-list-wrapper page-width{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}">
   <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
-    <h2 class="collection-list-title">{{ section.settings.title | escape }}</h2>
+    <h2 class="collection-list-title text-2xl lg:text-4xl font-medium text-center md:text-left">{{ section.settings.title | escape }}</h2>
   </div>
 
   <div class="swiper w-full h-full" id="collection-list-slider">
