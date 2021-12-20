@@ -24,7 +24,12 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
     if(Shopify.designMode) {
         document.addEventListener("shopify:section:load", function (event) {
+            console.log("section load");
             swiper.update();
-        })   
+        });
+
+        document.addEventListener("shopify:section:unload", function (event) {
+            console.log("section unload");
+        })
     }
 });
