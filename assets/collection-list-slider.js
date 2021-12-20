@@ -1,9 +1,9 @@
 document.addEventListener( 'DOMContentLoaded', function() {
     var swiper = new Swiper("#collection-list-slider", {
-        /*pagination: {
-            el: ".featured-collection-pagination",
+        pagination: {
+            el: ".collection-list-pagination",
             clickable: true
-        },*/
+        },
         spaceBetween: 20,
         breakpoints: {
             320: {
@@ -17,10 +17,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
             }
         }
     });
-});
 
-if(Shopify.designMode) {
-    document.addEventListener("shopify:section:load", function (event) {
-        console.log(event.detail);
-    })   
-}
+    if(Shopify.designMode) {
+        document.addEventListener("shopify:section:load", function (event) {
+            console.log(event.detail);
+        })   
+    }
+});
