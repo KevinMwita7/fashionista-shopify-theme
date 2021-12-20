@@ -205,6 +205,12 @@
           "settings": {
             "collection": "shirts"
           }
+        },
+        "dc690674-76d0-44cd-862c-e36cfae935c6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shoes"
+          }
         }
       },
       "block_order": [
@@ -214,7 +220,8 @@
         "fde99ce3-84a6-4051-a31d-89a4bb6b3798",
         "7b2fe984-c441-4024-8102-fb00ade39df5",
         "f457f7a9-a099-44dc-8749-ed80432ba71e",
-        "f7cb418c-7486-4459-9499-86ad66faf6dd"
+        "f7cb418c-7486-4459-9499-86ad66faf6dd",
+        "dc690674-76d0-44cd-862c-e36cfae935c6"
       ],
       "settings": {
         "title": "Collections",
