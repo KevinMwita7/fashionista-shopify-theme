@@ -24,12 +24,16 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
     if(Shopify.designMode) {
         document.addEventListener("shopify:section:load", function (event) {
-            console.log(event);
             swiper = initSlider();
         });
 
         document.addEventListener("shopify:section:unload", function (event) {
             swiper.destroy();
-        })
+        });
+
+        document.addEventListener("shopify:block:select", function (event) {
+            console.log(event.detail);
+            console.log(event.target);
+        });
     }
 });
