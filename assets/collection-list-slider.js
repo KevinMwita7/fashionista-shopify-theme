@@ -4,6 +4,10 @@ function initSlider() {
             el: ".collection-list-pagination",
             clickable: true
         },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         spaceBetween: 20,
         breakpoints: {
             320: {
