@@ -24,6 +24,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
     if(Shopify.designMode) {
         document.addEventListener("shopify:section:load", function (event) {
+            console.log(event, event.detail);
             swiper = initSlider();
         });
 
