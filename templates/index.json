@@ -161,34 +161,34 @@
         "swipe_on_mobile": false
       }
     },
-    "163998766171c0668e": {
+    "1639992274f6a6c890": {
       "type": "collection-list-slider",
       "blocks": {
-        "1639987661db53ee26-0": {
+        "1639992274bffc5122-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "1639992274bffc5122-1": {
           "type": "featured_collection",
           "settings": {
             "collection": ""
           }
         },
-        "1639987661db53ee26-1": {
+        "1639992274bffc5122-2": {
           "type": "featured_collection",
           "settings": {
             "collection": ""
           }
         },
-        "1639987661db53ee26-2": {
+        "1639992274bffc5122-3": {
           "type": "featured_collection",
           "settings": {
             "collection": ""
           }
         },
-        "1639987661db53ee26-3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "1639987661db53ee26-4": {
+        "1639992274bffc5122-4": {
           "type": "featured_collection",
           "settings": {
             "collection": ""
@@ -196,11 +196,11 @@
         }
       },
       "block_order": [
-        "1639987661db53ee26-0",
-        "1639987661db53ee26-1",
-        "1639987661db53ee26-2",
-        "1639987661db53ee26-3",
-        "1639987661db53ee26-4"
+        "1639992274bffc5122-0",
+        "1639992274bffc5122-1",
+        "1639992274bffc5122-2",
+        "1639992274bffc5122-3",
+        "1639992274bffc5122-4"
       ],
       "settings": {
         "title": "Collections",
@@ -217,6 +217,6 @@
     "collage",
     "video",
     "multi_column",
-    "163998766171c0668e"
+    "1639992274f6a6c890"
   ]
 }
