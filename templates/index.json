@@ -65,6 +65,77 @@
         "horizontal_content_position": "start"
       }
     },
+    "1639992274f6a6c890": {
+      "type": "collection-list-slider",
+      "blocks": {
+        "1639992274bffc5122-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "1639992274bffc5122-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bags"
+          }
+        },
+        "4ec21b77-9493-4766-8448-7aeb00fb5d59": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dresses"
+          }
+        },
+        "fde99ce3-84a6-4051-a31d-89a4bb6b3798": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hats"
+          }
+        },
+        "7b2fe984-c441-4024-8102-fb00ade39df5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "legwear"
+          }
+        },
+        "f457f7a9-a099-44dc-8749-ed80432ba71e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sandals"
+          }
+        },
+        "f7cb418c-7486-4459-9499-86ad66faf6dd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shirts"
+          }
+        },
+        "dc690674-76d0-44cd-862c-e36cfae935c6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shoes"
+          }
+        }
+      },
+      "block_order": [
+        "1639992274bffc5122-0",
+        "1639992274bffc5122-1",
+        "4ec21b77-9493-4766-8448-7aeb00fb5d59",
+        "fde99ce3-84a6-4051-a31d-89a4bb6b3798",
+        "7b2fe984-c441-4024-8102-fb00ade39df5",
+        "f457f7a9-a099-44dc-8749-ed80432ba71e",
+        "f7cb418c-7486-4459-9499-86ad66faf6dd",
+        "dc690674-76d0-44cd-862c-e36cfae935c6"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -160,63 +231,13 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
-    },
-    "1639992274f6a6c890": {
-      "type": "collection-list-slider",
-      "blocks": {
-        "1639992274bffc5122-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "accessories"
-          }
-        },
-        "1639992274bffc5122-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "bags"
-          }
-        },
-        "4ec21b77-9493-4766-8448-7aeb00fb5d59": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dresses"
-          }
-        },
-        "fde99ce3-84a6-4051-a31d-89a4bb6b3798": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hats"
-          }
-        },
-        "7b2fe984-c441-4024-8102-fb00ade39df5": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "legwear"
-          }
-        }
-      },
-      "block_order": [
-        "1639992274bffc5122-0",
-        "1639992274bffc5122-1",
-        "4ec21b77-9493-4766-8448-7aeb00fb5d59",
-        "fde99ce3-84a6-4051-a31d-89a4bb6b3798",
-        "7b2fe984-c441-4024-8102-fb00ade39df5"
-      ],
-      "settings": {
-        "title": "Collections",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
     }
   },
   "order": [
     "16375654467d9d124d",
+    "1639992274f6a6c890",
     "collage",
     "video",
-    "multi_column",
-    "1639992274f6a6c890"
+    "multi_column"
   ]
 }
