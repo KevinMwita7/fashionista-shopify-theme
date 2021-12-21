@@ -78,7 +78,8 @@ function initSlider() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  let swiper = initSlider();
+  let swiper = initSlider().enable();
+  console.log(swiper);
 
   if(Shopify.designMode) {
     document.addEventListener("shopify:section:load", function (event) {
