@@ -28,6 +28,8 @@
         "2e4d4504-5aa7-459a-bbcd-bb2e80832d0e": {
           "type": "slide",
           "settings": {
+            "large_image": "shopify:\/\/shop_images\/girl1_3840x_99c9a37f-8f53-4b60-8808-325a2cc9e6eb.jpg",
+            "small_image": "shopify:\/\/shop_images\/girl1_3840x_99c9a37f-8f53-4b60-8808-325a2cc9e6eb.jpg",
             "heading": "Slideshow heading",
             "sub_heading": "Slideshow sub-heading",
             "button_text": "Button Text",
