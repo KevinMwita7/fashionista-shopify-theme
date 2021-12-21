@@ -32,11 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
         
     document.addEventListener("shopify:block:select", function(event) {
-      if(event.detail.load) {
-        swiper.destroy();
-        swiper = new Swiper('#image-banner-sliders', options);
-      }
-      swiper.slideTo(+event.target.dataset.slideIndex);
+      // swiper.slideTo(+event.target.dataset.slideIndex);
     });
   }
 })
