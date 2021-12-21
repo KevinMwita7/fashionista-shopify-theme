@@ -24,14 +24,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if(Shopify.designMode) {
     document.addEventListener("shopify:section:load", function (event) {
+      console.log("banner load");
       swiper = new Swiper('#image-banner-sliders', options);
     });
 
     document.addEventListener("shopify:section:unload", function (event) {
+      console.log("banner unload");
         swiper.destroy();
     });
         
     document.addEventListener("shopify:block:select", function(event) {
+      console.log("banner slide select", event.detail.load);
       swiper.slideTo(+event.target.dataset.slideIndex);
     });
   }
