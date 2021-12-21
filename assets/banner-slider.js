@@ -3,7 +3,7 @@ const options = {
   autoplay: {
     delay: 5000,
   },
-  effect: window.innerWidth >= 768 ? "fade" : "",
+  // effect: window.innerWidth >= 768 ? "fade" : "",
   speed: 1000,
   pagination: {
     el: '.swiper-pagination',
