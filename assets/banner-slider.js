@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if(Shopify.designMode) {
     document.addEventListener("shopify:block:select", function(event) {
+      console.log("slide: ", +event.target.dataset.swiperSlideIndex);
       swiper.slideTo(+event.target.dataset.swiperSlideIndex);
     })
   }
