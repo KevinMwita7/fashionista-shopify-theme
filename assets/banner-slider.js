@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
         
     document.addEventListener("shopify:block:select", function(event) {
+      console.log(swiper.activeIndex, event.target.dataset.slideIndex);
       swiper.slideTo(+event.target.dataset.slideIndex);
     });
   }
