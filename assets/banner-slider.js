@@ -1,3 +1,5 @@
+let swiper;
+
 const options = {
   loop: true,
   autoplay: {
@@ -11,7 +13,7 @@ const options = {
   },
   on: {
     resize: function() {
-      console.log(window.innerWidth)
+      console.log(swiper)
     }
   },
   breakpoints: {
@@ -25,7 +27,7 @@ const options = {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  let swiper = new Swiper('#image-banner-sliders', options);
+  swiper = new Swiper('#image-banner-sliders', options);
 
   if(Shopify.designMode) {
     document.addEventListener("shopify:section:load", function (event) {
