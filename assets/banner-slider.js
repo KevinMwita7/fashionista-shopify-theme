@@ -78,8 +78,26 @@ function initSlider() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  let swiper = initSlider();
-  console.log("swiper: ", swiper);
+  let swiper = new Swiper('#image-banner-sliders', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    effect: window.innerWidth >= 768 ? "fade" : "",
+    speed: 1000,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      0: {
+        direction: "horizontal",
+      },
+      768: {
+        direction: "vertical",
+      }
+    }
+  });
 
   if(Shopify.designMode) {
     document.addEventListener("shopify:section:load", function (event) {
