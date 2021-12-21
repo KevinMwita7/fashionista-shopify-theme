@@ -1,7 +1,7 @@
 const options = {
   loop: true,
   autoplay: {
-    delay: 1000,
+    delay: 5000,
   },
   effect: window.innerWidth >= 768 ? "fade" : "",
   speed: 1000,
@@ -24,17 +24,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if(Shopify.designMode) {
     document.addEventListener("shopify:section:load", function (event) {
-      console.log("banner load");
       swiper = new Swiper('#image-banner-sliders', options);
     });
 
     document.addEventListener("shopify:section:unload", function (event) {
-      console.log("banner unload");
         swiper.destroy();
     });
         
     document.addEventListener("shopify:block:select", function(event) {
-      console.log("banner slide select", event.detail.load);
+      if(event.detail.load) {
+        swiper.destroy();
+        swiper = new Swiper('#image-banner-sliders', options);
+      }
       swiper.slideTo(+event.target.dataset.slideIndex);
     });
   }
