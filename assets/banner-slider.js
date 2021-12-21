@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
         
     document.addEventListener("shopify:block:select", function(event) {
-      // swiper.slideTo(+event.target.dataset.slideIndex);
+      swiper.slideTo(+event.target.dataset.slideIndex);
     });
   }
 })
