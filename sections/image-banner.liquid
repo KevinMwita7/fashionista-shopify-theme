@@ -187,9 +187,7 @@
               <div class="relative {{ section.settings.image_height }}">
                 <div class="hidden md:block h-full bg-cover bg-center overflow-hidden w-full relative">
                   {% if block.settings.large_image == blank and block.settings.small_image == blank %}
-                    <div class="absolute w-full pointer-events-none -z-1 h-full object-cover placeholder">
-                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                    </div>
+                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg absolute w-full pointer-events-none -z-1 h-full object-cover placeholder' }}
                   {% else %}
                     <img
                     srcset="{%- if block.settings.large_image != blank -%}{%- if block.settings.large_image.width >= 180 -%}{{ block.settings.large_image | img_url: '180x' }} 180w 80h,{% endif -%}{%- elsif block.settings.small_image.width >= 180 -%}{{ block.settings.small_image | img_url: '180x' }} 180w 80h,{%- endif -%}
