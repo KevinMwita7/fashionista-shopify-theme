@@ -9,6 +9,11 @@ const options = {
     el: '.swiper-pagination',
     clickable: true
   },
+  on: {
+    resize: function() {
+      console.log("Resized")
+    }
+  },
   breakpoints: {
     0: {
       direction: "horizontal",
