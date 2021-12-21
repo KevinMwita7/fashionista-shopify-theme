@@ -1,9 +1,9 @@
 const options = {
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 1000,
   },
-  // effect: window.innerWidth >= 768 ? "fade" : "",
+  effect: window.innerWidth >= 768 ? "fade" : "",
   speed: 1000,
   pagination: {
     el: '.swiper-pagination',
