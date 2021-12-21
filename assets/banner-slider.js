@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });*/
 
-document.addEventListener('DOMContentLoaded', function() {
-  const swiper = new Swiper('#image-banner-sliders', {
+function initSlider() {
+  return new Swiper('#image-banner-sliders', {
     loop: true,
     autoplay: {
       delay: 5000,
@@ -75,11 +75,22 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const swiper = initSlider();
 
   if(Shopify.designMode) {
+    document.addEventListener("shopify:section:load", function (event) {
+      swiper = initSlider();
+    });
+
+    document.addEventListener("shopify:section:unload", function (event) {
+        swiper.destroy();
+    });
+        
     document.addEventListener("shopify:block:select", function(event) {
-      console.log("slide: ", +event.target.dataset.slideIndex);
       swiper.slideTo(+event.target.dataset.slideIndex);
-    })
+    });
   }
 })
