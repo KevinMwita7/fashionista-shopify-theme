@@ -29,11 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
   swiper = new Swiper('#image-banner-sliders', options);
 
   window.addEventListener('resize', function() {
-      let slideIndex = swiper.realIndex;
+      // let slideIndex = swiper.realIndex;
       // Reinitialize slider
       swiper.destroy(true, true);
       swiper = new Swiper('#image-banner-sliders', { ...options, effect: getEffect() });
-      swiper.slideTo(slideIndex);
   })
 
   if(Shopify.designMode) {
