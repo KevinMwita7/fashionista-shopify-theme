@@ -18,11 +18,11 @@ const options = {
   on: {
     resize: function() {
       let slideIndex = swiper.realIndex;
-      console.log(slideIndex);
+      // console.log(slideIndex);
       // Reinitialize slider
       swiper.destroy();
       swiper = new Swiper('#image-banner-sliders', { ...options, effect: getEffect() });
-      swiper.slideTo(slideIndex);
+      // swiper.slideTo(slideIndex);
     }
   },
   breakpoints: {
