@@ -13,8 +13,7 @@ const options = {
   },
   on: {
     resize: function() {
-      this.effect = "crossfade";
-      console.log(this)
+      console.log(options);
     }
   },
   breakpoints: {
