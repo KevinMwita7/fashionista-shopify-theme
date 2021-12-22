@@ -5,7 +5,8 @@ function initSlider() {
             clickable: true
         },
         spaceBetween: 20,
-        breakpoints: {
+        slidesPerView: "auto",
+        /*breakpoints: {
             320: {
                 slidesPerView: 2,
             },
@@ -15,7 +16,7 @@ function initSlider() {
             1024: {
                 slidesPerView: 4,
             }
-        }
+        }*/
     });
 }
 
