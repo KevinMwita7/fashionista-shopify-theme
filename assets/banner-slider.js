@@ -33,8 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Reinitialize slider
       swiper.destroy(true, true);
       swiper = new Swiper('#image-banner-sliders', { ...options, effect: getEffect() });
-      console.log(slideIndex);
-      // swiper.slideTo(slideIndex);
+      swiper.slideTo(slideIndex);
   })
 
   if(Shopify.designMode) {
