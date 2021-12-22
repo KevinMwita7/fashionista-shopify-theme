@@ -15,17 +15,6 @@ const options = {
     el: '.swiper-pagination',
     clickable: true
   },
-  /*on: {
-    resize: function() {
-      let slideIndex = swiper.realIndex;
-      // console.log(slideIndex);
-      // Reinitialize slider
-      swiper.destroy(true, true);
-      swiper = new Swiper('#image-banner-sliders', { effect: getEffect() });
-      console.log(slideIndex);
-      // swiper.slideTo(slideIndex);
-    }
-  },*/
   breakpoints: {
     0: {
       direction: "horizontal",
@@ -40,7 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
   swiper = new Swiper('#image-banner-sliders', options);
 
   window.addEventListener('resize', function() {
-    console.log(window.innerWidth);
+      let slideIndex = swiper.realIndex;
+      // Reinitialize slider
+      swiper.destroy(true, true);
+      swiper = new Swiper('#image-banner-sliders', { ...options, effect: getEffect() });
+      console.log(slideIndex);
+      // swiper.slideTo(slideIndex);
   })
 
   if(Shopify.designMode) {
