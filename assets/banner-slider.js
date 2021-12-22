@@ -21,7 +21,7 @@ const options = {
       // console.log(slideIndex);
       // Reinitialize slider
       swiper.destroy(true, true);
-      swiper = new Swiper('#image-banner-sliders', { ...options, effect: getEffect() });
+      swiper = new Swiper('#image-banner-sliders', { effect: getEffect() });
       console.log(slideIndex);
       // swiper.slideTo(slideIndex);
     }
