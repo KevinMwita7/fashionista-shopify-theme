@@ -4,6 +4,10 @@ function getEffect() {
   return window.innerWidth >= 768 ? "fade" : "";
 }
 
+function getDirection() {
+  return window.innerWidth >= 768 ? "vertical" : "horizontal";
+}
+
 const options = {
   loop: true,
   autoplay: {
@@ -15,14 +19,15 @@ const options = {
     el: '.swiper-pagination',
     clickable: true
   },
-  breakpoints: {
+  direction: getDirection()
+  /*breakpoints: {
     0: {
       direction: "horizontal",
     },
     768: {
       direction: "vertical",
     }
-  }
+  }*/
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -32,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // let slideIndex = swiper.realIndex;
       // Reinitialize slider
       swiper.destroy(true, true);
-      swiper = new Swiper('#image-banner-sliders', { ...options, effect: getEffect() });
+      swiper = new Swiper('#image-banner-sliders', { ...options, effect: getEffect(), direction: getDirection() });
   })
 
   if(Shopify.designMode) {
