@@ -1,7 +1,3 @@
-.multicolumn .title {
-  margin: 0;
-}
-
 .multicolumn.no-heading .title {
   display: none;
 }
