@@ -237,39 +237,37 @@
                   </div>
                 </div>
       
-                <div class="md:hidden block">
-                    <div class="relative">
-                        <div>
-                          {% if block.settings.small_image == blank and block.settings.large_image == blank %}
-                            <div class="banner-img placeholder">
-                              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-                            </div>
-                          {% else %}
-                            <img 
-                            class="banner-img"
-                            alt="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.alt | escape }}{%- else -%}{{ block.settings.large_image.alt | escape }}{%- endif -%}"
-                            src="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image | img_url: '720x' }}{%- else -%}{{ block.settings.large_image | img_url: '720x' }}{%- endif -%}"
-                            srcset="{%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 180 -%}{{ block.settings.small_image | img_url: '180x' }} 180w{% endif -%}{%- elsif block.settings.large_image.width >= 180 -%}{{ block.settings.large_image | img_url: '180x' }} 180w{%- endif -%}
-                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 360 -%}{{ block.settings.small_image | img_url: '360x' }} 360w{% endif -%}{%- elsif block.settings.large_image.width >= 360 -%}{{ block.settings.large_image | img_url: '360x' }} 360w{%- endif -%}
-                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 540 -%}{{ block.settings.small_image | img_url: '540x' }} 540w{% endif -%}{%- elsif block.settings.large_image.width >= 540 -%}{{ block.settings.large_image | img_url: '540x' }} 540w{%- endif -%}
-                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 720 -%}{{ block.settings.small_image | img_url: '720x' }} 720w{% endif -%}{%- elsif block.settings.large_image.width >= 720 -%}{{ block.settings.large_image | img_url: '720x' }} 720w{%- endif -%}
-                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 900 -%}{{ block.settings.small_image | img_url: '900x' }} 900w{% endif -%}{%- elsif block.settings.large_image.width >= 900 -%}{{ block.settings.large_image | img_url: '900x' }} 900w{%- endif -%}
-                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 1080 -%}{{ block.settings.small_image | img_url: '1080x' }} 1080w{% endif -%}{%- elsif block.settings.large_image.width >= 1080 -%}{{ block.settings.large_image | img_url: '1080x' }} 1080w{%- endif -%}
-                            {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 1125 -%}{{ block.settings.small_image | img_url: '1125x' }} 1125w{% endif -%}{%- elsif block.settings.large_image.width >= 1125 -%}{{ block.settings.large_image | img_url: '1125x' }} 1125w{%- endif -%}
-                            {%- if block.settings.small_image != blank -%}{{ block.settings.small_image | img_url: 'master' }} {{ block.settings.small_image.width }}w {{ block.settings.small_image.width }}h {% else %} {{ block.settings.large_image | img_url: 'master' }} {{ block.settings.large_image.width }}w {{ block.settings.large_image.width }}h{%- endif -%}"
-                            loading="lazy"
-                            width="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.width }}{%- else -%}{{ block.settings.large_image.width }}{%- endif -%}"
-                            height="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.height | divided_by: block.settings.small_image.aspect_ratio }}{%- else -%}{{ block.settings.large_image.height | divided_by: block.settings.large_image.aspect_ratio }}{%- endif -%}">
-                            {% endif %}
-                        </div>
-                    </div>
-                    <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
-                        <p class="mb-0.5 font-semibold banner_heading">{{ block.settings.sub_heading }}</p>
-                        <h2 class="text-4xl my-6 banner_subheading">{{ block.settings.heading }}</h2>
-                        <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="border block rounded-{{ section.settings.button_border_radius }} h3 banner_button mb-20" style="font-weight: {{ section.settings.button_text_font_weight }}; color: {{ section.settings.button_text_color }}; border-color: {{ section.settings.button_border_color }}; {%- unless section.settings.button_bg_color == blank -%} background-color: {{ section.settings.button_bg_color }}; {%- endunless -%} padding: {{ section.settings.banner_button_size }};">
-                            {{ block.settings.button_text }}
-                        </a>
-                    </div>
+                <div class="md:hidden block relative">
+                  {% if block.settings.small_image == blank and block.settings.large_image == blank %}
+                    <img 
+                      src="{{ 'img-placeholder.png' | asset_img_url }}" 
+                      class="banner-img placeholder"
+                      loading="lazy"
+                    >
+                  {% else %}
+                    <img
+                    class="banner-img"
+                    alt="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.alt | escape }}{%- else -%}{{ block.settings.large_image.alt | escape }}{%- endif -%}"
+                    src="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image | img_url: '720x' }}{%- else -%}{{ block.settings.large_image | img_url: '720x' }}{%- endif -%}"
+                    srcset="{%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 180 -%}{{ block.settings.small_image | img_url: '180x' }} 180w{% endif -%}{%- elsif block.settings.large_image.width >= 180 -%}{{ block.settings.large_image | img_url: '180x' }} 180w{%- endif -%}
+                    {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 360 -%}{{ block.settings.small_image | img_url: '360x' }} 360w{% endif -%}{%- elsif block.settings.large_image.width >= 360 -%}{{ block.settings.large_image | img_url: '360x' }} 360w{%- endif -%}
+                    {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 540 -%}{{ block.settings.small_image | img_url: '540x' }} 540w{% endif -%}{%- elsif block.settings.large_image.width >= 540 -%}{{ block.settings.large_image | img_url: '540x' }} 540w{%- endif -%}
+                    {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 720 -%}{{ block.settings.small_image | img_url: '720x' }} 720w{% endif -%}{%- elsif block.settings.large_image.width >= 720 -%}{{ block.settings.large_image | img_url: '720x' }} 720w{%- endif -%}
+                    {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 900 -%}{{ block.settings.small_image | img_url: '900x' }} 900w{% endif -%}{%- elsif block.settings.large_image.width >= 900 -%}{{ block.settings.large_image | img_url: '900x' }} 900w{%- endif -%}
+                    {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 1080 -%}{{ block.settings.small_image | img_url: '1080x' }} 1080w{% endif -%}{%- elsif block.settings.large_image.width >= 1080 -%}{{ block.settings.large_image | img_url: '1080x' }} 1080w{%- endif -%}
+                    {%- if block.settings.small_image != blank -%}{%- if block.settings.small_image.width >= 1125 -%}{{ block.settings.small_image | img_url: '1125x' }} 1125w{% endif -%}{%- elsif block.settings.large_image.width >= 1125 -%}{{ block.settings.large_image | img_url: '1125x' }} 1125w{%- endif -%}
+                    {%- if block.settings.small_image != blank -%}{{ block.settings.small_image | img_url: 'master' }} {{ block.settings.small_image.width }}w {{ block.settings.small_image.width }}h {% else %} {{ block.settings.large_image | img_url: 'master' }} {{ block.settings.large_image.width }}w {{ block.settings.large_image.width }}h{%- endif -%}"
+                    loading="lazy"
+                    width="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.width }}{%- else -%}{{ block.settings.large_image.width }}{%- endif -%}"
+                    height="{%- if block.settings.small_image != blank -%}{{ block.settings.small_image.height | divided_by: block.settings.small_image.aspect_ratio }}{%- else -%}{{ block.settings.large_image.height | divided_by: block.settings.large_image.aspect_ratio }}{%- endif -%}">
+                  {% endif %}
+                  <div class="text-center container-fluid w-full h-full py-6 px-6 pb-0 relative">
+                    <p class="mb-0.5 font-semibold banner_heading">{{ block.settings.sub_heading }}</p>
+                    <h2 class="text-4xl my-6 banner_subheading">{{ block.settings.heading }}</h2>
+                    <a{% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="border block rounded-{{ section.settings.button_border_radius }} h3 banner_button mb-20" style="font-weight: {{ section.settings.button_text_font_weight }}; color: {{ section.settings.button_text_color }}; border-color: {{ section.settings.button_border_color }}; {%- unless section.settings.button_bg_color == blank -%} background-color: {{ section.settings.button_bg_color }}; {%- endunless -%} padding: {{ section.settings.banner_button_size }};">
+                        {{ block.settings.button_text }}
+                    </a>
+                  </div>
                 </div>
             </div>
           </div>
