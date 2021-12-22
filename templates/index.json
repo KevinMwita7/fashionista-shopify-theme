@@ -231,6 +231,12 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "1640162443b91afdf2": {
+      "type": "page",
+      "settings": {
+        "page": ""
+      }
     }
   },
   "order": [
@@ -238,6 +244,7 @@
     "1639992274f6a6c890",
     "collage",
     "video",
-    "multi_column"
+    "multi_column",
+    "1640162443b91afdf2"
   ]
 }
