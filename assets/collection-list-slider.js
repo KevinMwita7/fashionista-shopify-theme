@@ -5,18 +5,7 @@ function initSlider() {
             clickable: true
         },
         spaceBetween: 20,
-        slidesPerView: "auto",
-        /*breakpoints: {
-            320: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 3,
-            },
-            1024: {
-                slidesPerView: 4,
-            }
-        }*/
+        slidesPerView: "auto"
     });
 }
 
