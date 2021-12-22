@@ -15,7 +15,7 @@ const options = {
     el: '.swiper-pagination',
     clickable: true
   },
-  on: {
+  /*on: {
     resize: function() {
       let slideIndex = swiper.realIndex;
       // console.log(slideIndex);
@@ -25,7 +25,7 @@ const options = {
       console.log(slideIndex);
       // swiper.slideTo(slideIndex);
     }
-  },
+  },*/
   breakpoints: {
     0: {
       direction: "horizontal",
@@ -38,6 +38,10 @@ const options = {
 
 document.addEventListener('DOMContentLoaded', function() {
   swiper = new Swiper('#image-banner-sliders', options);
+
+  window.addEventListener('resize', function() {
+    console.log(window.innerWidth);
+  })
 
   if(Shopify.designMode) {
     document.addEventListener("shopify:section:load", function (event) {
