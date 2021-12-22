@@ -20,8 +20,9 @@ const options = {
       let slideIndex = swiper.realIndex;
       // console.log(slideIndex);
       // Reinitialize slider
-      swiper.destroy();
+      swiper.destroy(true, true);
       swiper = new Swiper('#image-banner-sliders', { ...options, effect: getEffect() });
+      console.log(slideIndex);
       // swiper.slideTo(slideIndex);
     }
   },
