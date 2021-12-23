@@ -241,8 +241,9 @@
                   {% if block.settings.small_image == blank and block.settings.large_image == blank %}
                     <img 
                       src="{{ 'img-placeholder.png' | asset_img_url }}" 
-                      class="banner-img placeholder"
+                      class="banner-img placeholder w-full"
                       loading="lazy"
+                      style="height: 55.5vh;"
                     >
                   {% else %}
                     <img
