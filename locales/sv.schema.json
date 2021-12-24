@@ -383,6 +383,12 @@
         "name": "Kollage"
       }
     },
+    "collection-list-slider": {
+      "name": "Skjutreglaget Samlingslista",
+      "presets": {
+        "name": "Skjutreglaget Samlingslista"
+      }
+    },
     "collection-list": {
       "name": "Kollektionslista",
       "settings": {

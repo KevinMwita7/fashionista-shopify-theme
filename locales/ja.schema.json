@@ -383,6 +383,12 @@
         "name": "コラージュ"
       }
     },
+    "collection-list-slider": {
+      "name": "コレクションリストスライダー",
+      "presets": {
+        "name": "コレクションリストスライダー"
+      }
+    },
     "collection-list": {
       "name": "コレクションリスト",
       "settings": {

@@ -383,6 +383,12 @@
         "name": "Fotomontasje"
       }
     },
+    "collection-list-slider": {
+      "name": "Glidebryter for samlingsliste",
+      "presets": {
+        "name": "Glidebryter for samlingsliste"
+      }
+    },
     "collection-list": {
       "name": "Samlingsliste",
       "settings": {

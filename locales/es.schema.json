@@ -383,6 +383,12 @@
         "name": "Collage"
       }
     },
+    "collection-list-slider": {
+      "name": "Control deslizante de lista de colecciones",
+      "presets": {
+        "name": "Control deslizante de lista de colecciones"
+      }
+    },
     "collection-list": {
       "name": "Lista de colecciones",
       "settings": {

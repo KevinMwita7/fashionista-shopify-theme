@@ -383,6 +383,12 @@
         "name": "Kolaj"
       }
     },
+    "collection-list-slider": {
+      "name": "Koleksiyon listesi kaydırıcısı",
+      "presets": {
+        "name": "Koleksiyon listesi kaydırıcısı"
+      }
+    },
     "collection-list": {
       "name": "Koleksiyon listesi",
       "settings": {

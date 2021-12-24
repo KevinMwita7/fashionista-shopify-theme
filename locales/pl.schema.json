@@ -383,6 +383,12 @@
         "name": "Kolaż"
       }
     },
+    "collection-list-slider": {
+      "name": "Suwak listy kolekcji",
+      "presets": {
+        "name": "Suwak listy kolekcji"
+      }
+    },
     "collection-list": {
       "name": "Lista kolekcji",
       "settings": {

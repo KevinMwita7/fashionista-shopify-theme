@@ -383,6 +383,12 @@
         "name": "Colagem"
       }
     },
+    "collection-list-slider": {
+      "name": "Slider de lista de coleção",
+      "presets": {
+        "name": "Slider de lista de coleção"
+      }
+    },
     "collection-list": {
       "name": "Lista de coleções",
       "settings": {

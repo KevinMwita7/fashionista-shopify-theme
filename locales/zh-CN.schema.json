@@ -383,6 +383,12 @@
         "name": "拼贴画"
       }
     },
+    "collection-list-slider": {
+      "name": "集合列表滑块",
+      "presets": {
+        "name": "集合列表滑块"
+      }
+    },
     "collection-list": {
       "name": "产品系列列表",
       "settings": {

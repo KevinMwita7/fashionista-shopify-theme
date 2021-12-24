@@ -383,6 +383,12 @@
         "name": "Collage"
       }
     },
+    "collection-list-slider": {
+      "name": "Curseur de liste de collections",
+      "presets": {
+        "name": "Curseur de liste de collections"
+      }
+    },
     "collection-list": {
       "name": "Liste des collections",
       "settings": {

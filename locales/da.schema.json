@@ -383,6 +383,12 @@
         "name": "Collage"
       }
     },
+    "collection-list-slider": {
+      "name": "Skyderen Samlingsliste",
+      "presets": {
+        "name": "Skyderen Samlingsliste"
+      }
+    },
     "collection-list": {
       "name": "Kollektionsliste",
       "settings": {

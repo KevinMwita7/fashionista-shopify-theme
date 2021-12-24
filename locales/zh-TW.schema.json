@@ -383,6 +383,12 @@
         "name": "拼貼"
       }
     },
+    "collection-list-slider": {
+      "name": "集合清單滑塊",
+      "presets": {
+        "name": "集合清單滑塊"
+      }
+    },
     "collection-list": {
       "name": "商品系列清單",
       "settings": {

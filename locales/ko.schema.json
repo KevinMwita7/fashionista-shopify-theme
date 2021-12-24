@@ -383,6 +383,12 @@
         "name": "콜라주"
       }
     },
+    "collection-list-slider": {
+      "name": "컬렉션 목록 슬라이더",
+      "presets": {
+        "name": "컬렉션 목록 슬라이더"
+      }
+    },
     "collection-list": {
       "name": "컬렉션 목록",
       "settings": {

@@ -383,6 +383,12 @@
         "name": "คอลลาจ"
       }
     },
+    "collection-list-slider": {
+      "name": "แถบเลื่อนรายการคอลเลกชัน",
+      "presets": {
+        "name": "แถบเลื่อนรายการคอลเลกชัน"
+      }
+    },
     "collection-list": {
       "name": "รายการคอลเลกชัน",
       "settings": {

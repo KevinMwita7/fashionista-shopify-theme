@@ -383,6 +383,12 @@
         "name": "Collage"
       }
     },
+    "collection-list-slider": {
+      "name": "Dispositivo di scorrimento dell'elenco delle raccolte",
+      "presets": {
+        "name": "Dispositivo di scorrimento dell'elenco delle raccolte"
+      }
+    },
     "collection-list": {
       "name": "Elenco delle collezioni",
       "settings": {

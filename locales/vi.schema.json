@@ -383,6 +383,12 @@
         "name": "Ghép"
       }
     },
+    "collection-list-slider": {
+      "name": "Thanh trượt danh sách tuyển tập",
+      "presets": {
+        "name": "Thanh trượt danh sách tuyển tập"
+      }
+    },
     "collection-list": {
       "name": "Danh sách bộ sưu tập",
       "settings": {

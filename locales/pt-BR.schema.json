@@ -383,6 +383,12 @@
         "name": "Colagem"
       }
     },
+    "collection-list-slider": {
+      "name": "Controle deslizante da lista de coleta",
+      "presets": {
+        "name": "Controle deslizante da lista de coleta"
+      }
+    },
     "collection-list": {
       "name": "Lista de coleções",
       "settings": {

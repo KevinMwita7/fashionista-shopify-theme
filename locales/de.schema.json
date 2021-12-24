@@ -383,6 +383,12 @@
         "name": "Collage"
       }
     },
+    "collection-list-slider": {
+      "name": "Schieberegler für Sammlungsliste",
+      "presets": {
+        "name": "Schieberegler für Sammlungsliste"
+      }
+    },
     "collection-list": {
       "name": "Kategorieliste",
       "settings": {

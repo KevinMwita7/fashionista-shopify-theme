@@ -383,6 +383,12 @@
         "name": "Kollaasi"
       }
     },
+    "collection-list-slider": {
+      "name": "Kokoelmaluettelon liukusäädin",
+      "presets": {
+        "name": "Kokoelmaluettelon liukusäädin"
+      }
+    },
     "collection-list": {
       "name": "Kokoelmaluettelo",
       "settings": {

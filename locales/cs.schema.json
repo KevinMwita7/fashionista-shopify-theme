@@ -383,6 +383,12 @@
         "name": "Koláž"
       }
     },
+    "collection-list-slider": {
+      "name": "Posuvník seznamu kolekcí",
+      "presets": {
+        "name": "Posuvník seznamu kolekcí"
+      }
+    },
     "collection-list": {
       "name": "Seznam kolekcí",
       "settings": {

@@ -383,6 +383,12 @@
         "name": "Collage"
       }
     },
+    "collection-list-slider": {
+      "name": "Schuifregelaar voor collectielijst",
+      "presets": {
+        "name": "Schuifregelaar voor collectielijst"
+      }
+    },
     "collection-list": {
       "name": "Collectielijst",
       "settings": {
