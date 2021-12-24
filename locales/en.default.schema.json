@@ -394,6 +394,12 @@
         "name": "Collage"
       }
     },
+    "collection-list-slider": {
+      "name": "Collection list slider",
+      "presets": {
+        "name": "Collection list slider"
+      }
+    },
     "collection-list": {
       "name": "Collection list",
       "settings": {
