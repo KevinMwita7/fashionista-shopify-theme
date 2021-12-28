@@ -8,13 +8,15 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
-<form>
-  <select name="collection">
-    {% for block in section.blocks %}
-      <option value="{{ forloop.index }}">{{ block.settings.title }}</option>
-    {% endfor %}  
-  </select>
-</form>
+{% if section.blocks.size > 1 %}
+  <form>
+    <select name="collection">
+      {% for block in section.blocks %}
+        <option value="{{ forloop.index }}">{{ block.settings.title }}</option>
+      {% endfor %}  
+    </select>
+  </form>
+{% endif %}
 
 {% for block in section.blocks %}
   {%- liquid
