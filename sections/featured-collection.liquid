@@ -86,7 +86,9 @@
   </div>
 {% endfor %}
 
-{{ 'featured-collection-slider.js' | asset_url | script_tag }}
+{% if section.blocks.size > 1 %}
+  <script src="{{ 'featured-collection-slider.js' | asset_url }}" defer></script>
+{% endif %}
 
 {% schema %}
 {
