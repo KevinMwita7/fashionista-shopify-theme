@@ -50,7 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
         
     document.addEventListener("shopify:block:select", function(event) {
-      console.log(event.target.dataset.shopifyEditorBlock.type === "slide", event.target.dataset.shopifyEditorBlock.type === "featured_collection", typeof event.target.dataset.shopifyEditorBlock.type);
+      var block = JSON.parse(event.target.dataset.shopifyEditorBlock);
+      console.log(block.type === "slide", block.type === "featured_collection");
       swiper.slideTo(+event.target.dataset.slideIndex);
     });
   }
