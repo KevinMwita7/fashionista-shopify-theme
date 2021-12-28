@@ -66,51 +66,51 @@
       }
     },
     "1639992274f6a6c890": {
-      "type": "collection-list-slide",
+      "type": "collection-list-slider",
       "blocks": {
-        "1639992274bffc5122-0": {
+        "a6123582-2008-48a3-a090-8ae80b2bb3b2": {
           "type": "collection_list_slide",
           "settings": {
             "collection": "accessories"
           }
         },
-        "1639992274bffc5122-1": {
+        "b9334d54-6507-49ae-8e29-bb13714ce18e": {
           "type": "collection_list_slide",
           "settings": {
             "collection": "bags"
           }
         },
-        "4ec21b77-9493-4766-8448-7aeb00fb5d59": {
+        "212ef2f3-5d0f-4d7d-92ce-a916fb01ab2a": {
           "type": "collection_list_slide",
           "settings": {
             "collection": "dresses"
           }
         },
-        "fde99ce3-84a6-4051-a31d-89a4bb6b3798": {
+        "8f0e5c56-37d5-466c-ae87-c693de5479c5": {
           "type": "collection_list_slide",
           "settings": {
             "collection": "hats"
           }
         },
-        "7b2fe984-c441-4024-8102-fb00ade39df5": {
+        "a633d4a8-f14e-42f6-97f9-92c86c806038": {
           "type": "collection_list_slide",
           "settings": {
             "collection": "legwear"
           }
         },
-        "f457f7a9-a099-44dc-8749-ed80432ba71e": {
+        "5f2cb4a3-faa1-4c3c-b710-a0f37308ff2e": {
           "type": "collection_list_slide",
           "settings": {
             "collection": "sandals"
           }
         },
-        "f7cb418c-7486-4459-9499-86ad66faf6dd": {
+        "796df8dd-0665-4a12-9569-193b5f49a90e": {
           "type": "collection_list_slide",
           "settings": {
             "collection": "shirts"
           }
         },
-        "dc690674-76d0-44cd-862c-e36cfae935c6": {
+        "220dbd58-85dc-40d0-a154-016e17628e9f": {
           "type": "collection_list_slide",
           "settings": {
             "collection": "shoes"
@@ -118,14 +118,14 @@
         }
       },
       "block_order": [
-        "1639992274bffc5122-0",
-        "1639992274bffc5122-1",
-        "4ec21b77-9493-4766-8448-7aeb00fb5d59",
-        "fde99ce3-84a6-4051-a31d-89a4bb6b3798",
-        "7b2fe984-c441-4024-8102-fb00ade39df5",
-        "f457f7a9-a099-44dc-8749-ed80432ba71e",
-        "f7cb418c-7486-4459-9499-86ad66faf6dd",
-        "dc690674-76d0-44cd-862c-e36cfae935c6"
+        "a6123582-2008-48a3-a090-8ae80b2bb3b2",
+        "b9334d54-6507-49ae-8e29-bb13714ce18e",
+        "212ef2f3-5d0f-4d7d-92ce-a916fb01ab2a",
+        "8f0e5c56-37d5-466c-ae87-c693de5479c5",
+        "a633d4a8-f14e-42f6-97f9-92c86c806038",
+        "5f2cb4a3-faa1-4c3c-b710-a0f37308ff2e",
+        "796df8dd-0665-4a12-9569-193b5f49a90e",
+        "220dbd58-85dc-40d0-a154-016e17628e9f"
       ],
       "settings": {
         "title": "Collections",
