@@ -23,7 +23,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
         document.addEventListener("shopify:block:select", function (event) {
             var block = JSON.parse(event.target.dataset.shopifyEditorBlock);
-            console.log(block);
             if(block.type === "collection_list_slide") {
                 swiper.slideTo(+event.target.dataset.slideIndex - 1);
             }
