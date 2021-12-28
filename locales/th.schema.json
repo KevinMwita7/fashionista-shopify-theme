@@ -551,6 +551,9 @@
           "info": "หากต้องการแสดงคะแนน ให้เพิ่มแอปการให้คะแนนสินค้า [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
         }
       },
+      "blocks": {
+        "name": "เหล่า"
+      },
       "presets": {
         "name": "คอลเลกชันแนะนำ"
       }

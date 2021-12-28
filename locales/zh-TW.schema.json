@@ -551,6 +551,9 @@
           "info": "新增產品評等應用程式，即可顯示評等。[瞭解詳情](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
         }
       },
+      "blocks": {
+        "name": "收集"
+      },
       "presets": {
         "name": "精選商品系列"
       }

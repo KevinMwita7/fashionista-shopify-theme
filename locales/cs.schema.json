@@ -551,6 +551,9 @@
           "info": "Pokud chcete zobrazovat hodnocení, přidejte si aplikaci pro hodnocení produktů. [Zjistit více](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
         }
       },
+      "blocks": {
+        "name": "Sbírka"
+      },
       "presets": {
         "name": "Propagovaná kolekce"
       }

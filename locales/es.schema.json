@@ -551,6 +551,9 @@
           "info": "Para mostrar una calificación, agrega una aplicación de calificación de productos [Más información](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
         }
       },
+      "blocks": {
+        "name": "Colección"
+      },
       "presets": {
         "name": "Colección destacada"
       }

@@ -551,6 +551,9 @@
           "info": "Pour afficher une note, ajoutez une application d'évaluation de produits. [En savoir plus](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
         }
       },
+      "blocks": {
+        "name": "Collection"
+      },
       "presets": {
         "name": "Collection en vedette"
       }

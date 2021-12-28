@@ -551,6 +551,9 @@
           "info": "Voeg een app toe voor productbeoordelingen om deze weer te geven. [Meer informatie](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
         }
       },
+      "blocks": {
+        "name": "Collectie"
+      },
       "presets": {
         "name": "Uitgelichte collectie"
       }
