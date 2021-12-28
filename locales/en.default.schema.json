@@ -516,8 +516,7 @@
       "name": "Featured collection",
       "settings": {
         "title": {
-          "label": "Heading",
-          "default": "Featured collection"
+          "label": "Heading"
         },
         "collection": {
           "label": "Collection"
