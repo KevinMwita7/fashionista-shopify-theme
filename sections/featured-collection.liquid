@@ -10,7 +10,7 @@
 
 {% if section.blocks.size > 1 %}
   <form>
-    <select name="collection">
+    <select name="collection" id="selected-featured-collection">
       {% for block in section.blocks %}
         <option value="{{ forloop.index }}">{{ block.settings.title }}</option>
       {% endfor %}  
@@ -85,6 +85,8 @@
     {%- endif -%}
   </div>
 {% endfor %}
+
+{{ 'featured-collection-slider.js' | asset_url | script_tag }}
 
 {% schema %}
 {
