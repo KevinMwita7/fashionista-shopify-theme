@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     handleSelectedCollectionChange();
 
     if(Shopify.designMode) {
-        document.addEventListener('shopify:section:load', handleSelectedCollectionChange);
+        document.addEventListener('shopify:block:select', function(event) {
+            var block = JSON.parse(event.target.dataset.shopifyEditorBlock);
+            if(block.type === "featured_collection") {
+                handleSelectedCollectionChange();
+            }
+        });
     }
 });
