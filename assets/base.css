@@ -2368,6 +2368,10 @@ details-disclosure > details {
   display: inline-block;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
 @media (min-width:1024px) {
   .lg\:section-heading {
     font-size:3.75rem;
