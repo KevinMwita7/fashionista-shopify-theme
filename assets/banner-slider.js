@@ -51,8 +51,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
     document.addEventListener("shopify:block:select", function(event) {
       var block = JSON.parse(event.target.dataset.shopifyEditorBlock);
-      console.log(block.type === "slide", block.type === "featured_collection");
-      swiper.slideTo(+event.target.dataset.slideIndex);
+      if(block.type === "slide") {
+        swiper.slideTo(+event.target.dataset.slideIndex);
+      }
     });
   }
 })
