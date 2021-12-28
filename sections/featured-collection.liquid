@@ -8,6 +8,14 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
+<form>
+  <select name="collection">
+    {% for block in section.blocks %}
+      <option value="{{ forloop.index }}">{{ block.settings.title }}</option>
+    {% endfor %}  
+  </select>
+</form>
+
 {% for block in section.blocks %}
   {%- liquid
     assign products_to_display = block.settings.collection.all_products_count
@@ -18,7 +26,7 @@
     endif
   -%}
   
-  <div class="collection page-width{% if section.settings.swipe_on_mobile == true and block.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
+  <div class="collection page-width{% if section.settings.swipe_on_mobile == true and block.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}"  data-index="{{ forloop.index }}" {{ block.shopify_attributes }}>
     <div class="{% if block.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
       <h2 class="title{% if block.settings.title == blank %} title--no-heading{% else %} section-heading lg:section-heading font-medium text-center md:text-left{% endif %}">{{ block.settings.title | escape }}</h2>
 
