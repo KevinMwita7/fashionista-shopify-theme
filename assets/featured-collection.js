@@ -3,6 +3,8 @@ function handleSelectedCollectionChange(event) {
     console.log(selectedCollection);
 }
 
+console.log("one");
+
 document.addEventListener('DOMContentLoaded', function() {
     handleSelectedCollectionChange();
 
