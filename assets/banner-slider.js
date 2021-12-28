@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
         
     document.addEventListener("shopify:block:select", function(event) {
+      console.log(event.detail);
       swiper.slideTo(+event.target.dataset.slideIndex);
     });
   }
