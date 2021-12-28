@@ -2360,6 +2360,10 @@ details-disclosure > details {
   font-weight: 500
 }
 
+.d-inline {
+  display: inline;
+}
+
 @media (min-width:1024px) {
   .lg\:section-heading {
     font-size:3.75rem;

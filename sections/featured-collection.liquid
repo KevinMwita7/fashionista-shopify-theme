@@ -11,19 +11,20 @@
 <div class="collection page-width{% if section.settings.swipe_on_mobile == true and block.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}"  data-index="{{ forloop.index }}">
   {% if section.blocks.size > 1 %}
     <div class="{% if block.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
-      <h2 class="title{% if block.settings.title == blank %} title--no-heading{% else %} section-heading lg:section-heading font-medium text-center md:text-left{% endif %}">Currently viewing</h2>
+      <h2 class="title section-heading lg:section-heading font-medium text-center md:text-left d-inline">Currently viewing</h2>
+
+      <form class="d-inline">
+        <select name="collection" id="selected-featured-collection">
+          {% for block in section.blocks %}
+            <option value="{{ forloop.index }}">{{ block.settings.title | escape}}</option>
+          {% endfor %}  
+        </select>
+      </form>
 
       {%- if section.settings.show_view_all and section.settings.swipe_on_mobile and more_in_collection -%}
         <a href="{{ block.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
       {%- endif -%}
     </div>
-    <form>
-      <select name="collection" id="selected-featured-collection">
-        {% for block in section.blocks %}
-          <option value="{{ forloop.index }}">{{ block.settings.title | escape}}</option>
-        {% endfor %}  
-      </select>
-    </form>
   {% else %}
     {% for block in section.blocks %}
       <div class="{% if block.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
