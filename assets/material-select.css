@@ -47,7 +47,7 @@
 .select-bar {
     position: relative;
     display: block;
-    width: 350px;
+    width: 150px;
 }
 
 .select-bar:before, .select-bar:after {
@@ -103,6 +103,10 @@
 
     .select-text {
         font-size: 3.75rem;
+        width: 350px;
+    }
+
+    .select-bar {
         width: 350px;
     }
 }
