@@ -89,6 +89,10 @@
     line-height: 1
 }
 
+.spacer {
+    margin-bottom: 2rem;
+}
+
 @media (min-width:768px) {
     .lg\:label {
       font-size:3.75rem;
