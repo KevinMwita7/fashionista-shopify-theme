@@ -145,10 +145,18 @@
             "title": "Featured collection",
             "collection": ""
           }
+        },
+        "a26ebe8f-a52c-43a6-97a1-d81078f8da94": {
+          "type": "featured_collection",
+          "settings": {
+            "title": "Featured collection",
+            "collection": ""
+          }
         }
       },
       "block_order": [
-        "164076470229e3124f-0"
+        "164076470229e3124f-0",
+        "a26ebe8f-a52c-43a6-97a1-d81078f8da94"
       ],
       "settings": {
         "show_view_all": true,
