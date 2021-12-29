@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var selectedCollection = document.getElementById("selected-featured-collection");
     if(selectedCollection) {
         selectedCollection.addEventListener('change', function (event) {
+            console.log(event.target.value);
             let els = document.getElementsByClassName('featured-collection');
             for(let i = 0; i < els.length; ++i) {
-                console.log(els[i]);
+                console.log(els[i].dataset.index);
             }
         });
     }
