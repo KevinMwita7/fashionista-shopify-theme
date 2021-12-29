@@ -12,7 +12,7 @@
 <div class="collection page-width{% if section.settings.swipe_on_mobile == true and block.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
   {% if section.blocks.size > 1 %}
     <div class="{% if block.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
-      <h2 class="title section-heading lg:section-heading font-medium text-center md:text-left d-inline-block mt-0">Currently viewing</h2>
+      <h2 class="title label lg:label font-medium text-center md:text-left d-inline-block mt-0">Currently viewing</h2>
 
       <form class="d-inline-block select">
         <select name="collection" id="selected-featured-collection" class="select-text">

@@ -1,7 +1,7 @@
 .select {
     font-family: 'Roboto','Helvetica','Arial',sans-serif;
     position: relative;
-    width: 350px;
+    width: 150px;
     margin-left: 1.2rem;
 }
 
@@ -9,9 +9,9 @@
     position: relative;
     font-family: inherit;
     background-color: transparent;
-    width: 350px;
+    width: 150px;
     padding: 10px 10px 10px 0;
-    font-size: 3.75rem;
+    font-size: 2rem;
     border-radius: 0;
     border: none;
     border-bottom: 1px solid rgba(0,0,0, 0.12);
@@ -82,4 +82,27 @@
     left: 0;
     pointer-events: none;
     opacity: 0.5;
+}
+
+.label {
+    font-size: 2rem;
+    line-height: 1
+}
+
+@media (min-width:768px) {
+    .lg\:label {
+      font-size:3.75rem;
+      line-height:1
+    }
+}
+
+@media (min-width: 768px) {
+    .select {
+        width: 350px;
+    }
+
+    .select-text {
+        font-size: 3.75rem;
+        width: 350px;
+    }
 }
