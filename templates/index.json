@@ -135,10 +135,37 @@
         "image_padding": false,
         "show_view_all": false
       }
+    },
+    "1640764702486b4d08": {
+      "type": "featured-collection",
+      "blocks": {
+        "164076470229e3124f-0": {
+          "type": "featured_collection",
+          "settings": {
+            "title": "Featured collection",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "164076470229e3124f-0"
+      ],
+      "settings": {
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "products_to_show": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
     "16375654467d9d124d",
-    "1639992274f6a6c890"
+    "1639992274f6a6c890",
+    "1640764702486b4d08"
   ]
 }
