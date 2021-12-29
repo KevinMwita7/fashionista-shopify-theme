@@ -136,17 +136,17 @@
         "show_view_all": false
       }
     },
-    "1640697195a5b9a546": {
+    "1640764702486b4d08": {
       "type": "featured-collection",
       "blocks": {
-        "16406971956c92c9b7-0": {
+        "164076470229e3124f-0": {
           "type": "featured_collection",
           "settings": {
             "title": "Featured collection",
             "collection": ""
           }
         },
-        "3ddc830f-a417-4e2e-a54d-e24043c425b9": {
+        "a26ebe8f-a52c-43a6-97a1-d81078f8da94": {
           "type": "featured_collection",
           "settings": {
             "title": "Featured collection",
@@ -155,8 +155,8 @@
         }
       },
       "block_order": [
-        "16406971956c92c9b7-0",
-        "3ddc830f-a417-4e2e-a54d-e24043c425b9"
+        "164076470229e3124f-0",
+        "a26ebe8f-a52c-43a6-97a1-d81078f8da94"
       ],
       "settings": {
         "show_view_all": true,
@@ -174,6 +174,6 @@
   "order": [
     "16375654467d9d124d",
     "1639992274f6a6c890",
-    "1640697195a5b9a546"
+    "1640764702486b4d08"
   ]
 }
