@@ -3,6 +3,7 @@
     position: relative;
     width: 150px;
     margin-left: 1.2rem;
+    color: black;
 }
 
 .select-text {
@@ -14,7 +15,7 @@
     font-size: 2rem;
     border-radius: 0;
     border: none;
-    border-bottom: 1px solid rgba(0,0,0, 0.12);
+    border-bottom: 2px solid rgba(0,0,0);
     text-transform: lowercase;
 }
 
@@ -39,7 +40,7 @@
     content: '';
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 6px solid rgba(0, 0, 0, 0.12);
+    border-top: 6px solid rgba(0, 0, 0);
     pointer-events: none;
 }
 
