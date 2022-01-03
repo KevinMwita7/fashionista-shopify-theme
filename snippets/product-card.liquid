@@ -25,7 +25,7 @@
       {%- endif -%}
 
       {%- if product_card_product.featured_media -%}
-        <h3 class="card-information__text h5">
+        <h3 class="card-information__text h3 font-semibold">
           <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
             {{ product_card_product.title | escape }}
           </a>
