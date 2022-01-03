@@ -162,10 +162,6 @@
               <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.text }}</a>
           {%- when 'share' -%}
             <share-button id="Share-{{ section.id }}" class="share-button" {{ block.shopify_attributes }}>
-              <button class="share-button__button hidden">
-                {% render 'icon-share' %}
-                {{ block.settings.share_label | escape }}
-              </button>
               <details id="Details-{{ block.id }}-{{ section.id }}">
                 <summary class="share-button__button">
                   {% render 'icon-share' %}
