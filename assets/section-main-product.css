@@ -825,7 +825,6 @@ a.product__text {
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid #fff;
-  float: left;
 }
 
 .s-color-swatch-container .s-color-swatch-outer-circle-selected {
@@ -840,7 +839,6 @@ a.product__text {
   border-radius: 8.5px;
   height: 19px;
   width: 19px;
-  float: left;
   margin: 3px;
 }
 
@@ -849,10 +847,8 @@ a.product__text {
 }
 
 .s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-fill .s-color-swatch-inner-circle-border {
-
   border-radius: 8.5px;
   height: 19px;
   width: 19px;
   border: 1px solid rgba(0,0,0,.2);
-  float: left;
 }
