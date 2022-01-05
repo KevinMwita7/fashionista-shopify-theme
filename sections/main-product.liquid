@@ -209,7 +209,7 @@
                           >
                           {% assign option_name = option.name | downcase %}
                           {% if option_name == 'color' or option_name == 'colour' %}
-                            <span class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if forloop.index == 1 %} s-color-swatch-selected{% endif %}" style="padding: 0; background-color: #fff;">
+                            <span class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if option.selected_value == value %} s-color-swatch-selected{% endif %}" style="padding: 0; background-color: #fff;">
                                 <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></label>
                             </span>
                           {% else %}
