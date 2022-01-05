@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
   var colorSwatchesParents = document.getElementsByClassName("s-color-swatch-outer-circle");
   var colorSwatches = document.getElementsByClassName("s-color-swatch-inner-circle-border");
-  for(var i = 0; i < colorSwatches.length; ++i) {
+
+  for(let i = 0; i < colorSwatches.length; ++i) {
       colorSwatches[i].addEventListener("click", function(event) {
         for(var j = 0; j < colorSwatchesParents.length; ++j) {
             colorSwatchesParents[j].classList.remove("s-color-swatch-selected");
         }
-        console.log(colorSwatchesParents, i);
         colorSwatchesParents[i].classList.add("s-color-swatch-selected");
       });
   }
