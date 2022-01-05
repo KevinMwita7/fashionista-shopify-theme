@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   var colorSwatchesParents = document.getElementsByClassName("s-color-swatch-outer-circle");
-  var colorSwatches = document.getElementsByClassName("s-color-swatch-outer-circle");
+  var colorSwatches = document.getElementsByClassName("s-color-swatch-inner-circle-border");
   for(var i = 0; i < colorSwatches.length; ++i) {
       colorSwatches[i].addEventListener("click", function(event) {
         for(var j = 0; j < colorSwatchesParents.length; ++j) {
