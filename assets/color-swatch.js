@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         for(var j = 0; j < colorSwatchesParents.length; ++j) {
             colorSwatchesParents[j].classList.remove("s-color-swatch-selected");
         }
+        console.log(colorSwatchesParents, i);
         colorSwatchesParents[i].classList.add("s-color-swatch-selected");
       });
   }
