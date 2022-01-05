@@ -840,6 +840,8 @@ a.product__text {
   height: 19px;
   width: 19px;
   margin: 3px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .a-text-center {
