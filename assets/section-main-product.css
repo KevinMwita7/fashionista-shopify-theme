@@ -817,24 +817,42 @@ a.product__text {
   width: 2.2rem;
 }
 
-.color-swatch {
-  border-radius: 50%; 
-  width: 50px; 
-  height: 50px;
-
+.s-color-swatch-container .s-color-swatch-pad {
+  margin-right: 4px;
 }
 
-.color-swatch::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 3px solid transparent;
-  border-color: #fff;
-  box-sizing: border-box;
+.s-color-swatch-container .s-color-swatch-outer-circle {
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #fff;
+  float: left;
+}
+
+.s-color-swatch-container .s-color-swatch-outer-circle-selected {
+  border-color: #111 !important;
+}
+
+.s-color-swatch-container .s-color-swatch-outer-circle:not(.s-color-swatch-outer-circle-selected):hover {
+  border-color: #d3d3d3 !important;
+}
+
+.s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-fill {
+  border-radius: 8.5px;
+  height: 19px;
+  width: 19px;
+  float: left;
+  margin: 3px;
+}
+
+.a-text-center {
+  text-align: center !important;
+}
+
+.s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-fill .s-color-swatch-inner-circle-border {
+
+  border-radius: 8.5px;
+  height: 19px;
+  width: 19px;
+  border: 1px solid rgba(0,0,0,.2);
+  float: left;
 }

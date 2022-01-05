@@ -208,9 +208,17 @@
                                 {% if option.selected_value == value %}checked{% endif %}
                           >
                           {% assign option_name = option.name | downcase %}
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" {% if option_name == 'color' or option_name == 'colour' %} class="color-swatch" style="background-color: {{ value }};" {% endif %}>
-                            {% if option_name != 'color' and option_name != 'colour' %} {{ value }} {% endif %}
-                          </label>
+                          {% if option_name == 'color' or option_name == 'colour' %}
+                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="a-section s-color-swatch-outer-circle s-color-swatch-outer-circle-selected s-color-swatch-pad">
+                              <span class="s-color-swatch-inner-circle-fill">
+                                  <button aria-label="{{ option_name }}-{{ value }}" class="a-link-normal s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></button>
+                              </span>
+                            </label>
+                          {% else %}
+                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                              {{ value }}
+                            </label>
+                          {% endif %}
                         {%- endfor -%}
                       </fieldset>
                   {%- endfor -%}
