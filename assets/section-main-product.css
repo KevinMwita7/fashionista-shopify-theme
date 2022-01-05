@@ -837,8 +837,8 @@ a.product__text {
 
 .s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-fill {
   border-radius: 8.5px;
-  height: 19px;
-  width: 19px;
+  height: 23px;
+  width: 23px;
   margin: 3px;
   cursor: pointer;
   display: inline-block;
