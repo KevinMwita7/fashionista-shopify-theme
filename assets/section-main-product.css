@@ -186,6 +186,7 @@ fieldset.product-form__input .form__label {
 .product-form__input input[type='radio']:checked + label {
   background-color: rgb(var(--color-foreground));
   color: rgb(var(--color-background));
+  border-color: #111 !important;
 }
 
 @media screen and (forced-colors: active) {
@@ -825,10 +826,6 @@ a.product__text {
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid #fff;
-}
-
-.s-color-swatch-container .s-color-swatch-outer-circle-selected {
-  border-color: #111 !important;
 }
 
 .s-color-swatch-container .s-color-swatch-outer-circle:not(.s-color-swatch-outer-circle-selected):hover {

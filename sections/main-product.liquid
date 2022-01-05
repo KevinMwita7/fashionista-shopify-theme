@@ -209,7 +209,7 @@
                           >
                           {% assign option_name = option.name | downcase %}
                           {% if option_name == 'color' or option_name == 'colour' %}
-                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="a-section s-color-swatch-outer-circle s-color-swatch-outer-circle-selected s-color-swatch-pad" style="padding: 0; background-color: #fff;">
+                            <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="a-section s-color-swatch-outer-circle s-color-swatch-pad" style="padding: 0; background-color: #fff;">
                               <span class="s-color-swatch-inner-circle-fill">
                                   <button aria-label="{{ option_name }}-{{ value }}" class="a-link-normal s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></button>
                               </span>
