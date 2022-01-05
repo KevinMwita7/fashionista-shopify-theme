@@ -828,6 +828,7 @@ a.product__text {
   border-color: #111;
   width: 30px;
   height: 30px;
+  display: inline-block;
 }
 
 /*.s-color-swatch-container .s-color-swatch-outer-circle:not(.s-color-swatch-outer-circle-selected):hover {
@@ -841,4 +842,5 @@ a.product__text {
   border: 1px solid rgba(0,0,0,.2);
   cursor: pointer;
   display: inline-block;
+  margin: 3.19px;
 }
