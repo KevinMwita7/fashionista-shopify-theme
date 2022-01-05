@@ -208,7 +208,8 @@
                                 {% if option.selected_value == value %}checked{% endif %}
                           >
                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            {{ value }}
+                            {% assign option_name = option.name | downcase %}
+                            {% if option_name != 'color' and option_name != 'colour' %} {{ value }} {% endif %}
                           </label>
                         {%- endfor -%}
                       </fieldset>
