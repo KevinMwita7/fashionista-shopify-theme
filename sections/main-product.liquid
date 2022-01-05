@@ -209,11 +209,9 @@
                           >
                           {% assign option_name = option.name | downcase %}
                           {% if option_name == 'color' or option_name == 'colour' %}
-                            <div class="a-section s-color-swatch-outer-circle s-color-swatch-pad" style="padding: 0; background-color: #fff;">
-                              <span class="s-color-swatch-inner-circle-fill" aria-label="{{ option_name }}-{{ value }}">
-                                  <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></label>
-                              </span>
-                            </div>
+                            <span class="a-section s-color-swatch-outer-circle s-color-swatch-pad" style="padding: 0; background-color: #fff;">
+                                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></label>
+                            </span>
                           {% else %}
                             <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                               {{ value }}

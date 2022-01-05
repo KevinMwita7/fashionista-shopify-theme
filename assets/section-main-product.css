@@ -834,15 +834,7 @@ a.product__text {
   border-color: #d3d3d3 !important;
 }*/
 
-.s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-fill {
-  height: 25px;
-  width: 25px;
-  margin: 3px;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-fill .s-color-swatch-inner-circle-border {
+.s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-border {
   border-radius: 50%;
   height: 21px;
   width: 21px;
