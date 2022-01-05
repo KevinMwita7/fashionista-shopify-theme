@@ -833,9 +833,9 @@ a.product__text {
   display: inline-block;
 }
 
-/*.s-color-swatch-container .s-color-swatch-outer-circle:not(.s-color-swatch-outer-circle-selected):hover {
+.s-color-swatch-container .s-color-swatch-outer-circle:not(.s-color-swatch-selected):hover {
   border-color: #d3d3d3 !important;
-}*/
+}
 
 .s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-border {
   border-radius: 50%;
