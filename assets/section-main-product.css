@@ -828,12 +828,11 @@ a.product__text {
   border: 1px solid #fff;
 }
 
-.s-color-swatch-container .s-color-swatch-outer-circle:not(.s-color-swatch-outer-circle-selected):hover {
+/*.s-color-swatch-container .s-color-swatch-outer-circle:not(.s-color-swatch-outer-circle-selected):hover {
   border-color: #d3d3d3 !important;
-}
+}*/
 
 .s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-fill {
-  border-radius: 8.5px;
   height: 25px;
   width: 25px;
   margin: 3px;
@@ -842,9 +841,9 @@ a.product__text {
 }
 
 .s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-fill .s-color-swatch-inner-circle-border {
-  border-radius: 8.5px;
-  height: 19px;
-  width: 19px;
+  border-radius: 50%;
+  height: 21px;
+  width: 21px;
   border: 1px solid rgba(0,0,0,.2);
   cursor: pointer;
 }
