@@ -6,6 +6,7 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'microtip.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -209,7 +210,7 @@
                           >
                           {% assign option_name = option.name | downcase %}
                           {% if option_name == 'color' or option_name == 'colour' %}
-                            <span class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if option.selected_value == value %} s-color-swatch-selected{% endif %}" style="padding: 0; background-color: #fff;">
+                            <span class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if option.selected_value == value %} s-color-swatch-selected{% endif %}" style="padding: 0; background-color: #fff;" aria-label="{{ value }}" data-microtip-position="top" role="tooltip">
                                 <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></label>
                             </span>
                           {% else %}
