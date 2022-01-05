@@ -828,8 +828,8 @@ a.product__text {
 .s-color-swatch-container .s-color-swatch-outer-circle {
   border-radius: 50%;
   border: 1px solid #fff;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   display: inline-block;
 }
 
@@ -839,10 +839,10 @@ a.product__text {
 
 .s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-border {
   border-radius: 50%;
-  height: 21px;
-  width: 21px;
+  height: 22px;
+  width: 22px;
   border: 1px solid rgba(0,0,0,.2);
   cursor: pointer;
   display: inline-block;
-  margin: 3.19px;
+  margin: 6px;
 }
