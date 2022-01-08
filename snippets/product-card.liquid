@@ -130,4 +130,27 @@
       </div>
     </div>
   </div>
+  {%- unless product_card_product.has_only_default_variant -%}
+    <variant-radios class="no-js-hidden" data-url="{{ product_card_product.url }}">
+      {%- for option in product_card_product.options_with_values -%}
+          <fieldset class="js product-form__input s-color-swatch-container">
+            <legend class="form__label">{{ option.name }}</legend>
+            {%- for value in option.values -%}
+              <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                    name="{{ option.name }}"
+                    value="{{ value | escape }}"
+                    form="{{ product_form_id }}"
+                    {% if option.selected_value == value %}checked{% endif %}
+              >
+              <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                {{ value }}
+              </label>
+            {%- endfor -%}
+          </fieldset>
+      {%- endfor -%}
+      <script type="application/json">
+        {{ product.variants | json }}
+      </script>
+    </variant-radios>    
+  {% endunless %}
 </div>
