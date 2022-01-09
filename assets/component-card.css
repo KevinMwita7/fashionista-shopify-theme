@@ -332,8 +332,6 @@
   margin-bottom: 45px;
   position: relative;
   /*transition: all 0.2s ease-in-out;*/
-  transition: transform var(--duration-long) ease;
-  transform: scale(1.03);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -344,7 +342,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);*/
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
