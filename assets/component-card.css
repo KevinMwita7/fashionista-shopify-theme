@@ -281,22 +281,22 @@
 }
 
 @media screen and (min-width: 990px) {
-  .card .media.media--hover-effect > img:only-child,
-  .card-wrapper .media.media--hover-effect > img:only-child,
+  .card .media.media--hover-effect > img,
+  .card-wrapper .media.media--hover-effect > img,
   .card--search img {
     transition: transform var(--duration-long) ease;
   }
 
-  .card:hover .media.media--hover-effect > img:first-child:only-child,
-  .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
+  .card:hover .media.media--hover-effect > img:first-child,
+  .card-wrapper:hover .media.media--hover-effect > img:first-child {
     transform: scale(1.03);
   }
 
-  .card-wrapper:hover
+  /*.card-wrapper:hover
     .media.media--hover-effect
     > img:first-child:not(:only-child) {
     opacity: 0;
-  }
+  }*/
 
   .card-wrapper:hover .media.media--hover-effect > img + img {
     opacity: 1;
@@ -322,4 +322,62 @@
     background-color: rgba(var(--color-card-hover), 0.06);
     transition: background-color var(--duration-long) ease;
   }
+}
+
+.media .quick-view {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 45px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+
+.media .quick-view>* {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -khtml-transform: translate(-50%, -50%);
+}
+
+.media .quick-view>button {
+  padding: 12px 30px;
+  border: 1px solid #313131;
+  background: #212121;
+  color: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 27px;
+  transition: all 0.05s ease-in-out;
+
+}
+
+.card-wrapper:hover .media.media--hover-effect > .quick-view {
+  border-color: #ddd;
+  box-shadow: none;
+  padding: 11px 28px;
+}
+
+.card-wrapper:hover .media.media--hover-effect > .quick-view {
+  margin-top: 0px;
+  opacity: 1;
+}
+
+.card-wrapper:hover .media.media--hover-effect > .quick-view button {
+  border-color: #ddd;
+  box-shadow: none;
+  padding: 11px 28px;
+}
+
+.card-wrapper .media .quick-view {
+  margin-top: 0px;
 }
