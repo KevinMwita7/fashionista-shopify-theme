@@ -365,11 +365,9 @@
   border-color: #ddd;
   box-shadow: none;
   padding: 11px 28px;
-}
-
-.card-wrapper:hover .media.media--hover-effect > .quick-view {
   margin-top: 0px;
   opacity: 1;
+  transform: rotate(180deg);
 }
 
 .card-wrapper:hover .media.media--hover-effect > .quick-view button {
