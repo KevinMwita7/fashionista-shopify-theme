@@ -76,6 +76,7 @@
           <div class="media media--transparent media--{{ media_size }} media--hover-effect"
             {% if media_size == 'adapt' and product_card_product.featured_media %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
           >
+            <a href="{{ product_card_product.url | default: '#' }}">
               <img
                 srcset="{%- if product_card_product.featured_media.width >= 165 -%}{{ product_card_product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
                   {%- if product_card_product.featured_media.width >= 360 -%}{{ product_card_product.featured_media | img_url: '360x' }} 360w,{%- endif -%}
@@ -92,7 +93,9 @@
                 width="{{ product_card_product.featured_media.width }}"
                 height="{{ product_card_product.featured_media.height }}"
               >
+            </a>
             {%- if product_card_product.media[1] != nil and show_secondary_image -%}
+              <a href="{{ product_card_product.url | default: '#' }}">
                 <img
                   srcset="{%- if product_card_product.media[1].width >= 165 -%}{{ product_card_product.media[1] | img_url: '165x' }} 165w,{%- endif -%}
                     {%- if product_card_product.media[1].width >= 360 -%}{{ product_card_product.media[1] | img_url: '360x' }} 360w,{%- endif -%}
@@ -109,6 +112,7 @@
                 width="{{ product_card_product.media[1].width }}"
                 height="{{ product_card_product.media[1].height }}"
                 >
+              </a>
             {%- endif -%}
             <div class="quick-view">
               <button>Quick View</button>
