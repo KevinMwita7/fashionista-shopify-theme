@@ -101,7 +101,26 @@
   </div>
 {% endfor %}
 
+<div id="featured-product-dialog" aria-labelledby="featured-product-dialog-title" aria-hidden="true">
+  <!-- 2. The dialog overlay -->
+  <div data-a11y-dialog-hide></div>
+  <!-- 3. The actual dialog -->
+  <div role="document">
+    <!-- 4. The close button -->
+    <button type="button" data-a11y-dialog-hide aria-label="Close dialog">
+      &times;
+    </button>
+    <!-- 5. The dialog title -->
+    <h1 id="featured-product-dialog-title">Your dialog title</h1>
+    <!-- 6. Dialog content -->
+  </div>
+</div>
+
 <script src="{{ 'featured-collection.js' | asset_url }}" defer></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/a11y-dialog@7/dist/a11y-dialog.min.js"
+></script>
 
 {% schema %}
 {
