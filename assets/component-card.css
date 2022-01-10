@@ -323,3 +323,58 @@
     transition: background-color var(--duration-long) ease;
   }
 }
+
+.media .quick-view {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 45px;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+}
+
+.media .quick-view>* {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -khtml-transform: translate(-50%, -50%);
+}
+
+.media .quick-view>button {
+  padding: 12px 30px;
+  border: 1px solid #313131;
+  background: #212121;
+  color: #fff;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 27px;
+  transition: all 0.05s ease-in-out;
+  z-index: 2;
+}
+
+.card-wrapper:hover .media.media--hover-effect > .quick-view {
+  border-color: #ddd;
+  box-shadow: none;
+  padding: 11px 28px;
+  margin-top: 0px;
+  opacity: 1;
+  transition: transform var(--duration-short) ease;
+}
+
+.card-wrapper:hover .media.media--hover-effect > .quick-view button {
+  border-color: #ddd;
+  box-shadow: none;
+  padding: 11px 28px;
+}
+
+.card-wrapper .media .quick-view {
+  margin-top: 0px;
+}
