@@ -55,7 +55,7 @@
           <span class="visually-hidden">{{ product_card_product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
         </p>
       {%- endif -%}
-      <a href="{{ product_card_product.url | default: '#' }}">
+      <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
         {% render 'price', product: product_card_product, price_class: '' %}
       </a>
     </div>
