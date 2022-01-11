@@ -1,0 +1,34 @@
+{{ 'quick-view-dialog' | asset_url | stylesheet_tag }}
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+
+<!-- 1. The dialog container -->
+<div
+    id="product-quick-view-dialog"
+    aria-labelledby="product-quick-view-dialog-title"
+    aria-hidden="true"
+    class="dialog-container"
+    >
+    <!-- 2. The dialog overlay -->
+    <div data-a11y-dialog-hide class="dialog-overlay"></div>
+    <!-- 3. The actual dialog -->
+    <div role="document" class="dialog-content">
+        <!-- 4. The close button -->
+        <button type="button" data-a11y-dialog-hide aria-label="Close dialog" class="dialog-close">
+        &times;
+        </button>
+        <!-- 5. The dialog title -->
+        <div class="product-details-wrapper">
+            <div class="product-images-gallery">
+                Loading...
+            </div>
+            <div class="product-details">
+                Loading...
+            </div>
+        </div>
+        <!-- 6. Dialog content -->
+    </div>
+</div>
+
+<script defer src="{{ 'a11y-dialog.min.js' }} | asset_url"></script>
+<script defer src="{{ 'swiper-bundle.min.js' }} | asset_url"></script>
+<script defer src="{{ 'quick-view-dialog.js' }} | asset_url"></script>

@@ -1,0 +1,163 @@
+.dialog-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.dialog-container[aria-hidden='true'] {
+  display: none;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(43, 46, 56, 0.9);
+  animation: fade-in 200ms both;
+}
+
+.dialog-content {
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  z-index: 3;
+  position: relative;
+  animation: fade-in 400ms 200ms both, slide-up 400ms 200ms both;
+  padding: 1em;
+  max-width: 90%;
+  width: 1200px;
+  border-radius: 2px;
+}
+
+.product-images-gallery {
+  width: 50%;
+  height: 100%;
+  padding: 2em;
+}
+
+.product-details {
+  width: 50%;
+  padding: 2em;
+}
+
+.product-details-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 700px) {
+  .dialog-content {
+    padding: 2em;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(10%);
+  }
+}
+
+.dialog h1 {
+  margin: 0;
+  font-size: 1.25em;
+}
+
+.dialog-close {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.25em;
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+@media screen and (min-width: 700px) {
+  .dialog-close {
+    top: 1em;
+    right: 1em;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.product-images-swiper {
+  height: 70vh;
+  width: 100%;
+}
+
+.product-images-thumbs {
+  height: 75px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  /*padding: 10px 0;*/
+}
+
+.product-images-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.product-images-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
