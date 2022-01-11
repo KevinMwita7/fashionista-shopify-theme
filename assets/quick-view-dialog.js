@@ -1,6 +1,10 @@
 var dialogEl = document.getElementById("product-quick-view-dialog");
 var dialog = new A11yDialog(dialogEl);
 
+dialog.on('show', function(element, event) {
+    console.log(event);
+})
+
 /*dialog.on('show', function() {
     var swiper = new Swiper(".mySwiper", {
         // loop: true,
