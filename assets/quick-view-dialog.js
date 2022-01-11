@@ -7,7 +7,8 @@ dialog.on('show', function(element, event) {
         return response.text()
     })
     .then(function(product) {
-        console.log(product);
+        var productDialog = document.getElementsByClassName("quickview-product-details-wrapper");
+        productDialog[0].innerHTML += product;
     })
     .catch(function(error) {
         console.log(error);
