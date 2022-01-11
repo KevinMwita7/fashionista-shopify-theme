@@ -4,12 +4,10 @@ var dialog = new A11yDialog(dialogEl);
 dialog.on('show', function(element, event) {
     fetch("/products/" + event.target.dataset.productHandle)
     .then(function(response) {
-        response.json().then(function(data) {
-            console.log(data);
-        })
-        .catch(function(e) {
-            console.log(e);
-        });
+        return response.json()
+    })
+    .then(function(product) {
+        console.log(product);
     })
     .catch(function(error) {
         console.log(error);
