@@ -4,7 +4,7 @@ var dialog = new A11yDialog(dialogEl);
 dialog.on('show', function(element, event) {
     fetch("/products/" + event.target.dataset.productHandle)
     .then(function(response) {
-        return response.json()
+        return response.text()
     })
     .then(function(product) {
         console.log(product);
