@@ -2,7 +2,13 @@ var dialogEl = document.getElementById("product-quick-view-dialog");
 var dialog = new A11yDialog(dialogEl);
 
 dialog.on('show', function(element, event) {
-    console.log(event);
+    fetch("/product/" + event.target.dataset.productHandle)
+    .then(function(response) {
+        console.log(response)
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
 })
 
 /*dialog.on('show', function() {
