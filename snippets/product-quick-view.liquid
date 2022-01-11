@@ -1,5 +1,5 @@
 {{ 'quick-view-dialog.css' | asset_url | stylesheet_tag }}
-{% comment %}{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}{% endcomment %}
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
 <!-- 1. The dialog container -->
 <div
@@ -9,7 +9,7 @@
     class="dialog-container"
     >
     <!-- 2. The dialog overlay -->
-    <div data-a11y-dialog-hide class="dialog-overlay"></div>
+    <div data-a11y-dialog-hide class="dialog-overlay">&nbsp;</div>
     <!-- 3. The actual dialog -->
     <div role="dialog" class="dialog-content">
         <!-- 4. The close button -->
