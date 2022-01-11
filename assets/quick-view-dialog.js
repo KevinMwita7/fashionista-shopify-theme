@@ -2,7 +2,7 @@ var dialogEl = document.getElementById("product-quick-view-dialog");
 var dialog = new A11yDialog(dialogEl);
 
 dialog.on('show', function(element, event) {
-    fetch("/product/" + event.target.dataset.productHandle)
+    fetch("/products/" + event.target.dataset.productHandle)
     .then(function(response) {
         console.log(response)
     })
