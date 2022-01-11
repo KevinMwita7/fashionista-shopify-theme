@@ -1,5 +1,5 @@
-{{ 'quick-view-dialog' | asset_url | stylesheet_tag }}
-{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+{{ 'quick-view-dialog' | stylesheet_tag }}
+{{ 'swiper-bundle.min.css' | stylesheet_tag }}
 
 <!-- 1. The dialog container -->
 <div
@@ -29,6 +29,6 @@
     </div>
 </div>
 
-<script defer src="{{ 'a11y-dialog.min.js' }} | asset_url"></script>
-<script defer src="{{ 'swiper-bundle.min.js' }} | asset_url"></script>
-<script defer src="{{ 'quick-view-dialog.js' }} | asset_url"></script>
+<script src="{{ 'a11y-dialog.min.js' | asset_url }}" defer></script>
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+<script src="{{ 'quick-view-dialog.js' | asset_url }}" defer></script>
