@@ -8,10 +8,13 @@ dialog.on('show', function(element, event) {
     })
     .then(function(product) {
         var productDialog = document.getElementsByClassName("quickview-product-details-wrapper");
-        console.log(product);
         var div = document.createElement('div');
         div.innerHTML = product;
-        productDialog[0].appendChild(div);
+        var header = div.getElementsByTagName("sticky-header")[0];
+        header.remove();
+        var footer = div.getElementsByTagName("footer");
+        footer[0].parentElement.remove();        
+        productDialog[0].appendChild(div);       
     })
     .catch(function(error) {
         console.log(error);
