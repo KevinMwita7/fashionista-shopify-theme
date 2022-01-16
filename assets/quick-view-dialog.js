@@ -12,6 +12,8 @@ dialog.on('show', function(element, event) {
         div.innerHTML = product;
         var header = div.getElementsByTagName("sticky-header")[0];
         header.remove();
+        var announcementBar = div.getElementsByClassName("shopify-section")[0];
+        announcementBar.remove()
         var footer = div.getElementsByTagName("footer");
         footer[0].parentElement.remove();        
         productDialog[0].appendChild(div);       
