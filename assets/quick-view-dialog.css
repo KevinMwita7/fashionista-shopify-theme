@@ -45,10 +45,10 @@
   padding: 2em;
 }
 
-.quickview-product-details-wrapper {
+/*.quickview-product-details-wrapper {
   display: flex;
   justify-content: space-between;
-}
+}*/
 
 @media screen and (min-width: 700px) {
   .dialog-content {
