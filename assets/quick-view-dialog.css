@@ -33,6 +33,7 @@
   width: 900px;
   height: 800px;
   border-radius: 2px;
+  overflow-y: auto;
 }
 
 .product-images-gallery {
