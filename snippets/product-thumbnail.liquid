@@ -60,6 +60,7 @@
 </noscript>
 
 <div class="no-js-hidden">
+  {% comment %}
   <span class="product__media-icon motion-reduce" aria-hidden="true">
     {%- liquid
       case media.media_type
@@ -72,6 +73,7 @@
       endcase
     -%}
   </span>
+{% endcomment %}
 
   <div class="product__media media media--transparent" style="padding-top: {{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;">
     <img
