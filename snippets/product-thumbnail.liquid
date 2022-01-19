@@ -91,15 +91,6 @@
       alt="{{ media.preview_image.alt | escape }}"
     >
   </div>
-  <button class="product__media-toggle" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
-    <span class="visually-hidden">
-      {%- if position == 'featured' %}
-        {{ 'products.product.media.open_featured_media' | t }}
-      {%- else -%}
-        {{ 'products.product.media.open_media' | t: index: position }}
-      {%- endif -%}
-    </span>
-  </button>
 </div>
 
 {%- if media.media_type != 'image' -%}
