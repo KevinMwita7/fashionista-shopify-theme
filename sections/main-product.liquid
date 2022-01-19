@@ -13,6 +13,8 @@
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
+<script src="https://cdn.tailwindcss.com" defer></script>
+
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
   {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
@@ -21,8 +23,8 @@
 {%- endif -%}
 
 <section class="page-width">
-  <div class="grid grid-rows-1 grid-cols-2">
-    <div class="product__media-wrapper">
+  <div class="grid grid-rows-1 grid-cols-3">
+    <div class="col-span-2">
       <div class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
