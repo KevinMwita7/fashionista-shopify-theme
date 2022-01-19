@@ -25,7 +25,7 @@
 <section class="page-width">
   <div class="md:grid md:grid-rows-1 md:grid-cols-2 lg:grid-cols-3">
     <div class="lg:col-span-2">
-      <div class="slider-mobile-gutter">
+      <div>
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>        
@@ -45,10 +45,22 @@
                 </div>
               {%- endunless -%}
             {%- endfor -%}            
-        </div>
+          </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
+        
+        <div thumbsSlider="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            {%- for media in product.media -%}
+              {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+                <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                  <img src="{{ media | img_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy">
+                </div>
+              {%- endunless -%}
+            {%- endfor -%}              
+          </div>
+        </div>        
       </div>
       {%- if first_3d_model -%}
         <button
