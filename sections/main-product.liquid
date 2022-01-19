@@ -7,6 +7,7 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'microtip.css' | asset_url | stylesheet_tag }}
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -370,34 +371,38 @@
     </div>
   </div>
 
-  <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
-    <div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
-      <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
-
-      <div class="product-media-modal__content" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
-        {%- liquid
-          if product.selected_or_first_available_variant.featured_media != null
-            assign media = product.selected_or_first_available_variant.featured_media
-            render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
-          endif
-        -%}
-
-        {%- for media in product.media -%}
-          {%- liquid
-            if section.settings.hide_variants and variant_images contains media.src
-              assign variant_image = true
-            else
-              assign variant_image = false
-            endif
-
-            unless media.id == product.selected_or_first_available_variant.featured_media.id
-              render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image
-            endunless
-          -%}
-        {%- endfor -%}
-      </div>
+  <div class="product-image-swiper">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+            {% if product.selected_or_first_available_variant.featured_media != null %}
+              {% assign media = product.selected_or_first_available_variant.featured_media %}
+              <div class="swiper-slide">
+                {% render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants %}
+              </div>
+            {% endif %}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>                        
     </div>
-  </product-modal>
+
+    <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          {%- for media in product.media -%}
+              {% if section.settings.hide_variants and variant_images contains media.src %}
+                {% assign variant_image = true %}
+              {% else %}
+                {% assign variant_image = false %}
+              {% endif %}
+
+              {% unless media.id == product.selected_or_first_available_variant.featured_media.id %}
+                <div class="swiper-slide">
+                  {% render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image %}
+                </div>
+              {% endunless %}
+          {%- endfor -%}          
+        </div>
+    </div>
+  </div>
 
   {% assign popups = section.blocks | where: "type", "popup" %}
   {%- for block in popups -%}
@@ -519,6 +524,8 @@
 </script>
 
 <script src="{{ 'color-swatch.js' | asset_url }}" defer></script>
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+<script src="{{ 'main-product.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
