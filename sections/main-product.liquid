@@ -26,11 +26,11 @@
 <section class="page-width">
   <div class="md:grid md:grid-rows-1 md:grid-cols-2 lg:grid-cols-3">
     <div class="lg:col-span-2">
-      <div>
+      <div class="md:flex">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>        
-        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 md:order-2">
           <div class="swiper-wrapper">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
             {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -51,7 +51,7 @@
           <div class="swiper-button-prev"></div>
         </div>
         
-        <div thumbsSlider="" class="swiper mySwiper">
+        <div thumbsSlider="" class="swiper mySwiper md:order-1 md:w-12">
           <div class="swiper-wrapper">
             {%- for media in product.media -%}
               {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
@@ -61,7 +61,7 @@
               {%- endunless -%}
             {%- endfor -%}              
           </div>
-        </div>        
+        </div>
       </div>
       {%- if first_3d_model -%}
         <button
