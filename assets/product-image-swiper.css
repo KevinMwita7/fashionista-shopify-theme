@@ -23,19 +23,19 @@
     align-items: center;
 }
 
-.swiper-slide img {
+.mySwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.mySwiper2 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-/*.mySwiper2 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }*/
 
 .swiper {
     width: 100%;
