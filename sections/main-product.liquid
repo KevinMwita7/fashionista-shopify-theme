@@ -55,8 +55,8 @@
           <div class="swiper-wrapper">
             {%- for media in product.media -%}
               {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-                <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-                  <img src="{{ media | img_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy">
+                <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" style="width: 75px; height: 75px;">
+                  <img src="{{ media | img_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="75px" width="75px">
                 </div>
               {%- endunless -%}
             {%- endfor -%}              
