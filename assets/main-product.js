@@ -4,7 +4,8 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     freeMode: true,
     watchSlidesProgress: true,
-    direction: "vertical"
+    direction: "vertical",
+    slidesPerView: 6
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
