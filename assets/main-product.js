@@ -10,7 +10,6 @@ var swiper = new Swiper(".mySwiper", {
 var swiper2 = new Swiper(".mySwiper2", {
     // loop: true,
     spaceBetween: 10,
-    slidesPerView: 5,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

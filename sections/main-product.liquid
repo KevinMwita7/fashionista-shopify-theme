@@ -49,7 +49,7 @@
           <div class="swiper-button-prev"></div>
         </div>
         
-        <div thumbsSlider="" class="mySwiper md:order-1 md:w-32" style="height: {{ product.media | size | times : 110 }}px;">
+        <div thumbsSlider="" class="swiper mySwiper md:order-1 md:w-32" style="height: {{ product.media | size | times : 110 }}px;">
           <div class="swiper-wrapper">
             {%- for media in product.media -%}
                 <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
