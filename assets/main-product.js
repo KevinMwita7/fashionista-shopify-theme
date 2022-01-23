@@ -1,7 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
     // loop: true,
     spaceBetween: 10,
-    slidesPerView: 12,
+    slidesPerView: "auto",
     freeMode: true,
     watchSlidesProgress: true,
     direction: "vertical"
