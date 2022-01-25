@@ -92,6 +92,6 @@
         width: 40%
     }
     .mySwiper2 .swiper-slide {
-        height: 100vh;
+        height: initial;
     }
 }
