@@ -53,8 +53,10 @@
                 <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                   <img src="{{ media | img_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="60px" width="60px">
                 </div>
-            {%- endfor -%}              
+            {%- endfor -%}
           </div>
+          <div class="vert-swiper-button-next" style="display: flex; color: black; background: white; border: 2px solid; border-radius: 50%; padding: 25px;"></div>
+          <div class="vert-swiper-button-prev" style="display: flex; color: black; background: white; border: 2px solid; border-radius: 50%; padding: 25px;"></div>
         </div>
         <div class="product__info-wrapper md:order-3 md:w-2/5">
           <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">

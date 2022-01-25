@@ -5,7 +5,11 @@ var swiper = new Swiper(".mySwiper", {
     freeMode: true,
     watchSlidesProgress: true,
     direction: "vertical",
-    slidesPerView: 6
+    slidesPerView: 6,
+    navigation: {
+        nextEl: ".vert-swiper-button-next",
+        prevEl: ".vert-swiper-button-prev",        
+    }
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
