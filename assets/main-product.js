@@ -7,8 +7,8 @@ var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     slidesPerView: 6,
     navigation: {
-        nextEl: ".vert-swiper-button-next",
-        prevEl: ".vert-swiper-button-prev",        
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",        
     }
 });
 
