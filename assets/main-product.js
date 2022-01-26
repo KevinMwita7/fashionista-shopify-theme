@@ -4,11 +4,16 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     freeMode: true,
     watchSlidesProgress: true,
-    direction: "vertical",
+    direction: "horizontal",
     slidesPerView: 6,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",        
+    },
+    breakpoints: {
+       1024: {
+           direction: "vertical"
+       } 
     }
 });
 
