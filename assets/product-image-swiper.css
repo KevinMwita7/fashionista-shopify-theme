@@ -82,6 +82,21 @@
     border: 1px solid black; 
 }
 
+@media screen and (min-width: 768px) {
+    .mySwiper {
+        width: 10%;
+        height: 500px;
+        margin: 0;
+    }
+    .mySwiper2 {
+        width: 80%;
+        float: right;
+    }
+    .product__info-wrapper {
+        padding-left: 0;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     .mySwiper2 {
         width: 40%
@@ -92,6 +107,9 @@
     .mySwiper {
         height: 600px;
         width: 8rem;
+    }
+    .product__info-wrapper {
+        padding-left: 5rem;
     }
     /*.swiper {
         height: 300px
