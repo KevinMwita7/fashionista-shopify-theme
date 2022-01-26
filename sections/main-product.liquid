@@ -46,7 +46,7 @@
           <div class="swiper-nav swiper-button-next"></div>
           <div class="swiper-nav swiper-button-prev"></div>
         </div>
-        <div style="clear: both;"></div>
+
         <div thumbsSlider="" class="swiper mySwiper md:order-1">
           <div class="swiper-wrapper">
             {%- for media in product.media -%}
@@ -56,6 +56,8 @@
             {%- endfor -%}
           </div>
         </div>
+
+        <div style="clear: both; display: block;"></div>
 
         <div class="product__info-wrapper md:order-3 lg:w-2/5">
           <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
