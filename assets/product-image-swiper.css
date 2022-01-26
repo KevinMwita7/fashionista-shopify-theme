@@ -1,8 +1,3 @@
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -23,20 +18,6 @@
     align-items: center;
 }
 
-/*.mySwiper .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.mySwiper2 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}*/
-
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -46,9 +27,11 @@
 
 .swiper {
     width: 100%;
-    height: 300px;
+    /*height: 300px;*/
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
@@ -62,11 +45,10 @@
 }
 
 .mySwiper {
-    height: 600px;
+    /*height: 600px;*/
     box-sizing: border-box;
     margin-top: 10px;
     /*margin-right: 10rem;*/
-    width: 8rem;
     /*padding: 10px 0;*/
 }
 
@@ -100,11 +82,18 @@
     border: 1px solid black; 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .mySwiper2 {
         width: 40%
     }
     .mySwiper2 .swiper-slide {
         height: initial;
+    }
+    .mySwiper {
+        height: 600px;
+        width: 8rem;
+    }
+    .swiper {
+        height: 300px
     }
 }
