@@ -85,6 +85,21 @@
     box-shadow: 0 0 10px;
 }
 
+.swiper .swiper-nav {
+    display: flex; 
+    color: black; 
+    background: white; 
+    border: 2px solid; 
+    border-radius: 50%; 
+    padding: 25px;
+}
+
+.swiper .swiper-nav:hover {
+    color: white; 
+    background: black; 
+    border: 1px solid; 
+}
+
 @media screen and (min-width: 768px) {
     .mySwiper2 {
         width: 40%
