@@ -11,7 +11,7 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",        
     },
     breakpoints: {
-       1024: {
+       768: {
            direction: "vertical"
        } 
     }
