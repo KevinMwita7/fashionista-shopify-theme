@@ -47,18 +47,14 @@
           <div class="swiper-button-prev" style="display: flex; color: black; background: white; border: 2px solid; border-radius: 50%; padding: 25px;"></div>
         </div>
         
-        <div>
-          <div class="swiper-button-prev" style="display: flex; position: relative; color: black; background: white; border: 2px solid; border-radius: 50%; padding: 25px; transform: rotate(90deg); transform-origin: left center; left: 50%; top: -4%"></div>
-          <div thumbsSlider="" class="swiper mySwiper md:order-1">
-            <div class="swiper-wrapper">
-              {%- for media in product.media -%}
-                  <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-                    <img src="{{ media | img_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="60px" width="60px">
-                  </div>
-              {%- endfor -%}
-            </div>
+        <div thumbsSlider="" class="swiper mySwiper md:order-1">
+          <div class="swiper-wrapper">
+            {%- for media in product.media -%}
+                <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                  <img src="{{ media | img_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="60px" width="60px">
+                </div>
+            {%- endfor -%}
           </div>
-          <div class="swiper-button-next" style="display: flex; position: relative; color: black; background: white; border: 2px solid; border-radius: 50%; padding: 25px; transform: rotate(90deg); transform-origin: left center; left: 50%; top: auto; bottom: 10px"></div>
         </div>
 
         <div class="product__info-wrapper md:order-3 md:w-2/5">
