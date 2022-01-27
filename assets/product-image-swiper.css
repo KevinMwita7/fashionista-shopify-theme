@@ -68,7 +68,7 @@
 }
 
 .swiper .swiper-nav {
-    display: flex; 
+    display: none; 
     color: black; 
     background: white; 
     border: 1px solid; 
@@ -98,6 +98,9 @@
     }
     .product__info-wrapper {
         padding-left: 0;
+    }
+    .swiper .swiper-nav {
+        display: flex;
     }
 }
 
