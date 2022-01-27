@@ -1,15 +1,10 @@
 var swiper = new Swiper(".mySwiper", {
-    // loop: true,
     spaceBetween: 10,
-    // slidesPerView: "auto",
-    // freeMode: true,
+    freeMode: true,
     watchSlidesProgress: true,
     direction: "horizontal",
-    slidesPerView: 12,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",        
-    },
+    slidesPerView: 6,
+    centerInsufficientSlides: true,
     breakpoints: {
        768: {
            direction: "vertical"
@@ -18,7 +13,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper2 = new Swiper(".mySwiper2", {
-    // loop: true,
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
