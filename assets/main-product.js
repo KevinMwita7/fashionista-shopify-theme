@@ -1,11 +1,11 @@
 var swiper = new Swiper(".mySwiper", {
     // loop: true,
     spaceBetween: 10,
-    slidesPerView: "auto",
-    freeMode: true,
+    // slidesPerView: "auto",
+    // freeMode: true,
     watchSlidesProgress: true,
     direction: "horizontal",
-    // slidesPerView: 6,
+    slidesPerView: 6,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",        
