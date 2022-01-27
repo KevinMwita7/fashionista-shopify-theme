@@ -24,6 +24,15 @@ var swiper2 = new Swiper(".mySwiper2", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+    },
+    breakpoints: {
+        768: {
+            pagination: false
+        }
+    },
     thumbs: {
         swiper: swiper,
     },
