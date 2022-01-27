@@ -402,7 +402,8 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: var(var(--swiper-theme-color), --swiper-pagination-color);
+    /*background: var(--swiper-pagination-color, var(--swiper-theme-color));*/
+    background: var(--swiper-theme-color);
     position: absolute;
     left: 0;
     top: 0;
