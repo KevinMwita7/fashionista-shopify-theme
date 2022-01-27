@@ -30,7 +30,11 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
     breakpoints: {
         768: {
-            pagination: false
+            pagination: {
+                // Set non existent class in order to hide pagination
+                el: ".ix2pzra7iz",
+                type: "progressbar"
+            }
         }
     },
     thumbs: {
