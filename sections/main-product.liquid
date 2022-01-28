@@ -38,7 +38,7 @@
                 </div>
               {% endcomment %}
             {%- for media in product.media -%}
-              {{ media.product_id }}
+              <h1>{{ media.product_id }}</h1>
               <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                 {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
               </div>              
