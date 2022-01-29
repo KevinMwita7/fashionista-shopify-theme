@@ -602,18 +602,20 @@ class VariantSelects extends HTMLElement {
       `[data-media-id="${this.dataset.section}-${this.currentVariant.featured_media.id}"]`
     );
     
-    let slideTo = -1;
+    /*let slideTo = -1;
+    let offset = 0;*/
     // Hide images not belonging to selected variant
     const images = document.getElementsByClassName("swiper-slide");
     for(let i = 0; i < images.length; ++i) {
       if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
-        if(slideTo == -1) {
+        /*if(slideTo == -1) {
           console.log(this.currentVariant.title, images[i].dataset.variantImageColor, i);
           slideTo = i;
-        }
+        }*/
         images[i].style.display = "flex";
       } else {
         images[i].style.display = "none";
+        // ++offset;
       }
     }
 
