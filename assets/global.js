@@ -607,7 +607,10 @@ class VariantSelects extends HTMLElement {
     const images = document.getElementsByClassName("swiper-slide");
     for(let i = 0; i< images.length; ++i) {
       if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
-        if(slideTo == -1) slideTo = i;
+        if(slideTo == -1) {
+          console.log(this.currentVariant.title, images[i].dataset.variantImageColor, i);
+          slideTo = i;
+        }
         images[i].style.display = "flex";
       } else {
         images[i].style.display = "none";
@@ -615,7 +618,7 @@ class VariantSelects extends HTMLElement {
     }
 
     const swiper = document.querySelector(".mySwiper2").swiper;
-    swiper.slideTo(slideTo);
+    swiper.slideTo(7);
 
     if (!newMedia) return;
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
