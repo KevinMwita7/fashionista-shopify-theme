@@ -603,25 +603,23 @@ class VariantSelects extends HTMLElement {
     );
     
     let slideTo = -1;
-    // let offset = 0;
     // Hide images not belonging to selected variant
     const images = document.getElementsByClassName("swiper-slide");
     for(let i = 0; i < images.length; ++i) {
       if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
         if(slideTo == -1) {
-          // console.log(this.currentVariant.title, images[i].dataset.variantImageColor, i);
+          images[i].classList.add("swiper-slide-thumb-active");
           slideTo = i + 1;
         }
         images[i].style.display = "flex";
       } else {
+        images[i].classList.remove("swiper-slide-thumb-active");
         images[i].style.display = "none";
-        // ++offset;
       }
     }
 
     const swiper = document.querySelector(".mySwiper").swiper;
-    console.log("sliding to " + slideTo);
-    swiper.slideTo(6);
+    swiper.slideTo(5);
 
     if (!newMedia) return;
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
