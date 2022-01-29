@@ -605,6 +605,7 @@ class VariantSelects extends HTMLElement {
     // Hide images not belonging to selected variant
     const images = document.getElementsByClassName("swiper-slider");
     for(let i = 0; i< images.length; ++i) {
+      console.log(this.currentVariant.title, images[i].dataset.variantImageColor)
       if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
         images[i].style.display = "flex";
       } else {
