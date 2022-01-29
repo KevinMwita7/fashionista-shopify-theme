@@ -323,7 +323,7 @@
     transition: background-color var(--duration-long) ease;
   }
 }
-
+/*
 .media .quick-view {
   text-align: center;
   font-size: 12px;
@@ -377,4 +377,4 @@
 
 .card-wrapper .media .quick-view {
   margin-top: 0px;
-}
+}*/

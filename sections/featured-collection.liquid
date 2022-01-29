@@ -102,9 +102,11 @@
   </div>
 {% endfor %}
 
+{% comment %}
 {% render 'product-quick-view',
   product_dialog_product: product
 %}
+{% endcomment %}
 
 <script src="{{ 'featured-collection.js' | asset_url }}" defer></script>
 

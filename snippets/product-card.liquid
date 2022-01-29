@@ -110,9 +110,11 @@
                 height="{{ product_card_product.media[1].height }}"
                 >
             {%- endif -%}
+            {% comment %}
             <div class="quick-view">
               <button type="button" data-a11y-dialog-show="product-quick-view-dialog" data-product-handle="{{ product_card_product.handle }}">Quick View</button>
             </div>
+            {% endcomment %}
           </div>
         </div>
       {%- else -%}
