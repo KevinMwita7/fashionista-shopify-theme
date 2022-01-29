@@ -615,7 +615,7 @@ class VariantSelects extends HTMLElement {
     }
     window.setTimeout(() => {
       parent.scrollLeft = 0;
-      parent.querySelector('li.product__media-item').scrollIntoView({behavior: 'smooth'});
+      parent.querySelector('div.product__media-item').scrollIntoView({behavior: 'smooth'});
     });
   }
 
