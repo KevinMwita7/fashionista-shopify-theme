@@ -602,16 +602,16 @@ class VariantSelects extends HTMLElement {
       `[data-media-id="${this.dataset.section}-${this.currentVariant.featured_media.id}"]`
     );
     
-    /*let slideTo = -1;
-    let offset = 0;*/
+    let slideTo = -1;
+    // let offset = 0;
     // Hide images not belonging to selected variant
     const images = document.getElementsByClassName("swiper-slide");
     for(let i = 0; i < images.length; ++i) {
       if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
-        /*if(slideTo == -1) {
-          console.log(this.currentVariant.title, images[i].dataset.variantImageColor, i);
-          slideTo = i;
-        }*/
+        if(slideTo == -1) {
+          // console.log(this.currentVariant.title, images[i].dataset.variantImageColor, i);
+          slideTo = i + 1;
+        }
         images[i].style.display = "flex";
       } else {
         images[i].style.display = "none";
@@ -621,7 +621,7 @@ class VariantSelects extends HTMLElement {
 
     const swiper = document.querySelector(".mySwiper2").swiper;
     console.log("sliding to " + i + 1);
-    swiper.slideTo(i + 1);
+    swiper.slideTo(slideTo);
 
     if (!newMedia) return;
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
