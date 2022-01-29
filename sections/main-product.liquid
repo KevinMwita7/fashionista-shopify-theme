@@ -41,7 +41,7 @@
               {% assign product_title = product.selected_or_first_available_variant.title | downcase %}
               {% assign img_alt = media.preview_image.alt | downcase %}
               {% if product_title contains img_alt %}
-                <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                <div class="product__media-item swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                   {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                 </div>
               {% endif %}
