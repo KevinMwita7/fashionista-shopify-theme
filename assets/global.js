@@ -620,7 +620,8 @@ class VariantSelects extends HTMLElement {
     }
 
     const swiper = document.querySelector(".mySwiper2").swiper;
-    swiper.slideTo(0);
+    console.log("sliding to " + i + 1);
+    swiper.slideTo(i + 1);
 
     if (!newMedia) return;
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
