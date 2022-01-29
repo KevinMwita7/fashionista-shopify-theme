@@ -620,7 +620,7 @@ class VariantSelects extends HTMLElement {
     }
 
     const swiper = document.querySelector(".mySwiper2").swiper;
-    console.log("sliding to " + i + 1);
+    console.log("sliding to " + slideTo);
     swiper.slideTo(slideTo);
 
     if (!newMedia) return;
