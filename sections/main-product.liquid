@@ -40,7 +40,7 @@
             {%- for media in product.media -%}
               {% assign product_title = product.selected_or_first_available_variant.title | downcase %}
               {% assign img_alt = media.preview_image.alt | downcase %}
-                <div class="product__media-item swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" style="display:{% if product_title contains img_alt %}flex;{% else %}none;{% endif %}">
+                <div class="product__media-item swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" style="display:{% if product_title contains img_alt %}flex;{% else %}none;{% endif %}" data-variant-image-color="{{ img_alt }}">
                   {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                 </div>
               {% comment %}
@@ -62,7 +62,7 @@
             {%- for media in product.media -%}
                 {% assign product_title = product.selected_or_first_available_variant.title | downcase %}
                 {% assign img_alt = media.preview_image.alt | downcase %}
-                  <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" style="display:{% if product_title contains img_alt %}flex;{% else %}none;{% endif %}">
+                  <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" style="display:{% if product_title contains img_alt %}flex;{% else %}none;{% endif %}" data-variant-image-color="{{ img_alt }}>
                     <img src="{{ media | img_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="60px" width="60px">
                   </div>
             {%- endfor -%}

@@ -601,18 +601,19 @@ class VariantSelects extends HTMLElement {
     const newMedia = document.querySelector(
       `[data-media-id="${this.dataset.section}-${this.currentVariant.featured_media.id}"]`
     );
-
-    if (!newMedia) {
-      console.log("No media")
-      return;
+    
+    const images = document.getElementsByClassName("product__media-item");
+    for(let i = 0; i< images.length; ++i) {
+      console.log(images[i].dataset.variantImageColor)
     }
+
+    if (!newMedia) return;
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     const parent = newMedia.parentElement;
     if (parent.firstChild == newMedia) return;
     modalContent.prepend(newMediaModal);
     parent.prepend(newMedia);
-    // console.log(newMedia);
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
       this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
