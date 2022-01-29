@@ -605,7 +605,7 @@ class VariantSelects extends HTMLElement {
     let slideTo = -1;
     // Hide images not belonging to selected variant
     const images = document.getElementsByClassName("swiper-slide");
-    for(let i = 0; i< images.length; ++i) {
+    for(let i = 0; i < images.length; ++i) {
       if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
         if(slideTo == -1) {
           console.log(this.currentVariant.title, images[i].dataset.variantImageColor, i);
@@ -618,7 +618,7 @@ class VariantSelects extends HTMLElement {
     }
 
     const swiper = document.querySelector(".mySwiper2").swiper;
-    swiper.slideTo(7);
+    swiper.slideTo(0);
 
     if (!newMedia) return;
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
