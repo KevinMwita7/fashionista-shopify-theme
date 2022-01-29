@@ -602,14 +602,17 @@ class VariantSelects extends HTMLElement {
       `[data-media-id="${this.dataset.section}-${this.currentVariant.featured_media.id}"]`
     );
 
-    if (!newMedia) return;
+    if (!newMedia) {
+      console.log("No media")
+      return;
+    }
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     const parent = newMedia.parentElement;
     if (parent.firstChild == newMedia) return;
     modalContent.prepend(newMediaModal);
     parent.prepend(newMedia);
-    console.log(newMedia);
+    // console.log(newMedia);
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
       this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
