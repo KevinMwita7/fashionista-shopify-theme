@@ -602,9 +602,14 @@ class VariantSelects extends HTMLElement {
       `[data-media-id="${this.dataset.section}-${this.currentVariant.featured_media.id}"]`
     );
     
-    const images = document.getElementsByClassName("product__media-item");
+    // Hide images not belonging to selected variant
+    const images = document.getElementsByClassName("swiper-slider");
     for(let i = 0; i< images.length; ++i) {
-      console.log(images[i].dataset.variantImageColor)
+      if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
+        images[i].style.display = "flex";
+      } else {
+        images[i].style.display = "none";
+      }
     }
 
     if (!newMedia) return;
