@@ -23,7 +23,7 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-console.log(featuredMedia.attributes.getNamedItem("aria-label"));
+console.log(featuredMedia.attributes);
 
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
