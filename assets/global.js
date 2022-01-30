@@ -606,9 +606,10 @@ class VariantSelects extends HTMLElement {
     let productId = document.getElementById("product-id-input").value;
     console.log(productId);
     // Hide images not belonging to selected variant
-    /*const images = document.getElementsByClassName("swiper-slide");
-    for(let i = 0; i < images.length; ++i) {
-      if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
+    const thumbs = document.querySelectorAll(".mySwiper .swiper-slide");
+    for(let i = 0; i < thumbs.length; ++i) {
+      console.log(thumbs[i].dataset.productId);
+      /*if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
         if(slideTo == -1) {
           images[i].classList.add("swiper-slide-thumb-active");
           slideTo = i + 1;
@@ -617,13 +618,12 @@ class VariantSelects extends HTMLElement {
       } else {
         images[i].classList.remove("swiper-slide-thumb-active");
         images[i].style.display = "none";
-      }
-    }*/
+      }*/
+    }
 
     if (!newMedia) return;
     const swiper = document.querySelector(".mySwiper").swiper;
     swiper.slideTo(6);
-    console.log(this.currentVariant.featured_media.id);
     swiper.update();
 
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
