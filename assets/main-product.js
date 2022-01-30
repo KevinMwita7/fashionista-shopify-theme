@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
     let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
-    let initialSlide = +featuredMedia.attributes.getNamedItem("aria-label").value[0] - 1;
 
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
@@ -18,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     var swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 10,
-        initialSlide: initialSlide,
+        initialSlide: +featuredMedia.attributes.getNamedItem("aria-label").value[0] - 1,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
