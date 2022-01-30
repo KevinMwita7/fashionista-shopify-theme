@@ -608,8 +608,8 @@ class VariantSelects extends HTMLElement {
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     const parent = newMedia.parentElement;
     if (parent.firstChild == newMedia) return;
-    modalContent.prepend(newMediaModal);
-    parent.prepend(newMedia);
+    /*modalContent.prepend(newMediaModal);
+    parent.prepend(newMedia);*/
     
     let slideTo = 0;
 
@@ -621,8 +621,11 @@ class VariantSelects extends HTMLElement {
 
     const thumbSwiper = document.querySelector(".mySwiper").swiper;
     const imageSwiper = document.querySelector(".mySwiper2").swiper;
-    thumbSwiper.slideTo(slideTo);
+    imageSwiper.slideTo(slideTo);
+    imageSwiper.update();
     thumbSwiper.update();
+    /*thumbSwiper.slideTo(slideTo);
+    thumbSwiper.update();*/
 
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
