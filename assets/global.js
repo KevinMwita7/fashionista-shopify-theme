@@ -608,8 +608,8 @@ class VariantSelects extends HTMLElement {
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     const parent = newMedia.parentElement;
     if (parent.firstChild == newMedia) return;
-    modalContent.prepend(newMediaModal);
-    parent.prepend(newMedia);
+    /*modalContent.prepend(newMediaModal);
+    parent.prepend(newMedia);*/
     
     let slideTo = 0;
 
