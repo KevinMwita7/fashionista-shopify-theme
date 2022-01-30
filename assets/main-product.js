@@ -1,4 +1,5 @@
 let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
+console.log(featuredMedia.attributes.getNamedItem("aria-label"))
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
@@ -13,7 +14,7 @@ var swiper = new Swiper(".mySwiper", {
        } 
     }
 });
-console.log(featuredMedia.attributes.getNamedItem("aria-label"))
+
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
     navigation: {
