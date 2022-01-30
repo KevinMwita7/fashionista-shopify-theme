@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
+let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
 
+document.addEventListener('DOMContentLoaded', function() {
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
         freeMode: true,
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
            } 
         }
     });
-    
+    console(featuredMedia.attributes.getNamedItem("aria-label"))
     var swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 10,
         initialSlide: +featuredMedia.attributes.getNamedItem("aria-label").value[0] - 1,
