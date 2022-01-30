@@ -615,7 +615,7 @@ class VariantSelects extends HTMLElement {
 
     for(let i = 0; i < newMedia.attributes.length; ++i) {
       if(newMedia.attributes[i].name === "aria-label"){
-        slideTo = +newMedia.attributes[i].value[0] - 1;
+        slideTo = +newMedia.attributes[i].value[0];
       }
     }
 
@@ -623,10 +623,9 @@ class VariantSelects extends HTMLElement {
     const imageSwiper = document.querySelector(".mySwiper2").swiper;
     imageSwiper.slideTo(slideTo);
     imageSwiper.update();
-    thumbSwiper.slideReset();
-    /*thumbSwiper.slideTo(slideTo);
+    thumbSwiper.slideTo(slideTo);
     // thumbSwiper.slideReset();
-    thumbSwiper.update();*/
+    thumbSwiper.update();
 
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
