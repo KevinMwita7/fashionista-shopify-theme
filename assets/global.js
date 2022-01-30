@@ -603,22 +603,14 @@ class VariantSelects extends HTMLElement {
     );
     
     let slideTo = -1;
-    let productId = document.getElementById("product-id-input").value;
-    console.log(productId);
     // Hide images not belonging to selected variant
     const thumbs = document.querySelectorAll(".mySwiper .swiper-slide");
     for(let i = 0; i < thumbs.length; ++i) {
-      console.log(thumbs[i].dataset.productId);
-      /*if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
-        if(slideTo == -1) {
-          images[i].classList.add("swiper-slide-thumb-active");
-          slideTo = i + 1;
-        }
-        images[i].style.display = "flex";
-      } else {
-        images[i].classList.remove("swiper-slide-thumb-active");
-        images[i].style.display = "none";
-      }*/
+      if(thumbs[i].dataset.productId === this.currentVariant.id) {
+        console.log(thumbs[i].dataset.productId, this.currentVariant.id, thumbs[i].ariaLabel, i);
+        slideTo = i;
+        break;
+      }
     }
 
     if (!newMedia) return;
