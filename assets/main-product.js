@@ -1,6 +1,4 @@
 // let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
-let featuredMedia = document.getElementById("variant-featured-media-6").id;
-
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     freeMode: true,
@@ -14,6 +12,9 @@ var swiper = new Swiper(".mySwiper", {
        } 
     }
 });
+
+let featuredMedia = document.getElementById("variant-featured-media-6").id;
+console.log(featuredMedia);
 
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
