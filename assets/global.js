@@ -617,7 +617,7 @@ class VariantSelects extends HTMLElement {
     swiper.update();
     
     for(let i = 0; i < newMedia.attributes.length; ++i) {
-      console.log(newMedia[i]);
+      console.log(newMedia.attributes[i]);
     }
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
