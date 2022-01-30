@@ -1,14 +1,5 @@
 let initialSlide = 0;
 
-let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
-for(let i = 0; i < featuredMedia.attributes.length; ++i) {
-    if(featuredMedia.attributes[i].name === "aria-label") {
-      // swiper2.slideTo(+featuredMedia.attributes[i].value[0] - 1);
-      initialSlide = +featuredMedia.attributes[i].value[0] - 1;
-      break;
-    }
-}
-
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     freeMode: true,
@@ -23,7 +14,17 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
-console.log(featuredMedia.attributes.getNamedItem("aria-label").value);
+document.addEventListener('DOMContentLoaded', function() {
+    let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
+    for(let i = 0; i < featuredMedia.attributes.length; ++i) {
+        if(featuredMedia.attributes[i].name === "aria-label") {
+          // swiper2.slideTo(+featuredMedia.attributes[i].value[0] - 1);
+          initialSlide = +featuredMedia.attributes[i].value[0] - 1;
+          break;
+        }
+    }
+    console.log(featuredMedia.attributes.getNamedItem("aria-label"))
+});
 
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
