@@ -60,7 +60,7 @@
             {%- for media in product.media -%}
                 {% assign product_title = product.selected_or_first_available_variant.title | downcase %}
                 {% assign img_alt = media.preview_image.alt | downcase %}
-                  <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                  <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" data-product-id="{{ product.selected_or_first_available_variant.id }}">
                     <img src="{{ media | img_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="60px" width="60px">
                   </div>
             {%- endfor -%}
@@ -101,7 +101,7 @@
                 {%- endif -%}
                 <div {{ block.shopify_attributes }}>
                   {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
-                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" id="product-id-input">
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>

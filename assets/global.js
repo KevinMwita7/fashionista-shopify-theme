@@ -603,6 +603,8 @@ class VariantSelects extends HTMLElement {
     );
     
     let slideTo = -1;
+    let productId = document.getElementById("product-id-input").value;
+    console.log(productId);
     // Hide images not belonging to selected variant
     /*const images = document.getElementsByClassName("swiper-slide");
     for(let i = 0; i < images.length; ++i) {
@@ -620,7 +622,7 @@ class VariantSelects extends HTMLElement {
 
     if (!newMedia) return;
     const swiper = document.querySelector(".mySwiper").swiper;
-    swiper.slideTo(5);
+    swiper.slideTo(6);
     console.log(this.currentVariant.featured_media.id);
     swiper.update();
 
