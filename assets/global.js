@@ -604,7 +604,7 @@ class VariantSelects extends HTMLElement {
     
     let slideTo = -1;
     // Hide images not belonging to selected variant
-    const images = document.getElementsByClassName("swiper-slide");
+    /*const images = document.getElementsByClassName("swiper-slide");
     for(let i = 0; i < images.length; ++i) {
       if(this.currentVariant.title && this.currentVariant.title.toLowerCase().indexOf(images[i].dataset.variantImageColor) > -1) {
         if(slideTo == -1) {
@@ -616,7 +616,7 @@ class VariantSelects extends HTMLElement {
         images[i].classList.remove("swiper-slide-thumb-active");
         images[i].style.display = "none";
       }
-    }
+    }*/
 
     const swiper = document.querySelector(".mySwiper").swiper;
     swiper.slideTo(5);
