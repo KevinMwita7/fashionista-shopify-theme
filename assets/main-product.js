@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
            } 
         }
     });
-    console(featuredMedia.attributes.getNamedItem("aria-label"))
+    console.log(featuredMedia.attributes.getNamedItem("aria-label"))
     var swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 10,
         initialSlide: +featuredMedia.attributes.getNamedItem("aria-label").value[0] - 1,
