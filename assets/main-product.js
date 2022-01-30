@@ -24,8 +24,8 @@ var swiper2 = new Swiper(".mySwiper2", {
         el: ".swiper-pagination",
         type: "progressbar",
     },
-    observer: true,
-    observeChildren: true,
+    /*observer: true,
+    observeChildren: true,*/
     breakpoints: {
         768: {
             pagination: {
