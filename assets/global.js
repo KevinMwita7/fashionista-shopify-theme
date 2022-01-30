@@ -612,11 +612,13 @@ class VariantSelects extends HTMLElement {
     parent.prepend(newMedia);
     const swiper = document.querySelector(".mySwiper").swiper;
     const swiper2 = document.querySelector(".mySwiper2").swiper;
-    console.log(swiper2.activeIndex);
+    console.log(swiper2.realIndex);
     swiper.slideTo(6);
     swiper.update();
     
-    console.log(newMedia.ariaLabel);
+    for(let i = 0; i < newMedia.attributes.length; ++i) {
+      console.log(newMedia[i]);
+    }
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
       this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
