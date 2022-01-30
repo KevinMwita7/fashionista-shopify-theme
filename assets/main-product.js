@@ -23,6 +23,8 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+console.log(initialSlide);
+
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
     initialSlide: initialSlide,
