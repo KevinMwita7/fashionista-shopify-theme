@@ -602,19 +602,6 @@ class VariantSelects extends HTMLElement {
       `[data-media-id="${this.dataset.section}-${this.currentVariant.featured_media.id}"]`
     );
     
-    let slideTo = -1;
-    // Hide images not belonging to selected variant
-    const thumbs = document.querySelectorAll(".mySwiper .swiper-slide");
-    
-    for(let i = 0; i < thumbs.length; ++i) {
-      console.log(thumbs[i].dataset.productId, this.currentVariant.id);
-      if(thumbs[i].dataset.productId === this.currentVariant.id) {
-        //console.log(thumbs[i].dataset.productId, this.currentVariant.id, thumbs[i].ariaLabel, i);
-        slideTo = i;
-        break;
-      }
-    }
-
     if (!newMedia) return;
     const swiper = document.querySelector(".mySwiper").swiper;
     swiper.slideTo(6);
@@ -626,6 +613,7 @@ class VariantSelects extends HTMLElement {
     if (parent.firstChild == newMedia) return;
     modalContent.prepend(newMediaModal);
     parent.prepend(newMedia);
+    console.log(newMedia.ariaLabel);
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
       this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
