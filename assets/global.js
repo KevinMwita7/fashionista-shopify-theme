@@ -621,6 +621,7 @@ class VariantSelects extends HTMLElement {
     if (!newMedia) return;
     const swiper = document.querySelector(".mySwiper").swiper;
     swiper.slideTo(5);
+    console.log(this.currentVariant.featured_media.id);
     swiper.update();
 
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
