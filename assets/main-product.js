@@ -39,7 +39,7 @@ var swiper2 = new Swiper(".mySwiper2", {
 let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
 for(let i = 0; i < featuredMedia.attributes.length; ++i) {
     if(featuredMedia.attributes[i].name === "aria-label") {
-        console.log("Sliding to " + featuredMedia.attributes[i].value[0] - 1);
+        console.log(+featuredMedia.attributes[i].value[0] - 1);
       swiper2.slideTo(+featuredMedia.attributes[i].value[0] - 1);
       break;
     }
