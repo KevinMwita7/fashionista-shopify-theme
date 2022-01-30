@@ -39,10 +39,11 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
 });
 
+console.log(featuredMedia.attributes.getNamedItem("aria-label"))
+
 for(let i = 0; i < featuredMedia.attributes.length; ++i) {
     if(featuredMedia.attributes[i].name === "aria-label") {
       swiper2.slideTo(+featuredMedia.attributes[i].value[0] - 1);
       break;
     }
 }
-console.log(featuredMedia.attributes.getNamedItem("aria-label"))
