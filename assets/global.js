@@ -615,7 +615,7 @@ class VariantSelects extends HTMLElement {
 
     for(let i = 0; i < newMedia.attributes.length; ++i) {
       if(newMedia.attributes[i].name === "aria-label"){
-        slideTo = +newMedia.attributes[i].value[0];
+        slideTo = +newMedia.attributes[i].value[0] - 1;
       }
     }
 
