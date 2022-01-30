@@ -603,9 +603,6 @@ class VariantSelects extends HTMLElement {
     );
     
     if (!newMedia) return;
-    const swiper = document.querySelector(".mySwiper").swiper;
-    swiper.slideTo(6);
-    swiper.update();
 
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
@@ -613,7 +610,13 @@ class VariantSelects extends HTMLElement {
     if (parent.firstChild == newMedia) return;
     modalContent.prepend(newMediaModal);
     parent.prepend(newMedia);
-    console.log(newMedia);
+    const swiper = document.querySelector(".mySwiper").swiper;
+    const swiper2 = document.querySelector(".mySwiper2").swiper;
+    console.log(swiper2.activeIndex);
+    swiper.slideTo(6);
+    swiper.update();
+    
+    console.log(newMedia.ariaLabel);
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
       this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
