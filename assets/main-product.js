@@ -3,7 +3,7 @@ var swiper = new Swiper(".mySwiper", {
     freeMode: true,
     watchSlidesProgress: true,
     direction: "horizontal",
-    slidesPerView: 6,
+    slidesPerView: 7,
     centerInsufficientSlides: true,
     breakpoints: {
        768: {
