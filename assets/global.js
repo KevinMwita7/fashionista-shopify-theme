@@ -605,10 +605,11 @@ class VariantSelects extends HTMLElement {
     let slideTo = -1;
     // Hide images not belonging to selected variant
     const thumbs = document.querySelectorAll(".mySwiper .swiper-slide");
-    console.log(this.currentVariant)
+    
     for(let i = 0; i < thumbs.length; ++i) {
+      console.log(thumbs[i].dataset.productId, this.currentVariant.id);
       if(thumbs[i].dataset.productId === this.currentVariant.id) {
-        console.log(thumbs[i].dataset.productId, this.currentVariant.id, thumbs[i].ariaLabel, i);
+        //console.log(thumbs[i].dataset.productId, this.currentVariant.id, thumbs[i].ariaLabel, i);
         slideTo = i;
         break;
       }
