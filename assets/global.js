@@ -623,9 +623,10 @@ class VariantSelects extends HTMLElement {
     const imageSwiper = document.querySelector(".mySwiper2").swiper;
     imageSwiper.slideTo(slideTo);
     imageSwiper.update();
-    thumbSwiper.slideTo(slideTo);
+    thumbSwiper.slideReset();
+    /*thumbSwiper.slideTo(slideTo);
     // thumbSwiper.slideReset();
-    thumbSwiper.update();
+    thumbSwiper.update();*/
 
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
