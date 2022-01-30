@@ -618,10 +618,11 @@ class VariantSelects extends HTMLElement {
       }
     }*/
 
+    if (!newMedia) return;
     const swiper = document.querySelector(".mySwiper").swiper;
     swiper.slideTo(5);
+    swiper.update();
 
-    if (!newMedia) return;
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
     const newMediaModal = modalContent.querySelector( `[data-media-id="${this.currentVariant.featured_media.id}"]`);
     const parent = newMedia.parentElement;
