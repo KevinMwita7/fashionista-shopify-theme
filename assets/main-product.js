@@ -4,7 +4,8 @@ var swiper = new Swiper(".mySwiper", {
     watchSlidesProgress: true,
     direction: "horizontal",
     slidesPerView: 6,
-    centerInsufficientSlides: true,
+    loop: true,
+    // centerInsufficientSlides: true,
     breakpoints: {
        768: {
            direction: "vertical"
