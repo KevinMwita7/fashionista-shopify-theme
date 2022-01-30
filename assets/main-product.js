@@ -5,6 +5,8 @@ var swiper = new Swiper(".mySwiper", {
     direction: "horizontal",
     slidesPerView: 6,
     centerInsufficientSlides: true,
+    observer: true,
+    observeParents: true,
     breakpoints: {
        768: {
            direction: "vertical"
@@ -22,6 +24,8 @@ var swiper2 = new Swiper(".mySwiper2", {
         el: ".swiper-pagination",
         type: "progressbar",
     },
+    observer: true,
+    observeChildren: true,
     breakpoints: {
         768: {
             pagination: {
