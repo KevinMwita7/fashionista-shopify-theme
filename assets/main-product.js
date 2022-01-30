@@ -1,5 +1,5 @@
-let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
-console.log(document.getElementById("variant-featured-media-6").id);
+// let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
+let featuredMedia = document.getElementById("variant-featured-media-6").id;
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
@@ -17,6 +17,7 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
+    initialSlide: +featuredMedia[featuredMedia.length - 1] - 1,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -39,9 +40,9 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
 });
 
-for(let i = 0; i < featuredMedia.attributes.length; ++i) {
+/*for(let i = 0; i < featuredMedia.attributes.length; ++i) {
     if(featuredMedia.attributes[i].name === "aria-label") {
       swiper2.slideTo(+featuredMedia.attributes[i].value[0] - 1);
       break;
     }
-}
+}*/
