@@ -621,8 +621,8 @@ class VariantSelects extends HTMLElement {
 
     const thumbSwiper = document.querySelector(".mySwiper").swiper;
     const imageSwiper = document.querySelector(".mySwiper2").swiper;
-    imageSwiper.slideTo(5);
-    imageSwiper.update();
+    thumbSwiper.slideTo(slideTo);
+    thumbSwiper.update();
     /*thumbSwiper.slideTo(slideTo);
     // thumbSwiper.slideReset();
     thumbSwiper.update();*/
