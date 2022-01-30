@@ -27,7 +27,7 @@ console.log(initialSlide);
 
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
-    initialSlide: initialSlide,
+    initialSlide: 5,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
