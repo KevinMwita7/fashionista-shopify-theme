@@ -1,5 +1,5 @@
 let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
-console.log(featuredMedia.attributes.getNamedItem("aria-label"))
+console.log(document.getElementById("variant-featured-media-6").id);
 
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
@@ -38,8 +38,6 @@ var swiper2 = new Swiper(".mySwiper2", {
         swiper: swiper,
     },
 });
-
-console.log(featuredMedia.attributes.getNamedItem("aria-label"))
 
 for(let i = 0; i < featuredMedia.attributes.length; ++i) {
     if(featuredMedia.attributes[i].name === "aria-label") {
