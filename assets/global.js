@@ -610,15 +610,21 @@ class VariantSelects extends HTMLElement {
     if (parent.firstChild == newMedia) return;
     modalContent.prepend(newMediaModal);
     parent.prepend(newMedia);
-    const swiper = document.querySelector(".mySwiper").swiper;
-    const swiper2 = document.querySelector(".mySwiper2").swiper;
-    console.log(swiper2.realIndex);
-    swiper.slideTo(6);
-    swiper.update();
     
+    let slideTo = 0;
+
     for(let i = 0; i < newMedia.attributes.length; ++i) {
-      console.log(newMedia.attributes[i]);
+      if(newMedia.attributes[i].name === "aria-label"){
+        slideTo = +newMedia.attributes[i].value[0];
+      }
     }
+
+    const thumbSwiper = document.querySelector(".mySwiper").swiper;
+    const imageSwiper = document.querySelector(".mySwiper2").swiper;
+    console.log("Sliding to " + slideTo)
+    thumbSwiper.slideTo(6);
+    thumbSwiper.update();
+
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
       this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
