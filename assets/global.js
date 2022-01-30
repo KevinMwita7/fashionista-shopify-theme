@@ -615,14 +615,14 @@ class VariantSelects extends HTMLElement {
 
     for(let i = 0; i < newMedia.attributes.length; ++i) {
       if(newMedia.attributes[i].name === "aria-label"){
-        slideTo = +newMedia.attributes[i].value[0];
+        slideTo = +newMedia.attributes[i].value[0] - 1;
       }
     }
 
     const thumbSwiper = document.querySelector(".mySwiper").swiper;
     const imageSwiper = document.querySelector(".mySwiper2").swiper;
     console.log("Sliding to " + slideTo)
-    thumbSwiper.slideTo(6);
+    thumbSwiper.slideTo(slideTo);
     thumbSwiper.update();
 
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
