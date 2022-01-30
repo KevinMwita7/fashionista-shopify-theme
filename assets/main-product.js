@@ -1,3 +1,5 @@
+let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
+
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     freeMode: true,
@@ -11,7 +13,7 @@ var swiper = new Swiper(".mySwiper", {
        } 
     }
 });
-
+console.log(featuredMedia.attributes.getNamedItem("aria-label"))
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
     navigation: {
@@ -36,7 +38,6 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
 });
 
-let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
 for(let i = 0; i < featuredMedia.attributes.length; ++i) {
     if(featuredMedia.attributes[i].name === "aria-label") {
       swiper2.slideTo(+featuredMedia.attributes[i].value[0] - 1);
