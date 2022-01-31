@@ -17,6 +17,7 @@
     %}
 {% endcomment %}
 
+{% comment %}
 <noscript>
   {%- if media.media_type == 'video' or media.media_type == 'external_video' -%}
     <span class="product__media-icon motion-reduce">{% render 'icon-play' %}</span>
@@ -58,6 +59,7 @@
     </div>
   {%- endif -%}
 </noscript>
+{% endcomment %}
 
 <img
   srcset="{% if media.preview_image.width >= 288 %}{{ media.preview_image | img_url: '288x' }} 288w,{% endif %}
