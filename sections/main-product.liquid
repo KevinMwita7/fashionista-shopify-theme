@@ -9,7 +9,6 @@
 {{ 'microtip.css' | asset_url | stylesheet_tag }}
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 {{ 'product-image-swiper.css' | asset_url | stylesheet_tag }}
-{{ 'drift.min.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -69,8 +68,6 @@
         </div>
 
         <div style="clear: both; display: block;"></div>
-
-        <div id="pane-container"></div>
 
         <div class="product__info-wrapper md:order-3 lg:w-2/5">
           <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
@@ -541,7 +538,7 @@
 
 <script src="{{ 'color-swatch.js' | asset_url }}" defer></script>
 <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
-<script src="{{ 'drift.min.js' | asset_url }}" defer></script>
+<script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript" defer></script>
 <script src="{{ 'main-product.js' | asset_url }}" defer></script>
 
 {% schema %}

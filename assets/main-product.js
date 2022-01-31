@@ -49,13 +49,10 @@ var swiper2 = new Swiper(".mySwiper2", {
 }*/
 
 // Initialize zoom image
-let productThumbnails = document.getElementsByClassName("product-image-thumbnail");
-let productThumbnailZoomPane = document.getElementById("pane-container");
+let productImages = document.querySelectorAll(".mySwiper2 .swiper-slide");
 for(let i = 0; i < productThumbnails.length; ++i) {
-    new Drift(productThumbnails[i], {
-        paneContainer: productThumbnailZoomPane,
-        containInline: true,
-        zoomFactor: 2,
-        handleTouch: false
-    });
+    new ImageZoom(productImages[i], {
+        fillContainer: true,
+        offset: {vertical: 0, horizontal: 10}
+    })
 }
