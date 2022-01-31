@@ -53,6 +53,9 @@ let productThumbnails = document.getElementsByClassName("product-image-thumbnail
 let productThumbnailZoomPane = document.getElementById("pane-container");
 for(let i = 0; i < productThumbnails.length; ++i) {
     new Drift(productThumbnails[i], {
-        paneContainer: productThumbnailZoomPane
+        paneContainer: productThumbnailZoomPane,
+        containInline: true,
+        zoomFactor: 2,
+        handleTouch: false
     });
 }
