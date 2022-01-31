@@ -1,6 +1,7 @@
 // let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
 let featuredMedia = document.querySelector("[id^=variant-featured-media-]").id;
 
+// Initialize swiper and its thumbnails
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     freeMode: true,
@@ -46,3 +47,12 @@ var swiper2 = new Swiper(".mySwiper2", {
       break;
     }
 }*/
+
+// Initialize zoom image
+let productThumbnails = document.getElementsByClassName("product-image-thumbnail");
+let productThumbnailZoomPane = document.getElementById("pane-container");
+for(let i = 0; i < productThumbnails.length; ++i) {
+    new Drift(productThumbnails[i], {
+        paneContainer: productThumbnailZoomPane
+    });
+}
