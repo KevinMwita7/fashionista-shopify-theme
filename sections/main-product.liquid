@@ -62,13 +62,15 @@
                 {% assign product_title = product.selected_or_first_available_variant.title | downcase %}
                 {% assign img_alt = media.preview_image.alt | downcase %}
                   <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-                    <img src="{{ media | image_url: '288x' }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="60" width="60">
+                    <img src="{{ media | image_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="60" width="60">
                   </div>
             {%- endfor -%}
           </div>
         </div>
 
         <div style="clear: both; display: block;"></div>
+
+        <div id="pane-container"></div>
 
         <div class="product__info-wrapper md:order-3 lg:w-2/5">
           <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
