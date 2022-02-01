@@ -53,6 +53,7 @@ let productImages = document.querySelectorAll(".mySwiper2 .swiper-slide");
 for(let i = 0; i < productImages.length; ++i) {
     new ImageZoom(productImages[i], {
         fillContainer: true,
-        offset: {vertical: 0, horizontal: 10}
+        offset: {vertical: 0, horizontal: 10},
+        zoomPosition: "original"
     })
 }
