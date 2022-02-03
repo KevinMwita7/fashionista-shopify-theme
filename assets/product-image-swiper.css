@@ -83,6 +83,10 @@
     border: 1px solid black; 
 }
 
+/*.mySwiper2 .swiper-slide {
+    height: initial;
+}*/
+
 @media screen and (min-width: 768px) {
     .mySwiper {
         width: 10%;
@@ -98,11 +102,6 @@
     }
     .swiper .swiper-nav {
         display: flex;
-    }
-    .mySwiper2 .swiper-slide {
-        /*height: initial;*/
-        margin-top: auto;
-        margin-bottom: auto;
     }
 }
 
