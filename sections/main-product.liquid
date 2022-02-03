@@ -50,19 +50,19 @@
               {% endcomment %}
             {%- endfor -%}            
           </div>
-          <div class="swiper-nav swiper-button-next"></div>
-          <div class="swiper-nav swiper-button-prev"></div>
-          <div class="swiper-pagination" style="bottom: 0;"></div>
+          {% if media.size > 1 %}
+            <div class="swiper-nav swiper-button-next"></div>
+            <div class="swiper-nav swiper-button-prev"></div>
+            <div class="swiper-pagination" style="bottom: 0;"></div>
+          {% endif %}
         </div>
 
         <div thumbsSlider="" class="swiper mySwiper md:order-1">
           <div class="swiper-wrapper">
             {%- for media in product.media -%}
-                {% assign product_title = product.selected_or_first_available_variant.title | downcase %}
-                {% assign img_alt = media.preview_image.alt | downcase %}
-                  <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-                    <img src="{{ media | image_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="60" width="60">
-                  </div>
+                <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                  <img src="{{ media | image_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="60" width="60">
+                </div>
             {%- endfor -%}
           </div>
         </div>
