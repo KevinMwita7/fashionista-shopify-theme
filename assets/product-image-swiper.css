@@ -83,8 +83,12 @@
     border: 1px solid black; 
 }
 
-.mySwiper2 .swiper-slide {
+/*.mySwiper2 .swiper-slide {
     height: auto;
+}*/
+
+.mySwiper2 .swiper-wrapper {
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
