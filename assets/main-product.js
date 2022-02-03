@@ -27,6 +27,7 @@ var swiper2 = new Swiper(".mySwiper2", {
         el: ".swiper-pagination",
         type: "progressbar",
     },
+    grabCursor: true,
     breakpoints: {
         768: {
             pagination: {
