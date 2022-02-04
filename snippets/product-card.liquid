@@ -138,7 +138,7 @@
 {% endcomment %}
 
 <div>
-  <div class="w-96"> 
+  <div class="w-full">
       <div class="card card--product{% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %} shadow hover:shadow-lg transition duration-300 ease-in-out xl:mb-0 lg:mb-0 md:mb-0 mb-6 cursor-pointer group" tabindex="-1">
           <div class="card__inner overflow-hidden relative">
 
@@ -189,9 +189,6 @@
                       height="{{ product_card_product.media[1].height }}"
                       >
                   {%- endif -%}
-                  <div class="quick-view">
-                    <button type="button" data-a11y-dialog-show="product-quick-view-dialog" data-product-handle="{{ product_card_product.handle }}">Quick View</button>
-                  </div>
                 </div>
               </div>
             {%- else -%}
