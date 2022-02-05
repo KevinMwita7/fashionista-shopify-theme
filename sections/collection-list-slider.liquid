@@ -7,7 +7,7 @@
 
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 
-<div class="collection-list-wrapper page-width{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}">
+<div class="collection-list-wrapper page-width{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}" style="padding: 0;">
   <div class="title-wrapper title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
     <h2 class="collection-list-title section-heading lg:section-heading font-medium text-center md:text-left">{{ section.settings.title | escape }}</h2>
   </div>
