@@ -12,6 +12,16 @@
   padding: 1rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+@media screen and (min-width: 990px) {
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+}
+
 .card {
   display: block;
   overflow: hidden;
