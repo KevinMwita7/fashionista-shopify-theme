@@ -442,3 +442,18 @@ video {
 a:hover > i {
     color:rgb(255 255 255/var(--tw-text-opacity))
 }
+
+.rounded-3xl {
+    border-radius: 1.5rem;
+}
+
+.border-r-2 {
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235/var(--tw-border-opacity));
+    border-right-width: 2px
+}
+
+.border-gray-200 {
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235/var(--tw-border-opacity))
+}
