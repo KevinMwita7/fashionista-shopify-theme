@@ -292,11 +292,11 @@
     transform: scale(1.03);
   }
 
-  /*.card-wrapper:hover
+  .card-wrapper:hover
     .media.media--hover-effect
     > img:first-child:not(:only-child) {
     opacity: 0;
-  }*/
+  }
 
   .card-wrapper:hover .media.media--hover-effect > img + img {
     opacity: 1;
