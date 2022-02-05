@@ -1,3 +1,17 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-cols-5 > * {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
 .card {
   display: block;
   overflow: hidden;

@@ -139,7 +139,7 @@
 
 <div class="card-wrapper">
   <div class="w-full">
-      <div class="card card--product{% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %} shadow hover:shadow-lg transition duration-300 ease-in-out xl:mb-0 lg:mb-0 md:mb-0 mb-6 cursor-pointer group" tabindex="-1">
+      <div class="card{% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline shadow{% endif %} hover:shadow-lg transition duration-300 ease-in-out xl:mb-0 lg:mb-0 md:mb-0 mb-6 cursor-pointer group" tabindex="-1">
           <div class="card__inner overflow-hidden relative">
 
             {%- if product_card_product.featured_media -%}

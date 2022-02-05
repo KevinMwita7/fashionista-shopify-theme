@@ -13,7 +13,7 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="collection page-width{% if section.settings.swipe_on_mobile == true and block.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}{% if section.blocks.size > 1 %} spacer{% endif %}">
+<div class="collection page-width{% if section.settings.swipe_on_mobile == true and block.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}{% if section.blocks.size > 1 %} spacer{% endif %}" style="padding: 0;">
   {% if section.blocks.size > 1 %}
     <div class="{% if block.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
       <h2 class="title label lg:label font-medium text-center md:text-left d-inline-block mt-0">Currently viewing</h2>
@@ -55,8 +55,9 @@
     endif
   -%}
   
-  <div class="featured-collection collection page-width{% if section.settings.swipe_on_mobile == true and block.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}{% if forloop.index > 1 %} hidden{% endif %}"  data-index="{{ forloop.index }}" {{ block.shopify_attributes }}>
+  <div class="featured-collection collection page-width{% if section.settings.swipe_on_mobile == true and block.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}{% if forloop.index > 1 %} hidden{% endif %}" style="padding: 0;" data-index="{{ forloop.index }}" {{ block.shopify_attributes }}>
     <slider-component class="slider-mobile-gutter">
+      {% comment %}
       <ul class="grid grid--2-col product-grid{% if products_to_display == 4 or block.settings.collection == blank %} grid--2-col-tablet grid--4-col-desktop{% else %} grid--3-col-tablet{% endif %}{% if products_to_display > 5 %} grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or block.settings.collection.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and block.settings.collection.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}" role="list">
         {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}
           <li class="grid__item{% if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}">
@@ -78,6 +79,28 @@
           {%- endfor -%}
         {%- endfor -%}
       </ul>
+      {% endcomment %}
+      <ul class="row row-cols-5" role="list">
+        {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}
+          <li class="p-4">
+            {% render 'product-card',
+              product_card_product: product,
+              media_size: section.settings.image_ratio,
+              show_secondary_image: section.settings.show_secondary_image,
+              add_image_padding: section.settings.add_image_padding,
+              show_vendor: section.settings.show_vendor,
+              show_image_outline: section.settings.show_image_outline,
+              show_rating: section.settings.show_rating
+            %}
+          </li>
+        {%- else -%}
+          {%- for i in (1..4) -%}
+            <li class="grid__item">
+              {% render 'product-card-placeholder' %}
+            </li>
+          {%- endfor -%}
+        {%- endfor -%}
+      </ul>      
       {%- if block.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 -%}
         <div class="slider-buttons no-js-hidden{% if block.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if block.settings.collection.all_products_count < 3 %} small-hide{% endif %}">
           <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
