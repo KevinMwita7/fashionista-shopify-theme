@@ -165,7 +165,7 @@
         "image_ratio": "portrait",
         "show_secondary_image": true,
         "add_image_padding": false,
-        "show_image_outline": true,
+        "show_image_outline": false,
         "show_vendor": false,
         "show_rating": true
       }
