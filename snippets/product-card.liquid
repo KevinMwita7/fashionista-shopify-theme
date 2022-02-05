@@ -259,7 +259,7 @@
             {%- endif -%}        
           </div>
           <div>
-            <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
+            <a href="{{ product_card_product.url | default: '#' }}">
               {% render 'price', product: product_card_product, price_class: '' %}
             </a>
           </div>
