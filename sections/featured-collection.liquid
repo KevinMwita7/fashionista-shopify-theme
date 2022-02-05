@@ -80,7 +80,7 @@
         {%- endfor -%}
       </ul>
       {% endcomment %}
-      <ul class="row row-cols-5" role="list">
+      <ul class="row product-cols" role="list">
         {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}
           <li class="p-4">
             {% render 'product-card',

@@ -3,9 +3,23 @@
   flex-wrap: wrap;
 }
 
-.row-cols-5 > * {
+.product-cols > * {
   flex: 0 0 auto;
-  width: 20%;
+  width: 50%;
+}
+
+@media screen and (min-width: 750px) {
+  .product-cols > * {
+    flex: 0 0 auto;
+    width: 33%;
+  } 
+}
+
+@media screen and (min-width: 990px) {
+  .product-cols > * {
+    flex: 0 0 auto;
+    width: 20%;
+  }
 }
 
 .p-4 {
