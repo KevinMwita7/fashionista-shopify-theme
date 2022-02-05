@@ -443,8 +443,8 @@ a:hover > i {
     color:rgb(255 255 255/var(--tw-text-opacity))
 }
 
-.rounded-3xl {
-    border-radius: 1.5rem;
+.rounded-md  {
+    border-radius: 0.375rem;
 }
 
 .border-r-2 {
