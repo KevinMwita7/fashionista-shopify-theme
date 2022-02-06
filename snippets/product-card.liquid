@@ -269,7 +269,7 @@
     </div>
 
     <div>
-      {%- for option in product.options_with_values -%}
+      {%- for option in product_card_product.options_with_values -%}
         <fieldset class="js product-form__input s-color-swatch-container">
           <legend class="form__label">{{ option.name }}</legend>
           {%- for value in option.values -%}
