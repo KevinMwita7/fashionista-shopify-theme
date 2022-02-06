@@ -273,7 +273,7 @@
             {%- for value in option.values -%}
               {% assign option_name = option.name | downcase %}
               {% if option_name == 'color' or option_name == 'colour' %}
-                <span class="a-section s-color-swatch-outer-circle s-color-swatch-pad" style="margin-right: 0; padding: 0; background-color: #fff;" aria-label="{{ value }}" data-microtip-position="top" role="tooltip">
+                <span class="a-section s-color-swatch-outer-circle s-color-swatch-pad" style="margin-right: 0; padding: 0; background-color: #fff; width: 32px;" aria-label="{{ value }}" data-microtip-position="top" role="tooltip">
                     <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></label>
                 </span>
               {% endif %}
@@ -281,7 +281,6 @@
           </fieldset>
         {%- endfor -%}
       </div>
-
     </div>
  </div>
 </div>
