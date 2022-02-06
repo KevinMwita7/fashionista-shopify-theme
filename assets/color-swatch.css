@@ -1,0 +1,29 @@
+.s-color-swatch-container .s-color-swatch-pad {
+    margin-right: 4px;
+}
+  
+.s-color-swatch-container .s-color-swatch-selected {
+    border-color: #111 !important;
+}
+  
+.s-color-swatch-container .s-color-swatch-outer-circle {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+  
+.s-color-swatch-container .s-color-swatch-outer-circle:not(.s-color-swatch-selected):hover {
+    border-color: #d3d3d3 !important;
+}
+  
+.s-color-swatch-container .s-color-swatch-outer-circle .s-color-swatch-inner-circle-border {
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    border: 1px solid rgba(0,0,0,.2);
+    cursor: pointer;
+    display: inline-block;
+    margin: 6px;
+}

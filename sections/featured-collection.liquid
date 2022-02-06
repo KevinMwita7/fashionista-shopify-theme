@@ -3,8 +3,13 @@
 {{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
 {{ 'material-select.css' | asset_url | stylesheet_tag }}
 {{ 'product-card.css' | asset_url | stylesheet_tag }}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
-{% comment %}{{ 'featured-product-dialog.css' | asset_url | stylesheet_tag }}{% endcomment %}
+{{ 'microtip.css' | asset_url | stylesheet_tag }}
+{{ 'color-swatch.css' | asset_url | stylesheet_tag }}
+
+{% comment %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+  {{ 'featured-product-dialog.css' | asset_url | stylesheet_tag }}
+{% endcomment %}
 
 
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
