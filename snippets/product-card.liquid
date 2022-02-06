@@ -266,27 +266,26 @@
             </a>
           </div>
       </div>
-    </div>
+      
+      <div>
+        {%- for option in product_card_product.options_with_values -%}
+          <fieldset class="js product-form__input s-color-swatch-container">
+            {%- for value in option.values -%}
+              {% assign option_name = option.name | downcase %}
+              {% if option_name == 'color' or option_name == 'colour' %}
+                <span class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if option.selected_value == value %} s-color-swatch-selected{% endif %}" style="padding: 0; background-color: #fff;" aria-label="{{ value }}" data-microtip-position="top" role="tooltip">
+                    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></label>
+                </span>
+              {% else %}
+                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                  {{ value }}
+                </label>
+              {% endif %}
+            {%- endfor -%}
+          </fieldset>
+        {%- endfor -%}
+      </div>
 
-    <div>
-      {%- for option in product_card_product.options_with_values -%}
-        <fieldset class="js product-form__input s-color-swatch-container">
-          <legend class="form__label">{{ option.name }}</legend>
-          {%- for value in option.values -%}
-            {% assign option_name = option.name | downcase %}
-            {% if option_name == 'color' or option_name == 'colour' %}
-              <span class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if option.selected_value == value %} s-color-swatch-selected{% endif %}" style="padding: 0; background-color: #fff;" aria-label="{{ value }}" data-microtip-position="top" role="tooltip">
-                  <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></label>
-              </span>
-            {% else %}
-              <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                {{ value }}
-              </label>
-            {% endif %}
-          {%- endfor -%}
-        </fieldset>
-      {%- endfor -%}      
     </div>
-    
  </div>
 </div>
