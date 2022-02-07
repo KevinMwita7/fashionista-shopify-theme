@@ -276,7 +276,17 @@
       {% endfor %}
 
       <div>
-        {% assign v = product_card_product.variants | where : "title", "White / Small" | first %}
+        {% assign variants_count = 1 %}
+        {% for option in product_card_product.options_with_values %}
+          {% assign option_name = option.name | downcase %}
+          {% if option_name != 'color' and option_name != 'colour' %}
+            {% liquid 
+              assign length = option.values | size
+              assign variants_count = variants_count | times: length
+            %}
+          {% endif %}
+        {% endfor %}
+        <h1>{{ variants_count }}</h1>
         {%- for option in product_card_product.options_with_values -%}
           <fieldset class="js product-form__input s-color-swatch-container">
             {%- for value in option.values -%}
