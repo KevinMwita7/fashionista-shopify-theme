@@ -619,7 +619,7 @@ class VariantSelects extends HTMLElement {
         break;
       }
     }
-    console.log(newMedia.attributes);
+    console.log(newMedia.attributes, slideTo);
     const thumbSwiper = document.querySelector(".mySwiper").swiper;
     const imageSwiper = document.querySelector(".mySwiper2").swiper;
     imageSwiper.slideTo(slideTo);
