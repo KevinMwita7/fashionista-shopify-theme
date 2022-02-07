@@ -267,14 +267,6 @@
           </div>
       </div>
       
-
-      
-      {% for v in product_card_product.variants %}
-        <p>
-          {{ v.title }}
-        </p>
-      {% endfor %}
-
       <div>
         {% comment %}Count number of variants not of type color{% endcomment %}
         {% assign variants_count = 1 %}
@@ -297,7 +289,7 @@
               %}
               <p>{{ product_card_product.variants[variant_index].id }}</p>
               {% if option_name == 'color' or option_name == 'colour' %}
-                <a href="{{ product_card_product.url }}?variant={{ v.id }}" class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if option.selected_value == value %} s-color-swatch-selected{% endif %}" style="margin-right: 0; padding: 0; background-color: #fff; z-index: 2; position: relative;" aria-label="{{ value }}">
+                <a href="{{ product_card_product.url }}{% if product_card_product.variants[variant_index] %}?variant={{ product_card_product.variants[variant_index].id }}{% endif %}" class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if option.selected_value == value %} s-color-swatch-selected{% endif %}" style="margin-right: 0; padding: 0; background-color: #fff; z-index: 2; position: relative;" aria-label="{{ value }}">
                     <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></label>
                 </a>
               {% endif %}
