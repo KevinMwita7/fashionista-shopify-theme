@@ -18,7 +18,7 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
-    initialSlide: featuredMedia ? +featuredMedia.id[featuredMedia.id.length - 1] - 1 : 0,
+    initialSlide: featuredMedia ? +featuredMedia.id.split("-")[3] - 1 : 0,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
