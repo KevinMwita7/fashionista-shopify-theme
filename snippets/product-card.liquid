@@ -267,9 +267,13 @@
           </div>
       </div>
       
+
+      <p>{{ product_card_product.variants | join: ' ,' }}</p>
+
       <div>
         {%- for option in product_card_product.options_with_values -%}
           <fieldset class="js product-form__input s-color-swatch-container">
+            <p>{{ option.values | join: '/ ' }}</p>
             {%- for value in option.values -%}
               {% assign option_name = option.name | downcase %}
               {% if option_name == 'color' or option_name == 'colour' %}
