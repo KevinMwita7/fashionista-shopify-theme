@@ -268,7 +268,12 @@
       </div>
       
 
-      <p>{{ product_card_product.variants | join: ' ,' }}</p>
+      
+      {% for v in product_card_product.variants %}
+        <p>
+          {{ v.title }}
+        </p>
+      {% endfor %}
 
       <div>
         {%- for option in product_card_product.options_with_values -%}
