@@ -615,11 +615,12 @@ class VariantSelects extends HTMLElement {
 
     for(let i = 0; i < newMedia.attributes.length; ++i) {
       if(newMedia.attributes[i].name === "aria-label") {
-        slideTo = +newMedia.attributes[i].value[0] - 1;
+        let idx = newMedia.attributes[i].value.split("/")[0];
+        slideTo = +idx - 1;
         break;
       }
     }
-    console.log(newMedia.attributes, slideTo);
+    // console.log(newMedia.attributes, slideTo);
     const thumbSwiper = document.querySelector(".mySwiper").swiper;
     const imageSwiper = document.querySelector(".mySwiper2").swiper;
     imageSwiper.slideTo(slideTo);
