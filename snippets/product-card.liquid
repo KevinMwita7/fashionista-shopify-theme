@@ -274,13 +274,19 @@
               {% assign option_name = option.name | downcase %}
               {% if option_name == 'color' or option_name == 'colour' %}
                 <a class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if option.selected_value == value %} s-color-swatch-selected{% endif %}" style="margin-right: 0; padding: 0; background-color: #fff; z-index: 2; position: relative;" aria-label="{{ value }}">
-                    {{ option.name }}
                     <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></label>
                 </a>
               {% endif %}
             {%- endfor -%}
           </fieldset>
         {%- endfor -%}
+      </div>
+      <div>
+        {% for variant in product_card_product.variants %}
+          {% for option in variant.options %}
+            <p>{{ option.name }}</p>
+          {% endfor %}
+        {% endfor %}
       </div>
     </div>
  </div>
