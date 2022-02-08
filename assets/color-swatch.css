@@ -9,8 +9,8 @@
 .s-color-swatch-container .s-color-swatch-outer-circle {
     border-radius: 50%;
     border: 1px solid #fff;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     display: inline-block;
 }
   
@@ -25,5 +25,5 @@
     border: 1px solid rgba(0,0,0,.2);
     cursor: pointer;
     display: inline-block;
-    margin: 6px;
+    margin: 4px;
 }
