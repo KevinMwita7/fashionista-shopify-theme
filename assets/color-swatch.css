@@ -1,3 +1,11 @@
+.s-color-swatch-container > *{
+    margin-right: 0;
+    padding: 0;
+    background-color: #fff;
+    z-index: 2;
+    position: relative;
+}
+
 .s-color-swatch-container .s-color-swatch-pad {
     margin-right: 4px;
 }

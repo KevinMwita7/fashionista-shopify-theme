@@ -283,21 +283,19 @@
         {%- for option in product_card_product.options_with_values -%}
           {% assign option_name = option.name | downcase %}
           {% if option_name == 'color' or option_name == 'colour' %}
-            <fieldset class="js product-form__input s-color-swatch-container">
+            <fieldset class="js product-form__input s-color-swatch-container flex items-center">
             {% comment %}Show only first 5 variants{% endcomment %}
             {%- for value in option.values -%}
               {% if forloop.index0 < 5 %}
                 {% comment %}Get corresponding index of option from product.variants{% endcomment %}
                 {% assign variant_index = forloop.index0 | times: variants_count %}
-                <a href="{{ product_card_product.url }}{% if product_card_product.variants[variant_index] %}?variant={{ product_card_product.variants[variant_index].id }}{% endif %}" class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if option.selected_value == value %} s-color-swatch-selected{% endif %}" style="margin-right: 0; padding: 0; background-color: #fff; z-index: 2; position: relative;" aria-label="{{ value }}">
+                <a href="{{ product_card_product.url }}{% if product_card_product.variants[variant_index] %}?variant={{ product_card_product.variants[variant_index].id }}{% endif %}" class="a-section s-color-swatch-outer-circle s-color-swatch-pad{% if option.selected_value == value %} s-color-swatch-selected{% endif %}" aria-label="{{ value }}">
                       <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="s-color-swatch-inner-circle-border" style="background-color: {{ value }}"></label>
                 </a>
               {% endif %}
             {%- endfor -%}
             {% if option.values.size > 5 %}
-              <a href="{{ product_card_product.url }}" style="z-index: 2;">
-                <label>+{{ option.values.size | minus: 5 }}</label>
-              </a>
+              <a href="{{ product_card_product.url }}">+{{ option.values.size | minus: 5 }}</a>
             {% endif %}            
           </fieldset>
         {% endif %}
