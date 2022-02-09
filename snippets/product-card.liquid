@@ -170,6 +170,7 @@
                       class="motion-reduce w-full transition duration-700 ease-in-out group-hover:opacity-60"
                       width="{{ product_card_product.featured_media.width }}"
                       height="{{ product_card_product.featured_media.height }}"
+                      style="object-fit: contain;"
                     >
                   {%- if product_card_product.media[1] != nil and show_secondary_image -%}
                       <img
@@ -187,6 +188,7 @@
                         class="motion-reduce w-full transition duration-700 ease-in-out group-hover:opacity-60"
                       width="{{ product_card_product.media[1].width }}"
                       height="{{ product_card_product.media[1].height }}"
+                      style="object-fit: contain;"
                       >
                   {%- endif -%}
                 </div>
