@@ -161,7 +161,7 @@
       "settings": {
         "show_view_all": true,
         "swipe_on_mobile": false,
-        "products_to_show": 12,
+        "products_to_show": 10,
         "image_ratio": "portrait",
         "show_secondary_image": true,
         "add_image_padding": false,
