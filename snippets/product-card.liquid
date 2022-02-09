@@ -297,7 +297,7 @@
               {% endif %}
             {%- endfor -%}
             {% if option.values.size > 5 %}
-              <a href="{{ product_card_product.url }}" style="z-index: 2;">+{{ option.values.size | minus: 5 }}</a>
+              <a href="{{ product_card_product.url }}" style="z-index: 2;" class="more-options-link">+{{ option.values.size | minus: 5 }}</a>
             {% endif %}            
           </fieldset>
         {% endif %}
