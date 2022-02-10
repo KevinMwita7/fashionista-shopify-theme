@@ -3,20 +3,20 @@
   flex-wrap: wrap;
 }
 
-.product-cols > * {
+.product-cols-5 > * {
   flex: 0 0 auto;
   width: 50%;
 }
 
 @media screen and (min-width: 750px) {
-  .product-cols > * {
+  .product-cols-5 > * {
     flex: 0 0 auto;
     width: 33%;
   } 
 }
 
 @media screen and (min-width: 990px) {
-  .product-cols > * {
+  .product-cols-5 > * {
     flex: 0 0 auto;
     width: 20%;
   }
