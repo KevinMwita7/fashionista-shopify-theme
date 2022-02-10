@@ -16,7 +16,21 @@
 }
 
 @media screen and (min-width: 990px) {
-  .product-cols-5 > * {
+  .lg\:product-cols-3 > * {
+    flex: 0 0 auto;
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .lg\:product-cols-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .lg\:product-cols-5 > * {
     flex: 0 0 auto;
     width: 20%;
   }
