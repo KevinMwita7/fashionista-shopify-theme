@@ -1915,6 +1915,9 @@
         "show_secondary_image": {
           "label": "Show second image on hover"
         },
+        "recommendations_to_show": {
+          "label": "Recommendations to show"
+        },
         "add_image_padding": {
           "label": "Add image padding"
         },
