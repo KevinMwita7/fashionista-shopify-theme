@@ -12,7 +12,7 @@
 <noscript>{{ 'product-card.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'color-swatch.css' | asset_url | stylesheet_tag }}</noscript>
 
-<product-recommendations class="product-recommendations page-width" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=3">
+<product-recommendations class="product-recommendations page-width" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=2">
   {% if recommendations.performed and recommendations.products_count > 0 %}
     <h2 class="product-recommendations__heading section-heading lg:section-heading font-medium text-center md:text-left">{{ section.settings.heading | escape }}</h2>
     <ul class="row product-cols{% if recommendations.products_count > 2 %} lg:product-cols-{{ recommendations.products_count }}{% endif %}" role="list">
