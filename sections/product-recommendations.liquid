@@ -12,12 +12,12 @@
 <noscript>{{ 'product-card.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'color-swatch.css' | asset_url | stylesheet_tag }}</noscript>
 
-<product-recommendations class="product-recommendations page-width" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4">
+<product-recommendations class="product-recommendations page-width" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=5">
   {% if recommendations.performed and recommendations.products_count > 0 %}
     <h2 class="product-recommendations__heading section-heading lg:section-heading font-medium text-center md:text-left">{{ section.settings.heading | escape }}</h2>
     <ul class="row product-cols" role="list">
       {% for recommendation in recommendations.products %}
-        <li class="grid__item">
+        <li class="p-4">
           {% render 'product-card',
             product_card_product: recommendation,
             media_size: section.settings.image_ratio,
