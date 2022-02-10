@@ -30,7 +30,8 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "variant_picker_button_shape": "sharp"
           }
         },
         "quantity_selector": {
@@ -80,7 +81,7 @@
         "image_ratio": "portrait",
         "show_secondary_image": true,
         "add_image_padding": false,
-        "show_image_outline": true,
+        "show_image_outline": false,
         "show_vendor": false,
         "show_rating": false
       }
