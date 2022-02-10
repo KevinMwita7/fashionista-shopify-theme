@@ -79,7 +79,7 @@
       "settings": {
         "heading": "You may also like",
         "image_ratio": "portrait",
-        "recommendations_to_show": 3,
+        "recommendations_to_show": 2,
         "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": false,
