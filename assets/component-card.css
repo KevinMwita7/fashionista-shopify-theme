@@ -3,13 +3,13 @@
   flex-wrap: wrap;
 }
 
-.product-cols-5 > * {
+.product-cols > * {
   flex: 0 0 auto;
   width: 50%;
 }
 
 @media screen and (min-width: 750px) {
-  .product-cols-5 > * {
+  .product-cols > * {
     flex: 0 0 auto;
     width: 33%;
   } 
