@@ -3,7 +3,6 @@
     padding: 0;
     background-color: #fff;
     position: relative;
-    flex-wrap: wrap;
 }
 
 .s-color-swatch-container .s-color-swatch-pad {

@@ -285,7 +285,7 @@
         {%- for option in product_card_product.options_with_values -%}
           {% assign option_name = option.name | downcase %}
           {% if option_name == 'color' or option_name == 'colour' %}
-            <fieldset class="js product-form__input s-color-swatch-container flex items-center">
+            <fieldset class="js product-form__input s-color-swatch-container flex items-center flex-wrap">
             {% comment %}Show only first 5 variants{% endcomment %}
             {%- for value in option.values -%}
               {% if forloop.index0 < 5 %}
