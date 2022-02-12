@@ -524,6 +524,9 @@
         "products_to_show": {
           "label": "Maximum products to show"
         },
+        "products_per_row": {
+          "label": "Products to show per row"
+        },
         "show_view_all": {
           "label": "Enable \"View all\" button if collection has more products than shown"
         },

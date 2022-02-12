@@ -84,7 +84,7 @@
         {%- endfor -%}
       </ul>
       {% endcomment %}
-      <ul class="row product-cols lg:product-cols-5" role="list">
+      <ul class="row product-cols lg:product-cols-{{ section.settings.products_per_row }}" role="list">
         {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}
           <li class="p-4">
             {% render 'product-card',
@@ -167,6 +167,15 @@
       "step": 2,
       "default": 4,
       "label": "t:sections.featured-collection.settings.products_to_show.label"
+    },
+    {
+      "type": "range",
+      "id": "products_per_row",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 5,
+      "label": "t:sections.featured-collection.settings.products_per_row.label"
     },
     {
       "type": "header",
