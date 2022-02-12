@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "Näytä toinen kuva osoittaessa"
         },
+        "recommendations_to_show": {
+          "label": "Näytettävät suositukset"
+        },
         "add_image_padding": {
           "label": "Lisää kuvan täyttö"
         },

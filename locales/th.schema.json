@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "แสดงรูปภาพที่สองเมื่อนำเมาส์ไปวาง"
         },
+        "recommendations_to_show": {
+          "label": "คําแนะนําที่จะแสดง"
+        },
         "add_image_padding": {
           "label": "เพิ่มพื้นที่ว่างให้รูปภาพ"
         },

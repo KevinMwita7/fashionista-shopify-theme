@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "Tweede afbeeldingen tonen als je de aanwijzer erboven houdt"
         },
+        "recommendations_to_show": {
+          "label": "Aanbevelingen om weer te geven"
+        },
         "add_image_padding": {
           "label": "Opvulling voor afbeeldingen toevoegen"
         },

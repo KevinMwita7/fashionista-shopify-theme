@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "Vis sekundærbilde når musepekeren beveges over"
         },
+        "recommendations_to_show": {
+          "label": "Anbefalinger som skal vises"
+        },
         "add_image_padding": {
           "label": "Legg til bildemarg"
         },

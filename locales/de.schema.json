@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "Hover-Effekt mit zweitem Bild"
         },
+        "recommendations_to_show": {
+          "label": "Zu zeigende Empfehlungen"
+        },
         "add_image_padding": {
           "label": "Bild-Padding hinzufügen"
         },

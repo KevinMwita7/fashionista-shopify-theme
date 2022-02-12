@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "Mostrar segunda imagen al pasar el cursor"
         },
+        "recommendations_to_show": {
+          "label": "Recomendaciones para mostrar"
+        },
         "add_image_padding": {
           "label": "Agregar relleno de imagen"
         },

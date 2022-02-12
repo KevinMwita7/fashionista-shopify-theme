@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "在悬停时显示第二张图片"
         },
+        "recommendations_to_show": {
+          "label": "要显示的建议"
+        },
         "add_image_padding": {
           "label": "添加图片填充"
         },

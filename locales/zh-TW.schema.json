@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "游標暫留時顯示次要圖片"
         },
+        "recommendations_to_show": {
+          "label": "要顯示的建議"
+        },
         "add_image_padding": {
           "label": "新增圖片邊框間距"
         },

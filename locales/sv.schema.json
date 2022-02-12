@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "Visa andra bild på hovring"
         },
+        "recommendations_to_show": {
+          "label": "Rekommendationer att visa"
+        },
         "add_image_padding": {
           "label": "Lägg till bild-padding"
         },

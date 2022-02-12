@@ -1692,6 +1692,9 @@
         "show_secondary_image": {
           "label": "Zobrazit druhý obrázek po najetí myší\/prstem"
         },
+        "recommendations_to_show": {
+          "label": "Doporučení k zobrazení"
+        },
         "add_image_padding": {
           "label": "Přidat vnitřní okraj obrázku"
         },

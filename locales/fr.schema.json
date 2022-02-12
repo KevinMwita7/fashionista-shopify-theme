@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "Afficher la deuxième image en survol"
         },
+        "recommendations_to_show": {
+          "label": "Recommandations à montrer"
+        },
         "add_image_padding": {
           "label": "Ajouter une marge intérieure à l'image"
         },

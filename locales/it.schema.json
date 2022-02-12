@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "Mostra la seconda immagine al passaggio del mouse"
         },
+        "recommendations_to_show": {
+          "label": "Consigli da mostrare"
+        },
         "add_image_padding": {
           "label": "Aggiungi spaziatura immagine"
         },

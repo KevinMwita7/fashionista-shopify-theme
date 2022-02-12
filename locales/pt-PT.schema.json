@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "Mostrar a segunda imagem ao passar o rato"
         },
+        "recommendations_to_show": {
+          "label": "Recomendações para mostrar"
+        },
         "add_image_padding": {
           "label": "Adicionar preenchimento de imagem"
         },

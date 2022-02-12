@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "마우스를 올리면 보조 배경 표시"
         },
+        "recommendations_to_show": {
+          "label": "표시할 권장 사항"
+        },
         "add_image_padding": {
           "label": "이미지 패딩 추가"
         },

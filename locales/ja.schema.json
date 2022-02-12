@@ -1696,6 +1696,9 @@
         "show_secondary_image": {
           "label": "マウスオーバー時に2番目の画像を表示する"
         },
+        "recommendations_to_show": {
+          "label": "表示する推奨事項"
+        },
         "add_image_padding": {
           "label": "画像の余白を追加する"
         },
