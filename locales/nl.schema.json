@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "Maximum aantal producten om te tonen"
         },
+        "products_per_row": {
+          "label": "Producten om per rij weer te geven"
+        },
         "show_view_all": {
           "label": "Schakel de knop 'Alles weergeven' in als collectie meer producten heeft dan wordt getoond"
         },

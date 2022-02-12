@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "Massimo di prodotti da mostrare"
         },
+        "products_per_row": {
+          "label": "Prodotti da mostrare per riga"
+        },
         "show_view_all": {
           "label": "Abilita il pulsante \"Visualizza tutto\" se la collezione include più prodotti di quelli mostrati"
         },

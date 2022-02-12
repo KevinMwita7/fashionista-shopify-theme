@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "Näytettävien tuotteiden enimmäismäärä"
         },
+        "products_per_row": {
+          "label": "Rivikohtaisesti näytettävät tuotteet"
+        },
         "show_view_all": {
           "label": "Ota Näytä kaikki ‑painike käyttöön, jos kokoelma sisältää useampia tuotteita kuin mitä on näkyvissä"
         },

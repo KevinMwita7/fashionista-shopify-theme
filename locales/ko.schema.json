@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "표시할 제품의 최대 수"
         },
+        "products_per_row": {
+          "label": "행당 표시할 제품"
+        },
         "show_view_all": {
           "label": "컬렉션에 표시된 것보다 많은 제품이 있는 경우 \"모두 보기\" 버튼을 활성화하십시오."
         },

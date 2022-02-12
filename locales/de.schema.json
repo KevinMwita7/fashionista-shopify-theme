@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "Maximal anzuzeigende Produkte"
         },
+        "products_per_row": {
+          "label": "Pro Zeile anzuzeigende Produkte"
+        },
         "show_view_all": {
           "label": "Aktiviere die Schaltfläche \"Alle anzeigen\", wenn die Kategorie mehr Produkte enthält, als angezeigt werden"
         },

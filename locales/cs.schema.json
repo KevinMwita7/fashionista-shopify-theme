@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "Maximální počet zobrazovaných produktů"
         },
+        "products_per_row": {
+          "label": "Produkty, které se mají zobrazit na řádek"
+        },
         "show_view_all": {
           "label": "Povolit tlačítko Zobrazit vše v případě, že kolekce obsahuje více produktů, než kolik se zobrazuje"
         },

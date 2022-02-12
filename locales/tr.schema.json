@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "Gösterilecek maksimum ürün sayısı"
         },
+        "products_per_row": {
+          "label": "Satır başına gösterilecek ürünler"
+        },
         "show_view_all": {
           "label": "Koleksiyon gösterilenden daha fazla ürün içeriyorsa \"Tümünü görüntüle\" düğmesini etkinleştir"
         },

@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "Maksimalt antal produkter, der skal vises"
         },
+        "products_per_row": {
+          "label": "Produkter, der skal vises pr. række"
+        },
         "show_view_all": {
           "label": "Aktivér knappen \"Se alle\", hvis kollektionen indeholder flere produkter, end der vises"
         },

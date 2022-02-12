@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "Maximalt antal produkter att visa"
         },
+        "products_per_row": {
+          "label": "Produkter som ska visas per rad"
+        },
         "show_view_all": {
           "label": "Aktivera \"Visa alla\"-knappen om produktserien innehåller fler produkter än vad som visas"
         },

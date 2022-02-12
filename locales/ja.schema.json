@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "表示する最大の商品"
         },
+        "products_per_row": {
+          "label": "行ごとに表示する製品"
+        },
         "show_view_all": {
           "label": "コレクションに表示されているよりも多くの商品がある場合、「すべてを表示」ボタンを有効にします"
         },

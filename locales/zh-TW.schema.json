@@ -513,6 +513,9 @@
         "products_to_show": {
           "label": "產品數量顯示上限"
         },
+        "products_per_row": {
+          "label": "每行要顯示的產品"
+        },
         "show_view_all": {
           "label": "若商品系列中包含的商品比顯示出的更多，請啟用「檢視全部」按鈕"
         },
