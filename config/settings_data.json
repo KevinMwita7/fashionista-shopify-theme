@@ -45,8 +45,8 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
+              "heading": "Legal",
+              "menu": "legal"
             }
           },
           "85e00e0e-3e52-463f-a72a-32c65e641325": {
