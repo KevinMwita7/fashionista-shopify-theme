@@ -35,7 +35,7 @@
       <div class="collection page-width">
         <div class="loading-overlay gradient"></div>
 
-        <ul id="product-grid" data-id="{{ section.id }}" class="row product-cols lg:prod-cols-{{ section.settings.products_per_row }}">
+        <ul id="product-grid" data-id="{{ section.id }}" class="row product-cols lg:product-cols-{{ section.settings.products_per_row }}">
           {%- for product in collection.products -%}
             <li class="p-4">
               {% render 'product-card',
