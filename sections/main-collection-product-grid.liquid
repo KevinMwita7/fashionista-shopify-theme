@@ -35,13 +35,9 @@
       <div class="collection page-width">
         <div class="loading-overlay gradient"></div>
 
-        <ul id="product-grid" data-id="{{ section.id }}" class="
-          grid grid--2-col negative-margin product-grid
-          {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
-            {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
-          {% endif %}">
+        <ul id="product-grid" data-id="{{ section.id }}" class="row product-cols lg:prod-cols-{{ section.settings.products_per_row }}">
           {%- for product in collection.products -%}
-            <li class="grid__item">
+            <li class="p-4">
               {% render 'product-card',
                 product_card_product: product,
                 media_size: section.settings.image_ratio,
@@ -77,6 +73,15 @@
       "default": 16,
       "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
     },
+    {
+      "type": "range",
+      "id": "products_per_row",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 5,
+      "label": "t:sections.featured-collection.settings.products_per_row.label"
+    },    
     {
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header__3.content"
