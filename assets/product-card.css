@@ -280,6 +280,10 @@ video {
     flex-wrap: wrap;
 }
 
+.font-semibold {
+    font-weight: 600;
+}
+
 .h-screen {
     height: 100vh
 }
