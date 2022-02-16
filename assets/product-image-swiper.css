@@ -18,10 +18,20 @@
     align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+    .swiper-slide img {
+        /*display: block;
+        object-fit: contain;*/
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }    
+}
+
 .swiper-slide img {
     /*display: block;
     object-fit: contain;*/
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
