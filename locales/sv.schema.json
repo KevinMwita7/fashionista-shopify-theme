@@ -387,6 +387,17 @@
       "name": "Skjutreglaget Samlingslista",
       "presets": {
         "name": "Skjutreglaget Samlingslista"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Teckenstorlek för kortfot"
+        },
+        "center_footer_text": {
+          "label": "Text med mittfältsfot"
+        },
+        "color_card": {
+          "label": "Färgkort"
+        }
       }
     },
     "collection-list": {

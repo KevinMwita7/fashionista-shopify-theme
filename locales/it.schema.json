@@ -387,6 +387,17 @@
       "name": "Dispositivo di scorrimento dell'elenco delle raccolte",
       "presets": {
         "name": "Dispositivo di scorrimento dell'elenco delle raccolte"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Dimensione del carattere del piè di pagina della scheda"
+        },
+        "center_footer_text": {
+          "label": "Testo del piè di pagina della scheda centrale"
+        },
+        "color_card": {
+          "label": "Scheda colori"
+        }
       }
     },
     "collection-list": {

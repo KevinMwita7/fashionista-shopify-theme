@@ -387,6 +387,17 @@
       "name": "集合清單滑塊",
       "presets": {
         "name": "集合清單滑塊"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "卡片頁腳字體大小"
+        },
+        "center_footer_text": {
+          "label": "居中卡頁腳文本"
+        },
+        "color_card": {
+          "label": "色卡"
+        }
       }
     },
     "collection-list": {

@@ -387,6 +387,17 @@
       "name": "Control deslizante de lista de colecciones",
       "presets": {
         "name": "Control deslizante de lista de colecciones"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Tamaño de fuente del pie de página de la tarjeta"
+        },
+        "center_footer_text": {
+          "label": "Texto del pie de página de la tarjeta central"
+        },
+        "color_card": {
+          "label": "Tarjeta de color"
+        }
       }
     },
     "collection-list": {

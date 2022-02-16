@@ -387,6 +387,17 @@
       "name": "컬렉션 목록 슬라이더",
       "presets": {
         "name": "컬렉션 목록 슬라이더"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "카드 푸터 글꼴 크기"
+        },
+        "center_footer_text": {
+          "label": "중앙 카드 발터 텍스트"
+        },
+        "color_card": {
+          "label": "컬러 카드"
+        }
       }
     },
     "collection-list": {

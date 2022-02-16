@@ -387,6 +387,17 @@
       "name": "Schuifregelaar voor collectielijst",
       "presets": {
         "name": "Schuifregelaar voor collectielijst"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Lettergrootte van kaartvoettekst"
+        },
+        "center_footer_text": {
+          "label": "Tekst van de voettekst van de middelste kaart"
+        },
+        "color_card": {
+          "label": "Kleurenkaart"
+        }
       }
     },
     "collection-list": {

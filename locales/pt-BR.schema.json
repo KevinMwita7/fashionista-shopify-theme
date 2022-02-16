@@ -387,6 +387,17 @@
       "name": "Controle deslizante da lista de coleta",
       "presets": {
         "name": "Controle deslizante da lista de coleta"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Tamanho da fonte do rodapé da placa"
+        },
+        "center_footer_text": {
+          "label": "Texto do rodapé do cartão central"
+        },
+        "color_card": {
+          "label": "Cartão de cor"
+        }
       }
     },
     "collection-list": {

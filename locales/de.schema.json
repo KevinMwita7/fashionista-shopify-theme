@@ -387,6 +387,17 @@
       "name": "Schieberegler für Sammlungsliste",
       "presets": {
         "name": "Schieberegler für Sammlungsliste"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Schriftgröße der Kartenfußzeile"
+        },
+        "center_footer_text": {
+          "label": "Fußzeilentext der Karte zentrieren"
+        },
+        "color_card": {
+          "label": "Farbkarte"
+        }
       }
     },
     "collection-list": {

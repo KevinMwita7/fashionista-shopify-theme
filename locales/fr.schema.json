@@ -387,6 +387,17 @@
       "name": "Curseur de liste de collections",
       "presets": {
         "name": "Curseur de liste de collections"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Taille de la police du pied de page de la carte"
+        },
+        "center_footer_text": {
+          "label": "Texte du pied de page de la carte centrale"
+        },
+        "color_card": {
+          "label": "Carte couleur"
+        }
       }
     },
     "collection-list": {

@@ -387,6 +387,17 @@
       "name": "แถบเลื่อนรายการคอลเลกชัน",
       "presets": {
         "name": "แถบเลื่อนรายการคอลเลกชัน"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "ขนาดแบบอักษรส่วนท้ายของการ์ด"
+        },
+        "center_footer_text": {
+          "label": "จัดกึ่งกลางข้อความท้ายกระดาษของบัตร"
+        },
+        "color_card": {
+          "label": "บัตรสี"
+        }
       }
     },
     "collection-list": {

@@ -387,6 +387,17 @@
       "name": "Kokoelmaluettelon liukusäädin",
       "presets": {
         "name": "Kokoelmaluettelon liukusäädin"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Kortin alatunnisteen fonttikoko"
+        },
+        "center_footer_text": {
+          "label": "Keskitä kortin alatunnisteen teksti"
+        },
+        "color_card": {
+          "label": "Värikortti"
+        }
       }
     },
     "collection-list": {

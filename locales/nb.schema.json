@@ -387,6 +387,17 @@
       "name": "Glidebryter for samlingsliste",
       "presets": {
         "name": "Glidebryter for samlingsliste"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Skriftstørrelse for bunntekst for kort"
+        },
+        "center_footer_text": {
+          "label": "Midtstill bunntekst på kort"
+        },
+        "color_card": {
+          "label": "Fargekort"
+        }
       }
     },
     "collection-list": {

@@ -387,6 +387,17 @@
       "name": "Koleksiyon listesi kaydırıcısı",
       "presets": {
         "name": "Koleksiyon listesi kaydırıcısı"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Kart altbilgisi yazı tipi boyutu"
+        },
+        "center_footer_text": {
+          "label": "Orta kart altbilgi metni"
+        },
+        "color_card": {
+          "label": "Renkli kart"
+        }
       }
     },
     "collection-list": {

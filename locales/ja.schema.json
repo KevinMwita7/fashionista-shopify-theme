@@ -387,6 +387,17 @@
       "name": "コレクションリストスライダー",
       "presets": {
         "name": "コレクションリストスライダー"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "カード フッターのフォント サイズ"
+        },
+        "center_footer_text": {
+          "label": "中央のカードのフッターテキスト"
+        },
+        "color_card": {
+          "label": "カラーカード"
+        }
       }
     },
     "collection-list": {

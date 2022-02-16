@@ -387,6 +387,17 @@
       "name": "Skyderen Samlingsliste",
       "presets": {
         "name": "Skyderen Samlingsliste"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Skriftstørrelse for kortfod"
+        },
+        "center_footer_text": {
+          "label": "Centrer tekst til sidefod med kort"
+        },
+        "color_card": {
+          "label": "Farvekort"
+        }
       }
     },
     "collection-list": {

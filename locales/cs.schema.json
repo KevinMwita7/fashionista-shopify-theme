@@ -387,6 +387,17 @@
       "name": "Posuvník seznamu kolekcí",
       "presets": {
         "name": "Posuvník seznamu kolekcí"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Velikost písma zápatí karty"
+        },
+        "center_footer_text": {
+          "label": "Prostřední text zápatí karty"
+        },
+        "color_card": {
+          "label": "Barevná karta"
+        }
       }
     },
     "collection-list": {

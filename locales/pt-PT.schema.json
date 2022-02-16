@@ -387,6 +387,17 @@
       "name": "Slider de lista de coleção",
       "presets": {
         "name": "Slider de lista de coleção"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Tamanho do tipo de fonte do rodapé do cartão"
+        },
+        "center_footer_text": {
+          "label": "Texto do rodapé do cartão central"
+        },
+        "color_card": {
+          "label": "Cartão de cor"
+        }
       }
     },
     "collection-list": {

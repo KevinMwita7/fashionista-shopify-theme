@@ -387,6 +387,17 @@
       "name": "Thanh trượt danh sách tuyển tập",
       "presets": {
         "name": "Thanh trượt danh sách tuyển tập"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Cỡ phông chân trang thẻ"
+        },
+        "center_footer_text": {
+          "label": "Văn bản chân trang thẻ trung tâm"
+        },
+        "color_card": {
+          "label": "Thẻ màu"
+        }
       }
     },
     "collection-list": {

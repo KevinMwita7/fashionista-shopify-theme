@@ -387,6 +387,17 @@
       "name": "Suwak listy kolekcji",
       "presets": {
         "name": "Suwak listy kolekcji"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Rozmiar czcionki stopki karty"
+        },
+        "center_footer_text": {
+          "label": "Tekst stopki środkowej karty"
+        },
+        "color_card": {
+          "label": "Karta kolorów"
+        }
       }
     },
     "collection-list": {
