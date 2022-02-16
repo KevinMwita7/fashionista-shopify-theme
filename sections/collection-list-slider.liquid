@@ -30,7 +30,7 @@
           <a{% if block.settings.collection != blank and block.settings.collection.all_products_count > 0 %} href="{{ block.settings.collection.url }}"{% else %} role="link" aria-disabled="true"{% endif %}
             class="card animate-arrow link{% if block.settings.collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %} hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
           >
-            <div class="card--stretch{% if section.settings.color_card_footer %} card-colored{% endif %} color-{{ section.settings.color_scheme }}">
+            <div class="card--stretch{% if section.settings.color_card %} card-colored color-{{ section.settings.color_scheme }}{% endif %}">
               {%- if block.settings.collection.featured_image != blank -%}
                 <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
                   {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
@@ -60,7 +60,7 @@
                   </div>
                 </div>
 
-                <div class="card__text card__text-spacing{% if section.settings.color_card_footer %} card-colored{% endif %} card__text-hover{% if section.settings.image_padding == false %} color-{{ section.settings.color_scheme }}{% endif %}">
+                <div class="card__text card__text-spacing{% if section.settings.color_card %} card-colored color-{{ section.settings.color_scheme }}{% endif %} card__text-hover">
                   {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
                   <h3 class="text-{{ section.settings.footer_font_size }}xl{% if section.settings.center_footer_text %} text-center{% endif %}">
                     {%- if block.settings.collection.title != blank -%}
@@ -138,9 +138,9 @@
     },
     {
       "type": "checkbox",
-      "id": "color_card_footer",
+      "id": "color_card",
       "default": false,
-      "label": "t:sections.collection-list-slider.settings.color_card_footer.label"
+      "label": "t:sections.collection-list-slider.settings.color_card.label"
     },
     {
       "type": "select",
