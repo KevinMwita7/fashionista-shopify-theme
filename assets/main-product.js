@@ -10,7 +10,7 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 6,
     // centerInsufficientSlides: true,
     breakpoints: {
-        990: {
+        768: {
             direction: "vertical"
         } 
     }
@@ -29,7 +29,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     },
     grabCursor: true,
     breakpoints: {
-        990: {
+        768: {
             pagination: {
                 // Set non existent class in order to hide pagination
                 el: ".ix2pzra7iz",

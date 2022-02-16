@@ -19,17 +19,11 @@
 }
 
 .swiper-slide img {
-    object-fit: contain;
+    /*display: block;
+    object-fit: contain;*/
+    object-fit: cover;
     width: 100%;
     height: 100%;
-}
-
-@media screen and (min-width: 768px) {
-    .mySwiper2 .swiper-slide img {
-        /*display: block;
-        object-fit: contain;*/
-        object-fit: cover;
-    }
 }
 
 .swiper {
