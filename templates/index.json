@@ -131,11 +131,11 @@
         "title": "Collections",
         "footer_font_size": 5,
         "center_footer_text": true,
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "color_card": false,
         "color_scheme": "background-1",
         "swipe_on_mobile": false,
-        "image_padding": true,
+        "image_padding": false,
         "show_view_all": false
       }
     },
