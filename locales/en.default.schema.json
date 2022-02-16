@@ -398,6 +398,11 @@
       "name": "Collection list slider",
       "presets": {
         "name": "Collection list slider"
+      },
+      "settings": {
+        "footer_font_size": {
+          "label": "Card footer font size"
+        }
       }
     },
     "collection-list": {
@@ -406,6 +411,7 @@
         "title": {
           "label": "Heading"
         },
+
         "image_ratio": {
           "label": "Image ratio",
           "options__1": {
