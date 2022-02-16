@@ -28,8 +28,7 @@
       {%- for block in section.blocks -%}
         <li class="swiper-slide w-3/5 md:w-2/5 lg:w-3/10" {{ block.shopify_attributes }} data-slide-index={{ forloop.index }}>
           <a{% if block.settings.collection != blank and block.settings.collection.all_products_count > 0 %} href="{{ block.settings.collection.url }}"{% else %} role="link" aria-disabled="true"{% endif %}
-            class="card animate-arrow link{% if block.settings.collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}
-            hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
+            class="card animate-arrow link{% if block.settings.collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %} hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
           >
             <div class="card--stretch card-colored color-{{ section.settings.color_scheme }}">
               {%- if block.settings.collection.featured_image != blank -%}
