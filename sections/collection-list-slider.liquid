@@ -62,7 +62,7 @@
 
                 <div class="card__text card__text-spacing card-colored card__text-hover{% if section.settings.image_padding == false %} color-{{ section.settings.color_scheme }}{% endif %}">
                   {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
-                  <h3 class="text-{{ section.settings.footer_font_size }}xl">
+                  <h3 class="text-{{ section.settings.footer_font_size }}xl{% if section.settings.center_footer_text == true %} text-center{% endif %}">
                     {%- if block.settings.collection.title != blank -%}
                       {{- block.settings.collection.title | escape -}}{% comment %}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{% endcomment %}
                     {%- else -%}
@@ -73,7 +73,7 @@
               {%- else -%}
                 <div class="overlay-card"></div>
                 <div class="card__text-spacing card__text-hover">
-                  <h3 class="h1 text-{{ section.settings.footer_font_size }}xl">
+                  <h3 class="h1 text-{{ section.settings.footer_font_size }}xl{% if section.settings.center_footer_text == true %} text-center{% endif %}">
                     {%- if block.settings.collection.title != blank -%}
                       {{- block.settings.collection.title | escape -}}{%- if block.settings.collection.description == blank -%}
                         {% comment %}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{% endcomment %}
@@ -129,7 +129,13 @@
       "step": 1,
       "default": 6,
       "label": "t:sections.collection-list-slider.settings.footer_font_size.label"
-    },    
+    },
+    {
+      "type": "checkbox",
+      "id": "footer_text_alignment",
+      "default": true,
+      "label": "t:sections.collection-list-slider.settings.center_footer_text.label"
+    },
     {
       "type": "select",
       "id": "image_ratio",

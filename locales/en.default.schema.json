@@ -402,6 +402,9 @@
       "settings": {
         "footer_font_size": {
           "label": "Card footer font size"
+        },
+        "center_footer_text": {
+          "label": "Center card footer text"
         }
       }
     },
