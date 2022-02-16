@@ -405,6 +405,9 @@
         },
         "center_footer_text": {
           "label": "Center card footer text"
+        },
+        "color_card_footer": {
+          "label": "Color card footer"
         }
       }
     },
