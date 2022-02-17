@@ -616,8 +616,6 @@ class VariantSelects extends HTMLElement {
     const imageSwiper = document.querySelector(".mySwiper2");
     // Is main product image, slide to swiper image
     if(imageSwiper) {
-      imageSwiper.swiper.slideTo(slideTo);
-      imageSwiper.swiper.update();
       let slideTo = 0;
 
       for(let i = 0; i < newMedia.attributes.length; ++i) {
@@ -626,7 +624,9 @@ class VariantSelects extends HTMLElement {
           slideTo = +idx - 1;
           break;
         }
-      }      
+      }
+      imageSwiper.swiper.slideTo(slideTo);
+      imageSwiper.swiper.update(); 
     } else {
       // Is featured product, append new image
       modalContent.prepend(newMediaModal);
