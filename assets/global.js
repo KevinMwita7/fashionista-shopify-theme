@@ -611,21 +611,26 @@ class VariantSelects extends HTMLElement {
     /*modalContent.prepend(newMediaModal);
     parent.prepend(newMedia);*/
     
-    let slideTo = 0;
-
-    for(let i = 0; i < newMedia.attributes.length; ++i) {
-      if(newMedia.attributes[i].name === "aria-label") {
-        let idx = newMedia.attributes[i].value.split("/")[0];
-        slideTo = +idx - 1;
-        break;
-      }
-    }
     // console.log(newMedia.attributes, slideTo);
     // const thumbSwiper = document.querySelector(".mySwiper").swiper;
     const imageSwiper = document.querySelector(".mySwiper2");
+    // Is main product image, slide to swiper image
     if(imageSwiper) {
       imageSwiper.swiper.slideTo(slideTo);
       imageSwiper.swiper.update();
+      let slideTo = 0;
+
+      for(let i = 0; i < newMedia.attributes.length; ++i) {
+        if(newMedia.attributes[i].name === "aria-label") {
+          let idx = newMedia.attributes[i].value.split("/")[0];
+          slideTo = +idx - 1;
+          break;
+        }
+      }      
+    } else {
+      // Is featured product, append new image
+      modalContent.prepend(newMediaModal);
+      parent.prepend(newMedia);
     }
     // thumbSwiper.update();
     /*thumbSwiper.slideTo(slideTo);
