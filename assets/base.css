@@ -483,6 +483,10 @@ blockquote {
   color: rgb(var(--color-foreground));
 }
 
+.content-for-layout {
+  background-color: white;
+}
+
 table:not([class]) {
   table-layout: fixed;
   border-collapse: collapse;
