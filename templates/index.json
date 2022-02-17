@@ -173,11 +173,80 @@
         "show_vendor": false,
         "show_rating": true
       }
+    },
+    "16451267713dfae769": {
+      "type": "featured-product",
+      "blocks": {
+        "1645126771ab3697b8-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "1645126771ab3697b8-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "1645126771ab3697b8-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "1645126771ab3697b8-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1645126771ab3697b8-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "1645126771ab3697b8-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1645126771ab3697b8-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "1645126771ab3697b8-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "1645126771ab3697b8-0",
+        "1645126771ab3697b8-1",
+        "1645126771ab3697b8-2",
+        "1645126771ab3697b8-3",
+        "1645126771ab3697b8-4",
+        "1645126771ab3697b8-5",
+        "1645126771ab3697b8-6",
+        "1645126771ab3697b8-7"
+      ],
+      "settings": {
+        "product": "late-bird",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
     }
   },
   "order": [
     "16375654467d9d124d",
     "1639992274f6a6c890",
-    "1641296584966eafbb"
+    "1641296584966eafbb",
+    "16451267713dfae769"
   ]
 }
