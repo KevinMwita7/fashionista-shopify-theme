@@ -621,10 +621,12 @@ class VariantSelects extends HTMLElement {
       }
     }
     // console.log(newMedia.attributes, slideTo);
-    const thumbSwiper = document.querySelector(".mySwiper").swiper;
-    const imageSwiper = document.querySelector(".mySwiper2").swiper;
-    imageSwiper.slideTo(slideTo);
-    imageSwiper.update();
+    // const thumbSwiper = document.querySelector(".mySwiper").swiper;
+    const imageSwiper = document.querySelector(".mySwiper2");
+    if(imageSwiper) {
+      imageSwiper.swiper.slideTo(slideTo);
+      imageSwiper.swiper.update();
+    }
     // thumbSwiper.update();
     /*thumbSwiper.slideTo(slideTo);
     // thumbSwiper.slideReset();
