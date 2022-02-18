@@ -1310,6 +1310,15 @@
               "options__2": {
                 "label": "按鈕"
               }
+            },
+            "button_shape": {
+              "label": "按鈕形狀",
+              "options__1": {
+                "label": "鋒利"
+              },
+              "options__2": {
+                "label": "彎曲"
+              }
             }
           },
           "name": "子類選擇器"

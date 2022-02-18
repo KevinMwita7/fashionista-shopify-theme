@@ -1319,6 +1319,15 @@
               "options__2": {
                 "label": "Bouton"
               }
+            },
+            "button_shape": {
+              "label": "Forme du bouton",
+              "options__1": {
+                "label": "Tranchant"
+              },
+              "options__2": {
+                "label": "Courbé"
+              }
             }
           }
         },

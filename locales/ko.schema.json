@@ -1310,6 +1310,15 @@
               "options__2": {
                 "label": "버튼"
               }
+            },
+            "button_shape": {
+              "label": "버튼 셰이프",
+              "options__1": {
+                "label": "날카로운"
+              },
+              "options__2": {
+                "label": "곡선"
+              }
             }
           },
           "name": "이형 상품 피커"

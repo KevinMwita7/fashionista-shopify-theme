@@ -1319,6 +1319,15 @@
               "options__2": {
                 "label": "Painike"
               }
+            },
+            "button_shape": {
+              "label": "Painikkeen muoto",
+              "options__1": {
+                "label": "Terävä"
+              },
+              "options__2": {
+                "label": "Kaareva"
+              }
             }
           }
         },

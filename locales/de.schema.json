@@ -1319,6 +1319,15 @@
               "options__2": {
                 "label": "Schaltfläche"
               }
+            },
+            "button_shape": {
+              "label": "Schaltflächenform",
+              "options__1": {
+                "label": "Scharf"
+              },
+              "options__2": {
+                "label": "Gekrümmt"
+              }
             }
           }
         },

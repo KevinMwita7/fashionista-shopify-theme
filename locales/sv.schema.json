@@ -1310,6 +1310,15 @@
               "options__2": {
                 "label": "Knapp"
               }
+            },
+            "button_shape": {
+              "label": "Figur för knapp",
+              "options__1": {
+                "label": "Skarp"
+              },
+              "options__2": {
+                "label": "Krokig"
+              }
             }
           },
           "name": "Variantväljare"

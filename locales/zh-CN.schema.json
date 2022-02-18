@@ -1310,6 +1310,15 @@
               "options__2": {
                 "label": "按钮"
               }
+            },
+            "button_shape": {
+              "label": "按钮形状",
+              "options__1": {
+                "label": "锋利"
+              },
+              "options__2": {
+                "label": "弯曲"
+              }
             }
           },
           "name": "多属性选择器"

@@ -1319,6 +1319,15 @@
               "options__2": {
                 "label": "Knapp"
               }
+            },
+            "button_shape": {
+              "label": "Knapp, figur",
+              "options__1": {
+                "label": "Skarp"
+              },
+              "options__2": {
+                "label": "Buet"
+              }
             }
           }
         },

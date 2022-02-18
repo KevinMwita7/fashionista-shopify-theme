@@ -1320,6 +1320,15 @@
               "options__2": {
                 "label": "Pulsante"
               }
+            },
+            "button_shape": {
+              "label": "Forma del pulsante",
+              "options__1": {
+                "label": "Affilato"
+              },
+              "options__2": {
+                "label": "Curvo"
+              }
             }
           }
         },

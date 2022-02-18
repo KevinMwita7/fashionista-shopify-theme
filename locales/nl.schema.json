@@ -1320,6 +1320,15 @@
               "options__2": {
                 "label": "Knop"
               }
+            },
+            "button_shape": {
+              "label": "Knopvorm",
+              "options__1": {
+                "label": "Scherp"
+              },
+              "options__2": {
+                "label": "Gebogen"
+              }
             }
           }
         },

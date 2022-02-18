@@ -1320,6 +1320,15 @@
               "options__2": {
                 "label": "Przycisk"
               }
+            },
+            "button_shape": {
+              "label": "Kształt przycisku",
+              "options__1": {
+                "label": "Ostry"
+              },
+              "options__2": {
+                "label": "Zakrzywiony"
+              }
             }
           }
         },

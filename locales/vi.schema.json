@@ -1317,6 +1317,15 @@
               "options__2": {
                 "label": "Nút"
               }
+            },
+            "button_shape": {
+              "label": "Hình nút",
+              "options__1": {
+                "label": "Sắc"
+              },
+              "options__2": {
+                "label": "Cong"
+              }
             }
           }
         },

@@ -1316,6 +1316,15 @@
               "options__2": {
                 "label": "Tlačítko"
               }
+            },
+            "button_shape": {
+              "label": "Tvar tlačítka",
+              "options__1": {
+                "label": "Ostrý"
+              },
+              "options__2": {
+                "label": "Zakřivený"
+              }
             }
           }
         },

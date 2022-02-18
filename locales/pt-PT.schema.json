@@ -1310,6 +1310,15 @@
               "options__2": {
                 "label": "Botão"
               }
+            },
+            "button_shape": {
+              "label": "Forma de botão",
+              "options__1": {
+                "label": "Afiado"
+              },
+              "options__2": {
+                "label": "Curvado"
+              }
             }
           },
           "name": "Seletor de variante"

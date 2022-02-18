@@ -1320,6 +1320,15 @@
               "options__2": {
                 "label": "Knap"
               }
+            },
+            "button_shape": {
+              "label": "Figur af knap",
+              "options__1": {
+                "label": "Skarp"
+              },
+              "options__2": {
+                "label": "Buede"
+              }
             }
           }
         },

@@ -1319,6 +1319,15 @@
               "options__2": {
                 "label": "Düğme"
               }
+            },
+            "button_shape": {
+              "label": "Düğme şekli",
+              "options__1": {
+                "label": "Keskin"
+              },
+              "options__2": {
+                "label": "Kıvrımlı"
+              }
             }
           }
         },

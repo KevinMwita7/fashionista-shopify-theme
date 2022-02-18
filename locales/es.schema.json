@@ -1320,6 +1320,15 @@
               "options__2": {
                 "label": "Botón"
               }
+            },
+            "button_shape": {
+              "label": "Forma del botón",
+              "options__1": {
+                "label": "Afilado"
+              },
+              "options__2": {
+                "label": "Curvo"
+              }
             }
           }
         },
