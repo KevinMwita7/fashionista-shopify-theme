@@ -1442,6 +1442,15 @@
               "options__2": {
                 "label": "Button"
               }
+            },
+            "button_shape": {
+              "label": "Button shape",
+              "options__1": {
+                "label": "Sharp"
+              },
+              "options__2": {
+                "label": "Curved"
+              }
             }
           }
         },
