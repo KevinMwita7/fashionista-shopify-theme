@@ -88,9 +88,9 @@
     height: auto;
 }*/
 
-.mySwiper2 .swiper-wrapper {
+/*.mySwiper2 .swiper-wrapper {
     align-items: center;
-}
+}*/
 
 @media screen and (min-width: 768px) {
     .mySwiper {
