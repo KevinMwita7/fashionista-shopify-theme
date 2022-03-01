@@ -108,6 +108,9 @@
     .swiper .swiper-nav {
         display: flex;
     }
+    .mySwiper2 .swiper-wrapper {
+        max-height: 700px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
