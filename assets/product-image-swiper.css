@@ -87,6 +87,11 @@
     position: relative;
 }
 
+.mySwiper2 .swiper-slide img {
+    width: 500px;
+    height: auto !important;
+}
+
 .mySwiper2 .swiper-wrapper {
     align-items: center;
 }
