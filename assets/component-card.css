@@ -375,6 +375,12 @@
     transition: background-color var(--duration-long) ease;
   }
 }
+
+.center-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
 /*
 .media .quick-view {
   text-align: center;
