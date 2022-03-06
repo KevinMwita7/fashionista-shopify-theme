@@ -406,6 +406,9 @@
         "center_footer_text": {
           "label": "Center card footer text"
         },
+        "show_arrow": {
+          "label": "Show arrow"
+        },
         "color_card": {
           "label": "Color card"
         }
@@ -1306,9 +1309,6 @@
           "options__6": {
             "label": "Product count, low to high"
           }
-        },
-        "show_arrow": {
-          "label": "Show arrow"
         },
         "image_ratio": {
           "label": "Image ratio",
