@@ -52,7 +52,7 @@
                 <h2 class="h3 text-{{ section.settings.footer_font_size }}xl{% if section.settings.center_footer_text %} text-center{% endif %}">{{- collection.title -}}
                   {% if section.settings.footer_font_size < 5 %}
                     {% assign icon_size = 0 %}
-                  {% elsif section.settings.footer_font_size < 9 %}
+                  {% elsif section.settings.footer_font_size < 8 %}
                     {% assign icon_size = 4 %}
                   {% else %}
                     {% assign icon_size = 9 %}
