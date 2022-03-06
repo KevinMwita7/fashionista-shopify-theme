@@ -50,14 +50,18 @@
               <div class="card__text card__text-spacing card__text-hover">
                 {% unless section.settings.image_padding %}<div class="overlay-card"></div>{% endunless %}
                 <h2 class="h3 text-{{ section.settings.footer_font_size }}xl{% if section.settings.center_footer_text %} text-center{% endif %}">{{- collection.title -}}
-                  {% if section.settings.footer_font_size < 5 %}
-                    {% assign icon_size = 0 %}
-                  {% elsif section.settings.footer_font_size < 8 %}
-                    {% assign icon_size = 4 %}
-                  {% else %}
-                    {% assign icon_size = 9 %}
+                  {% liquid 
+                    if section.settings.footer_font_size < 5
+                      assign icon_size = 0
+                    elsif section.settings.footer_font_size < 8
+                      assign icon_size = 4
+                    else
+                      assign icon_size = 9
+                    endif
+                  %}
+                  {% if section.settings.show_arrow %}
+                    <span class="icon-wrap arrow-icon">&nbsp;{% render 'icon-arrow', size: icon_size %}</span>
                   {% endif %}
-                  <span class="icon-wrap arrow-icon">&nbsp;{% render 'icon-arrow', size: icon_size %}</span>
                 </h2>
               </div>
             {%- else -%}
@@ -138,6 +142,12 @@
       "id": "center_footer_text",
       "default": true,
       "label": "t:sections.collection-list-slider.settings.center_footer_text.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrow",
+      "default": false,
+      "label": "t:sections.collection-list-slider.settings.show_arrow.label"
     },
     {
       "type": "select",

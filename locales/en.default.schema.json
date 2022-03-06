@@ -1307,6 +1307,9 @@
             "label": "Product count, low to high"
           }
         },
+        "show_arrow": {
+          "label": "Show arrow"
+        },
         "image_ratio": {
           "label": "Image ratio",
           "options__1": {
