@@ -131,9 +131,9 @@
         "title": "Collections",
         "footer_font_size": 5,
         "center_footer_text": true,
+        "show_arrow": true,
         "image_ratio": "portrait",
-        "color_card": false,
-        "color_scheme": "background-1",
+        "color_scheme": "none",
         "swipe_on_mobile": false,
         "image_padding": false,
         "show_view_all": false
