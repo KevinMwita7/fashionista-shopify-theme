@@ -31,11 +31,11 @@
             class="card animate-arrow link{% if block.settings.collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %} hover:shadow-lg transition duration-300 ease-in-out cursor-pointer"
           >
             <div class="card--stretch card-colored color-{{ section.settings.color_scheme }}">
-              {%- if block.settings.collection.featured_image != blank -%}
                 <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
+                  {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
                   <div class="media{% if section.blocks.size > 1 %} media--{{ section.settings.image_ratio }}{% endif %} media--hover-effect overflow-hidden product-img"
                     {% if section.settings.image_ratio == 'adapt' and section.blocks.size > 1 %}style="padding-bottom: {{ 1 | divided_by: block.settings.collection.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
-                    {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
+                    {%- if block.settings.collection.featured_image != blank -%}
                     <img
                       srcset="{%- if block.settings.collection.featured_image.width >= 165 -%}{{ block.settings.collection.featured_image | img_url: '165x' }} 165w,{%- endif -%}
                         {%- if block.settings.collection.featured_image.width >= 330 -%}{{ block.settings.collection.featured_image | img_url: '330x' }} 330w,{%- endif -%}
