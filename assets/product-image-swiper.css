@@ -97,7 +97,7 @@
 }
 
 .mySwiper2 .swiper-wrapper img {
-    height: 600px !important;
+    height: 400px !important;
     object-fit: contain;
 }
 
@@ -116,6 +116,11 @@
     }
     .swiper .swiper-nav {
         display: flex;
+    }
+
+    .mySwiper2 .swiper-wrapper img {
+        height: 600px !important;
+        object-fit: contain;
     }
     /*.mySwiper2 .swiper-wrapper {
         max-height: 600px;
