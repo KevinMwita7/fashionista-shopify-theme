@@ -21,7 +21,7 @@
     {%- for collection in collections -%}
       <li class="collection-list__item grid__item">
         <a{% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}
-          class="card animate-arrow{% if collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
+          class="card animate-arrow{% if collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}"
         >
           <div class="card--stretch card-colored color-{{ section.settings.color_scheme }}">
             {%- if collection.featured_image != blank -%}
