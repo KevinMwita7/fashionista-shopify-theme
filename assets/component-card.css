@@ -376,9 +376,10 @@
   }
 }
 
-.center-icon {
+.arrow-icon {
   display: inline-flex;
   align-items: center;
+  padding-right: .8rem;
 }
 
 /*
