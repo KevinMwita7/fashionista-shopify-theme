@@ -26,7 +26,7 @@
 }
 
 .mySwiper .swiper-slide img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .swiper {
