@@ -65,8 +65,17 @@
                   <h3 class="text-{{ section.settings.footer_font_size }}xl{% if section.settings.center_footer_text %} text-center{% endif %}">
                     {%- if block.settings.collection.title != blank -%}
                       {{- block.settings.collection.title | escape -}}
+                      {% liquid 
+                        if section.settings.footer_font_size < 5
+                          assign icon_size = 0
+                        elsif section.settings.footer_font_size < 8
+                          assign icon_size = 4
+                        else
+                          assign icon_size = 9
+                        endif
+                      %}
                       {% if section.settings.show_arrow %}
-                        <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                        <span class="icon-wrap arrow-icon">&nbsp;{% render 'icon-arrow', size: icon_size %}</span>
                       {% endif %}
                     {%- else -%}
                       {{ 'onboarding.collection_title' | t }}
