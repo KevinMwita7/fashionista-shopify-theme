@@ -88,7 +88,7 @@
                   <h3 class="h1 text-{{ section.settings.footer_font_size }}xl{% if section.settings.center_footer_text %} text-center{% endif %}">
                     {%- if block.settings.collection.title != blank -%}
                       {{- block.settings.collection.title | escape -}}{%- if block.settings.collection.description == blank -%}
-                        {% comment %}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>{% endcomment %}
+                        <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
                       {% endif %}
                     {%- else -%}
                       {{ 'onboarding.collection_title' | t }}
