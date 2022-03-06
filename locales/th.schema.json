@@ -1200,18 +1200,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "การเน้น 1"
+            "label": "ไม่มีใคร"
           },
           "options__2": {
-            "label": "การเน้น 2"
+            "label": "การเน้น 1"
           },
           "options__3": {
-            "label": "พื้นหลัง 1"
+            "label": "การเน้น 2"
           },
           "options__4": {
-            "label": "พื้นหลัง 2"
+            "label": "พื้นหลัง 1"
           },
           "options__5": {
+            "label": "พื้นหลัง 2"
+          },
+          "options__6": {
             "label": "ตรงกันข้าม"
           },
           "label": "รูปแบบสี"

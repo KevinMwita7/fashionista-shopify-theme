@@ -1200,18 +1200,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "アクセント1"
+            "label": "何一つ"
           },
           "options__2": {
-            "label": "アクセント2"
+            "label": "アクセント1"
           },
           "options__3": {
-            "label": "背景1"
+            "label": "アクセント2"
           },
           "options__4": {
-            "label": "背景2"
+            "label": "背景1"
           },
           "options__5": {
+            "label": "背景2"
+          },
+          "options__6": {
             "label": "反転"
           },
           "label": "配色"

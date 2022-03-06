@@ -1200,18 +1200,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "Akcent 1"
+            "label": "Żaden"
           },
           "options__2": {
-            "label": "Akcent 2"
+            "label": "Akcent 1"
           },
           "options__3": {
-            "label": "Tło 1"
+            "label": "Akcent 2"
           },
           "options__4": {
-            "label": "Tło 2"
+            "label": "Tło 1"
           },
           "options__5": {
+            "label": "Tło 2"
+          },
+          "options__6": {
             "label": "Odwrócone"
           },
           "label": "Kolorystyka"

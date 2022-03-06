@@ -1200,18 +1200,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "Elemento in risalto 1"
+            "label": "Nessuno"
           },
           "options__2": {
-            "label": "Elemento in risalto 2"
+            "label": "Elemento in risalto 1"
           },
           "options__3": {
-            "label": "Sfondo 1"
+            "label": "Elemento in risalto 2"
           },
           "options__4": {
-            "label": "Sfondo 2"
+            "label": "Sfondo 1"
           },
           "options__5": {
+            "label": "Sfondo 2"
+          },
+          "options__6": {
             "label": "Inverso"
           },
           "label": "Schema di colori"

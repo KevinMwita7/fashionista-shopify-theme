@@ -1200,18 +1200,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "色調 1"
+            "label": "沒有"
           },
           "options__2": {
-            "label": "色調 2"
+            "label": "色調 1"
           },
           "options__3": {
-            "label": "背景 1"
+            "label": "色調 2"
           },
           "options__4": {
-            "label": "背景 2"
+            "label": "背景 1"
           },
           "options__5": {
+            "label": "背景 2"
+          },
+          "options__6": {
             "label": "倒轉"
           },
           "label": "顏色配置"

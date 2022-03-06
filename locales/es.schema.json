@@ -1200,18 +1200,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "Acento 1"
+            "label": "Ninguno"
           },
           "options__2": {
-            "label": "Acento 2"
+            "label": "Acento 1"
           },
           "options__3": {
-            "label": "Fondo 1"
+            "label": "Acento 2"
           },
           "options__4": {
-            "label": "Fondo 2"
+            "label": "Fondo 1"
           },
           "options__5": {
+            "label": "Fondo 2"
+          },
+          "options__6": {
             "label": "Invertir"
           },
           "label": "Esquema de colores"

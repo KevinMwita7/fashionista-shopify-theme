@@ -1196,19 +1196,22 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "Destaque 1"
+            "label": "Nenhum."
           },
           "options__2": {
-            "label": "Destaque 2"
+            "label": "Destaque 1"
           },
           "options__3": {
-            "label": "Plano de fundo 1"
+            "label": "Destaque 2"
           },
           "options__4": {
-            "label": "Plano de fundo 2"
+            "label": "Fundo 1"
           },
           "options__5": {
-            "label": "Inverso"
+            "label": "Fundo 2"
+          },
+          "options__6": {
+            "label": "Inverter"
           },
           "label": "Esquema de cores"
         },

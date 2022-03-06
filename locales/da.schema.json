@@ -1200,18 +1200,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "Markering 1"
+            "label": "Ingen"
           },
           "options__2": {
-            "label": "Markering 2"
+            "label": "Markering 1"
           },
           "options__3": {
-            "label": "Baggrund 1"
+            "label": "Markering 2"
           },
           "options__4": {
-            "label": "Baggrund 2"
+            "label": "Baggrund 1"
           },
           "options__5": {
+            "label": "Baggrund 2"
+          },
+          "options__6": {
             "label": "Omvendt"
           },
           "label": "Farveskema"

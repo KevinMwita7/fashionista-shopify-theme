@@ -1196,18 +1196,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "Zvýraznění 1"
+            "label": "Žádný"
           },
           "options__2": {
-            "label": "Zvýraznění 2"
+            "label": "Zvýraznění 1"
           },
           "options__3": {
-            "label": "Pozadí 1"
+            "label": "Zvýraznění 2"
           },
           "options__4": {
-            "label": "Pozadí 2"
+            "label": "Pozadí 1"
           },
           "options__5": {
+            "label": "Pozadí 2"
+          },
+          "options__6": {
             "label": "Inverze"
           },
           "label": "Barevné schéma"

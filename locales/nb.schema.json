@@ -1200,18 +1200,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "Aksent 1"
+            "label": "Ingen"
           },
           "options__2": {
-            "label": "Aksent 2"
+            "label": "Aksent 1"
           },
           "options__3": {
-            "label": "Bakgrunn 1"
+            "label": "Aksent 2"
           },
           "options__4": {
-            "label": "Bakgrunn 2"
+            "label": "Bakgrunn 1"
           },
           "options__5": {
+            "label": "Bakgrunn 2"
+          },
+          "options__6": {
             "label": "Omvendt"
           },
           "label": "Fargepalett"

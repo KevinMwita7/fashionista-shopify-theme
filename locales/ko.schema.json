@@ -1200,18 +1200,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "강조 1"
+            "label": "없음"
           },
           "options__2": {
-            "label": "강조 2"
+            "label": "강조 1"
           },
           "options__3": {
-            "label": "배경 1"
+            "label": "강조 2"
           },
           "options__4": {
-            "label": "배경 2"
+            "label": "배경 1"
           },
           "options__5": {
+            "label": "배경 2"
+          },
+          "options__6": {
             "label": "서로 바꾸기"
           },
           "label": "색상 배합"

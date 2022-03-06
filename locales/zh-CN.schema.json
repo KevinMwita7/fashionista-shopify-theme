@@ -1200,18 +1200,21 @@
         },
         "color_scheme": {
           "options__1": {
-            "label": "强调色 1"
+            "label": "沒有"
           },
           "options__2": {
-            "label": "强调色 2"
+            "label": "强调色 1"
           },
           "options__3": {
-            "label": "背景 1"
+            "label": "强调色 2"
           },
           "options__4": {
-            "label": "背景 2"
+            "label": "背景 1"
           },
           "options__5": {
+            "label": "背景 2"
+          },
+          "options__6": {
             "label": "反转"
           },
           "label": "配色方案"
