@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "จัดกึ่งกลางข้อความท้ายกระดาษของบัตร"
         },
+        "show_arrow": {
+          "label": "แสดงลูกศร"
+        },
         "color_card": {
           "label": "บัตรสี"
         }

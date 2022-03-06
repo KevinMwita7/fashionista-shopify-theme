@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Keskitä kortin alatunnisteen teksti"
         },
+        "show_arrow": {
+          "label": "Näytä nuoli"
+        },
         "color_card": {
           "label": "Värikortti"
         }

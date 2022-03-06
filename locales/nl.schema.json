@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Tekst van de voettekst van de middelste kaart"
         },
+        "show_arrow": {
+          "label": "Toon pijl"
+        },
         "color_card": {
           "label": "Kleurenkaart"
         }

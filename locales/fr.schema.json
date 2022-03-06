@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Texte du pied de page de la carte centrale"
         },
+        "show_arrow": {
+          "label": "Afficher la flèche"
+        },
         "color_card": {
           "label": "Carte couleur"
         }

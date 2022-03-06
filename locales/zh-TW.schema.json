@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "居中卡頁腳文本"
         },
+        "show_arrow": {
+          "label": "顯示箭號"
+        },
         "color_card": {
           "label": "色卡"
         }

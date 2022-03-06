@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "中央のカードのフッターテキスト"
         },
+        "show_arrow": {
+          "label": "矢印を表示"
+        },
         "color_card": {
           "label": "カラーカード"
         }

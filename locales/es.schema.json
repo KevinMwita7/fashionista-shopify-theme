@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Texto del pie de página de la tarjeta central"
         },
+        "show_arrow": {
+          "label": "Mostrar flecha"
+        },
         "color_card": {
           "label": "Tarjeta de color"
         }

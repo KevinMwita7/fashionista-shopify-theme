@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Fußzeilentext der Karte zentrieren"
         },
+        "show_arrow": {
+          "label": "Pfeil anzeigen"
+        },
         "color_card": {
           "label": "Farbkarte"
         }

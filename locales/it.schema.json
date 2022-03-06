@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Testo del piè di pagina della scheda centrale"
         },
+        "show_arrow": {
+          "label": "Mostra freccia"
+        },
         "color_card": {
           "label": "Scheda colori"
         }

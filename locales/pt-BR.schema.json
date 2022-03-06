@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Texto do rodapé do cartão central"
         },
+        "show_arrow": {
+          "label": "Mostrar seta"
+        },
         "color_card": {
           "label": "Cartão de cor"
         }

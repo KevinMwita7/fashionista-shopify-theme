@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Midtstill bunntekst på kort"
         },
+        "show_arrow": {
+          "label": "Vis pil"
+        },
         "color_card": {
           "label": "Fargekort"
         }

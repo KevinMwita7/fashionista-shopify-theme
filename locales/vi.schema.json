@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Văn bản chân trang thẻ trung tâm"
         },
+        "show_arrow": {
+          "label": "Hiện mũi tên"
+        },
         "color_card": {
           "label": "Thẻ màu"
         }

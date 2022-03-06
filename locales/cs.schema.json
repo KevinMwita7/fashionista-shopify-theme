@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Prostřední text zápatí karty"
         },
+        "show_arrow": {
+          "label": "Zobrazit šipku"
+        },
         "color_card": {
           "label": "Barevná karta"
         }

@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Tekst stopki środkowej karty"
         },
+        "show_arrow": {
+          "label": "Pokaż strzałkę"
+        },
         "color_card": {
           "label": "Karta kolorów"
         }

@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "중앙 카드 발터 텍스트"
         },
+        "show_arrow": {
+          "label": "화살표 표시"
+        },
         "color_card": {
           "label": "컬러 카드"
         }

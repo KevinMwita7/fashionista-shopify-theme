@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "居中卡页脚文本"
         },
+        "show_arrow": {
+          "label": "显示箭头"
+        },
         "color_card": {
           "label": "色卡"
         }

@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Orta kart altbilgi metni"
         },
+        "show_arrow": {
+          "label": "Oku göster"
+        },
         "color_card": {
           "label": "Renkli kart"
         }

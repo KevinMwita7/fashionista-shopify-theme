@@ -395,6 +395,9 @@
         "center_footer_text": {
           "label": "Text med mittfältsfot"
         },
+        "show_arrow": {
+          "label": "Visa pil"
+        },
         "color_card": {
           "label": "Färgkort"
         }
