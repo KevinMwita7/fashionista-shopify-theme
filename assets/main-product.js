@@ -59,3 +59,6 @@ for(let i = 0; i < productImages.length; ++i) {
         zoomPosition: "original",
     })
 }
+
+// Hack to enable js-image-zoom library work on landscape images
+window.scrollTo(0, 1)

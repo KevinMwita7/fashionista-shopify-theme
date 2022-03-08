@@ -637,8 +637,10 @@ class VariantSelects extends HTMLElement {
       this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
     }
     window.setTimeout(() => {
-      // parent.scrollLeft = 0;
-      parent.querySelector('div.product__media-item').scrollIntoView({behavior: 'smooth'});
+      parent.scrollLeft = 0;
+      // Stop scrolling to view when product variation changes. This is to prevent js-image-zoom library
+      // from resetting and thus being unable to zoom landscape images
+      // parent.querySelector('div.product__media-item').scrollIntoView({behavior: 'smooth'});
     });
   }
 
