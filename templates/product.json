@@ -102,11 +102,28 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "opinew-reviews-product-page-code": {
+      "type": "apps",
+      "blocks": {
+        "opinew-reviews-widget": {
+          "type": "shopify:\/\/apps\/opinew-product-reviews-app\/blocks\/product-widget\/e1d8e0dc-17ff-4e4a-8a8a-1e73c8ef8676",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "opinew-reviews-widget"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "1646739227cf38b21a"
+    "1646739227cf38b21a",
+    "opinew-reviews-product-page-code"
   ]
 }
