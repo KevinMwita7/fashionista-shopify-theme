@@ -40,6 +40,13 @@ var swiper2 = new Swiper(".mySwiper2", {
     thumbs: {
         swiper: swiper,
     },
+    on: {
+        slideChange: function() {
+            // Hack to enable js-image-zoom library work on landscape images
+            window.scrollTo(0, 1);
+            console.log("Slide changed")
+        }
+    }
 });
 
 /*for(let i = 0; i < featuredMedia.attributes.length; ++i) {
@@ -59,6 +66,3 @@ for(let i = 0; i < productImages.length; ++i) {
         zoomPosition: "original",
     })
 }
-
-// Hack to enable js-image-zoom library work on landscape images
-window.scrollTo(0, 1)
