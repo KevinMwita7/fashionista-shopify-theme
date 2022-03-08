@@ -86,10 +86,27 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "1646739227cf38b21a": {
+      "type": "apps",
+      "blocks": {
+        "544781a1-8c30-4155-8287-4c8539d32ec9": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "544781a1-8c30-4155-8287-4c8539d32ec9"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1646739227cf38b21a"
   ]
 }
