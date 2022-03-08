@@ -43,7 +43,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     on: {
         slideChange: function() {
             // Hack to enable js-image-zoom library work on landscape images
-            window.scrollTo(0, 1);
+            window.scrollTo(20, 20);
             console.log("Slide changed")
         }
     }
