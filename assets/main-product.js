@@ -57,6 +57,6 @@ for(let i = 0; i < productImages.length; ++i) {
         fillContainer: true,
         // offset: {vertical: 0, horizontal: 10},
         zoomPosition: "original",
-        // scale: 1.5
+        scale: 0.5
     })
 }
