@@ -255,7 +255,7 @@
                 <span aria-hidden="true" class="rating-star color-icon-{{ settings.accent_icons }}" style="--rating: {{ product_card_product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ product_card_product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"></span>
               </div>
               <p class="rating-text caption d-inline">
-                <div aria-hidden="true" class="product-rating-stars" style="--rating: {{ product_card_product.metafields.reviews.rating.value }};" aria-label="{{ product_card_product.metafields.reviews.rating.value }} out of {{ product_card_product.metafields.reviews.rating.value.scale_max }}.">
+                <span aria-hidden="true" class="product-rating-stars" style="--rating: {{ product_card_product.metafields.reviews.rating.value }};" aria-label="{{ product_card_product.metafields.reviews.rating.value }} out of {{ product_card_product.metafields.reviews.rating.value.scale_max }}."></span>
               </p>
               <p class="rating-count caption d-inline">
                 <span aria-hidden="true">({{ product_card_product.metafields.reviews.rating_count }})</span>
