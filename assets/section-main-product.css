@@ -817,15 +817,19 @@ a.product__text {
   width: 2.2rem;
 }
 
+.spr-starrating {
+  justify-content: start !important;
+}
+
 @media screen and (max-width: 750px) {
   .spr-summary > .spr-starrating {
-    justify-content: center;
+    justify-content: center !important;
   }
 }
 
 @media screen and (min-width: 750px) {
   .spr-summary > .spr-starrating {
-    justify-content: start;
+    justify-content: start !important;
   }
 }
 
