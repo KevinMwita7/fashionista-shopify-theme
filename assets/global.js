@@ -611,7 +611,6 @@ class VariantSelects extends HTMLElement {
     /*modalContent.prepend(newMediaModal);
     parent.prepend(newMedia);*/
     
-    // console.log(newMedia.attributes, slideTo);
     // const thumbSwiper = document.querySelector(".mySwiper").swiper;
     const imageSwiper = document.querySelector(".mySwiper2");
     // Is main product image, slide to swiper image
@@ -632,17 +631,13 @@ class VariantSelects extends HTMLElement {
       modalContent.prepend(newMediaModal);
       parent.prepend(newMedia);
     }
-    // thumbSwiper.update();
-    /*thumbSwiper.slideTo(slideTo);
-    // thumbSwiper.slideReset();
-    thumbSwiper.update();*/
 
     this.stickyHeader = this.stickyHeader || document.querySelector('sticky-header');
     if(this.stickyHeader) {
       this.stickyHeader.dispatchEvent(new Event('preventHeaderReveal'));
     }
     window.setTimeout(() => {
-      parent.scrollLeft = 0;
+      // parent.scrollLeft = 0;
       parent.querySelector('div.product__media-item').scrollIntoView({behavior: 'smooth'});
     });
   }
