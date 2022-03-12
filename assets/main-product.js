@@ -30,6 +30,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     grabCursor: true,
     breakpoints: {
         768: {
+            allowTouchMove: false,
             pagination: {
                 // Set non existent class in order to hide pagination
                 el: ".ix2pzra7iz",
