@@ -2,7 +2,7 @@
 let featuredMedia = document.querySelector("[id^=variant-featured-media-]");
 
 // Initialize swiper and its thumbnails
-var swiper = new Swiper(".mySwiper", {
+/*ervar swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     freeMode: true,
     watchSlidesProgress: true,
@@ -40,14 +40,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     thumbs: {
         swiper: swiper,
     },
-    /*on: {
-        slideChangeTransitionEnd: function() {
-            // Hack to enable js-image-zoom library work on landscape images
-            window.scrollTo(1, 1);
-            console.log("Slide changed")
-        }
-    }*/
-});
+});*/
 
 /*for(let i = 0; i < featuredMedia.attributes.length; ++i) {
     if(featuredMedia.attributes[i].name === "aria-label") {
