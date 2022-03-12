@@ -1,5 +1,5 @@
 // let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
-/*let featuredMedia = document.querySelector("[id^=variant-featured-media-]");
+let featuredMedia = document.querySelector("[id^=variant-featured-media-]");
 
 // Initialize swiper and its thumbnails
 var swiper = new Swiper(".mySwiper", {
@@ -40,7 +40,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     thumbs: {
         swiper: swiper,
     },
-});*/
+});
 
 /*for(let i = 0; i < featuredMedia.attributes.length; ++i) {
     if(featuredMedia.attributes[i].name === "aria-label") {
