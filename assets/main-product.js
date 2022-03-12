@@ -1,5 +1,5 @@
 // let featuredMedia = document.querySelector('[data-is-featured-media="true"]');
-let featuredMedia = document.querySelector("[id^=variant-featured-media-]");
+/*let featuredMedia = document.querySelector("[id^=variant-featured-media-]");
 
 // Initialize swiper and its thumbnails
 var swiper = new Swiper(".mySwiper", {
@@ -30,7 +30,6 @@ var swiper2 = new Swiper(".mySwiper2", {
     grabCursor: true,
     breakpoints: {
         768: {
-            allowTouchMove: false,
             pagination: {
                 // Set non existent class in order to hide pagination
                 el: ".ix2pzra7iz",
@@ -41,14 +40,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     thumbs: {
         swiper: swiper,
     },
-    /*on: {
-        slideChangeTransitionEnd: function() {
-            // Hack to enable js-image-zoom library work on landscape images
-            window.scrollTo(1, 1);
-            console.log("Slide changed")
-        }
-    }*/
-});
+});*/
 
 /*for(let i = 0; i < featuredMedia.attributes.length; ++i) {
     if(featuredMedia.attributes[i].name === "aria-label") {
