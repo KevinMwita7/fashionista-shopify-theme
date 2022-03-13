@@ -37,6 +37,13 @@ var swiper2 = new Swiper(".mySwiper2", {
             }
         }
     },
+    on: {
+        slideChange: function(swiper) {
+            console.log("scrolling");
+            window.scrollTo(1, 1);
+            window.scrollTo(0, 0);
+        }
+    },
     thumbs: {
         swiper: swiper,
     },
