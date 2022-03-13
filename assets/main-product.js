@@ -8,7 +8,6 @@ var swiper = new Swiper(".mySwiper", {
     watchSlidesProgress: true,
     direction: "horizontal",
     slidesPerView: 6,
-    // centerInsufficientSlides: true,
     breakpoints: {
         768: {
             direction: "vertical"
@@ -37,27 +36,13 @@ var swiper2 = new Swiper(".mySwiper2", {
             }
         }
     },
-    on: {
-        slideChange: function(swiper) {
-            console.log("scrolling");
-            window.scrollTo(1, 1);
-            window.scrollTo(0, 0);
-        }
-    },
     thumbs: {
         swiper: swiper,
     },
 });
 
-/*for(let i = 0; i < featuredMedia.attributes.length; ++i) {
-    if(featuredMedia.attributes[i].name === "aria-label") {
-      swiper2.slideTo(+featuredMedia.attributes[i].value[0] - 1);
-      break;
-    }
-}*/
-
-// Initialize zoom image
-let productImages = document.querySelectorAll(".mySwiper2 .swiper-slide");
+// Initialize js-image-zoom
+/*let productImages = document.querySelectorAll(".mySwiper2 .swiper-slide");
 
 for(let i = 0; i < productImages.length; ++i) {
     new ImageZoom(productImages[i], {
@@ -65,4 +50,4 @@ for(let i = 0; i < productImages.length; ++i) {
         // offset: {vertical: 0, horizontal: 10},
         zoomPosition: "original",
     })
-}
+}*/
