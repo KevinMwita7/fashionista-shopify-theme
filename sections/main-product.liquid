@@ -28,7 +28,9 @@
       <div class="lg:flex md:h-4/5">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
-        </a>        
+        </a>
+        
+        <modal-opener class="product__modal-opener product__modal-opener-- no-js-hidden" data-modal="#ProductModal-{{ section.id }}">
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 md:order-2">
           <div class="swiper-wrapper">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
@@ -56,7 +58,17 @@
             <div class="swiper-nav swiper-button-prev"></div>
             <div class="swiper-pagination" style="bottom: 0;"></div>
           {% endif %}
-      </div>
+        </div>
+        <button class="product__media-toggle" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
+          <span class="visually-hidden">
+            {%- if forloop.index0 == 0 %}
+              {{ 'products.product.media.open_featured_media' | t }}
+            {%- else -%}
+              {{ 'products.product.media.open_media' | t: index: forloop.index }}
+            {%- endif -%}
+          </span>
+        </button>
+      </modal-opener>
 
         <div thumbsSlider="" class="swiper mySwiper md:order-1">
           <div class="swiper-wrapper">
