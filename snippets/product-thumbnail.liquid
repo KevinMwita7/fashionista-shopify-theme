@@ -90,8 +90,8 @@
     height="{{ 576 | divided_by: media.preview_image.aspect_ratio | ceil }}"
     alt="{{ media.preview_image.alt | escape }}"
   >
-  </div>
 {% comment %}
+  </div>
   <button class="product__media-toggle" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
     <span class="visually-hidden">
       {%- if position == 'featured' %}
