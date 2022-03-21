@@ -51,11 +51,13 @@
               {% endcomment %}
             {%- endfor -%}            
           </div>
+          {% comment %}
           {% if product.media.size > 1 %}
             <div class="swiper-nav swiper-button-next"></div>
             <div class="swiper-nav swiper-button-prev"></div>
             <div class="swiper-pagination" style="bottom: 0;"></div>
           {% endif %}
+        {% endcomment %}
         </div>
 
         <div thumbsSlider="" class="swiper mySwiper md:order-1">
@@ -538,7 +540,7 @@
 
 <script src="{{ 'color-swatch.js' | asset_url }}" defer></script>
 <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
-<script src="{{ 'main-product.js' | asset_url }}" defer></script>
+{% comment %}<script src="{{ 'main-product.js' | asset_url }}" defer></script>{% endcomment %}
 
 {% schema %}
 {
