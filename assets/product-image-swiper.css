@@ -105,6 +105,14 @@
     cursor: zoom-in;
 }
 
+.zoom-helper-text {
+    position: absolute;
+    bottom: 0.05%;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
 @media screen and (min-width: 768px) {
     .mySwiper {
         width: 10%;
