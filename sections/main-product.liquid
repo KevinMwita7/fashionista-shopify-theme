@@ -29,17 +29,24 @@
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>        
-        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 md:order-2">
+        <ul style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 md:order-2">
           <div class="swiper-wrapper">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
+            {% comment %}
               {%- assign media = product.selected_or_first_available_variant.featured_media -%}
               <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                   {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
               </li>
+            {% endcomment %}
             {%- for media in product.media -%}
+                <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                  {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                </li>
+                {% comment %}
                 <div id="{% if media.id == product.selected_or_first_available_variant.featured_media.id %}variant-featured-media-{{ forloop.index }}{% endif %}" class="product__media-item swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" {% if media.id == product.selected_or_first_available_variant.featured_media.id %}data-is-featured-media="true"{% endif %}>
                   {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                 </div>
+              {% endcomment %}
               {% comment %}
                 {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
                   <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
@@ -56,7 +63,7 @@
             <div class="swiper-pagination" style="bottom: 0;"></div>
           {% endif %}
         {% endcomment %}
-      </div>
+      </ul>
 
         <div thumbsSlider="" class="swiper mySwiper md:order-1">
           <div class="swiper-wrapper">
