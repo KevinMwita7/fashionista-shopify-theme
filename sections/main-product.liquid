@@ -40,7 +40,7 @@
               </li>
             {% endcomment %}
             {%- for media in product.media -%}
-                <a href="{{ media.preview_image | img_url: '1500x1500' }}" id="{% if media.id == product.selected_or_first_available_variant.featured_media.id %}variant-featured-media-{{ forloop.index }}{% endif %}" class="product__media-item swiper-slide spotlight{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" {% if media.id == product.selected_or_first_available_variant.featured_media.id %}data-is-featured-media="true"{% endif %}>
+                <a href="{{ media.preview_image | img_url: '1500x1500' }}" id="{% if media.id == product.selected_or_first_available_variant.featured_media.id %}variant-featured-media-{{ forloop.index }}{% endif %}" class="product__media-item swiper-slide spotlight{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" {% if media.id == product.selected_or_first_available_variant.featured_media.id %}data-is-featured-media="true"{% endif %} data-media={{ media.type }}>
                   {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                 </a>
               {% comment %}
