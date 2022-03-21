@@ -101,6 +101,10 @@
     object-fit: contain;
 }
 
+.spotlight {
+    cursor: zoom-in;
+}
+
 @media screen and (min-width: 768px) {
     .mySwiper {
         width: 10%;
