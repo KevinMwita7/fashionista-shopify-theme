@@ -17,6 +17,7 @@
     %}
 {% endcomment %}
 
+{% comment %}
 <noscript>
   {%- if media.media_type == 'video' or media.media_type == 'external_video' -%}
     <span class="product__media-icon motion-reduce">{% render 'icon-play' %}</span>
@@ -58,6 +59,7 @@
     </div>
   {%- endif -%}
 </noscript>
+{% endcomment %}
 
 <modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}">
   <span class="product__media-icon motion-reduce" aria-hidden="true">
