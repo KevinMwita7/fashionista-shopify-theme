@@ -10,6 +10,7 @@
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 {{ 'product-image-swiper.css' | asset_url | stylesheet_tag }}
 {{ 'color-swatch.css' | asset_url | stylesheet_tag }}
+{{ 'spotlight.min.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -39,9 +40,9 @@
               </li>
             {% endcomment %}
             {%- for media in product.media -%}
-                <div id="{% if media.id == product.selected_or_first_available_variant.featured_media.id %}variant-featured-media-{{ forloop.index }}{% endif %}" class="product__media-item swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" {% if media.id == product.selected_or_first_available_variant.featured_media.id %}data-is-featured-media="true"{% endif %}>
+                <a href="{{ media.preview_image | img_url: '1500x1500' }}" id="{% if media.id == product.selected_or_first_available_variant.featured_media.id %}variant-featured-media-{{ forloop.index }}{% endif %}" class="product__media-item swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" {% if media.id == product.selected_or_first_available_variant.featured_media.id %}data-is-featured-media="true"{% endif %}>
                   {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-                </div>
+                </a>
               {% comment %}
                 {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
                   <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
@@ -538,6 +539,7 @@
 
 <script src="{{ 'color-swatch.js' | asset_url }}" defer></script>
 <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+<script src="{{ 'spotlight.min.js' | asset_url }}" defer></script>
 <script src="{{ 'main-product.js' | asset_url }}" defer></script>
 
 {% schema %}
