@@ -31,7 +31,7 @@
           {{ "accessibility.skip_to_product_info" | t }}
         </a>        
         <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 md:order-2">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper spotlight-group">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
             {% comment %}
               {%- assign media = product.selected_or_first_available_variant.featured_media -%}
