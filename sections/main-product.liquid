@@ -23,41 +23,41 @@
 {%- endif -%}
 
 <section class="page-width">
-  <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper">
-      <slider-component class="slider-mobile-gutter">
+  <div>
+    <div>
+      <div class="lg:flex md:h-4/5">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
-        </a>
-        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
-          {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-          {%- if product.selected_or_first_available_variant.featured_media != null -%}
-            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-            <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-            </li>
-          {%- endif -%}
-          {%- for media in product.media -%}
-            {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-              <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-              </li>
-            {%- endunless -%}
-          {%- endfor -%}
-        </ul>
-        <div class="slider-buttons no-js-hidden{% if product.media.size < 2 %} small-hide{% endif %}">
-          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-            <span class="slider-counter--total">{% if section.settings.hide_variants %}{{ product.media.size | minus: variant_images.size | plus: 1 }}{% else %}{{ product.media.size }}{% endif %}</span>
+        </a>        
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 md:order-2">
+          <div class="swiper-wrapper">
+            {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
+              {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+              {% comment %}
+                <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                  {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                </div>
+              {% endcomment %}
+            {%- for media in product.media -%}
+                <div id="{% if media.id == product.selected_or_first_available_variant.featured_media.id %}variant-featured-media-{{ forloop.index }}{% endif %}" class="product__media-item swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" {% if media.id == product.selected_or_first_available_variant.featured_media.id %}data-is-featured-media="true"{% endif %}>
+                  {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                </div>
+              {% comment %}
+                {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+                  <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                    {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                  </div>
+                {%- endunless -%}
+              {% endcomment %}
+            {%- endfor -%}            
           </div>
-          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+          {% if product.media.size > 1 %}
+            <div class="swiper-nav swiper-button-next"></div>
+            <div class="swiper-nav swiper-button-prev"></div>
+            <div class="swiper-pagination" style="bottom: 0;"></div>
+          {% endif %}
         </div>
-      </slider-component>
 
-      {% comment %}
         <div thumbsSlider="" class="swiper mySwiper md:order-1">
           <div class="swiper-wrapper">
             {%- for media in product.media -%}
@@ -67,7 +67,6 @@
             {%- endfor -%}
           </div>
         </div>
-      {% endcomment %}
 
         <div style="clear: both; display: block;"></div>
 
@@ -539,6 +538,7 @@
 
 <script src="{{ 'color-swatch.js' | asset_url }}" defer></script>
 <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+<script src="{{ 'main-product.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
