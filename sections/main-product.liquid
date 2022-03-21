@@ -33,20 +33,22 @@
           <div class="swiper-wrapper">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
               {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+              {% comment %}
                 <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                   {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                 </div>
+              {% endcomment %}
             {%- for media in product.media -%}
-              {% comment %}
                 <div id="{% if media.id == product.selected_or_first_available_variant.featured_media.id %}variant-featured-media-{{ forloop.index }}{% endif %}" class="product__media-item swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}" {% if media.id == product.selected_or_first_available_variant.featured_media.id %}data-is-featured-media="true"{% endif %}>
                   {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                 </div>
-              {% endcomment %}
-              {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+              {% comment %}
+                {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
                   <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                     {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                   </div>
                 {%- endunless -%}
+              {% endcomment %}
             {%- endfor -%}            
           </div>
           {% if product.media.size > 1 %}
@@ -155,11 +157,13 @@
                     </button>
                   </quantity-input>
                 </div>
+              {% comment %}
               {%- when 'popup' -%}
                   <modal-opener class="product-popup-modal__opener no-js-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                     <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
                   </modal-opener>
                   <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.text }}</a>
+                {% endcomment %}
               {%- when 'share' -%}
                 <share-button id="Share-{{ section.id }}" class="share-button" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}">
