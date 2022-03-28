@@ -1,0 +1,160 @@
+{% for block in section.blocks %}
+    {% case block.type %}
+    {% when 'collapsible_tab' %}
+        <div class="product__accordion accordion" {{ block.shopify_attributes }}>
+            <details id="Details-{{ block.id }}-{{ section.id }}">
+            <summary>
+                <div class="summary__title">
+                {% render 'icon-accordion', icon: block.settings.icon %}
+                <h2 class="h4 accordion__title">
+                    {{ block.settings.heading | default: block.settings.page.title }}
+                </h2>
+                </div>
+                {% render 'icon-caret' %}
+            </summary>
+            <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                {{ block.settings.content }}
+                {{ block.settings.page.content }}
+            </div>
+            </details>
+        </div>
+    {% endcase %}
+{% endfor %}
+
+{% schema %}
+{
+    "name": "Product details",
+    "tag": "section",
+    "limit": 1,
+    "blocks": [
+        {
+            "type": "collapsible_tab",
+            "name": "t:sections.main-product.blocks.collapsible_tab.name",
+            "settings": [
+              {
+                "type": "text",
+                "id": "heading",
+                "default": "Collapsible tab",
+                "info": "t:sections.main-product.blocks.collapsible_tab.settings.heading.info",
+                "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
+              },
+              {
+                "type": "richtext",
+                "id": "content",
+                "label": "t:sections.main-product.blocks.collapsible_tab.settings.content.label"
+              },
+              {
+                "type": "page",
+                "id": "page",
+                "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+              },
+              {
+                "type": "select",
+                "id": "icon",
+                "options": [
+                  {
+                    "value": "none",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__1.label"
+                  },
+                  {
+                    "value": "box",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__2.label"
+                  },
+                  {
+                    "value": "chat_bubble",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__3.label"
+                  },
+                  {
+                    "value": "check_mark",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__4.label"
+                  },
+                  {
+                    "value": "dryer",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__5.label"
+                  },
+                  {
+                    "value": "eye",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__6.label"
+                  },
+                  {
+                    "value": "heart",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__7.label"
+                  },
+                  {
+                    "value": "iron",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__8.label"
+                  },
+                  {
+                    "value": "leaf",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__9.label"
+                  },
+                  {
+                    "value": "leather",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__10.label"
+                  },
+                  {
+                    "value": "lock",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__11.label"
+                  },
+                  {
+                    "value": "map_pin",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__12.label"
+                  },
+                  {
+                    "value": "pants",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__13.label"
+                  },
+                  {
+                    "value": "plane",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__14.label"
+                  },
+                  {
+                    "value": "price_tag",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__15.label"
+                  },
+                  {
+                    "value": "question_mark",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__16.label"
+                  },
+                  {
+                    "value": "return",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__17.label"
+                  },
+                  {
+                    "value": "ruler",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__18.label"
+                  },
+                  {
+                    "value": "shirt",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__19.label"
+                  },
+                  {
+                    "value": "shoe",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__20.label"
+                  },
+                  {
+                    "value": "silhouette",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__21.label"
+                  },
+                  {
+                    "value": "star",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__22.label"
+                  },
+                  {
+                    "value": "truck",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__23.label"
+                  },
+                  {
+                    "value": "washing",
+                    "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__24.label"
+                  }
+                ],
+                "default": "check_mark",
+                "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
+              }
+            ]
+          }
+    ],
+    "templates": ["products"]
+}
+{% endschema %}
