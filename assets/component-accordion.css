@@ -60,10 +60,6 @@
 }
 
 @media screen and (min-width: 750px) {
-  .accordion__content_mw {
-    max-width: 824px;
-  }
-  
   .accordion__content-margin {
     margin-left: 15%;
   }
