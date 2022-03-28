@@ -1,7 +1,7 @@
 {% for block in section.blocks %}
     {% case block.type %}
     {% when 'accordion' %}
-        <div class="product__accordion accordion" {{ block.shopify_attributes }}>
+        <div class="product__accordion accordion" {{ block.shopify_attributes }} style="border-bottom: initial;">
             <details id="Details-{{ block.id }}-{{ section.id }}">
             <summary>
                 <div class="summary__title">
