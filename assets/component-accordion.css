@@ -63,5 +63,17 @@
   .accordion__content-margin {
     max-width: 824px;
     margin-left: 15%;
+  }
+  
+  .accordion__columns {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-gap: 3em;
   }  
+
+  .accordion__columns img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }

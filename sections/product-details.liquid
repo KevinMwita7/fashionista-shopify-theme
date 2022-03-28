@@ -12,11 +12,12 @@
                 </div>
                 {% render 'icon-caret' %}
             </summary>
-            <div class="accordion__content rte{% if section.settings.collapsible_tabs_margin %} accordion__content-margin{% endif %}" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+            <div class="accordion__content rte{% if section.settings.collapsible_tabs_margin %} accordion__content-margin{% endif %}%{% if block.settings.image %} accordion__columns{% endif %}" 
+                id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                 {% if block.settings.image %}
                     <div>
-                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt | escape }}" loading="lazy" height="60" width="60">
-                    <div>
+                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt | escape }}" loading="lazy" height="450" width="450">
+                    </div>
                 {% endif %}
                 <div>
                     {{ block.settings.content }}
