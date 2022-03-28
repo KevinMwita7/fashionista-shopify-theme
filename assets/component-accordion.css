@@ -11,7 +11,9 @@
 }
 
 .accordion .summary__title + .icon-caret {
-  height: calc(var(--font-heading-scale) * 0.6rem);
+  /*height: calc(var(--font-heading-scale) * 0.6rem);*/
+  height: 1em;
+  width: 1em;
 }
 
 .accordion + .accordion {
@@ -27,6 +29,7 @@
 }
 
 .accordion__title {
+  font-size: 1.25em;
   display: inline-block;
   max-width: calc(100% - 6rem);
   min-height: 1.6rem;
