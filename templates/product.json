@@ -86,10 +86,30 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "16484754432b0c39a9": {
+      "type": "product-details",
+      "blocks": {
+        "d151ce6e-9229-44f5-874a-e778f769f5b4": {
+          "type": "accordion",
+          "settings": {
+            "title": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "check_mark"
+          }
+        }
+      },
+      "block_order": [
+        "d151ce6e-9229-44f5-874a-e778f769f5b4"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "16484754432b0c39a9"
   ]
 }
