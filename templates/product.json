@@ -55,6 +55,15 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "11b89359-5d55-41d4-9296-e27762f04ba3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "<p>Sample description<\/p>",
+            "page": "",
+            "icon": "eye"
+          }
         }
       },
       "block_order": [
@@ -66,7 +75,8 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "11b89359-5d55-41d4-9296-e27762f04ba3"
       ],
       "settings": {
         "enable_sticky_info": true,
