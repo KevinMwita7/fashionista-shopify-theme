@@ -18,6 +18,8 @@
             </div>
             </details>
         </div>
+    {% when '@app' %}
+        {% render block %}
     {% endcase %}
 {% endfor %}
 
@@ -33,7 +35,7 @@
             "settings": [
               {
                 "type": "text",
-                "id": "heading",
+                "id": "title",
                 "default": "Collapsible tab",
                 "info": "t:sections.main-product.blocks.collapsible_tab.settings.heading.info",
                 "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
@@ -153,8 +155,10 @@
                 "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
               }
             ]
-          }
-    ],
-    "templates": ["product"]
+        },
+        {
+            "type": "@app"
+        }
+    ]
 }
 {% endschema %}
