@@ -64,6 +64,15 @@
             "page": "",
             "icon": "eye"
           }
+        },
+        "88835987-bcb1-42dc-bafe-0629a918edc3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "<p>Sample description 2<\/p>",
+            "page": "",
+            "icon": "iron"
+          }
         }
       },
       "block_order": [
@@ -76,7 +85,8 @@
         "buy_buttons",
         "description",
         "share",
-        "11b89359-5d55-41d4-9296-e27762f04ba3"
+        "11b89359-5d55-41d4-9296-e27762f04ba3",
+        "88835987-bcb1-42dc-bafe-0629a918edc3"
       ],
       "settings": {
         "enable_sticky_info": true,
