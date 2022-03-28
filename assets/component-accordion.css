@@ -52,8 +52,16 @@
 .accordion__content {
   margin-bottom: 1.5rem;
   word-break: break-word;
+  line-height: 1.75;
 }
 
 .accordion__content img {
   max-width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .accordion__content-margin {
+    max-width: 824px;
+    margin-left: 15%;
+  }  
 }

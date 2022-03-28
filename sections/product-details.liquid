@@ -12,7 +12,7 @@
                 </div>
                 {% render 'icon-caret' %}
             </summary>
-            <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+            <div class="accordion__content rte{% if section.settings.collapsible_tabs_margin %} accordion__content-margin{% endif %}" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                 {{ block.settings.content }}
                 {{ block.settings.page.content }}
             </div>
@@ -28,11 +28,20 @@
     "name": "Product description",
     "tag": "section",
     "class": "page-width spaced-section",
+    "settings": [
+        {
+            "type": "checkbox",
+            "label": "Enable collapsible tabs content margin",
+            "id": "collapsible_tabs_margin",
+            "default": true
+        }
+    ],
     "blocks": [
         {
             "type": "accordion",
             "name": "t:sections.main-product.blocks.collapsible_tab.name",
-            "settings": [{
+            "settings": [
+                {
                     "type": "text",
                     "id": "heading",
                     "default": "Collapsible tab",
