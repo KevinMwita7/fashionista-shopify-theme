@@ -13,6 +13,9 @@
                 {% render 'icon-caret' %}
             </summary>
             <div class="accordion__content rte{% if section.settings.collapsible_tabs_margin %} accordion__content-margin{% endif %}" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                {% if block.settings.image %}
+                    <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt | escape }}" loading="lazy" height="60" width="60">
+                {% endif %}
                 {{ block.settings.content }}
                 {{ block.settings.page.content }}
             </div>
@@ -42,6 +45,11 @@
             "name": "t:sections.main-product.blocks.collapsible_tab.name",
             "settings": [
                 {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }
+                {
                     "type": "text",
                     "id": "heading",
                     "default": "Collapsible tab",
@@ -61,7 +69,8 @@
                 {
                     "type": "select",
                     "id": "icon",
-                    "options": [{
+                    "options": [
+                        {
                             "value": "none",
                             "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__1.label"
                         },
