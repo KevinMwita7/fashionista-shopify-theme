@@ -5,7 +5,7 @@ let featuredMedia = document.querySelector("[id^=variant-featured-media-]");
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     freeMode: true,
-    watchSlidesProgress: true,
+    // watchSlidesProgress: true,
     direction: "horizontal",
     slidesPerView: 6,
     breakpoints: {
