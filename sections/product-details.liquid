@@ -2,7 +2,7 @@
     {% case block.type %}
     {% when 'accordion' %}
         <div class="product__accordion accordion" {{ block.shopify_attributes }} style="border-bottom: initial;">
-            <details id="Details-{{ block.id }}-{{ section.id }}" {% if block.settings.default_expanded %} style="padding: 0;" {% endif %}>
+            <details id="Details-{{ block.id }}-{{ section.id }}" open="">
                 <summary>
                     <div class="summary__title">
                     {% render 'icon-accordion', icon: block.settings.icon %}
