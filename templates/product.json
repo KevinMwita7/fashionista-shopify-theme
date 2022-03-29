@@ -97,11 +97,22 @@
             "page": "",
             "icon": "none"
           }
+        },
+        "3ce94206-4bbf-41b8-b4a5-d2a485dfe05a": {
+          "type": "accordion",
+          "settings": {
+            "default_expanded": false,
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": "",
+            "icon": "none"
+          }
         }
       },
       "block_order": [
         "d151ce6e-9229-44f5-874a-e778f769f5b4",
-        "90c4ce5b-a813-4855-be15-8d1604c2b3f9"
+        "90c4ce5b-a813-4855-be15-8d1604c2b3f9",
+        "3ce94206-4bbf-41b8-b4a5-d2a485dfe05a"
       ],
       "settings": {
         "collapsible_tabs_margin": true
