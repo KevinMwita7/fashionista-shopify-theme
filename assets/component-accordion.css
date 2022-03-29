@@ -60,10 +60,6 @@
 }
 
 @media screen and (min-width: 750px) {
-  .accordion__content-margin {
-    margin-left: 15%;
-  }
-  
   .accordion__columns {
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
@@ -73,5 +69,16 @@
   .accordion__columns img {
     width: 100%;
     object-fit: cover;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .accordion__content-margin {
+    margin-left: 15%;
+  }
+
+  .accordion__columns img {
+    height: 100%;
   }
 }
