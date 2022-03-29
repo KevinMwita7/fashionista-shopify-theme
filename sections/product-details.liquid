@@ -2,28 +2,28 @@
     {% case block.type %}
     {% when 'accordion' %}
         <div class="product__accordion accordion" {{ block.shopify_attributes }} style="border-bottom: initial;">
-            <details id="Details-{{ block.id }}-{{ section.id }}" {% if block.settings.default_expanded %}open=""{% endif %}>
-            <summary>
-                <div class="summary__title">
-                {% render 'icon-accordion', icon: block.settings.icon %}
-                <h2 class="h4 accordion__title font-bold">
-                    {{ block.settings.heading | default: block.settings.page.title }}
-                </h2>
-                </div>
-                {% render 'icon-caret' %}
-            </summary>
-            <div class="accordion__content rte{% if section.settings.collapsible_tabs_margin %} accordion__content-margin{% endif %}{% if block.settings.image %} accordion__columns{% endif %}" 
-                id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                {% if block.settings.image %}
-                    <div>
-                        <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt | escape }}" loading="lazy" height="450" width="450">
+            <details id="Details-{{ block.id }}-{{ section.id }}" {% if block.settings.default_expanded %} open="" {% endif %}>
+                <summary>
+                    <div class="summary__title">
+                    {% render 'icon-accordion', icon: block.settings.icon %}
+                    <h2 class="h4 accordion__title font-bold">
+                        {{ block.settings.heading | default: block.settings.page.title }}
+                    </h2>
                     </div>
-                {% endif %}
-                <div>
-                    {{ block.settings.content }}
-                    {{ block.settings.page.content }}
+                    {% render 'icon-caret' %}
+                </summary>
+                <div class="accordion__content rte{% if section.settings.collapsible_tabs_margin %} accordion__content-margin{% endif %}{% if block.settings.image %} accordion__columns{% endif %}" 
+                    id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                    {% if block.settings.image %}
+                        <div>
+                            <img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.alt | escape }}" loading="lazy" height="450" width="450">
+                        </div>
+                    {% endif %}
+                    <div>
+                        {{ block.settings.content }}
+                        {{ block.settings.page.content }}
+                    </div>
                 </div>
-            </div>
             </details>
         </div>
     {% when '@app' %}
