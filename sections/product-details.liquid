@@ -2,7 +2,7 @@
     {% case block.type %}
     {% when 'accordion' %}
         <div class="product__accordion accordion" {{ block.shopify_attributes }} style="border-bottom: initial;">
-            <details id="Details-{{ block.id }}-{{ section.id }}">
+            <details id="Details-{{ block.id }}-{{ section.id }}" {% if block.settings.default_expanded %}open=""{% endif %}>
             <summary>
                 <div class="summary__title">
                 {% render 'icon-accordion', icon: block.settings.icon %}
@@ -49,6 +49,13 @@
             "type": "accordion",
             "name": "t:sections.main-product.blocks.collapsible_tab.name",
             "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "default_expanded",
+                    "label": "Default expanded",
+                    "info": "Have tab expanded by default",
+                    "default": false
+                },
                 {
                     "type": "image_picker",
                     "id": "image",
