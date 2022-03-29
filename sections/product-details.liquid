@@ -26,7 +26,7 @@
                 </div>
             </details>
         </div>
-    {% when 'feature' %}
+    {% when 'product_feature' %}
         <div>
             {{ block.settings.feature_description }}
             {{ block.settings.icon }}
@@ -190,8 +190,8 @@
             ]
         },
         {
-            "type": "feature",
-            "name": "t:sections.main-product.blocks.collapsible_tab.name",
+            "type": "product_feature",
+            "name": "Product Feature",
             "settings": [
                 {
                     "type": "text",
