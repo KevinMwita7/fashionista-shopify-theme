@@ -6,7 +6,7 @@
     {% for block in section.blocks %}
         {% case block.type %}
         {% when 'product_highlight' %}
-            <div>
+            <div class="flex">
                 {% render 'icon-accordion', icon: block.settings.highlight_icon %}
                 {{ block.settings.highlight_description }}
             </div>
