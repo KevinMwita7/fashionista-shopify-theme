@@ -7,7 +7,7 @@
         {% case block.type %}
         {% when 'product_highlight' %}
             <div>
-                {{ block.settings.highlight_icon }}
+                {% render 'icon-accordion', icon: block.settings.highlight_icon %}
                 {{ block.settings.highlight_description }}
             </div>
         {% when '@app' %}
@@ -44,10 +44,6 @@
                     "type": "select",
                     "id": "highlight_icon",
                     "options": [
-                        {
-                            "value": "none",
-                            "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__1.label"
-                        },
                         {
                             "value": "box",
                             "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__2.label"
@@ -141,7 +137,7 @@
                             "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__24.label"
                         }
                     ],
-                    "default": "none",
+                    "default": "check_mark",
                     "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
                 }
             ]
