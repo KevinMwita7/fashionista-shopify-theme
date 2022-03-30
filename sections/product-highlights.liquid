@@ -6,9 +6,11 @@
     {% for block in section.blocks %}
         {% case block.type %}
         {% when 'product_highlight' %}
-            <div class="flex">
-                {% render 'icon-accordion', icon: block.settings.highlight_icon %}
-                {{ block.settings.highlight_description }}
+            <div class="flex flex-wrap">
+                <div>
+                    {% render 'icon-accordion', icon: block.settings.highlight_icon %}
+                    {{ block.settings.highlight_description }}
+                </div>
             </div>
         {% when '@app' %}
             {% render block %}
