@@ -1,18 +1,20 @@
-<h2 class="h4 accordion__title font-bold">
-    {{ section.settings.heading }}
-</h2>
-
-{% for block in section.blocks %}
-    {% case block.type %}
-    {% when 'product_highlight' %}
-        <div>
-            {{ block.settings.highlight_icon }}
-            {{ block.settings.highlight_description }}
-        </div>
-    {% when '@app' %}
-        {% render block %}
-    {% endcase %}
-{% endfor %}
+<div class="accordion">
+    <h2 class="h4 accordion__title font-bold">
+        {{ section.settings.heading }}
+    </h2>
+    
+    {% for block in section.blocks %}
+        {% case block.type %}
+        {% when 'product_highlight' %}
+            <div>
+                {{ block.settings.highlight_icon }}
+                {{ block.settings.highlight_description }}
+            </div>
+        {% when '@app' %}
+            {% render block %}
+        {% endcase %}
+    {% endfor %}
+</div>
 
 {% schema %}
 {
