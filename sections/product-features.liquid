@@ -1,7 +1,8 @@
+<h2 class="h4 accordion__title font-bold">
+    {{ section.settings.heading }}
+</h2>
+
 {% for block in section.blocks %}
-    <h2 class="h4 accordion__title font-bold">
-        {{ section.settings.heading }}
-    </h2>
     {% case block.type %}
     {% when 'product_highlight' %}
         <div>
