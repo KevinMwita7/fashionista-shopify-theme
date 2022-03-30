@@ -1,7 +1,9 @@
 <div class="accordion" style="padding: 1.5rem 0; border-bottom: initial;">
-    <h2 class="h4 accordion__title font-bold">
-        {{ section.settings.heading }}
-    </h2>
+    <div style="padding: 1.5rem 0;">
+        <h2 class="h4 accordion__title font-bold">
+            {{ section.settings.heading }}
+        </h2>
+    </div>
     
     {% for block in section.blocks %}
         {% case block.type %}
