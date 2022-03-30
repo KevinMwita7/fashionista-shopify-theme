@@ -1,9 +1,12 @@
 {% for block in section.blocks %}
     {% case block.type %}
-    {% when 'product_feature' %}
+    {% when 'product_highlight' %}
+        <h2 class="h4 accordion__title font-bold">
+            {{ section.settings.heading }}
+        </h2>
         <div>
-            {{ block.settings.feature_icon }}
-            {{ block.settings.feature_description }}
+            {{ block.settings.highlight_icon }}
+            {{ block.settings.highlight_description }}
         </div>
     {% when '@app' %}
         {% render block %}
@@ -12,23 +15,30 @@
 
 {% schema %}
 {
-    "name": "Product features",
+    "name": "Product highlights",
     "tag": "section",
     "class": "page-width spaced-section",
+    "settings": [
+        {
+            "type": "text",
+            "label": "Heading",
+            "default": "heading"
+        }
+    ],
     "blocks": [
         {
-            "type": "product_feature",
-            "name": "Product feature",
+            "type": "product_highlight",
+            "name": "Product highlight",
             "settings": [
                 {
                     "type": "text",
-                    "id": "feature_description",
+                    "id": "highlight_description",
                     "default": "Description",
-                    "label": "Product feature"
+                    "label": "Product highlight"
                 },
                 {
                     "type": "select",
-                    "id": "feature_icon",
+                    "id": "highlight_icon",
                     "options": [
                         {
                             "value": "none",
@@ -138,7 +148,7 @@
     ],
     "presets": [
         {
-            "name": "Product features"
+            "name": "Product highlights"
         }
     ]
 }
