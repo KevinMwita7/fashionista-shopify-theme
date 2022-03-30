@@ -74,6 +74,12 @@
         "enable_video_looping": false
       }
     },
+    "164864391290c4514a": {
+      "type": "product-highlights",
+      "settings": {
+        "heading": "Highlights"
+      }
+    },
     "16484754432b0c39a9": {
       "type": "product-details",
       "blocks": {
@@ -123,6 +129,7 @@
   },
   "order": [
     "main",
+    "164864391290c4514a",
     "16484754432b0c39a9",
     "product-recommendations"
   ]
