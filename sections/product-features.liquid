@@ -1,9 +1,9 @@
 {% for block in section.blocks %}
+    <h2 class="h4 accordion__title font-bold">
+        {{ section.settings.heading }}
+    </h2>
     {% case block.type %}
     {% when 'product_highlight' %}
-        <h2 class="h4 accordion__title font-bold">
-            {{ section.settings.heading }}
-        </h2>
         <div>
             {{ block.settings.highlight_icon }}
             {{ block.settings.highlight_description }}
@@ -23,7 +23,7 @@
             "type": "text",
             "id": "heading",
             "label": "Heading",
-            "default": "heading"
+            "default": "Highlights"
         }
     ],
     "blocks": [
