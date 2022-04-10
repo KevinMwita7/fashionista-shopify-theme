@@ -8,8 +8,8 @@
     {% for block in section.blocks %}
         {% case block.type %}
         {% when 'product_highlight' %}
-            <div class="flex">
-                <div class="flex" style="flex: 0 0 auto; width: 33%;">
+            <div class="flex ">
+                <div class="flex align-items-center" style="flex: 0 0 auto; width: 33%;">
                     {% render 'icon-accordion-lg', icon: block.settings.highlight_icon %}
                     {{ block.settings.highlight_description }}
                 </div>
