@@ -2460,3 +2460,7 @@ details-disclosure>details {
 .spr-star {
   display: inline;
 }
+
+.icon-lg > path {
+  transform: scale(4);
+}
