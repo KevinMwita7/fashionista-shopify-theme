@@ -107,13 +107,6 @@
         "collapsible_tabs_margin": true
       }
     },
-    "1649757852c9dec936": {
-      "type": "product-highlights",
-      "settings": {
-        "heading": "Highlights",
-        "highlight": "<div class=\"grid grid-cols-3 gap-4\">\n        <div class=\"flex items-center\">\n          <img src=\"https:\/\/www.sephora.com\/contentimages\/highlights\/hydrating-color.svg\" alt=\"temp\" class=\"w-16 h-16\">\n          <p class=\"ml-4\">Description<\/p>\n        <\/div>\n        <div class=\"flex items-center\">\n          <img src=\"https:\/\/www.sephora.com\/contentimages\/highlights\/hydrating-color.svg\" alt=\"temp\" class=\"w-16 h-16\">\n          <p class=\"ml-4\">Description<\/p>\n        <\/div>\n        <div class=\"flex items-center\">\n          <img src=\"https:\/\/www.sephora.com\/contentimages\/highlights\/hydrating-color.svg\" alt=\"temp\" class=\"w-16 h-16\">\n          <p class=\"ml-4\">Description<\/p>\n        <\/div>\n        <div class=\"flex items-center\">\n          <img src=\"https:\/\/www.sephora.com\/contentimages\/highlights\/hydrating-color.svg\" alt=\"temp\" class=\"w-16 h-16\">\n          <p class=\"ml-4\">Description<\/p>\n        <\/div>\n        <div class=\"flex items-center\">\n          <img src=\"https:\/\/www.sephora.com\/contentimages\/highlights\/hydrating-color.svg\" alt=\"temp\" class=\"w-16 h-16\">\n          <p class=\"ml-4\">Description<\/p>\n        <\/div>\n        <div class=\"flex items-center\">\n          <img src=\"https:\/\/www.sephora.com\/contentimages\/highlights\/hydrating-color.svg\" alt=\"temp\" class=\"w-16 h-16\">\n          <p class=\"ml-4\">Description<\/p>\n        <\/div>\n        <div class=\"flex items-center\">\n          <img src=\"https:\/\/www.sephora.com\/contentimages\/highlights\/hydrating-color.svg\" alt=\"temp\" class=\"w-16 h-16\">\n          <p class=\"ml-4\">Description<\/p>\n        <\/div>\n      <\/div>"
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -131,7 +124,6 @@
   "order": [
     "main",
     "16484754432b0c39a9",
-    "1649757852c9dec936",
     "product-recommendations"
   ]
 }
