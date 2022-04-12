@@ -119,11 +119,19 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "1649757852c9dec936": {
+      "type": "product-highlights",
+      "settings": {
+        "heading": "Highlights",
+        "highlight": "<ul>\n<li>Item 1<\/li>\n<li>item 2<\/li>\n<li>Item 3<\/li>\n<\/ul>"
+      }
     }
   },
   "order": [
     "main",
     "16484754432b0c39a9",
-    "product-recommendations"
+    "product-recommendations",
+    "1649757852c9dec936"
   ]
 }
