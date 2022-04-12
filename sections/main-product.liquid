@@ -397,8 +397,11 @@
     {% case block.type %}
       {%- when 'description' -%}
         {%- if product.description != blank -%}
-          <div class="product__description rte">
-            {{ product.description }}
+          <div class="product__description rte accordion" style="border-bottom: initial;">
+              <div style="padding: 1.5rem 0;">
+                  <h2 class="h4 accordion__title font-bold">Product description</h2>
+              </div>
+              {{ product.description }}
           </div>
         {%- endif -%}
     {% endcase %}
