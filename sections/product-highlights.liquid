@@ -8,7 +8,7 @@
     {% for block in section.blocks %}
         {% case block.type %}
         {% when 'product_highlight' %}
-            <p>Highlight</p>
+            {{ section.settings.highlight }}
             {% comment %} <div class="flex ">
                 <div class="flex align-items-center" style="flex: 0 0 auto; width: 33%;">
                     {% render 'icon-accordion-lg', icon: block.settings.highlight_icon %}
@@ -32,22 +32,12 @@
             "id": "heading",
             "label": "Heading",
             "default": "Highlights"
-        }
-    ],
-    "blocks": [
-        {
-            "type": "product_highlight",
-            "name": "Product highlight",
-            "settings": [
-                {
-                    "type": "liquid",
-                    "id": "highlight_description",
-                    "label": "Product highlight"
-                }
-            ]
         },
         {
-            "type": "@app"
+            "type": "html",
+            "id": "highlight",
+            "Label": "Highlight",
+            "default": "<ul><li>Item 1</li><li>item 2</li><li>Item 3</li></ul>"
         }
     ],
     "presets": [
