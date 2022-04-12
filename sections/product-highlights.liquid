@@ -4,21 +4,7 @@
             {{ section.settings.heading }}
         </h2>
     </div>
-    
-    {% for block in section.blocks %}
-        {% case block.type %}
-        {% when 'product_highlight' %}
-            {{ section.settings.highlight }}
-            {% comment %} <div class="flex ">
-                <div class="flex align-items-center" style="flex: 0 0 auto; width: 33%;">
-                    {% render 'icon-accordion-lg', icon: block.settings.highlight_icon %}
-                    {{ block.settings.highlight_description }}
-                </div>
-            </div> {% endcomment %}
-        {% when '@app' %}
-            {% render block %}
-        {% endcase %}
-    {% endfor %}
+    {{ section.settings.highlight }}
 </div>
 
 {% schema %}
