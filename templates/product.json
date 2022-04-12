@@ -74,24 +74,6 @@
         "enable_video_looping": false
       }
     },
-    "164864391290c4514a": {
-      "type": "product-highlights",
-      "blocks": {
-        "a5d07fa6-5148-43de-a0c0-42aae4489b65": {
-          "type": "product_highlight",
-          "settings": {
-            "highlight_description": "Description",
-            "highlight_icon": "check_mark"
-          }
-        }
-      },
-      "block_order": [
-        "a5d07fa6-5148-43de-a0c0-42aae4489b65"
-      ],
-      "settings": {
-        "heading": "Highlights"
-      }
-    },
     "16484754432b0c39a9": {
       "type": "product-details",
       "blocks": {
@@ -141,7 +123,6 @@
   },
   "order": [
     "main",
-    "164864391290c4514a",
     "16484754432b0c39a9",
     "product-recommendations"
   ]
