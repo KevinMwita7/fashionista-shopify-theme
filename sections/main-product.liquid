@@ -109,6 +109,12 @@
                     {{ form | payment_terms }}
                   {%- endform -%}
                 </div>
+                {%- when 'highlights' -%}
+                  {%- if block.settings.highlights_text != blank -%}
+                    <div class="product__description rte">
+                      {{ block.settings.highlights_text }}
+                    </div>
+                  {%- endif -%} 
               {% comment %} 
                 {%- when 'description' -%}
                   {%- if product.description != blank -%}
@@ -670,9 +676,16 @@
       ]
     },
     {
-      "type": "description",
+      "type": "highlights",
       "name": "t:sections.main-product.blocks.description.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "highlights_text",
+          "label": "Highlights"
+        }
+      ]
     },
     {
       "type": "share",
