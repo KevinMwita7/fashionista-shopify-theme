@@ -2468,3 +2468,7 @@ details-disclosure>details {
 .align-items-center {
   align-items: center;
 }
+
+.rounded-img {
+  border-radius: 24px;
+}

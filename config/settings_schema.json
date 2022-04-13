@@ -348,5 +348,16 @@
         "default": true
       }
     ]
+  },
+  {
+    "name": "Images",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "curve_image_borders",
+        "label": "Curve image borders",
+        "default": true
+      }
+    ]
   }
 ]

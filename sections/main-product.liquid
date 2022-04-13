@@ -64,7 +64,7 @@
         <div thumbsSlider="" class="swiper mySwiper md:order-1">
           <div class="swiper-wrapper">
             {%- for media in product.media -%}
-                <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+                <div class="swiper-slide{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}{% if settings.curve_image_borders %} rounded-img{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                   <img src="{{ media | image_url }}" alt="{{ media.preview_image.alt | escape }}" loading="lazy" height="60" width="60">
                 </div>
             {%- endfor -%}
