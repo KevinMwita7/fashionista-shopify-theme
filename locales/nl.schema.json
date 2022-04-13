@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Beelden",
+      "settings": {
+        "label": "Randen van curveafbeeldingen"
+      }
+    },
     "colors": {
       "name": "Kleuren",
       "settings": {

@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Images",
+      "settings": {
+        "label": "Bordures d'image de courbe"
+      }
+    },
     "colors": {
       "name": "Couleurs",
       "settings": {

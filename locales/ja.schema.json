@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "画像",
+      "settings": {
+        "label": "曲線画像の境界線"
+      }
+    },
     "colors": {
       "name": "色",
       "settings": {

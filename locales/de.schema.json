@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Bilder",
+      "settings": {
+        "label": "Bildrahmen krümmen"
+      }
+    },
     "colors": {
       "name": "Farben",
       "settings": {

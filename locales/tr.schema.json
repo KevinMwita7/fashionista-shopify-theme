@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Görüntü",
+      "settings": {
+        "label": "Eğri görüntü kenarlıkları"
+      }
+    },
     "colors": {
       "name": "Renkler",
       "settings": {

@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Kuvia",
+      "settings": {
+        "label": "Käyrän kuvan reunat"
+      }
+    },
     "colors": {
       "name": "Värit",
       "settings": {

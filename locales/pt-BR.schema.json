@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Imagens",
+      "settings": {
+        "label": "Bordas de imagem curva"
+      }
+    },
     "colors": {
       "name": "Cores",
       "settings": {

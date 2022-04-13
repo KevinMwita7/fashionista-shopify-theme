@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "ภาพ",
+      "settings": {
+        "label": "เส้นขอบรูปโค้ง"
+      }
+    },
     "colors": {
       "name": "สี",
       "settings": {

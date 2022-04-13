@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "圖像",
+      "settings": {
+        "label": "曲線圖像邊框"
+      }
+    },
     "colors": {
       "name": "色彩",
       "settings": {

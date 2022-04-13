@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Immagini",
+      "settings": {
+        "label": "Curva bordi immagine"
+      }
+    },
     "colors": {
       "name": "Colori",
       "settings": {

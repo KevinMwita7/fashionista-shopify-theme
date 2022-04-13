@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Billeder",
+      "settings": {
+        "label": "Kurve billede grænser"
+      }
+    },
     "colors": {
       "name": "Farver",
       "settings": {

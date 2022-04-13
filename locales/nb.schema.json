@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Bilder",
+      "settings": {
+        "label": "Kantlinjer for buede bilder"
+      }
+    },
     "colors": {
       "name": "Farger",
       "settings": {

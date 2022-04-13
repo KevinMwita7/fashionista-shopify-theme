@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "이미지",
+      "settings": {
+        "label": "커브 이미지 테두리"
+      }
+    },
     "colors": {
       "name": "색상",
       "settings": {

@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Obrazów",
+      "settings": {
+        "label": "Obramowania obrazu krzywej"
+      }
+    },
     "colors": {
       "name": "Kolory",
       "settings": {

@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Obrazy",
+      "settings": {
+        "label": "Ohraničení obrazu křivky"
+      }
+    },
     "colors": {
       "name": "Barvy",
       "settings": {

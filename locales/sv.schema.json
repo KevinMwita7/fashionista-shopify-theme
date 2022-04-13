@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Bilder",
+      "settings": {
+        "label": "Kurvbildskantlinjer"
+      }
+    },
     "colors": {
       "name": "Färger",
       "settings": {

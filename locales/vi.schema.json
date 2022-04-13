@@ -1,5 +1,11 @@
 {
   "settings_schema": {
+    "images": {
+      "name": "Hình ảnh",
+      "settings": {
+        "label": "Viền ảnh đường cong"
+      }
+    },
     "colors": {
       "name": "Màu sắc",
       "settings": {
