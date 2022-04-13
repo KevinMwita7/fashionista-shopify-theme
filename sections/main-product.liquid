@@ -125,7 +125,7 @@
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
-                <div class="product__accordion accordion accordion-top-border-0 accordion-bottom-border-0" {{ block.shopify_attributes }}>
+                <div class="product__accordion accordion{% if block.settings.hide_top_border %} accordion-top-border-0{% endif %}{% if block.settings.hide_top_border %} accordion-bottom-border-0{% endif %}" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}">
                     <summary>
                       <div class="summary__title">
@@ -738,6 +738,18 @@
           "type": "page",
           "id": "page",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_top_border",
+          "label": "Hide top border",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_bottom_border",
+          "label": "Hide bottom border",
+          "default": true
         },
         {
           "type": "select",
