@@ -350,12 +350,12 @@
     ]
   },
   {
-    "name": "Images",
+    "name": "t:settings_schema.images.name",
     "settings": [
       {
         "type": "checkbox",
         "id": "curve_image_borders",
-        "label": "Curve image borders",
+        "label": "t:settings_schema.images.settings.label",
         "default": true
       }
     ]
