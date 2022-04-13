@@ -70,6 +70,9 @@
 .mySwiper .swiper-slide-thumb-active {
     opacity: 1;
     border: 2px solid black;
+}
+
+.mySwiper .swiper-slide-thumb-active:not(.rounded-img) {
     box-shadow: 0 0 10px;
 }
 
