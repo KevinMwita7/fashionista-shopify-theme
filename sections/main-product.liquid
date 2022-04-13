@@ -85,7 +85,7 @@
                   {{- block.settings.text -}}
                 </p>
               {%- when 'title' -%}
-                <h1 class="product__title" {{ block.shopify_attributes }}>
+                <h1 class="product__title font-medium text-4xl" {{ block.shopify_attributes }}>
                   {{ product.title | escape }}
                 </h1>
               {%- when 'price' -%}
