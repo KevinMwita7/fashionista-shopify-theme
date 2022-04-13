@@ -28,6 +28,14 @@
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
+.accordion-top-border-0 {
+  border-top: 0;
+}
+
+.accordion-bottom-border-0 {
+  border-top: 0;
+}
+
 .accordion__title {
   font-size: 1.25em;
   display: inline-block;

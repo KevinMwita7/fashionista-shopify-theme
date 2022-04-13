@@ -125,7 +125,7 @@
               {%- when 'custom_liquid' -%}
                 {{ block.settings.custom_liquid }}
               {%- when 'collapsible_tab' -%}
-                <div class="product__accordion accordion" {{ block.shopify_attributes }}>
+                <div class="product__accordion accordion accordion-top-border-0 accordion-bottom-border-0" {{ block.shopify_attributes }}>
                   <details id="Details-{{ block.id }}-{{ section.id }}">
                     <summary>
                       <div class="summary__title">
