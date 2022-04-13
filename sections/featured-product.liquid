@@ -28,7 +28,7 @@
         <div class="product__media-list">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-            <div class="product__media-item{% if settings.curve_image_borders %} rounded-img{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+            <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
               {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
             </div>
           {%- endif -%}
