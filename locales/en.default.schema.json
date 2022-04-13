@@ -1466,6 +1466,9 @@
             "show_dynamic_checkout": {
               "label": "Show dynamic checkout buttons",
               "info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Rounded buy buttons"
             }
           }
         },
@@ -1504,6 +1507,12 @@
             "heading": {
               "info": "Include a heading that explains the content.",
               "label": "Heading"
+            },
+            "hide_top_border": {
+              "label": "Hide top border"
+            },
+            "hide_bottom_border": {
+              "label": "Hide bottom border"
             },
             "content": {
               "label": "Tab content"
