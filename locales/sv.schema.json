@@ -1334,6 +1334,9 @@
             "show_dynamic_checkout": {
               "label": "Visa dynamiska utcheckningsknappar",
               "info": "Genom att använda tillgängliga betalningsmetoder i butiken kan kunder se valt alternativ, till exempel PayPal eller Apple Pay. [Läs mer](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Rundade köpknappar"
             }
           },
           "name": "Köpknappar"
@@ -1357,6 +1360,12 @@
             "heading": {
               "info": "Inkludera en rubrik som beskriver innehållet.",
               "label": "Rubrik"
+            },
+            "hide_top_border": {
+              "label": "Dölja övre kantlinje"
+            },
+            "hide_bottom_border": {
+              "label": "Dölja nederkantkant"
             },
             "content": {
               "label": "Flikens innehåll"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "Visa dynamiska kassaknappar",
               "info": "Genom att använda de betalningsmetoder som finns tillgängliga i din butik kan kunder se det alternativ de föredrar, som PayPal eller Apple Pay. [Mer information](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Rundade köpknappar"
             }
           }
         },

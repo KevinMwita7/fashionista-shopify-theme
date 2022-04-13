@@ -1334,6 +1334,9 @@
             "show_dynamic_checkout": {
               "label": "显示动态结账按钮",
               "info": "通过使用您商店中提供的付款方式，客户会看到他们的首选付款方式，例如 PayPal 或 Apple Pay。[了解详细信息](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "圆形购买按钮"
             }
           },
           "name": "Buy Button"
@@ -1357,6 +1360,12 @@
             "heading": {
               "info": "包含可解释相关内容的标题。",
               "label": "标题"
+            },
+            "hide_top_border": {
+              "label": "隐藏顶部边框"
+            },
+            "hide_bottom_border": {
+              "label": "隐藏底部边框"
             },
             "content": {
               "label": "标签内容"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "显示动态结账按钮",
               "info": "通过使用您商店中提供的付款方式，客户会看到他们的首选付款方式，例如 PayPal 或 Apple Pay。[了解详细信息](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "圆形购买按钮"
             }
           }
         },

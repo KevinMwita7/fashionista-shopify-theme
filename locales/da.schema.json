@@ -1344,6 +1344,9 @@
             "show_dynamic_checkout": {
               "label": "Vis dynamiske betalingsknapper",
               "info": "Via de tilgængelige betalingsmetoder i din butik ser kunderne deres foretrukne mulighed, som f.eks. PayPal eller Apple Pay. [Få mere at vide](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Afrundede købsknapper"
             }
           }
         },
@@ -1373,6 +1376,12 @@
             "heading": {
               "info": "Inkluder en overskrift, der forklarer indholdet.",
               "label": "Overskrift"
+            },
+            "hide_top_border": {
+              "label": "Skjul den øverste kant"
+            },
+            "hide_bottom_border": {
+              "label": "Skjul nederste kant"
             },
             "content": {
               "label": "Fanens indhold"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "Vis dynamiske betalingsknapper",
               "info": "Via de tilgængelige betalingsmetoder i din butik ser kunderne deres foretrukne mulighed, som f.eks. PayPal eller Apple Pay. [Få mere at vide](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Afrundede købsknapper"
             }
           }
         },

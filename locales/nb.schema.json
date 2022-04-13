@@ -1343,6 +1343,9 @@
             "show_dynamic_checkout": {
               "label": "Vis dynamiske knapper for å gå til kassen",
               "info": "Kundene vil se sitt foretrukne alternativ, som PayPal eller Apple Pay, av betalingsmåtene som er tilgjengelig i butikken. [Finn ut mer](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Avrundede kjøpsknapper"
             }
           }
         },
@@ -1372,6 +1375,12 @@
             "heading": {
               "info": "Inkluder en overskrift som forklarer innholdet.",
               "label": "Overskrift"
+            },
+            "hide_top_border": {
+              "label": "Skjul øvre kantlinje"
+            },
+            "hide_bottom_border": {
+              "label": "Skjul nedre kantlinje"
             },
             "content": {
               "label": "Faneinnhold"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "Vis dynamiske knapper for å gå til kassen",
               "info": "Kundene vil se sitt foretrukne alternativ, som PayPal eller Apple Pay, av betalingsmåtene som er tilgjengelig i butikken. [Finn ut mer](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Avrundede kjøpsknapper"
             }
           }
         },

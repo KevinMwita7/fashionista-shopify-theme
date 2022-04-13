@@ -1343,6 +1343,9 @@
             "show_dynamic_checkout": {
               "label": "Dinamik ödeme düğmelerini göster",
               "info": "Müşteriler, mağazanızda bulunan ödeme yöntemlerini kullanarak PayPal veya Apple Pay gibi tercih ettikleri seçeneği görür. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Yuvarlatılmış satın al düğmeleri"
             }
           }
         },
@@ -1372,6 +1375,12 @@
             "heading": {
               "info": "İçeriği açıklayan bir başlık ekleyin.",
               "label": "Başlık"
+            },
+            "hide_top_border": {
+              "label": "Üst kenarlığı gizle"
+            },
+            "hide_bottom_border": {
+              "label": "Alt kenarlığı gizle"
             },
             "content": {
               "label": "Sekme içeriği"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "Dinamik ödeme düğmelerini göster",
               "info": "Müşteriler, mağazanızda bulunan ödeme yöntemlerini kullanarak PayPal veya Apple Pay gibi tercih ettikleri seçeneği görür. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Yuvarlatılmış satın al düğmeleri"
             }
           }
         },

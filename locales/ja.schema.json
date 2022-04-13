@@ -1334,6 +1334,9 @@
             "show_dynamic_checkout": {
               "label": "動的チェックアウトボタンを表示する",
               "info": "ストアで利用可能な決済方法を使用すると、お客様にはPayPalやApple Payなど、希望のオプションが表示されます。[もっと詳しく](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "丸みを帯びた購入ボタン"
             }
           },
           "name": "購入ボタン"
@@ -1357,6 +1360,12 @@
             "heading": {
               "info": "コンテンツを説明する見出しを含めます。",
               "label": "見出し"
+            },
+            "hide_top_border": {
+              "label": "上罫線を隠す"
+            },
+            "hide_bottom_border": {
+              "label": "下罫線を隠す"
             },
             "content": {
               "label": "タブのコンテンツ"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "動的チェックアウトボタンを表示",
               "info": "ストアで利用可能な決済方法を使用すると、お客様にはPayPalやApple Payなど、希望のオプションが表示されます。[詳しくはこちら](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "丸みを帯びた購入ボタン"
             }
           }
         },

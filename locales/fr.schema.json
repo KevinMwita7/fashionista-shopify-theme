@@ -1343,6 +1343,9 @@
             "show_dynamic_checkout": {
               "label": "Afficher les boutons de paiement dynamique",
               "info": "En utilisant les méthodes de paiement disponibles sur votre boutique, les clients voient leur option préférée, comme PayPal ou Apple Pay. [En savoir plus](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Boutons d'achat arrondis"
             }
           }
         },
@@ -1372,6 +1375,12 @@
             "heading": {
               "info": "Incluez un titre qui explique le contenu.",
               "label": "Titre"
+            },
+            "hide_top_border": {
+              "label": "Masquer la bordure supérieure"
+            },
+            "hide_bottom_border": {
+              "label": "Masquer la bordure inférieure"
             },
             "content": {
               "label": "Contenu de l'onglet"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "Afficher les boutons de paiement dynamique",
               "info": "En utilisant les moyens de paiement disponibles sur votre boutique, les clients voient leur option préférée, comme PayPal ou Apple Pay. [En savoir plus](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Boutons d'achat arrondis"
             }
           }
         },

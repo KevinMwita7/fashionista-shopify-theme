@@ -1334,6 +1334,9 @@
             "show_dynamic_checkout": {
               "label": "แสดงปุ่มชำระเงินแบบไดนามิก",
               "info": "วิธีการชำระเงินที่พร้อมใช้งานบนร้านค้าของคุณ จะช่วยให้ลูกค้าเห็นตัวเลือกที่พวกเขาต้องการ เช่น PayPal หรือ Apple Pay  [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "ปุ่มซื้อแบบโค้งมน"
             }
           },
           "name": "ปุ่มซื้อ"
@@ -1357,6 +1360,12 @@
             "heading": {
               "info": "เพิ่มหัวเรื่องที่ช่วยอธิบายเนื้อหา",
               "label": "หัวเรื่อง"
+            },
+            "hide_top_border": {
+              "label": "ซ่อนเส้นขอบบน"
+            },
+            "hide_bottom_border": {
+              "label": "ซ่อนเส้นขอบล่าง"
             },
             "content": {
               "label": "เนื้อหาแท็บ"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "แสดงปุ่มชำระเงินแบบไดนามิก",
               "info": "วิธีการชำระเงินที่พร้อมใช้งานบนร้านค้าของคุณจะช่วยให้ลูกค้าเห็นตัวเลือกที่พวกเขาต้องการ เช่น PayPal หรือ Apple Pay [ดูข้อมูลเพิ่มเติม](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "ปุ่มซื้อแบบโค้งมน"
             }
           }
         },

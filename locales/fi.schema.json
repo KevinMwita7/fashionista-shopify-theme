@@ -1343,6 +1343,9 @@
             "show_dynamic_checkout": {
               "label": "Näytä dynaamiset kassapainikkeet",
               "info": "Kun käytät kaupallesi saatavilla olevia maksutapoja, asiakkaat näkevät ensisijaisen vaihtoehtonsa, kuten PayPalin tai Apple Payn. [Lisätietoja](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Pyöristetyt ostopainikkeet"
             }
           }
         },
@@ -1372,6 +1375,12 @@
             "heading": {
               "info": "Lisää sisältöä kuvaava otsikko.",
               "label": "Otsikko"
+            },
+            "hide_top_border": {
+              "label": "Piilota yläreunus"
+            },
+            "hide_bottom_border": {
+              "label": "Piilota alareuna"
             },
             "content": {
               "label": "Välilehden sisältö"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "Näytä dynaamiset kassapainikkeet",
               "info": "Kun käytät kaupallesi saatavilla olevia maksutapoja, asiakkaat näkevät ensisijaisen vaihtoehtonsa, kuten PayPalin tai Apple Payn. [Lisätietoja](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Pyöristetyt ostopainikkeet"
             }
           }
         },

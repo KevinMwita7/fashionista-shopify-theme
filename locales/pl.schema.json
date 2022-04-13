@@ -1344,6 +1344,9 @@
             "show_dynamic_checkout": {
               "label": "Pokaż dynamiczne przyciski realizacji zakupu",
               "info": "Korzystając z metod płatności dostępnych w Twoim sklepie, klienci widzą swoją preferowaną opcję, np. PayPal lub Apple Pay. [Dowiedz się więcej](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Afgeronde koopknoppen"
             }
           }
         },
@@ -1373,6 +1376,12 @@
             "heading": {
               "info": "Dołącz nagłówek, który wyjaśnia treść.",
               "label": "Nagłówek"
+            },
+            "hide_top_border": {
+              "label": "Ukryj górną krawędź"
+            },
+            "hide_bottom_border": {
+              "label": "Ukryj dolną krawędź"
             },
             "content": {
               "label": "Zawartość karty"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "Pokaż dynamiczne przyciski realizacji zakupu",
               "info": "Korzystając z metod płatności dostępnych w Twoim sklepie, klienci widzą swoją preferowaną opcję, np. PayPal lub Apple Pay. [Dowiedz się więcej](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Afgeronde koopknoppen"
             }
           }
         },

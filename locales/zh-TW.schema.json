@@ -1334,6 +1334,9 @@
             "show_dynamic_checkout": {
               "label": "顯示動態結帳按鈕",
               "info": "顧客可以使用您商店可用的付款方式，看見其偏好選項，如 PayPal 或 Apple Pay 。[深入瞭解相關資訊](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "圓形購買按鈕"
             }
           },
           "name": "購買按鈕"
@@ -1357,6 +1360,12 @@
             "heading": {
               "info": "包含說明內容的標題。",
               "label": "標題"
+            },
+            "hide_top_border": {
+              "label": "隱藏頂部邊框"
+            },
+            "hide_bottom_border": {
+              "label": "隱藏底部邊框"
             },
             "content": {
               "label": "分頁內容"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "顯示動態結帳按鈕",
               "info": "顧客可透過您商店的可用付款方式，看到其偏好選項 (如 PayPal 或 Apple Pay)。[瞭解詳情](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "圓形購買按鈕"
             }
           }
         },

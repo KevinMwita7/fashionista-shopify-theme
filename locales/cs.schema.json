@@ -1340,6 +1340,9 @@
             "show_dynamic_checkout": {
               "label": "Zobrazit dynamická tlačítka pokladny",
               "info": "V rámci platebních metod dostupných v obchodě uvidí zákazníci tu, kterou nejvíce preferují, jako například PayPal nebo Apple Pay. [Zjistit více](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Zaoblená tlačítka nákupu"
             }
           }
         },
@@ -1369,6 +1372,12 @@
             "heading": {
               "info": "Připojte nadpis, který popíše obsah.",
               "label": "Nadpis"
+            },
+            "hide_top_border": {
+              "label": "Skrýt horní ohraničení"
+            },
+            "hide_bottom_border": {
+              "label": "Skrýt dolní ohraničení"
             },
             "content": {
               "label": "Obsah karty"
@@ -1908,6 +1917,9 @@
             "show_dynamic_checkout": {
               "label": "Zobrazit dynamická tlačítka pokladny",
               "info": "V rámci platebních metod dostupných v obchodě uvidí zákazníci tu, kterou nejvíce preferují, jako například PayPal nebo Apple Pay. [Zjistit více](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Zaoblená tlačítka nákupu"
             }
           }
         },

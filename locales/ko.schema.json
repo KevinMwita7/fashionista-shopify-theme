@@ -1334,6 +1334,9 @@
             "show_dynamic_checkout": {
               "label": "동적 결제 버튼 표시",
               "info": "스토어에서 사용 가능한 결제 방법을 사용하면 고객이 PayPal 또는 ApplePay처럼 원하는 옵션을 볼 수 있습니다. [자세히 알아보기](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "둥근 구매 버튼"
             }
           },
           "name": "구매 버튼"
@@ -1357,6 +1360,12 @@
             "heading": {
               "info": "콘텐츠를 설명하는 제목을 포함합니다.",
               "label": "제목"
+            },
+            "hide_top_border": {
+              "label": "위쪽 테두리 숨기기"
+            },
+            "hide_bottom_border": {
+              "label": "아래쪽 테두리 숨기기"
             },
             "content": {
               "label": "탭 콘텐츠"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "동적 결제 버튼 표시",
               "info": "스토어에서 사용 가능한 결제 방법을 사용하면 고객이 PayPal 또는 Apple Pay처럼 원하는 옵션을 볼 수 있습니다. [자세히 알아보기](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "둥근 구매 버튼"
             }
           }
         },

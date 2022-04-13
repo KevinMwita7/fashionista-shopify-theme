@@ -1344,6 +1344,9 @@
             "show_dynamic_checkout": {
               "label": "Dynamische checkoutknoppen weergeven",
               "info": "Bij de betaalmethoden die bij je winkel beschikbaar zijn, zien klanten de optie die hun voorkeur heeft, zoals PayPal of Apple Pay. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Avrundede kjøpsknapper"
             }
           }
         },
@@ -1373,6 +1376,12 @@
             "heading": {
               "info": "Gebruik een kop die de content verklaart.",
               "label": "Opschrift"
+            },
+            "hide_top_border": {
+              "label": "Bovenrand verbergen"
+            },
+            "hide_bottom_border": {
+              "label": "Onderrand verbergen"
             },
             "content": {
               "label": "Content tabblad"
@@ -1912,6 +1921,9 @@
             "show_dynamic_checkout": {
               "label": "Dynamische checkout-knoppen weergeven",
               "info": "Bij de betaalmethoden die bij je winkel beschikbaar zijn, zien klanten de optie die hun voorkeur heeft, zoals PayPal of Apple Pay. [Meer informatie](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Avrundede kjøpsknapper"
             }
           }
         },

@@ -1338,6 +1338,9 @@
             "show_dynamic_checkout": {
               "label": "Hiển thị nút thanh toán động",
               "info": "Sử dụng phương thức thanh toán được hỗ trợ trong cửa hàng, khách hàng sẽ thấy tùy chọn ưu tiên của họ như PayPal hoặc Apple Pay. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Nút mua tròn"
             }
           }
         },
@@ -1367,6 +1370,12 @@
             "heading": {
               "info": "Bao gồm tiêu đề giải thích nội dung.",
               "label": "Tiêu đề"
+            },
+            "hide_top_border": {
+              "label": "Ẩn viền trên cùng"
+            },
+            "hide_bottom_border": {
+              "label": "Ẩn viền dưới cùng"
             },
             "content": {
               "label": "Nội dung tab"
@@ -1903,6 +1912,9 @@
             "show_dynamic_checkout": {
               "label": "Hiển thị nút thanh toán động",
               "info": "Khi sử dụng phương thức thanh toán được hỗ trợ trong cửa hàng của bạn, khách hàng sẽ thấy tùy chọn ưu tiên của mình, như PayPal hoặc Apple Pay. [Tìm hiểu thêm](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
+            },
+            "rounded_buy_buttons": {
+              "label": "Nút mua tròn"
             }
           }
         },
