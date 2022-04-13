@@ -153,7 +153,7 @@
               -%}
       
               <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
-                <div class="media media--transparent media--{{ media_size }} media--hover-effect product-img"
+                <div class="media media--transparent media--{{ media_size }} media--hover-effect product-img{% if settings.curve_image_borders %} rounded-img{% endif %}"
                   {% if media_size == 'adapt' and product_card_product.featured_media %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
                 >
                     <img
