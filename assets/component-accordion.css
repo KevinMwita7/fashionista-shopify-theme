@@ -63,30 +63,8 @@
   line-height: 1.75;
 }
 
-.accordion__content img {
-  max-width: 100%;
-}
-
-@media screen and (min-width: 750px) {
-  .accordion__columns {
-    display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
-    grid-gap: 3em;
-  }  
-
-  .accordion__columns img {
-    width: 100%;
-    object-fit: cover;
-    height: auto;
-  }
-}
-
 @media screen and (min-width: 990px) {
   .accordion__content-margin {
     margin-left: 15%;
-  }
-
-  .accordion__columns img {
-    height: 100%;
   }
 }
