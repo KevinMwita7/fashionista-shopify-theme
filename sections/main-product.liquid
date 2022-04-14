@@ -146,7 +146,7 @@
                 {% endif %}
               {% when 'stock' %}
                 {% if block.settings.show_stock %}
-                  <p>{{ products.product.quantity }}</p>
+                  <p>{{'products.product.quantity' }}</p>
                 {% endif %}
               {%- when 'quantity_selector' -%}
                 <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
