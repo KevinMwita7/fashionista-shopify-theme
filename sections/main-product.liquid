@@ -144,6 +144,10 @@
                     </details>
                   </div>
                 {% endif %}
+              {% when 'stock' %}
+                {% if block.settings.show_stock %}
+                  <p>{{ products.product.quantity }}</p>
+                {% endif %}
               {%- when 'quantity_selector' -%}
                 <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
                   <label class="form__label" for="Quantity-{{ section.id }}">
@@ -607,6 +611,19 @@
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
       "limit": 1
+    },
+    {
+      "type": "stock",
+      "name": "Stock",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "label": "Show stock level",
+          "id": "show_stock",
+          "default": true
+        }
+      ]
     },
     {
       "type": "price",
