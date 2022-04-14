@@ -45,7 +45,7 @@
             "heading": "Highlights",
             "hide_top_border": true,
             "hide_bottom_border": true,
-            "content": "<p> • 100% Polyester  <br\/> • The Mens Hawaiian Shirts Are Made Of High Quality Soft Polyester Fabric With Quick To Dry Effect, Maintainning A Silky-Like Skin Contact Feeling.<\/p><p> • Our Hawaiian Mens Shirts Suitable In Many Occasions Including Beach Parties , Theme Parties, Fishing, Sailing, Days at Office Etc.   <\/p><p> • The Mens Floral Shirts Are Designed for Different Ages, No Matter Young or Senior With Multiple Colors For Your Selection.   <\/p><p> • Exact American Regular Fit Size<\/p><p> • You May Return Back Whenever You Feel Unsatisfied With The Mens Hawaiian Shirts.  <\/p>",
+            "content": "<p>{{ product.metafields.highlights.value | metafield_tag }}<\/p>",
             "page": "",
             "icon": "none"
           }
