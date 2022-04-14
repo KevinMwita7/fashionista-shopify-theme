@@ -24,7 +24,7 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button",
-            "variant_picker_button_shape": "sharp"
+            "variant_picker_button_shape": "curved"
           }
         },
         "quantity_selector": {
