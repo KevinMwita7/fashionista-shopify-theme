@@ -2087,7 +2087,9 @@
   "product-details": {
     "name": "Product details",
     "settings": {
-      "collapsible_tabs_margin": "Enable collapsible tabs content margin"
+      "collapsible_tabs_margin": {
+        "label": "Enable collapsible tabs content margin"
+      }
     },
     "blocks": {
       "settings": {
