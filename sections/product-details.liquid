@@ -30,13 +30,13 @@
 
 {% schema %}
 {
-    "name": "Product details",
+    "name": "t:sections.product-details.name",
     "tag": "section",
     "class": "page-width spaced-section",
     "settings": [
         {
             "type": "checkbox",
-            "label": "Enable collapsible tabs content margin",
+            "label": "t:sections.product-details.settings.collapsible_tabs_margin",
             "id": "collapsible_tabs_margin",
             "default": true
         }
@@ -49,8 +49,8 @@
                 {
                     "type": "checkbox",
                     "id": "default_expanded",
-                    "label": "Default expanded",
-                    "info": "Have tab expanded by default",
+                    "label": "t:sections.product-details.blocks.settings.default_expanded.label",
+                    "info": "t:sections.product-details.blocks.settings.default_expanded.info",
                     "default": false
                 },
                 {
@@ -182,7 +182,7 @@
     ],
     "presets": [
         {
-            "name": "Product description"
+            "name": "t:sections.product-details.name"
         }
     ]
 }

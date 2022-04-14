@@ -2083,5 +2083,19 @@
         "name": "Video"
       }
     }
+  },
+  "product-details": {
+    "name": "Product details",
+    "settings": {
+      "collapsible_tabs_margin": "Enable collapsible tabs content margin"
+    },
+    "blocks": {
+      "settings": {
+        "default_expanded": {
+          "label": "Default expanded",
+          "info": "Have tab expanded by default"
+        }
+      }
+    }
   }
 }
