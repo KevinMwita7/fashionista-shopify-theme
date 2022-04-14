@@ -72,7 +72,7 @@
             "heading": "Returns and exchanges",
             "hide_top_border": true,
             "hide_bottom_border": true,
-            "content": "<p>Accepted. Exceptions may apply.<\/p>",
+            "content": "<p>Accepted. <strong>Exceptions may apply<\/strong>.<\/p>",
             "page": "",
             "icon": "none"
           }
