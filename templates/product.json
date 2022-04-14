@@ -61,7 +61,7 @@
             "heading": "Shipping",
             "hide_top_border": true,
             "hide_bottom_border": true,
-            "content": "<p>Ready to ship in<\/p><p><strong>1-2 business days<\/strong><\/p>",
+            "content": "<p>Ready to ship in <strong>1-2 business days<\/strong><\/p>",
             "page": "",
             "icon": "none"
           }
