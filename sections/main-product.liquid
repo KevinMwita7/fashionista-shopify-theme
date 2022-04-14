@@ -398,19 +398,14 @@
     </div>
   </div>
 
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {%- when 'description' -%}
-        {%- if product.description != blank -%}
-          <div class="product__description rte accordion" style="border-bottom: initial;">
-              <div style="padding: 1.5rem 0;">
-                  <h2 class="h4 accordion__title font-bold">Product description</h2>
-              </div>
-              {{ product.description }}
-          </div>
-        {%- endif -%}
-    {% endcase %}
-  {% endfor %}
+  {%- if product.description != blank -%}
+    <div class="product__description rte accordion" style="border-bottom: initial;">
+        <div style="padding: 1.5rem 0;">
+            <h2 class="h4 accordion__title font-bold">Product description</h2>
+        </div>
+        {{ product.description }}
+    </div>
+  {%- endif -%}
 
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
     <div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
@@ -679,11 +674,6 @@
           "label": "t:sections.main-product.blocks.buy_buttons.settings.rounded_buy_buttons.label"
         }
       ]
-    },
-    {
-      "type": "description",
-      "name": "t:sections.main-product.blocks.description.name",
-      "limit": 1
     },
     {
       "type": "share",
