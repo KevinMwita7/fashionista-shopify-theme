@@ -92,9 +92,9 @@
     </span>
   {% endcomment %}
   {%- endif -%}
-  {% if available == false %}
-    <p>Out of stock</p>
-  {% else %}
-    <p>In stock</p>
-  {% endif %}
 </div>
+{% if available == false %}
+  <small>Out of stock</small>
+{% else %}
+  <small>In stock</small>
+{% endif %}
