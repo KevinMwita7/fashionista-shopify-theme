@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "이메일 가입 배너"
       }
+    },
+    "product-details": {
+      "name": "제품 세부 정보",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "축소 가능한 탭 콘텐츠 여백 사용"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "기본 확장",
+            "info": "탭이 기본적으로 확장되어 있습니다."
+          }
+        }
+      }
     }
   }
 }

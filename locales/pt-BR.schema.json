@@ -2078,6 +2078,22 @@
       "presets": {
         "name": "Banner de assinante de e-mail"
       }
+    },
+    "product-details": {
+      "name": "Detalhes do produto",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Habilitar margem de conteúdo de guias dobráveis"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Padrão expandido",
+            "info": "Ter guia expandida por padrão"
+          }
+        }
+      }
     }
   }
 }

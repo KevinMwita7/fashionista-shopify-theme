@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Banner för e-postregistrering"
       }
+    },
+    "product-details": {
+      "name": "Produktinformation",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Aktivera innehållsmarginal för hopfällbara flikar"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Standard expanderad",
+            "info": "Fliken Har expanderat som standard"
+          }
+        }
+      }
     }
   }
 }

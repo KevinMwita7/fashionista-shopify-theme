@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "电子邮件注册横幅"
       }
+    },
+    "product-details": {
+      "name": "产品详情",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "启用可折叠选项卡内容边距"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "默认展开",
+            "info": "默认情况下展开选项卡"
+          }
+        }
+      }
     }
   }
 }

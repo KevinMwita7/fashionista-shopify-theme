@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Baner rejestracji w celu otrzymywania e-maili"
       }
+    },
+    "product-details": {
+      "name": "Detalhes do produto",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Włączanie marginesu zawartości zwijanych kart"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Domyślnie rozwinięty",
+            "info": "Domyślnie rozwinięta karta"
+          }
+        }
+      }
     }
   }
 }

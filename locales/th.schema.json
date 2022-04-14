@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "แบนเนอร์การลงทะเบียนอีเมล"
       }
+    },
+    "product-details": {
+      "name": "รายละเอียดผลิตภัณฑ์",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "เปิดใช้งานระยะขอบเนื้อหาของแท็บที่ยุบได้"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "ขยายเริ่มต้น",
+            "info": "มีการขยายแท็บตามค่าเริ่มต้น"
+          }
+        }
+      }
     }
   }
 }

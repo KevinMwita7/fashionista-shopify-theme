@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Faixa de registo de e-mail"
       }
+    },
+    "product-details": {
+      "name": "Detalhes do produto",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Permitir a margem de conteúdo dos separadores desmontáveis"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Padrão expandido",
+            "info": "Ter separador expandido por padrão"
+          }
+        }
+      }
     }
   }
 }

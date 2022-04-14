@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Banner for tilmelding med mail"
       }
+    },
+    "product-details": {
+      "name": "Produkt detaljer",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Aktivér indholdsmargen for sammenklappelige faner"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Standard udvidet",
+            "info": "Har fanen udvidet som standard"
+          }
+        }
+      }
     }
   }
 }

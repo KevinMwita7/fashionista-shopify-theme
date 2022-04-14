@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Banner de suscripción de correo electrónico"
       }
+    },
+    "product-details": {
+      "name": "Detalles del producto",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Habilitar margen de contenido de pestañas plegables"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Expandido por defecto",
+            "info": "Tener la pestaña expandida de forma predeterminada"
+          }
+        }
+      }
     }
   }
 }

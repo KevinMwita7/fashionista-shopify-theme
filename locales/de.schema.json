@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Banner für E-Mail-Anmeldung"
       }
+    },
+    "product-details": {
+      "name": "Produktdetails",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Inhaltsrand für reduzierbare Registerkarten aktivieren"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Standard erweitert",
+            "info": "Registerkarte standardmäßig erweitert"
+          }
+        }
+      }
     }
   }
 }

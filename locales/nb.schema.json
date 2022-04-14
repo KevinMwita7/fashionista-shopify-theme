@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Banner for e-postregistrering"
       }
+    },
+    "product-details": {
+      "name": "Produktdetaljer",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Aktivere innholdsmarg for kategorier som kan skjules"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Standard utvidet",
+            "info": "Vise kategorien som standard"
+          }
+        }
+      }
     }
   }
 }

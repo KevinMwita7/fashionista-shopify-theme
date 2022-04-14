@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Banner di iscrizione alla newsletter"
       }
+    },
+    "product-details": {
+      "name": "Dettagli del prodotto",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Abilitare il margine di contenuto delle schede comprimibili"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Predefinito espanso",
+            "info": "Avere la scheda espansa per impostazione predefinita"
+          }
+        }
+      }
     }
   }
 }

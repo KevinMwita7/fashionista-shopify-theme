@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "電子郵件訂閱橫幅"
       }
+    },
+    "product-details": {
+      "name": "產品詳情",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "啟用可摺疊選項卡內容邊距"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "默認展開",
+            "info": "默認情況下展開選項卡"
+          }
+        }
+      }
     }
   }
 }

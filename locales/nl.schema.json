@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Banner voor aanmelding voor het ontvangen van e-mail"
       }
+    },
+    "product-details": {
+      "name": "Productdetails",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Inhoudsmarge voor inklapbare tabbladen inschakelen"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Standaard uitgevouwen",
+            "info": "Tabblad standaard uitgevouwen hebben"
+          }
+        }
+      }
     }
   }
 }

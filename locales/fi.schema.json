@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Sähköpostirekisteröitymisen banneri"
       }
+    },
+    "product-details": {
+      "name": "Tuotteen tiedot",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Ota kokoontaitettavat välilehdet käyttöön sisältöreunus"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Oletusarvo laajennettu",
+            "info": "Välilehden laajentaminen oletusarvoisesti"
+          }
+        }
+      }
     }
   }
 }

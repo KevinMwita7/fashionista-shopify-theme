@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "E-posta kaydı banner'ı"
       }
+    },
+    "product-details": {
+      "name": "Ürün detayları",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Daraltılabilir sekmeler içerik kenar boşluğunu etkinleştirme"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Varsayılan genişletilmiş",
+            "info": "Sekmenin varsayılan olarak genişletilmesini sağlayın"
+          }
+        }
+      }
     }
   }
 }

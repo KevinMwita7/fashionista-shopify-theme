@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "メール登録者バナー"
       }
+    },
+    "product-details": {
+      "name": "商品詳細",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "折りたたみ可能なタブのコンテンツ余白を有効にする"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "デフォルト展開",
+            "info": "デフォルトでタブが展開されている"
+          }
+        }
+      }
     }
   }
 }

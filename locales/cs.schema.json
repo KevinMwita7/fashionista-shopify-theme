@@ -2078,6 +2078,22 @@
       "presets": {
         "name": "Banner přihlášení k odběru e-mailů"
       }
+    },
+    "product-details": {
+      "name": "Podrobnosti o produktu",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Povolit okraj obsahu sbalitelných karet"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Výchozí rozbalené",
+            "info": "Mít kartu rozbalenou ve výchozím nastavení"
+          }
+        }
+      }
     }
   }
 }

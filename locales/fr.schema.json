@@ -2082,6 +2082,22 @@
       "presets": {
         "name": "Bannière d'inscription à la liste de diffusion"
       }
+    },
+    "product-details": {
+      "name": "Détails du produit",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Activer la marge de contenu des onglets réductibles"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Extension par défaut",
+            "info": "Avoir l'onglet développé par défaut"
+          }
+        }
+      }
     }
   }
 }

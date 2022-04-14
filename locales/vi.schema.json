@@ -2073,6 +2073,22 @@
       "presets": {
         "name": "Biểu ngữ đăng ký nhận email"
       }
+    },
+    "product-details": {
+      "name": "Chi tiết sản phẩm",
+      "settings": {
+        "collapsible_tabs_margin": {
+          "label": "Bật lề nội dung tab có thể thu gọn"
+        }
+      },
+      "blocks": {
+        "settings": {
+          "default_expanded": {
+            "label": "Mở rộng mặc định",
+            "info": "Có tab được mở rộng theo mặc định"
+          }
+        }
+      }
     }
   }
 }
