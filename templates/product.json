@@ -54,6 +54,17 @@
           "type": "description",
           "settings": {
           }
+        },
+        "c40204ce-6725-46c2-9680-9c30fdc42b93": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "hide_top_border": true,
+            "hide_bottom_border": true,
+            "content": "<p>Ready to ship in<\/p><p><strong>1-2 business days<\/strong><\/p>",
+            "page": "",
+            "icon": "none"
+          }
         }
       },
       "block_order": [
@@ -64,7 +75,8 @@
         "quantity_selector",
         "buy_buttons",
         "0bedd49c-304a-4a4c-b161-0b15d810bb9e",
-        "709e5b67-fce3-4ac2-8de5-ca29a59993ae"
+        "709e5b67-fce3-4ac2-8de5-ca29a59993ae",
+        "c40204ce-6725-46c2-9680-9c30fdc42b93"
       ],
       "settings": {
         "enable_sticky_info": true,
