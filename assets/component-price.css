@@ -88,3 +88,11 @@
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
 }
+
+.in-stock {
+  color: #007600;
+}
+
+.out-of-stock {
+  color: #d00;
+}
