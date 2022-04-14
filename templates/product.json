@@ -65,6 +65,17 @@
             "page": "",
             "icon": "none"
           }
+        },
+        "8427f09a-cfe5-4211-b749-326b5b9032c2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Returns and exchanges",
+            "hide_top_border": true,
+            "hide_bottom_border": true,
+            "content": "<p>Accepted. Exceptions may apply<\/p>",
+            "page": "",
+            "icon": "none"
+          }
         }
       },
       "block_order": [
@@ -76,7 +87,8 @@
         "buy_buttons",
         "0bedd49c-304a-4a4c-b161-0b15d810bb9e",
         "709e5b67-fce3-4ac2-8de5-ca29a59993ae",
-        "c40204ce-6725-46c2-9680-9c30fdc42b93"
+        "c40204ce-6725-46c2-9680-9c30fdc42b93",
+        "8427f09a-cfe5-4211-b749-326b5b9032c2"
       ],
       "settings": {
         "enable_sticky_info": true,
