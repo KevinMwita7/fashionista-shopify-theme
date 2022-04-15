@@ -10,7 +10,7 @@
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "low_stock_alert": 8,
-    "low_stock_text": "low stock (amt)",
+    "low_stock_text": "low stock, ((amt)) left",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
