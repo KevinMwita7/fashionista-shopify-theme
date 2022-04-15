@@ -359,5 +359,17 @@
         "default": true
       }
     ]
+  },
+  {
+    "name": "t:settings_schema.low_stock_alert.name",
+    "settings": [
+      {
+        "type": "number",
+        "id": "low_stock_alert",
+        "label": "t:settings_schema.low_stock_alert.settings.label",
+        "info": "t:settings_schema.low_stock_alert.settings.info",
+        "default": 5
+      }
+    ]
   }
 ]
