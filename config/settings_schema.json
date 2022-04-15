@@ -366,9 +366,30 @@
       {
         "type": "number",
         "id": "low_stock_alert",
-        "label": "t:settings_schema.low_stock_alert.settings.label",
-        "info": "t:settings_schema.low_stock_alert.settings.info",
+        "label": "t:settings_schema.low_stock_alert.settings.threshold.label",
+        "info": "t:settings_schema.low_stock_alert.settings.threshold.info",
         "default": 5
+      },
+      {
+        "type": "text",
+        "id": "in_stock_text",
+        "label": "t:settings_schema.low_stock_alert.settings.in_stock_text.label",
+        "info": "t:settings_schema.low_stock_alert.settings.in_stock_text.info",
+        "default": "In stock"
+      },
+      {
+        "type": "text",
+        "id": "out_of_stock_text",
+        "label": "t:settings_schema.low_stock_alert.settings.out_of_stock_text.label",
+        "info": "t:settings_schema.low_stock_alert.settings.out_of_stock_text.info",
+        "default": "Out of stock"
+      },
+      {
+        "type": "text",
+        "id": "low_stock_text",
+        "label": "t:settings_schema.low_stock_alert.settings.low_stock_text.label",
+        "info": "t:settings_schema.low_stock_alert.settings.low_stock_text.info",
+        "default": "Only (amt) in stock!"
       }
     ]
   }

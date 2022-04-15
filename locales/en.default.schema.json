@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Stock alert",
       "settings": {
-        "label": "Low stock alert",
-        "info": "At which amount to alert user that the product has low stock"
+        "threshold": {
+          "label": "Low stock alert",
+          "info": "At which amount to alert user that the product has low stock"
+        },
+        "in_stock_text": {
+          "label": "In stock text",
+          "info": "Text to display if item is in stock"
+        },
+        "out_of_stock_text": {
+          "label": "Out of stock text",
+          "info": "Text to display if item is out of stock"
+        },
+        "low_stock_text": {
+          "label": "Low stock text",
+          "info": "Text to display if item has low stock. Include the (amt) placeholder to insert amount"
+        }
       }
     },
     "images": {
