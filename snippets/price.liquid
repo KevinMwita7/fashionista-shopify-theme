@@ -97,5 +97,5 @@
 {% elsif target.inventory_quantity <= 10 %}
   <small class="out-of-stock">Only {{ target.inventory_quantity }} in stock!</small>
 {% else %}
-  <small class="in-stock">In stock!</small>
+  <small class="in-stock">In stock {{ target.inventory_quantity }}!</small>
 {% endif %}
