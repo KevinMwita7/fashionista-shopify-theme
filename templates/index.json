@@ -177,13 +177,6 @@
     "16500198939fbdf68a": {
       "type": "featured-product",
       "blocks": {
-        "16500198934f0a9715-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "16500198934f0a9715-1": {
           "type": "title",
           "settings": {
@@ -208,11 +201,6 @@
             "variant_picker_button_shape": "sharp"
           }
         },
-        "16500198934f0a9715-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "16500198934f0a9715-6": {
           "type": "buy_buttons",
           "settings": {
@@ -228,12 +216,10 @@
         }
       },
       "block_order": [
-        "16500198934f0a9715-0",
         "16500198934f0a9715-1",
         "16500198934f0a9715-2",
         "16500198934f0a9715-3",
         "16500198934f0a9715-4",
-        "16500198934f0a9715-5",
         "16500198934f0a9715-6",
         "16500198934f0a9715-7"
       ],
