@@ -17,6 +17,7 @@
     assign target = product
   endif
 
+  assign low_stock_alert = settings.low_stock_alert
   assign compare_at_price = target.compare_at_price
   assign price = target.price | default: 1999
   assign available = target.available | default: false
@@ -94,7 +95,7 @@
 
 {% if target.inventory_quantity <= 0 %}
   <small class="out-of-stock">Out of stock</small>
-{% elsif target.inventory_quantity <= {{ settings.low_stock_alert }} %}
+{% elsif target.inventory_quantity <= low_stock_alert %}
   <small class="out-of-stock">Only {{ target.inventory_quantity }} in stock!</small>
 {% else %}
   <small class="in-stock">In stock</small>
