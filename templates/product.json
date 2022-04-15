@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "featured-product",
       "blocks": {
         "title": {
           "type": "title",
