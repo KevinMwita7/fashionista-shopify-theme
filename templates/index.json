@@ -173,68 +173,11 @@
         "show_vendor": false,
         "show_rating": true
       }
-    },
-    "16500198939fbdf68a": {
-      "type": "featured-product",
-      "blocks": {
-        "16500198934f0a9715-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "16500198934f0a9715-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "49376f4a-f747-40be-b31d-24c92de88b7e": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
-        "16500198934f0a9715-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "16500198934f0a9715-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "variant_picker_button_shape": "sharp"
-          }
-        },
-        "16500198934f0a9715-7": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "16500198934f0a9715-1",
-        "16500198934f0a9715-2",
-        "49376f4a-f747-40be-b31d-24c92de88b7e",
-        "16500198934f0a9715-3",
-        "16500198934f0a9715-4",
-        "16500198934f0a9715-7"
-      ],
-      "settings": {
-        "product": "aged-mountain",
-        "secondary_background": false,
-        "hide_variants": false,
-        "enable_video_looping": false
-      }
     }
   },
   "order": [
     "16375654467d9d124d",
     "1639992274f6a6c890",
-    "1641296584966eafbb",
-    "16500198939fbdf68a"
+    "1641296584966eafbb"
   ]
 }
