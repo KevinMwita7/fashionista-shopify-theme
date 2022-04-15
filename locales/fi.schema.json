@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Varastohälytys",
       "settings": {
-        "label": "Matalan varaston hälytys",
-        "info": "Millä summalla käyttäjää varoitetaan siitä, että tuotteella on vähän varastoa"
+        "threshold": {
+          "label": "Matalan varaston hälytys",
+          "info": "Millä summalla käyttäjää varoitetaan siitä, että tuotteella on vähän varastoa"
+        },
+        "in_stock_text": {
+          "label": "Varastossa oleva teksti",
+          "info": "Teksti, joka näytetään, jos nimikettä on varastossa"
+        },
+        "out_of_stock_text": {
+          "label": "Loppunut teksti",
+          "info": "Teksti, joka näytetään, jos nimike on loppunut varastosta"
+        },
+        "low_stock_text": {
+          "label": "Pieni varastoteksti",
+          "info": "Teksti, joka näytetään, jos kohteen varasto on pieni. Sisällytä (amt) paikkamerkki summan lisäämistä varten"
+        }
       }
     },
     "images": {

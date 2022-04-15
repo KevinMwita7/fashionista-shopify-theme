@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Alerte de stock",
       "settings": {
-        "label": "Alerte de stock faible",
-        "info": "À quel montant alerter l'utilisateur que le produit a un stock faible"
+        "threshold": {
+          "label": "Alerte de stock faible",
+          "info": "À quel montant alerter l'utilisateur que le produit a un stock faible"
+        },
+        "in_stock_text": {
+          "label": "Dans le texte du stock",
+          "info": "Texte à afficher si l'article est en stock"
+        },
+        "out_of_stock_text": {
+          "label": "Texte en rupture de stock",
+          "info": "Texte à afficher si l'article est en rupture de stock"
+        },
+        "low_stock_text": {
+          "label": "Low stock text",
+          "info": "Texte à afficher si l'article a un stock faible. Inclure l'espace réservé (amt) pour insérer le montant"
+        }
       }
     },
     "images": {

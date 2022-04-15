@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Upozornění na zásoby",
       "settings": {
-        "label": "Upozornění na nízké zásoby",
-        "info": "V jaké výši upozornit uživatele, že produkt má nízké zásoby"
+        "threshold": {
+          "label": "Upozornění na nízké zásoby",
+          "info": "V jaké výši upozornit uživatele, že produkt má nízké zásoby"
+        },        
+        "in_stock_text": {
+          "label": "Text na skladě",
+          "info": "Text, který se má zobrazit, pokud je položka skladem"
+        },
+        "out_of_stock_text": {
+          "label": "Text není na skladě",
+          "info": "Text, který se má zobrazit, pokud položka není na skladě"
+        },
+        "low_stock_text": {
+          "label": "Text s nízkou zásobou",
+          "info": "Text, který se zobrazí, pokud má položka málo zásob. Zahrnutí zástupného symbolu (amt) pro vložení částky"
+        }
       }
     },
     "images": {

@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Advarsel om lager",
       "settings": {
-        "label": "Advarsel om lavt lager",
-        "info": "På hvilket beløb for at advare brugeren om, at produktet har lavt lager"
+        "threshold": {
+          "label": "Advarsel om lavt lager",
+          "info": "På hvilket beløb for at advare brugeren om, at produktet har lavt lager"
+        },
+        "in_stock_text": {
+          "label": "På lager tekst",
+          "info": "Tekst til visning, hvis varen er på lager"
+        },
+        "out_of_stock_text": {
+          "label": "Out of stock text",
+          "info": "Tekst, der skal vises, hvis varen ikke er på lager"
+        },
+        "low_stock_text": {
+          "label": "Tekst med lavt lager",
+          "info": "Tekst til visning, hvis varen har lavt lager. Medtag (amt) pladsholderen til at indsætte beløb"
+        }
       }
     },
     "images": {

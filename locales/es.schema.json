@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Alerta de stock",
       "settings": {
-        "label": "Alerta de stock bajo",
-        "info": "En qué cantidad alertar al usuario de que el producto tiene poco stock"
+        "threshold": {
+          "label": "Alerta de stock bajo",
+          "info": "En qué cantidad alertar al usuario de que el producto tiene poco stock"
+        },
+        "in_stock_text": {
+          "label": "En el texto de stock",
+          "info": "Texto para mostrar si el artículo está en stock"
+        },
+        "out_of_stock_text": {
+          "label": "Texto agotado",
+          "info": "Texto para mostrar si el artículo está agotado"
+        },
+        "low_stock_text": {
+          "label": "Texto de stock bajo",
+          "info": "Texto para mostrar si el artículo tiene poco stock. Incluya el marcador de posición (amt) para insertar la cantidad"
+        }
       }
     },
     "images": {

@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Voorraad alert",
       "settings": {
-        "label": "Waarschuwing voor lage voorraad",
-        "info": "Bij welk bedrag om de gebruiker te waarschuwen dat het product een lage voorraad heeft"
+        "threshold": {
+          "label": "Waarschuwing voor lage voorraad",
+          "info": "Bij welk bedrag om de gebruiker te waarschuwen dat het product een lage voorraad heeft"
+        },
+        "in_stock_text": {
+          "label": "Op voorraad",
+          "info": "Tekst om weer te geven als artikel op voorraad is"
+        },
+        "out_of_stock_text": {
+          "label": "Tekst die niet op voorraad is",
+          "info": "Text to display if item is out of stock"
+        },
+        "low_stock_text": {
+          "label": "Tekst met weinig voorraad",
+          "info": "Tekst om weer te geven als het artikel een lage voorraad heeft. Voeg de tijdelijke aanduiding (amt) toe om het bedrag in te voegen"
+        }
       }
     },
     "images": {

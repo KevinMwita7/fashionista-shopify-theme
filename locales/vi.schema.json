@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Cảnh báo chứng khoán",
       "settings": {
-        "label": "Cảnh báo cổ phiếu thấp",
-        "info": "Tại số tiền đó để cảnh báo người dùng rằng sản phẩm có cổ phiếu thấp"
+        "threshold": {
+          "label": "Cảnh báo cổ phiếu thấp",
+          "info": "Tại số tiền đó để cảnh báo người dùng rằng sản phẩm có cổ phiếu thấp"
+        },
+        "in_stock_text": {
+          "label": "Trong văn bản chứng khoán",
+          "info": "Văn bản để hiển thị nếu mục có trong kho"
+        },
+        "out_of_stock_text": {
+          "label": "Văn bản hết hàng",
+          "info": "Văn bản để hiển thị nếu mục hết hàng"
+        },
+        "low_stock_text": {
+          "label": "Văn bản chứng khoán thấp",
+          "info": "Văn bản để hiển thị nếu mục có cổ phiếu thấp. Bao gồm chỗ dành sẵn (amt) để chèn số tiền"
+        }
       }
     },
     "images": {

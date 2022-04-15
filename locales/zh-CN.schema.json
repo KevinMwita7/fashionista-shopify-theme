@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "股票提醒",
       "settings": {
-        "label": "低库存警报",
-        "info": "提醒用户产品库存不足的金额"
+        "threshold": {
+          "label": "低库存警报",
+          "info": "提醒用户产品库存不足的金额"
+        },
+        "in_stock_text": {
+          "label": "库存文本",
+          "info": "如果商品有库存，要显示的文本"
+        },
+        "out_of_stock_text": {
+          "label": "缺货文本",
+          "info": "如果商品缺货，要显示的文本"
+        },
+        "low_stock_text": {
+          "label": "低库存文本",
+          "info": "如果物料库存不足，则要显示的文本。包括用于插入量的 （amt） 占位符"
+        }
       }
     },
     "images": {

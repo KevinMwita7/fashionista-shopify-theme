@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "재고 경고",
       "settings": {
-        "label": "낮은 재고 경고",
-        "info": "제품의 재고가 부족하다는 것을 사용자에게 알릴 금액"
+        "threshold": {
+          "label": "낮은 재고 경고",
+          "info": "제품의 재고가 부족하다는 것을 사용자에게 알릴 금액"
+        },
+        "in_stock_text": {
+          "label": "주식 텍스트에서",
+          "info": "품목이 재고가 있는 경우 표시할 텍스트"
+        },
+        "out_of_stock_text": {
+          "label": "품절 텍스트",
+          "info": "품목이 품절된 경우 표시할 텍스트"
+        },
+        "low_stock_text": {
+          "label": "낮은 재고 텍스트",
+          "info": "품목의 재고가 부족한 경우 표시할 텍스트입니다. 양을 삽입할 (amt) 자리 표시자 포함"
+        }
       }
     },
     "images": {

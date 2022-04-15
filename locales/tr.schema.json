@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Stok uyarısı",
       "settings": {
-        "label": "Düşük stok uyarısı",
-        "info": "Kullanıcıyı ürünün düşük stoka sahip olduğu konusunda uyarmak için hangi miktarda"
+        "threshold": {
+          "label": "Düşük stok uyarısı",
+          "info": "Kullanıcıyı ürünün düşük stoka sahip olduğu konusunda uyarmak için hangi miktarda"
+        },
+        "in_stock_text": {
+          "label": "Stok metninde",
+          "info": "Ürün stokta varsa görüntülenecek metin"
+        },
+        "out_of_stock_text": {
+          "label": "Stokta yok metni",
+          "info": "Öğe stokta yoksa görüntülenecek metin"
+        },
+        "low_stock_text": {
+          "label": "Düşük stok metni",
+          "info": "Öğenin stoğu düşükse görüntülenecek metin. Miktarı eklemek için (amt) yer tutucuyu ekleyin"
+        }
       }
     },
     "images": {

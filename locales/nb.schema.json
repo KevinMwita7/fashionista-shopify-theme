@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Varsel om lager",
       "settings": {
-        "label": "Varsel om lavt lager",
-        "info": "På hvilket beløp for å varsle brukeren om at produktet har lavt lager"
+        "threshold": {
+          "label": "Varsel om lavt lager",
+          "info": "På hvilket beløp for å varsle brukeren om at produktet har lavt lager"
+        },
+        "in_stock_text": {
+          "label": "I arkivtekst",
+          "info": "Tekst som skal vises hvis varen er på lager"
+        },
+        "out_of_stock_text": {
+          "label": "Tekst som ikke er på lager",
+          "info": "Tekst som skal vises hvis varen er utsolgt"
+        },
+        "low_stock_text": {
+          "label": "Tekst på lavt lagernivå",
+          "info": "Tekst som skal vises hvis varen har lite lager. Inkluder (amt)-plassholderen for å sette inn beløp"
+        }
       }
     },
     "images": {

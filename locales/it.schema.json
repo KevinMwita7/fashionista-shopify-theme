@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Avviso di magazzino",
       "settings": {
-        "label": "Avviso di scorte basse",
-        "info": "A quale importo avvisare l'utente che il prodotto ha scorte basse"
+        "threshold": {
+          "label": "Avviso di scorte basse",
+          "info": "A quale importo avvisare l'utente che il prodotto ha scorte basse"
+        },
+        "in_stock_text": {
+          "label": "Testo disponibile",
+          "info": "Testo da visualizzare se l'articolo è disponibile"
+        },
+        "out_of_stock_text": {
+          "label": "Testo esaurito",
+          "info": "Testo da visualizzare se l'articolo è esaurito"
+        },
+        "low_stock_text": {
+          "label": "Testo di riserva basso",
+          "info": "Testo da visualizzare se l'articolo ha scorte insufficienti. Includi il segnaposto (amt) per inserire l'importo"
+        }
       }
     },
     "images": {

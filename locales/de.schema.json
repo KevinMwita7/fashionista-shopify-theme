@@ -3,8 +3,22 @@
     "low_stock_alert": {
       "name": "Bestandswarnung",
       "settings": {
-        "label": "Warnung bei niedrigem Lagerbestand",
-        "info": "Bei welcher Menge soll der Benutzer benachrichtigt werden, dass das Produkt einen geringen Lagerbestand hat"
+        "threshold": {
+          "label": "Warnung bei niedrigem Lagerbestand",
+          "info": "Bei welcher Menge soll der Benutzer benachrichtigt werden, dass das Produkt einen geringen Lagerbestand hat"
+        },
+        "in_stock_text": {
+          "label": "Text auf Lager",
+          "info": "Text, der angezeigt werden soll, wenn Artikel auf Lager ist"
+        },
+        "out_of_stock_text": {
+          "label": "Nicht vorrätiger Text",
+          "info": "Text, der angezeigt werden soll, wenn der Artikel nicht vorrätig ist"
+        },
+        "low_stock_text": {
+          "label": "Text mit niedrigem Lagerbestand",
+          "info": "Text, der angezeigt werden soll, wenn der Artikel einen geringen Lagerbestand hat. Fügen Sie den Platzhalter (amt) zum Einfügen des Betrags hinzu"
+        }
       }
     },
     "images": {
