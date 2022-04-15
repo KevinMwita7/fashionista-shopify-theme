@@ -92,13 +92,11 @@
   {%- endif -%}
 </div>
 
-{% if target.inventory_management != blank %}
-  {% case target.inventory_quantity %}
-    {% when <= 0 %}
-      <small class="out-of-stock">Out of stock</small>
-    {% when <= 5 %}
-      <small class="out-of-stock">Only {{ target.inventory_quantity }} in stock!</small>
-    {% else %}
-      <small class="in-stock">In stock</small>
-  {% endcase %}
-{% endif %}
+{% case target.inventory_quantity %}
+  {% when <= 0 %}
+    <small class="out-of-stock">Out of stock</small>
+  {% when <= 5 %}
+    <small class="out-of-stock">Only {{ target.inventory_quantity }} in stock!</small>
+  {% else %}
+    <small class="in-stock">In stock</small>
+{% endcase %}
