@@ -182,20 +182,6 @@
           "settings": {
           }
         },
-        "16500198934f0a9715-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "49376f4a-f747-40be-b31d-24c92de88b7e": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
         "16500198934f0a9715-3": {
           "type": "price",
           "settings": {
@@ -213,15 +199,21 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "a2875f39-021b-4304-a501-312d0ab9bdba": {
+          "type": "text",
+          "settings": {
+            "text": "Text block",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
         "16500198934f0a9715-1",
-        "16500198934f0a9715-2",
-        "49376f4a-f747-40be-b31d-24c92de88b7e",
         "16500198934f0a9715-3",
         "16500198934f0a9715-4",
-        "16500198934f0a9715-7"
+        "16500198934f0a9715-7",
+        "a2875f39-021b-4304-a501-312d0ab9bdba"
       ],
       "settings": {
         "product": "aged-mountain",
