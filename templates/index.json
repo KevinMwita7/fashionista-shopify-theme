@@ -189,6 +189,13 @@
             "text_style": "subtitle"
           }
         },
+        "49376f4a-f747-40be-b31d-24c92de88b7e": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
         "16500198934f0a9715-3": {
           "type": "price",
           "settings": {
@@ -201,13 +208,6 @@
             "variant_picker_button_shape": "sharp"
           }
         },
-        "16500198934f0a9715-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "rounded_buy_buttons": true
-          }
-        },
         "16500198934f0a9715-7": {
           "type": "share",
           "settings": {
@@ -218,9 +218,9 @@
       "block_order": [
         "16500198934f0a9715-1",
         "16500198934f0a9715-2",
+        "49376f4a-f747-40be-b31d-24c92de88b7e",
         "16500198934f0a9715-3",
         "16500198934f0a9715-4",
-        "16500198934f0a9715-6",
         "16500198934f0a9715-7"
       ],
       "settings": {
