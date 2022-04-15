@@ -194,17 +194,17 @@
             "variant_picker_button_shape": "sharp"
           }
         },
-        "16500198934f0a9715-7": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
         "a2875f39-021b-4304-a501-312d0ab9bdba": {
           "type": "text",
           "settings": {
             "text": "Text block",
             "text_style": "body"
+          }
+        },
+        "16500198934f0a9715-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
           }
         }
       },
@@ -212,8 +212,8 @@
         "16500198934f0a9715-1",
         "16500198934f0a9715-3",
         "16500198934f0a9715-4",
-        "16500198934f0a9715-7",
-        "a2875f39-021b-4304-a501-312d0ab9bdba"
+        "a2875f39-021b-4304-a501-312d0ab9bdba",
+        "16500198934f0a9715-7"
       ],
       "settings": {
         "product": "aged-mountain",
