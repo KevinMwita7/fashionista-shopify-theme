@@ -265,7 +265,7 @@
           </div>
           <div>
             <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
-              {% render 'price', product: product_card_product, price_class: '' %}
+              {% render 'price', product: product_card_product, price_class: '', use_variant: true %}
             </a>
           </div>
       </div>
