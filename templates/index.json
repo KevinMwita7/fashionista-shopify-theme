@@ -173,11 +173,66 @@
         "show_vendor": false,
         "show_rating": true
       }
+    },
+    "165002260161bdc95f": {
+      "type": "featured-product",
+      "blocks": {
+        "1650022601cdc19870-0": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "1650022601cdc19870-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1650022601cdc19870-2": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "variant_picker_button_shape": "sharp"
+          }
+        },
+        "1650022601cdc19870-3": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1650022601cdc19870-4": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "rounded_buy_buttons": true
+          }
+        },
+        "1650022601cdc19870-5": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "1650022601cdc19870-0",
+        "1650022601cdc19870-1",
+        "1650022601cdc19870-2",
+        "1650022601cdc19870-3",
+        "1650022601cdc19870-4",
+        "1650022601cdc19870-5"
+      ],
+      "settings": {
+        "product": "aged-mountain",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
     }
   },
   "order": [
     "16375654467d9d124d",
     "1639992274f6a6c890",
-    "1641296584966eafbb"
+    "1641296584966eafbb",
+    "165002260161bdc95f"
   ]
 }
