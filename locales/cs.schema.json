@@ -6,7 +6,7 @@
         "threshold": {
           "label": "Upozornění na nízké zásoby",
           "info": "V jaké výši upozornit uživatele, že produkt má nízké zásoby"
-        },        
+        },
         "in_stock_text": {
           "label": "Text na skladě",
           "info": "Text, který se má zobrazit, pokud je položka skladem"
