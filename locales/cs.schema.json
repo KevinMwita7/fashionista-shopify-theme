@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "Upozornění na zásoby",
+      "settings": {
+        "label": "Upozornění na nízké zásoby",
+        "info": "V jaké výši upozornit uživatele, že produkt má nízké zásoby"
+      }
+    },
     "images": {
       "name": "Obrazy",
       "settings": {

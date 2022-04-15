@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "股票提醒",
+      "settings": {
+        "label": "低庫存警報",
+        "info": "提醒使用者產品庫存不足的金額"
+      }
+    },
     "images": {
       "name": "圖像",
       "settings": {

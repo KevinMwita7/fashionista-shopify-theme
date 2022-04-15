@@ -1,7 +1,7 @@
 {
   "settings_schema": {
     "low_stock_alert": {
-      "name": "Low stock alert",
+      "name": "Stock alert",
       "settings": {
         "label": "Low stock alert",
         "info": "At which amount to alert user that the product has low stock"

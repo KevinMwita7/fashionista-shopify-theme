@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "Voorraad alert",
+      "settings": {
+        "label": "Waarschuwing voor lage voorraad",
+        "info": "Bij welk bedrag om de gebruiker te waarschuwen dat het product een lage voorraad heeft"
+      }
+    },
     "images": {
       "name": "Beelden",
       "settings": {

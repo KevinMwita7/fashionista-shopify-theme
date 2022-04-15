@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "Alerte de stock",
+      "settings": {
+        "label": "Alerte de stock faible",
+        "info": "À quel montant alerter l'utilisateur que le produit a un stock faible"
+      }
+    },
     "images": {
       "name": "Images",
       "settings": {

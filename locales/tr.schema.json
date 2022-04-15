@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "Stok uyarısı",
+      "settings": {
+        "label": "Düşük stok uyarısı",
+        "info": "Kullanıcıyı ürünün düşük stoka sahip olduğu konusunda uyarmak için hangi miktarda"
+      }
+    },
     "images": {
       "name": "Görüntü",
       "settings": {

@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "Varastohälytys",
+      "settings": {
+        "label": "Matalan varaston hälytys",
+        "info": "Millä summalla käyttäjää varoitetaan siitä, että tuotteella on vähän varastoa"
+      }
+    },
     "images": {
       "name": "Kuvia",
       "settings": {

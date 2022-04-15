@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "Varsel om lager",
+      "settings": {
+        "label": "Varsel om lavt lager",
+        "info": "På hvilket beløp for å varsle brukeren om at produktet har lavt lager"
+      }
+    },
     "images": {
       "name": "Bilder",
       "settings": {

@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "Avviso di magazzino",
+      "settings": {
+        "label": "Avviso di scorte basse",
+        "info": "A quale importo avvisare l'utente che il prodotto ha scorte basse"
+      }
+    },
     "images": {
       "name": "Immagini",
       "settings": {

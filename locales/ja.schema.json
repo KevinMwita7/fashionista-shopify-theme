@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "在庫アラート",
+      "settings": {
+        "label": "低在庫アラート",
+        "info": "製品の在庫が少ないことをユーザーに警告する量"
+      }
+    },
     "images": {
       "name": "画像",
       "settings": {

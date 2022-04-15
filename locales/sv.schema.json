@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "Varning för lager",
+      "settings": {
+        "label": "Varning för lågt lager",
+        "info": "Vid vilket belopp för att varna användaren om att produkten har lågt lager"
+      }
+    },
     "images": {
       "name": "Bilder",
       "settings": {

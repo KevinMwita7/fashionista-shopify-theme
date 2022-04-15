@@ -1,5 +1,12 @@
 {
   "settings_schema": {
+    "low_stock_alert": {
+      "name": "Cảnh báo chứng khoán",
+      "settings": {
+        "label": "Cảnh báo cổ phiếu thấp",
+        "info": "Tại số tiền đó để cảnh báo người dùng rằng sản phẩm có cổ phiếu thấp"
+      }
+    },
     "images": {
       "name": "Hình ảnh",
       "settings": {
