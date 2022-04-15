@@ -206,6 +206,13 @@
             "rounded_buy_buttons": true
           }
         },
+        "b6b8a1b3-6401-43a1-904a-8c2cf398cb1d": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ section.settings.product.metafields.highlights.value | metafield_tag }}<\/p>",
+            "text_style": "body"
+          }
+        },
         "1650022601cdc19870-5": {
           "type": "share",
           "settings": {
@@ -219,6 +226,7 @@
         "1650022601cdc19870-2",
         "1650022601cdc19870-3",
         "1650022601cdc19870-4",
+        "b6b8a1b3-6401-43a1-904a-8c2cf398cb1d",
         "1650022601cdc19870-5"
       ],
       "settings": {
