@@ -22,7 +22,7 @@
 
       {%- if section.settings.blog != blank and section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
         <a href="{{ section.settings.blog.url }}"
-          class="link underlined-link large-up-hide{% if settings.rounded_buttons %} rounded_btn{% endif %}"
+          class="link underlined-link large-up-hide"
         >
           {{ 'sections.featured_blog.view_all' | t }}
         </a>
@@ -56,7 +56,7 @@
 
       {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
         <div class="blog__view-all center small-hide medium-hide">
-          <a href="{{ section.settings.blog.url }}" class="blog__button button{% if settings.rounded_buttons %} rounded_btn{% endif %}">
+          <a href="{{ section.settings.blog.url }}" class="blog__button button">
             {{ 'sections.featured_blog.view_all' | t }}
           </a>
         </div>
