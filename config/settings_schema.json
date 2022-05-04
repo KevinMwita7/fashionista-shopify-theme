@@ -398,6 +398,7 @@
     "settings": [
       {
         "type": "checkbox",
+        "label": "Rounded buttons",
         "id": "rounded_buttons",
         "default": true
       }

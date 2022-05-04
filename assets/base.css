@@ -2473,3 +2473,7 @@ details-disclosure>details {
   border-radius: 6px;
   box-shadow: 0;
 }
+
+.rounded_buy_buttons button {
+  border-radius: 24px;
+}
