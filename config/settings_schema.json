@@ -392,16 +392,5 @@
         "default": "Only (amt) in stock!"
       }
     ]
-  },
-  {
-    "name": "Rounded buttons",
-    "settings": [
-      {
-        "type": "checkbox",
-        "label": "Rounded buttons",
-        "id": "rounded_buttons",
-        "default": true
-      }
-    ]    
   }
 ]
