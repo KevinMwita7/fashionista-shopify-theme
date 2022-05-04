@@ -2474,6 +2474,6 @@ details-disclosure>details {
   box-shadow: 0;
 }
 
-.rounded_buy_buttons button {
+.rounded_btn {
   border-radius: 24px;
 }
