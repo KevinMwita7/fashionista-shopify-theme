@@ -94,7 +94,7 @@
 
   {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
     <div class="center">
-      <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
+      <a href="{{ routes.collections_url }}" class="button{% if settings.rounded_buttons %} rounded_btn{% endif %}">{{ 'sections.collection_list.view_all' | t }}</a>
     </div>
   {%- endif -%}
 </div>
