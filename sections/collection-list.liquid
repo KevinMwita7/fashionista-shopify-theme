@@ -10,7 +10,7 @@
     <h2 class="title section-heading lg:section-heading font-medium text-center md:text-left">{{ section.settings.title | escape }}</h2>
 
     {%- if section.settings.show_view_all and section.settings.swipe_on_mobile -%}
-      <a href="{{ routes.collections_url }}" class="link underlined-link large-up-hide">{{ 'sections.collection_list.view_all' | t }}</a>
+      <a href="{{ routes.collections_url }}" class="link underlined-link large-up-hide{% if settings.rounded_buttons %} rounded_btn{% endif %}">{{ 'sections.collection_list.view_all' | t }}</a>
     {%- endif -%}
   </div>
 
@@ -112,7 +112,7 @@
 
   {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
     <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
-      <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
+      <a href="{{ routes.collections_url }}" class="button{% if settings.rounded_buttons %} rounded_btn{% endif %}">{{ 'sections.collection_list.view_all' | t }}</a>
     </div>
   {%- endif -%}
 </div>

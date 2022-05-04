@@ -33,7 +33,7 @@
       </form>
 
       {%- if section.settings.show_view_all and section.settings.swipe_on_mobile and more_in_collection -%}
-        <a href="{{ block.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
+        <a href="{{ block.settings.collection.url }}" class="link underlined-link large-up-hide{% if settings.rounded_buttons %} rounded_btn{% endif %}">{{ 'sections.featured_collection.view_all' | t }}</a>
       {%- endif -%}
     </div>
   {% else %}
@@ -42,7 +42,7 @@
         <h2 class="title{% if block.settings.title == blank %} title--no-heading{% else %} section-heading lg:section-heading font-medium text-center md:text-left{% endif %}">{{ block.settings.title | escape }}</h2>
 
         {%- if section.settings.show_view_all and section.settings.swipe_on_mobile and more_in_collection -%}
-          <a href="{{ block.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
+          <a href="{{ block.settings.collection.url }}" class="link underlined-link large-up-hide{% if settings.rounded_buttons %} rounded_btn{% endif %}">{{ 'sections.featured_collection.view_all' | t }}</a>
         {%- endif -%}
       </div>
     {% endfor %}
@@ -122,7 +122,7 @@
     {%- if section.settings.show_view_all and more_in_collection -%}
       <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
         <a href="{{ block.settings.collection.url }}"
-          class="button"
+          class="button{% if settings.rounded_buttons %} rounded_btn{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: block.settings.collection.title }}"
         >
           {{ 'sections.featured_collection.view_all' | t }}
